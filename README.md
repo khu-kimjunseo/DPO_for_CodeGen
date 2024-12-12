@@ -42,7 +42,7 @@
 DPO 알고리즘으로 모델을 훈련시키려면 다음 명령을 실행하세요:
 ```bash
 python dpo_train/dpo_train.py
-
+```
 ---
 
 ## 3. 컴파일 결과 확인
@@ -52,12 +52,12 @@ python dpo_train/dpo_train.py
 훈련이 완료된 후, 결과를 확인하려면 다음 명령을 사용하세요:
 ```bash
 python test/compile.py <directory> <language>
-
+```
 ---
 
 ## 참고 자료
 
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
 - [DPO Trainer](https://huggingface.co/docs/trl/main/en/dpo_trainer)
-- [Salesforce CodeGen 모델]([https://github.com/salesforce/CodeGen](https://huggingface.co/Salesforce/codegen-350M-multi))
+- [Salesforce CodeGen 모델](https://huggingface.co/Salesforce/codegen-350M-multi)
 - [MultiPL-C2C 데이터셋](https://huggingface.co/datasets/zilu-peter-tang/MultiPL-C2C)
