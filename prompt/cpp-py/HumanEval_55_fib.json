@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_55_fib",
+    "language": "py",
+    "prompt": "def fib(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_55_fib.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(fib)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong fib(long n) {\n    if (n == 0) {\n        return 0;\n    }\n    if (n == 1) {\n        return 1;\n    }\n    return fib(n - 1) + fib(n - 2);\n}\n\n### Python version\n\ndef fib(n: int) -> int:\n"
+}

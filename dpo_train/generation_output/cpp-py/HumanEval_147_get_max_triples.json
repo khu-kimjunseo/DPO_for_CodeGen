@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_147_get_max_triples",
+    "language": "py",
+    "prompt": "def get_max_triples(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_147_get_max_triples.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == 1\n    assert candidate(6) == 4\n    assert candidate(10) == 36\n    assert candidate(100) == 53361\n\ndef test_check():\n    check(get_max_triples)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong get_max_triples(long n) {\n    std::vector<long> A;\n    for (long i = 1; i <= n; i++) {\n        A.push_back(i*i - i + 1);\n    }\n    long ans = 0;\n    for (long i = 0; i < n; i++) {\n        for (long j = i+1; j < n; j++) {\n            for (long k = j+1; k < n; k++) {\n                if ((A[i]+A[j]+A[k])%3 == 0) {\n                    ans++;\n                }\n            }\n        }\n    }\n    return ans;\n}\n\n### Python version\n\ndef get_max_triples(n: int) -> int:\n"
+}

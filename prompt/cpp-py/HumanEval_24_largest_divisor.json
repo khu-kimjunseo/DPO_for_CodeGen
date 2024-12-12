@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_24_largest_divisor",
+    "language": "py",
+    "prompt": "def largest_divisor(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_24_largest_divisor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(largest_divisor)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong largest_divisor(long n) {\n    for(long i=n-1;i>=1;i--) {\n        if(n%i==0) {\n            return i;\n        }\n    }\n}\n\n### Python version\n\ndef largest_divisor(n: int) -> int:\n"
+}

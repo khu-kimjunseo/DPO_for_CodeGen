@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_84_solve",
+    "language": "py",
+    "prompt": "def solve(N: int) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_84_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(1000) == '1'\n    assert candidate(150) == '110'\n    assert candidate(147) == '1100'\n    assert candidate(333) == '1001'\n    assert candidate(963) == '10010'\n\ndef test_check():\n    check(solve)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string solve(long N) {\n    std::string s = std::to_string(N);\n    long sum = 0;\n    for (int i = 0; i < s.size(); i++) {\n        sum += s[i] - '0';\n    }\n    std::bitset<64> b(sum);\n    return b.to_string().substr(b.to_string().find('1'));\n}\n\n### Python version\n\ndef solve(N: int) -> str:\n"
+}

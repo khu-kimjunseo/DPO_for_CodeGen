@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_109_move_one_ball",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool move_one_ball(std::vector<long> arr) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_109_move_one_ball.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = move_one_ball;\n    assert(candidate((std::vector<long>({(long)3, (long)4, (long)5, (long)1, (long)2}))) == (true));\n    assert(candidate((std::vector<long>({(long)3, (long)5, (long)10, (long)1, (long)2}))) == (true));\n    assert(candidate((std::vector<long>({(long)4, (long)3, (long)1, (long)2}))) == (false));\n    assert(candidate((std::vector<long>({(long)3, (long)5, (long)4, (long)1, (long)2}))) == (false));\n    assert(candidate((std::vector<long>())) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef move_one_ball(arr: List[int]) -> bool:\n    if len(arr)==0:\n      return True\n    sorted_array=sorted(arr)\n    my_arr=[]\n    \n    min_value=min(arr)\n    min_index=arr.index(min_value)\n    my_arr=arr[min_index:]+arr[0:min_index]\n    for i in range(len(arr)):\n      if my_arr[i]!=sorted_array[i]:\n        return False\n    return True\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool move_one_ball(std::vector<long> arr) {\n"
+}

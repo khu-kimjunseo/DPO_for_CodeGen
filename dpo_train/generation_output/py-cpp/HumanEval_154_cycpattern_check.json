@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_154_cycpattern_check",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool cycpattern_check(std::string a, std::string b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_154_cycpattern_check.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = cycpattern_check;\n    assert(candidate((\"xyzw\"), (\"xyw\")) == (false));\n    assert(candidate((\"yello\"), (\"ell\")) == (true));\n    assert(candidate((\"whattup\"), (\"ptut\")) == (false));\n    assert(candidate((\"efef\"), (\"fee\")) == (true));\n    assert(candidate((\"abab\"), (\"aabb\")) == (false));\n    assert(candidate((\"winemtt\"), (\"tinem\")) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef cycpattern_check(a: str , b: str) -> bool:\n    l = len(b)\n    pat = b + b\n    for i in range(len(a) - l + 1):\n        for j in range(l + 1):\n            if a[i:i+l] == pat[j:j+l]:\n                return True\n    return False\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool cycpattern_check(std::string a, std::string b) {\n"
+}

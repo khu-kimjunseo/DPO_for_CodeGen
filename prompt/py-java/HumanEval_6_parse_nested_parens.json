@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_6_parse_nested_parens",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseNestedParens(String paren_string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_6_parse_nested_parens.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(parseNestedParens((\"(()()) ((())) () ((())()())\")).equals((new ArrayList<Long>(Arrays.asList((long)2l, (long)3l, (long)1l, (long)3l)))));\n    assert(parseNestedParens((\"() (()) ((())) (((())))\")).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l)))));\n    assert(parseNestedParens((\"(()(())((())))\")).equals((new ArrayList<Long>(Arrays.asList((long)4l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    def parse_paren_group(s):\n        depth = 0\n        max_depth = 0\n        for c in s:\n            if c == '(':\n                depth += 1\n                max_depth = max(depth, max_depth)\n            else:\n                depth -= 1\n\n        return max_depth\n\n    return [parse_paren_group(x) for x in paren_string.split(' ') if x]\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseNestedParens(String paren_string) {\n"
+}

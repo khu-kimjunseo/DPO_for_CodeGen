@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_98_count_upper",
+    "language": "py",
+    "prompt": "def count_upper(s: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_98_count_upper.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('aBCdEf') == 1\n    assert candidate('abcdefg') == 0\n    assert candidate('dBBE') == 0\n    assert candidate('B') == 0\n    assert candidate('U') == 1\n    assert candidate('') == 0\n    assert candidate('EEEE') == 2\n\ndef test_check():\n    check(count_upper)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countUpper(String s) {\n        long count = 0;\n        for (int i = 0; i < s.length(); i += 2) {\n            if (\"AEIOU\".indexOf(s.charAt(i)) >= 0) {\n                count++;\n            }\n        }\n        return count;\n    }\n}\n\n### Python version\n\ndef count_upper(s: str) -> int:\n"
+}

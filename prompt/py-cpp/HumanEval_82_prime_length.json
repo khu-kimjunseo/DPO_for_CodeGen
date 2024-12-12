@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_82_prime_length",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool prime_length(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_82_prime_length.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = prime_length;\n    assert(candidate((\"Hello\")) == (true));\n    assert(candidate((\"abcdcba\")) == (true));\n    assert(candidate((\"kittens\")) == (true));\n    assert(candidate((\"orange\")) == (false));\n    assert(candidate((\"wow\")) == (true));\n    assert(candidate((\"world\")) == (true));\n    assert(candidate((\"MadaM\")) == (true));\n    assert(candidate((\"Wow\")) == (true));\n    assert(candidate((\"\")) == (false));\n    assert(candidate((\"HI\")) == (true));\n    assert(candidate((\"go\")) == (true));\n    assert(candidate((\"gogo\")) == (false));\n    assert(candidate((\"aaaaaaaaaaaaaaa\")) == (false));\n    assert(candidate((\"Madam\")) == (true));\n    assert(candidate((\"M\")) == (false));\n    assert(candidate((\"0\")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef prime_length(string: str) -> bool:\n    l = len(string)\n    if l == 0 or l == 1:\n        return False\n    for i in range(2, l):\n        if l % i == 0:\n            return False\n    return True\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool prime_length(std::string string) {\n"
+}

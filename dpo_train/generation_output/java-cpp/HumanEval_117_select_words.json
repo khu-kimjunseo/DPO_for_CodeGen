@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_117_select_words",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> select_words(std::string s, long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_117_select_words.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = select_words;\n    assert(candidate((\"Mary had a little lamb\"), (4)) == (std::vector<std::string>({(std::string)\"little\"})));\n    assert(candidate((\"Mary had a little lamb\"), (3)) == (std::vector<std::string>({(std::string)\"Mary\", (std::string)\"lamb\"})));\n    assert(candidate((\"simple white space\"), (2)) == (std::vector<std::string>()));\n    assert(candidate((\"Hello world\"), (4)) == (std::vector<std::string>({(std::string)\"world\"})));\n    assert(candidate((\"Uncle sam\"), (3)) == (std::vector<std::string>({(std::string)\"Uncle\"})));\n    assert(candidate((\"\"), (4)) == (std::vector<std::string>()));\n    assert(candidate((\"a b c d e f\"), (1)) == (std::vector<std::string>({(std::string)\"b\", (std::string)\"c\", (std::string)\"d\", (std::string)\"f\"})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> selectWords(String s, long n) {\n        ArrayList<String> result = new ArrayList<String>();\n        for (String word : s.split(\" \")) {\n            long n_consonants = 0;\n            for (int i = 0; i < word.length(); i++) {\n                if (!\"aeiouAEIOU\".contains(String.valueOf(word.charAt(i)))) {\n                    n_consonants++;\n                }\n            }\n            if (n_consonants == n) {\n                result.add(word);\n            }\n        }\n        return result;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> select_words(std::string s, long n) {\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_140_fix_spaces",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string fix_spaces(std::string text) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_140_fix_spaces.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = fix_spaces;\n    assert(candidate((\"Example\")) == (\"Example\"));\n    assert(candidate((\"Mudasir Hanif \")) == (\"Mudasir_Hanif_\"));\n    assert(candidate((\"Yellow Yellow  Dirty  Fellow\")) == (\"Yellow_Yellow__Dirty__Fellow\"));\n    assert(candidate((\"Exa   mple\")) == (\"Exa-mple\"));\n    assert(candidate((\"   Exa 1 2 2 mple\")) == (\"-Exa_1_2_2_mple\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String fixSpaces(String text) {\n        String newText = \"\";\n        int i = 0;\n        int start = 0, end = 0;\n        while (i < text.length()) {\n            if (text.charAt(i) == ' ') {\n                end++;\n            } else {\n                if (end - start > 2) {\n                    newText += \"-\"+text.charAt(i);\n                } else if (end - start > 0) {\n                    newText += \"_\".repeat(end - start)+text.charAt(i);\n                } else {\n                    newText += text.charAt(i);\n                }\n                start = i+1; end = i+1;\n            }\n            i++;\n        }\n        if (end - start > 2) {\n            newText += \"-\";\n        } else if (end - start > 0) {\n            newText += \"_\";\n        }\n        return newText;\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string fix_spaces(std::string text) {\n"
+}

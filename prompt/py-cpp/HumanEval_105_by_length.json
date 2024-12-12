@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_105_by_length",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> by_length(std::vector<long> arr) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_105_by_length.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = by_length;\n    assert(candidate((std::vector<long>({(long)2, (long)1, (long)1, (long)4, (long)5, (long)8, (long)2, (long)3}))) == (std::vector<std::string>({(std::string)\"Eight\", (std::string)\"Five\", (std::string)\"Four\", (std::string)\"Three\", (std::string)\"Two\", (std::string)\"Two\", (std::string)\"One\", (std::string)\"One\"})));\n    assert(candidate((std::vector<long>())) == (std::vector<std::string>()));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)55}))) == (std::vector<std::string>({(std::string)\"One\"})));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)3, (long)2}))) == (std::vector<std::string>({(std::string)\"Three\", (std::string)\"Two\", (std::string)\"One\"})));\n    assert(candidate((std::vector<long>({(long)9, (long)4, (long)8}))) == (std::vector<std::string>({(std::string)\"Nine\", (std::string)\"Eight\", (std::string)\"Four\"})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef by_length(arr: List[int]) -> List[str]:\n    dic = {\n        1: \"One\",\n        2: \"Two\",\n        3: \"Three\",\n        4: \"Four\",\n        5: \"Five\",\n        6: \"Six\",\n        7: \"Seven\",\n        8: \"Eight\",\n        9: \"Nine\",\n    }\n    sorted_arr = sorted(arr, reverse=True)\n    new_arr = []\n    for var in sorted_arr:\n        try:\n            new_arr.append(dic[var])\n        except:\n            pass\n    return new_arr\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> by_length(std::vector<long> arr) {\n"
+}

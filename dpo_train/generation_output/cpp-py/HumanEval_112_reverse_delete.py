@@ -1,0 +1,111 @@
+### C++ version
+
+#include<assert.h>
+#include<bits/stdc++.h>
+#include<vector>
+#include<sstream>
+#include<regex>
+#include<map>
+#include<set>
+std::tuple<std::string, bool> reverse_delete(std::string s, std::string c) {
+    s.erase(std::remove_if(s.begin(), s.end(), [&c](char x) { return c.find(x) != std::string::npos; }), s.end());
+    return {s, s == std::string(s.rbegin(), s.rend())};
+}
+
+### Python version
+
+from typing import Tuple
+
+def reverse_delete(s: str, c: str) -> Tuple[str, bool]:
+    """
+    >>> reverse_delete("abc", "b")
+    ('b', True)
+    >>> reverse_delete("abc", "a")
+    ('a', True)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "c")
+    ('c', False)
+    >>> reverse_delete("abc", "")
+    ('', False)
+    >>> reverse_delete("abc", "b")
+    ('b', False)
+    >>> reverse_delete("abc", "a")
+    ('a', False)
+    >>> reverse_delete("abc", "

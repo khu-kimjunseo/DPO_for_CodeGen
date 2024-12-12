@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_159_eat",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> eat(long number, long need, long remaining) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_159_eat.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(eat((5l), (6l), (10l)).equals((new ArrayList<Long>(Arrays.asList((long)11l, (long)4l)))));\n    assert(eat((4l), (8l), (9l)).equals((new ArrayList<Long>(Arrays.asList((long)12l, (long)1l)))));\n    assert(eat((1l), (10l), (10l)).equals((new ArrayList<Long>(Arrays.asList((long)11l, (long)0l)))));\n    assert(eat((2l), (11l), (5l)).equals((new ArrayList<Long>(Arrays.asList((long)7l, (long)0l)))));\n    assert(eat((4l), (5l), (7l)).equals((new ArrayList<Long>(Arrays.asList((long)9l, (long)2l)))));\n    assert(eat((4l), (5l), (1l)).equals((new ArrayList<Long>(Arrays.asList((long)5l, (long)0l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> eat(long number, long need, long remaining) {\n    if(need <= remaining){\n        return { number + need , remaining-need };\n    } else{\n        return { number + remaining , 0};\n    }\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> eat(long number, long need, long remaining) {\n"
+}

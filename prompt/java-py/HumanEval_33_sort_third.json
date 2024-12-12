@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_33_sort_third",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef sort_third(l: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_33_sort_third.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([5, 6, 3, 4, 8, 9, 2]) == [2, 6, 3, 4, 8, 9, 5]\n    assert candidate([5, 8, 3, 4, 6, 9, 2]) == [2, 8, 3, 4, 6, 9, 5]\n    assert candidate([5, 6, 9, 4, 8, 3, 2]) == [2, 6, 9, 4, 8, 3, 5]\n    assert candidate([5, 6, 3, 4, 8, 9, 2, 1]) == [2, 6, 3, 4, 8, 9, 5, 1]\n\ndef test_check():\n    check(sort_third)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> sortThird(ArrayList<Long> l) {\n        for (int i=2; i<l.size(); i+=3) {\n            int j=i-2;\n            while (j>=0 && l.get(j+3)<l.get(j)) {\n                long tmp=l.get(j);\n                l.set(j,l.get(j+3));\n                l.set(j+3,tmp);\n                j-=3;\n            }\n        }\n        return l;\n    }\n    \n}\n\n### Python version\n\nfrom typing import List\n\ndef sort_third(l: List[int]) -> List[int]:\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_27_flip_case",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string flip_case(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_27_flip_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = flip_case;\n    assert(candidate((\"\")) == (\"\"));\n    assert(candidate((\"Hello!\")) == (\"hELLO!\"));\n    assert(candidate((\"These violent delights have violent ends\")) == (\"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef flip_case(string: str) -> str:\n    return string.swapcase()\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string flip_case(std::string string) {\n"
+}

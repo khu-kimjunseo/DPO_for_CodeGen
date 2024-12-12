@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_119_match_parens",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string match_parens(std::vector<std::string> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_119_match_parens.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = match_parens;\n    assert(candidate((std::vector<std::string>({(std::string)\"()(\", (std::string)\")\"}))) == (\"Yes\"));\n    assert(candidate((std::vector<std::string>({(std::string)\")\", (std::string)\")\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"(()(())\", (std::string)\"())())\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\")())\", (std::string)\"(()()(\"}))) == (\"Yes\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"(())))\", (std::string)\"(()())((\"}))) == (\"Yes\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"()\", (std::string)\"())\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"(()(\", (std::string)\"()))()\"}))) == (\"Yes\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"((((\", (std::string)\"((())\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\")(()\", (std::string)\"(()(\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\")(\", (std::string)\")(\"}))) == (\"No\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"(\", (std::string)\")\"}))) == (\"Yes\"));\n    assert(candidate((std::vector<std::string>({(std::string)\")\", (std::string)\"(\"}))) == (\"Yes\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef match_parens(lst: List[str]) -> str:\n    def check(s):\n        val = 0\n        for i in s:\n            if i == '(':\n                val = val + 1\n            else:\n                val = val - 1\n            if val < 0:\n                return False\n        return True if val == 0 else False\n\n    S1 = lst[0] + lst[1]\n    S2 = lst[1] + lst[0]\n    return 'Yes' if check(S1) or check(S2) else 'No'\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string match_parens(std::vector<std::string> lst) {\n"
+}

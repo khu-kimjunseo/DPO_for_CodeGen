@@ -1,0 +1,782 @@
+2024-12-10 06:21:30 - INFO - Directory: java-cpp
+2024-12-10 06:21:30 - INFO - Total Files: 47
+2024-12-10 06:21:30 - INFO - Successful Compilations: 17
+2024-12-10 06:21:30 - INFO - Failed Compilations: 30
+2024-12-10 06:21:30 - INFO - Success Rate: 36.17%
+2024-12-10 11:11:10 - ERROR - Failed to compile java-cpp/HumanEval_27_flip_case.cpp. Error:
+java-cpp/HumanEval_27_flip_case.cpp: In function ‘std::string flip_case(std::string)’:
+java-cpp/HumanEval_27_flip_case.cpp:16:90: error: no matching function for call to ‘std::__cxx11::basic_string<char>::replace(std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type)’
+   16 |     result2.replace(m.position(1), m.length(), m.position(1) + m.length() - m.position(1));
+      |                                                                                          ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/istream:38,
+                 from /usr/include/c++/9/sstream:38,
+                 from /usr/include/c++/9/complex:45,
+                 from /usr/include/c++/9/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h:54,
+                 from java-cpp/HumanEval_27_flip_case.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:1965:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’ <near match>
+ 1965 |       replace(size_type __pos, size_type __n1, const _CharT* __s)
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:1965:7: note:   conversion of argument 3 would be ill-formed:
+java-cpp/HumanEval_27_flip_case.cpp:16:75: error: invalid conversion from ‘std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type’ {aka ‘long int’} to ‘const char*’ [-fpermissive]
+   16 |     result2.replace(m.position(1), m.length(), m.position(1) + m.length() - m.position(1));
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type {aka long int}
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/istream:38,
+                 from /usr/include/c++/9/sstream:38,
+                 from /usr/include/c++/9/complex:45,
+                 from /usr/include/c++/9/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h:54,
+                 from java-cpp/HumanEval_27_flip_case.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:1893:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 1893 |       replace(size_type __pos, size_type __n, const basic_string& __str)
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:1893:67: note:   no known conversion for argument 3 from ‘std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type’ {aka ‘long int’} to ‘const std::__cxx11::basic_string<char>&’
+ 1893 |       replace(size_type __pos, size_type __n, const basic_string& __str)
+      |                                               ~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/bits/basic_string.h:1915:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 1915 |       replace(size_type __pos1, size_type __n1, const basic_string& __str,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:1915:7: note:   candidate expects 5 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:1940:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 1940 |       replace(size_type __pos, size_type __n1, const _CharT* __s,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:1940:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:1989:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 1989 |       replace(size_type __pos, size_type __n1, size_type __n2, _CharT __c)
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:1989:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2007:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’
+ 2007 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2007:32: note:   no known conversion for argument 1 from ‘std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type’ {aka ‘long int’} to ‘std::__cxx11::basic_string<char>::__const_iterator’ {aka ‘__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >’}
+ 2007 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |               ~~~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/9/bits/basic_string.h:2027:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 2027 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2027:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2049:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’
+ 2049 |       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2049:32: note:   no known conversion for argument 1 from ‘std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type’ {aka ‘long int’} to ‘std::__cxx11::basic_string<char>::__const_iterator’ {aka ‘__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >’}
+ 2049 |       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
+      |               ~~~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/9/bits/basic_string.h:2070:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+ 2070 |       replace(__const_iterator __i1, __const_iterator __i2, size_type __n,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2070:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2097:9: note: candidate: ‘template<class _InputIterator, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+ 2097 |         replace(const_iterator __i1, const_iterator __i2,
+      |         ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2097:9: note:   template argument deduction/substitution failed:
+java-cpp/HumanEval_27_flip_case.cpp:16:90: note:   candidate expects 4 arguments, 3 provided
+   16 |     result2.replace(m.position(1), m.length(), m.position(1) + m.length() - m.position(1));
+      |                                                                                          ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/istream:38,
+                 from /usr/include/c++/9/sstream:38,
+                 from /usr/include/c++/9/complex:45,
+                 from /usr/include/c++/9/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h:54,
+                 from java-cpp/HumanEval_27_flip_case.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:2127:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, _CharT*, _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’
+ 2127 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2127:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2138:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, const _CharT*, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’
+ 2138 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2138:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2149:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::pointer = char*]’
+ 2149 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2149:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2160:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >]’
+ 2160 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2160:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/9/bits/basic_string.h:2185:21: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’
+ 2185 |       basic_string& replace(const_iterator __i1, const_iterator __i2,
+      |                     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:2185:44: note:   no known conversion for argument 1 from ‘std::__cxx11::match_results<__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> > >::difference_type’ {aka ‘long int’} to ‘std::__cxx11::basic_string<char>::const_iterator’ {aka ‘__gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >’}
+ 2185 |       basic_string& replace(const_iterator __i1, const_iterator __i2,
+      |                             ~~~~~~~~~~~~~~~^~~~
+
+2024-12-10 11:11:11 - ERROR - Failed to compile java-cpp/HumanEval_158_find_max.cpp. Error:
+java-cpp/HumanEval_158_find_max.cpp: In function ‘std::string find_max(std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_158_find_max.cpp:30:1: error: expected initializer before ‘}’ token
+   30 | }
+      | ^
+java-cpp/HumanEval_158_find_max.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:11 - ERROR - Failed to compile java-cpp/HumanEval_83_starts_one_ends.cpp. Error:
+java-cpp/HumanEval_83_starts_one_ends.cpp: In function ‘long int starts_one_ends(long int)’:
+java-cpp/HumanEval_83_starts_one_ends.cpp:12:18: error: ‘Math’ was not declared in this scope
+   12 |     return (long)Math.pow(10, n - 2);
+      |                  ^~~~
+
+2024-12-10 11:11:12 - INFO - Successfully compiled: java-cpp/HumanEval_47_median.cpp
+2024-12-10 11:11:13 - ERROR - Failed to compile java-cpp/HumanEval_143_words_in_sentence.cpp. Error:
+java-cpp/HumanEval_143_words_in_sentence.cpp: In function ‘std::string words_in_sentence(std::string)’:
+java-cpp/HumanEval_143_words_in_sentence.cpp:17:42: error: ‘split’ was not declared in this scope
+   17 |         std::vector<std::string> words = split(word);
+      |                                          ^~~~~
+
+2024-12-10 11:11:13 - ERROR - Failed to compile java-cpp/HumanEval_135_can_arrange.cpp. Error:
+java-cpp/HumanEval_135_can_arrange.cpp: In function ‘long int can_arrange(std::vector<long int>)’:
+java-cpp/HumanEval_135_can_arrange.cpp:13:17: error: ‘class std::vector<long int>’ has no member named ‘get’
+   13 |         if (arr.get(i) < arr.get(i-1)) {
+      |                 ^~~
+java-cpp/HumanEval_135_can_arrange.cpp:13:30: error: ‘class std::vector<long int>’ has no member named ‘get’
+   13 |         if (arr.get(i) < arr.get(i-1)) {
+      |                              ^~~
+
+2024-12-10 11:11:14 - ERROR - Failed to compile java-cpp/HumanEval_131_digits.cpp. Error:
+java-cpp/HumanEval_131_digits.cpp: In function ‘long int digits(long int)’:
+java-cpp/HumanEval_131_digits.cpp:13:19: error: ‘Long’ was not declared in this scope; did you mean ‘long’?
+   13 |     for (char c : Long.toString(n).toCharArray()) {
+      |                   ^~~~
+      |                   long
+java-cpp/HumanEval_131_digits.cpp:14:21: error: ‘Character’ was not declared in this scope
+   14 |         int digit = Character.getNumericValue(c);
+      |                     ^~~~~~~~~
+
+2024-12-10 11:11:14 - ERROR - Failed to compile java-cpp/HumanEval_75_is_multiply_prime.cpp. Error:
+java-cpp/HumanEval_75_is_multiply_prime.cpp: In function ‘bool is_multiply_prime(long int)’:
+java-cpp/HumanEval_75_is_multiply_prime.cpp:73:10: error: expected ‘)’ before ‘}’ token
+   73 |     if (a
+      |        ~ ^
+      |          )
+   74 | }
+      | ~         
+java-cpp/HumanEval_75_is_multiply_prime.cpp:74:1: error: expected primary-expression before ‘}’ token
+   74 | }
+      | ^
+java-cpp/HumanEval_75_is_multiply_prime.cpp:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+   74 | }
+      | ^
+
+2024-12-10 11:11:15 - ERROR - Failed to compile java-cpp/HumanEval_114_minSubArraySum.cpp. Error:
+java-cpp/HumanEval_114_minSubArraySum.cpp: In function ‘long int minSubArraySum(std::vector<long int>)’:
+java-cpp/HumanEval_114_minSubArraySum.cpp:18:19: error: ‘Math’ was not declared in this scope
+   18 |         max_sum = Math.max(s, max_sum);
+      |                   ^~~~
+java-cpp/HumanEval_114_minSubArraySum.cpp:21:24: error: ‘class std::vector<long int>’ has no member named ‘stream’
+   21 |         max_sum = nums.stream().mapToLong(i -> -i).max().getAsLong();
+      |                        ^~~~~~
+java-cpp/HumanEval_114_minSubArraySum.cpp:21:43: error: ‘i’ was not declared in this scope
+   21 |         max_sum = nums.stream().mapToLong(i -> -i).max().getAsLong();
+      |                                           ^
+java-cpp/HumanEval_114_minSubArraySum.cpp:21:48: error: expected unqualified-id before ‘-’ token
+   21 |         max_sum = nums.stream().mapToLong(i -> -i).max().getAsLong();
+      |                                                ^
+
+2024-12-10 11:11:16 - ERROR - Failed to compile java-cpp/HumanEval_42_incr_list.cpp. Error:
+java-cpp/HumanEval_42_incr_list.cpp: In function ‘std::vector<long int> incr_list(std::vector<long int>)’:
+java-cpp/HumanEval_42_incr_list.cpp:59:10: error: ‘un’ is not a member of ‘std’
+   59 |     std::un
+      |          ^~
+java-cpp/HumanEval_42_incr_list.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   60 | }
+      | ^
+
+2024-12-10 11:11:16 - ERROR - Failed to compile java-cpp/HumanEval_40_triples_sum_to_zero.cpp. Error:
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp: In function ‘bool triples_sum_to_zero(std::vector<long int>)’:
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp:68:1: error: expected unqualified-id before ‘}’ token
+   68 | }
+      | ^
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp:68:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:17 - INFO - Successfully compiled: java-cpp/HumanEval_121_solution.cpp
+2024-12-10 11:11:18 - INFO - Successfully compiled: java-cpp/HumanEval_60_sum_to_n.cpp
+2024-12-10 11:11:18 - INFO - Successfully compiled: java-cpp/HumanEval_105_by_length.cpp
+2024-12-10 11:11:19 - ERROR - Failed to compile java-cpp/HumanEval_153_Strongest_Extension.cpp. Error:
+java-cpp/HumanEval_153_Strongest_Extension.cpp: In function ‘std::string Strongest_Extension(std::string, std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_153_Strongest_Extension.cpp:14:21: error: ‘std::string’ {aka ‘class std::__cxx11::basic_string<char>’} has no member named ‘replaceAll’; did you mean ‘replace’?
+   14 |         int val = s.replaceAll("[^A-Z]", "").length() - s.replaceAll("[^a-z]", "").length();
+      |                     ^~~~~~~~~~
+      |                     replace
+java-cpp/HumanEval_153_Strongest_Extension.cpp:14:59: error: ‘std::string’ {aka ‘class std::__cxx11::basic_string<char>’} has no member named ‘replaceAll’; did you mean ‘replace’?
+   14 |         int val = s.replaceAll("[^A-Z]", "").length() - s.replaceAll("[^a-z]", "").length();
+      |                                                           ^~~~~~~~~~
+      |                                                           replace
+
+2024-12-10 11:11:19 - ERROR - Failed to compile java-cpp/HumanEval_138_is_equal_to_sum_even.cpp. Error:
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp: In function ‘bool is_equal_to_sum_even(long int)’:
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp:87:1: error: expected primary-expression before ‘}’ token
+   87 | }
+      | ^
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+   87 | }
+      | ^
+
+2024-12-10 11:11:20 - ERROR - Failed to compile java-cpp/HumanEval_23_strlen.cpp. Error:
+java-cpp/HumanEval_23_strlen.cpp: In function ‘long int string_length(std::string)’:
+java-cpp/HumanEval_23_strlen.cpp:74:1: error: expected unqualified-id before ‘}’ token
+   74 | }
+      | ^
+java-cpp/HumanEval_23_strlen.cpp:74:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:21 - ERROR - Failed to compile java-cpp/HumanEval_127_intersection.cpp. Error:
+java-cpp/HumanEval_127_intersection.cpp: In function ‘std::string intersection(std::tuple<long int, long int>, std::tuple<long int, long int>)’:
+java-cpp/HumanEval_127_intersection.cpp:12:21: error: ‘class std::tuple<long int, long int>’ has no member named ‘getValue0’
+   12 |     ss << interval1.getValue0() << " " << interval1.getValue1() << " " << interval2.getValue0() << " " << interval2.getValue1();
+      |                     ^~~~~~~~~
+java-cpp/HumanEval_127_intersection.cpp:12:53: error: ‘class std::tuple<long int, long int>’ has no member named ‘getValue1’
+   12 |     ss << interval1.getValue0() << " " << interval1.getValue1() << " " << interval2.getValue0() << " " << interval2.getValue1();
+      |                                                     ^~~~~~~~~
+java-cpp/HumanEval_127_intersection.cpp:12:85: error: ‘class std::tuple<long int, long int>’ has no member named ‘getValue0’
+   12 |     ss << interval1.getValue0() << " " << interval1.getValue1() << " " << interval2.getValue0() << " " << interval2.getValue1();
+      |                                                                                     ^~~~~~~~~
+java-cpp/HumanEval_127_intersection.cpp:12:117: error: ‘class std::tuple<long int, long int>’ has no member named ‘getValue1’
+   12 |     ss << interval1.getValue0() << " " << interval1.getValue1() << " " << interval2.getValue0() << " " << interval2.getValue1();
+      |                                                                                                                     ^~~~~~~~~
+
+2024-12-10 11:11:21 - INFO - Successfully compiled: java-cpp/HumanEval_10_make_palindrome.cpp
+2024-12-10 11:11:22 - INFO - Successfully compiled: java-cpp/HumanEval_88_sort_array.cpp
+2024-12-10 11:11:23 - ERROR - Failed to compile java-cpp/HumanEval_70_strange_sort_list.cpp. Error:
+java-cpp/HumanEval_70_strange_sort_list.cpp: In function ‘std::vector<long int> strange_sort_list(std::vector<long int>)’:
+java-cpp/HumanEval_70_strange_sort_list.cpp:56:1: error: expected unqualified-id before ‘}’ token
+   56 | }
+      | ^
+java-cpp/HumanEval_70_strange_sort_list.cpp:56:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:23 - ERROR - Failed to compile java-cpp/HumanEval_96_count_up_to.cpp. Error:
+java-cpp/HumanEval_96_count_up_to.cpp: In function ‘std::vector<long int> count_up_to(long int)’:
+java-cpp/HumanEval_96_count_up_to.cpp:16:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime’
+   16 |     std::vector<long> primes_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:15:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime’ previously declared here
+   15 |     std::vector<long> primes_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:17:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime’
+   17 |     std::vector<long> primes_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:15:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime’ previously declared here
+   15 |     std::vector<long> primes_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:19:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   19 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:20:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   20 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:21:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   21 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:22:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   22 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:23:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   23 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:24:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   24 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:25:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   25 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:26:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   26 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:27:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   27 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:28:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   28 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:29:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   29 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:30:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   30 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:31:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   31 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:32:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   32 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:33:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   33 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:34:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   34 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:35:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   35 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:36:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   36 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:37:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   37 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:38:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   38 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:39:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   39 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:40:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   40 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:41:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   41 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:42:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   42 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:43:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   43 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:44:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   44 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:45:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   45 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:46:23: error: redeclaration of ‘std::vector<long int> primes_prime_prime_prime_prime_prime’
+   46 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:18:23: note: ‘std::vector<long int> primes_prime_prime_prime_prime_prime’ previously declared here
+   18 |     std::vector<long> primes_prime_prime_prime_prime_prime;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_96_count_up_to.cpp:48:1: error: expected unqualified-id before ‘}’ token
+   48 | }
+      | ^
+java-cpp/HumanEval_96_count_up_to.cpp:48:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:24 - INFO - Successfully compiled: java-cpp/HumanEval_86_anti_shuffle.cpp
+2024-12-10 11:11:25 - INFO - Successfully compiled: java-cpp/HumanEval_5_intersperse.cpp
+2024-12-10 11:11:25 - ERROR - Failed to compile java-cpp/HumanEval_87_get_row.cpp. Error:
+java-cpp/HumanEval_87_get_row.cpp: In function ‘std::vector<std::tuple<long int, long int> > get_row(std::vector<std::vector<long int> >, long int)’:
+java-cpp/HumanEval_87_get_row.cpp:13:33: error: ‘class std::vector<std::vector<long int> >’ has no member named ‘get’
+   13 |         for (int j = 0; j < lst.get(i).size(); j++) {
+      |                                 ^~~
+java-cpp/HumanEval_87_get_row.cpp:14:21: error: ‘class std::vector<std::vector<long int> >’ has no member named ‘get’
+   14 |             if (lst.get(i).get(j) == x) {
+      |                     ^~~
+
+2024-12-10 11:11:26 - ERROR - Failed to compile java-cpp/HumanEval_145_order_by_points.cpp. Error:
+java-cpp/HumanEval_145_order_by_points.cpp: In function ‘std::vector<long int> order_by_points(std::vector<long int>)’:
+java-cpp/HumanEval_145_order_by_points.cpp:50:1: error: expected initializer before ‘}’ token
+   50 | }
+      | ^
+java-cpp/HumanEval_145_order_by_points.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:27 - ERROR - Failed to compile java-cpp/HumanEval_129_minPath.cpp. Error:
+java-cpp/HumanEval_129_minPath.cpp: In function ‘std::vector<long int> minPath(std::vector<std::vector<long int> >, long int)’:
+java-cpp/HumanEval_129_minPath.cpp:59:1: error: expected unqualified-id before ‘}’ token
+   59 | }
+      | ^
+java-cpp/HumanEval_129_minPath.cpp:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:27 - INFO - Successfully compiled: java-cpp/HumanEval_33_sort_third.cpp
+2024-12-10 11:11:28 - ERROR - Failed to compile java-cpp/HumanEval_107_even_odd_palindrome.cpp. Error:
+java-cpp/HumanEval_107_even_odd_palindrome.cpp: In function ‘std::tuple<long int, long int> even_odd_palindrome(long int)’:
+java-cpp/HumanEval_107_even_odd_palindrome.cpp:63:1: error: expected unqualified-id before ‘}’ token
+   63 | }
+      | ^
+java-cpp/HumanEval_107_even_odd_palindrome.cpp:63:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:28 - INFO - Successfully compiled: java-cpp/HumanEval_17_parse_music.cpp
+2024-12-10 11:11:29 - INFO - Successfully compiled: java-cpp/HumanEval_3_below_zero.cpp
+2024-12-10 11:11:30 - INFO - Successfully compiled: java-cpp/HumanEval_122_add_elements.cpp
+2024-12-10 11:11:30 - ERROR - Failed to compile java-cpp/HumanEval_72_will_it_fly.cpp. Error:
+java-cpp/HumanEval_72_will_it_fly.cpp: In function ‘bool will_it_fly(std::vector<long int>, long int)’:
+java-cpp/HumanEval_72_will_it_fly.cpp:16:33: error: redeclaration of ‘std::vector<long int>::iterator it_end’
+   16 |     std::vector<long>::iterator it_end;
+      |                                 ^~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:13:33: note: ‘std::vector<long int>::iterator it_end’ previously declared here
+   13 |     std::vector<long>::iterator it_end;
+      |                                 ^~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:20:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end’
+   20 |     std::vector<long>::iterator it_begin_end_begin_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:19:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end’ previously declared here
+   19 |     std::vector<long>::iterator it_begin_end_begin_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:22:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end’
+   22 |     std::vector<long>::iterator it_begin_end_begin_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:21:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end’ previously declared here
+   21 |     std::vector<long>::iterator it_begin_end_begin_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:24:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end’
+   24 |     std::vector<long>::iterator it_begin_end_begin_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:23:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end’ previously declared here
+   23 |     std::vector<long>::iterator it_begin_end_begin_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:26:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   26 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:27:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   27 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:28:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   28 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:29:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   29 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:30:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   30 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:31:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   31 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:32:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   32 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:33:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   33 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:34:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   34 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:35:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   35 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:36:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   36 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:37:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   37 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:38:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   38 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:39:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   39 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:40:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   40 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:41:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   41 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:42:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   42 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:43:33: error: redeclaration of ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’
+   43 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:25:33: note: ‘std::vector<long int>::iterator it_begin_end_begin_end_end_end_end’ previously declared here
+   25 |     std::vector<long>::iterator it_begin_end_begin_end_end_end_end;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_72_will_it_fly.cpp:45:1: error: expected unqualified-id before ‘}’ token
+   45 | }
+      | ^
+java-cpp/HumanEval_72_will_it_fly.cpp:45:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:31 - ERROR - Failed to compile java-cpp/HumanEval_7_filter_by_substring.cpp. Error:
+java-cpp/HumanEval_7_filter_by_substring.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > filter_by_substring(std::vector<std::__cxx11::basic_string<char> >, std::string)’:
+java-cpp/HumanEval_7_filter_by_substring.cpp:13:10: error: ‘regex_match_iterator’ is not a member of ‘std’
+   13 |     std::regex_match_iterator it = std::find_if(strings.begin(), strings.end(), [&](std::string s) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+java-cpp/HumanEval_7_filter_by_substring.cpp:15:6: error: expected primary-expression before ‘)’ token
+   15 |     });
+      |      ^
+java-cpp/HumanEval_7_filter_by_substring.cpp:16:9: error: ‘it’ was not declared in this scope; did you mean ‘int’?
+   16 |     if (it != strings.end()) {
+      |         ^~
+      |         int
+
+2024-12-10 11:11:32 - INFO - Successfully compiled: java-cpp/HumanEval_101_words_string.cpp
+2024-12-10 11:11:33 - ERROR - Failed to compile java-cpp/HumanEval_54_same_chars.cpp. Error:
+java-cpp/HumanEval_54_same_chars.cpp: In function ‘bool same_chars(std::string, std::string)’:
+java-cpp/HumanEval_54_same_chars.cpp:24:44: error: ‘s1_str_re_re_re_re_re’ was not declared in this scope; did you mean ‘s0_str_re_re_re_re_re’?
+   24 |     std::string s1_str_re_re_re_re_re_re = s1_str_re_re_re_re_re.substr(0, s1_str_re_re_re_re_re.size()-1);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~
+      |                                            s0_str_re_re_re_re_re
+java-cpp/HumanEval_54_same_chars.cpp:25:50: error: ‘s0_str_re_re_re_re_re_re_re’ was not declared in this scope; did you mean ‘s0_str_re_re_re_re_re_re_re_re’?
+   25 |     std::string s0_str_re_re_re_re_re_re_re_re = s0_str_re_re_re_re_re_re_re.substr(0, s0_str_re_re_re_re_re_re_re.size()-1);
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                  s0_str_re_re_re_re_re_re_re_re
+java-cpp/HumanEval_54_same_chars.cpp:27:1: error: expected initializer before ‘}’ token
+   27 | }
+      | ^
+java-cpp/HumanEval_54_same_chars.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:33 - INFO - Successfully compiled: java-cpp/HumanEval_55_fib.cpp
+2024-12-10 11:11:34 - ERROR - Failed to compile java-cpp/HumanEval_147_get_max_triples.cpp. Error:
+java-cpp/HumanEval_147_get_max_triples.cpp: In function ‘long int get_max_triples(long int)’:
+java-cpp/HumanEval_147_get_max_triples.cpp:12:9: warning: structured bindings only available with ‘-std=c++17’ or ‘-std=gnu++17’
+   12 |     long[] A = new long[(int)n+1];
+      |         ^
+java-cpp/HumanEval_147_get_max_triples.cpp:12:9: error: structured binding declaration cannot have type ‘long int’
+   12 |     long[] A = new long[(int)n+1];
+      |         ^~
+java-cpp/HumanEval_147_get_max_triples.cpp:12:9: note: type must be cv-qualified ‘auto’ or reference to cv-qualified ‘auto’
+java-cpp/HumanEval_147_get_max_triples.cpp:12:9: error: empty structured binding declaration
+java-cpp/HumanEval_147_get_max_triples.cpp:12:12: error: expected initializer before ‘A’
+   12 |     long[] A = new long[(int)n+1];
+      |            ^
+java-cpp/HumanEval_147_get_max_triples.cpp:14:9: error: ‘A’ was not declared in this scope
+   14 |         A[i] = i*i-i+1;
+      |         ^
+java-cpp/HumanEval_147_get_max_triples.cpp:18:18: error: ‘A’ was not declared in this scope
+   18 |             if ((A[i]+A[j]+A[k])%3 == 0) {
+      |                  ^
+java-cpp/HumanEval_147_get_max_triples.cpp:18:30: error: ‘k’ was not declared in this scope
+   18 |             if ((A[i]+A[j]+A[k])%3 == 0) {
+      |                              ^
+
+2024-12-10 11:11:34 - ERROR - Failed to compile java-cpp/HumanEval_12_longest.cpp. Error:
+java-cpp/HumanEval_12_longest.cpp:10:6: error: ‘optional’ in namespace ‘std’ does not name a template type
+   10 | std::optional<std::string> longest(std::vector<std::string> strings) {
+      |      ^~~~~~~~
+java-cpp/HumanEval_12_longest.cpp:10:1: note: ‘std::optional’ is only available from C++17 onwards
+   10 | std::optional<std::string> longest(std::vector<std::string> strings) {
+      | ^~~
+java-cpp/HumanEval_12_longest.cpp: In function ‘int main()’:
+java-cpp/HumanEval_12_longest.cpp:20:22: error: ‘longest’ was not declared in this scope
+   20 |     auto candidate = longest;
+      |                      ^~~~~~~
+In file included from /usr/include/c++/9/cassert:44,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h:33,
+                 from java-cpp/HumanEval_12_longest.cpp:2:
+java-cpp/HumanEval_12_longest.cpp:21:60: error: ‘nullopt’ is not a member of ‘std’
+   21 |     assert(candidate((std::vector<std::string>())) == std::nullopt);
+      |                                                            ^~~~~~~
+
+2024-12-10 11:11:35 - ERROR - Failed to compile java-cpp/HumanEval_46_fib4.cpp. Error:
+java-cpp/HumanEval_46_fib4.cpp: In function ‘long int fib4(long int)’:
+java-cpp/HumanEval_46_fib4.cpp:141:12: error: a function-definition is not allowed here before ‘{’ token
+  141 | int main() {
+      |            ^
+java-cpp/HumanEval_46_fib4.cpp:147:1: error: expected ‘}’ at end of input
+  147 | }
+      | ^
+java-cpp/HumanEval_46_fib4.cpp:10:19: note: to match this ‘{’
+   10 | long fib4(long n) {
+      |                   ^
+java-cpp/HumanEval_46_fib4.cpp:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+  147 | }
+      | ^
+
+2024-12-10 11:11:36 - ERROR - Failed to compile java-cpp/HumanEval_104_unique_digits.cpp. Error:
+java-cpp/HumanEval_104_unique_digits.cpp: In function ‘std::vector<long int> unique_digits(std::vector<long int>)’:
+java-cpp/HumanEval_104_unique_digits.cpp:11:42: error: ‘uniqueDigits’ was not declared in this scope; did you mean ‘unique_digits’?
+   11 |     std::vector<long> oddDigitElements = uniqueDigits(x);
+      |                                          ^~~~~~~~~~~~
+      |                                          unique_digits
+
+2024-12-10 11:11:36 - INFO - Successfully compiled: java-cpp/HumanEval_82_prime_length.cpp
+2024-12-10 11:11:37 - ERROR - Failed to compile java-cpp/HumanEval_74_total_match.cpp. Error:
+java-cpp/HumanEval_74_total_match.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_74_total_match.cpp:14:35: error: conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to non-scalar type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} requested
+   14 |     std::string s1_len = s1.length();
+      |                          ~~~~~~~~~^~
+java-cpp/HumanEval_74_total_match.cpp:15:35: error: conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to non-scalar type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} requested
+   15 |     std::string s2_len = s2.length();
+      |                          ~~~~~~~~~^~
+java-cpp/HumanEval_74_total_match.cpp:16:14: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   16 |     int l1 = s1_len;
+      |              ^~~~~~
+      |              |
+      |              std::string {aka std::__cxx11::basic_string<char>}
+java-cpp/HumanEval_74_total_match.cpp:17:14: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   17 |     int l2 = s2_len;
+      |              ^~~~~~
+      |              |
+      |              std::string {aka std::__cxx11::basic_string<char>}
+java-cpp/HumanEval_74_total_match.cpp:29:71: error: ‘l2_len_len_len_len_len_len’ was not declared in this scope; did you mean ‘l1_len_len_len_len_len_len’?
+   29 |     int l1_len_len_len_len_len_len_len = l1_len_len_len_len_len_len + l2_len_len_len_len_len_len;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                       l1_len_len_len_len_len_len
+java-cpp/HumanEval_74_total_match.cpp:30:79: error: ‘l2_len_len_len_len_len_len_len’ was not declared in this scope; did you mean ‘l1_len_len_len_len_len_len_len’?
+   30 |     int l1_len_len_len_len_len_len_len_len = l1_len_len_len_len_len_len_len + l2_len_len_len_len_len_len_len;
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                               l1_len_len_len_len_len_len_len
+java-cpp/HumanEval_74_total_match.cpp:31:91: error: ‘l2_len_len_len_len_len_len_len_len’ was not declared in this scope; did you mean ‘l1_len_len_len_len_len_len_len_len’?
+   31 |     int l1_len_len_len_len_len_len_len_len_len = l1_len_len_len_len_len_len_len_len_len + l2_len_len_len_len_len_len_len_len;
+      |                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                           l1_len_len_len_len_len_len_len_len
+java-cpp/HumanEval_74_total_match.cpp:32:115: error: ‘l2_len_len_len_len_len_len_len_len_len_len’ was not declared in this scope; did you mean ‘l1_len_len_len_len_len_len_len_len_len’?
+   32 |     int l1_len_len_len_len_len_len_len_len_len_len_len_len = l1_len_len_len_len_len_len_len_len_len_len_len_len + l2_len_len_len_len_len_len_len_len_len_len;
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                                   l1_len_len_len_len_len_len_len_len_len
+java-cpp/HumanEval_74_total_match.cpp:34:1: error: expected initializer before ‘}’ token
+   34 | }
+      | ^
+java-cpp/HumanEval_74_total_match.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-10 11:11:37 - ERROR - Failed to compile java-cpp/HumanEval_80_is_happy.cpp. Error:
+java-cpp/HumanEval_80_is_happy.cpp: In function ‘bool is_happy(std::string)’:
+java-cpp/HumanEval_80_is_happy.cpp:34:30: error: redeclaration of ‘std::unordered_set<char> s2’
+   34 |     std::unordered_set<char> s2;
+      |                              ^~
+java-cpp/HumanEval_80_is_happy.cpp:13:30: note: ‘std::unordered_set<char> s2’ previously declared here
+   13 |     std::unordered_set<char> s2;
+      |                              ^~
+java-cpp/HumanEval_80_is_happy.cpp:40:30: error: redeclaration of ‘std::unordered_set<char> s2’
+   40 |     std::unordered_set<char> s2;
+      |                              ^~
+java-cpp/HumanEval_80_is_happy.cpp:13:30: note: ‘std::unordered_set<char> s2’ previously declared here
+   13 |     std::unordered_set<char> s2;
+      |                              ^~
+java-cpp/HumanEval_80_is_happy.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   60 | }
+      | ^
+
+2024-12-10 11:11:38 - INFO - Successfully compiled: java-cpp/HumanEval_29_filter_by_prefix.cpp
+2024-12-10 11:11:39 - INFO - Successfully compiled: java-cpp/HumanEval_120_maximum.cpp
+2024-12-10 11:11:39 - ERROR - Failed to compile java-cpp/HumanEval_35_max_element.cpp. Error:
+java-cpp/HumanEval_35_max_element.cpp: In function ‘long int max_element(std::vector<long int>)’:
+java-cpp/HumanEval_35_max_element.cpp:13:13: error: ‘Math’ was not declared in this scope
+   13 |         m = Math.max(m, e);
+      |             ^~~~
+
+2024-12-10 11:11:39 - INFO - Directory: java-cpp
+2024-12-10 11:11:39 - INFO - Total Files: 47
+2024-12-10 11:11:39 - INFO - Successful Compilations: 17
+2024-12-10 11:11:39 - INFO - Failed Compilations: 30
+2024-12-10 11:11:39 - INFO - Success Rate: 36.17%

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_150_x_or_y",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long xOrY(long n, long x, long y) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_150_x_or_y.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(xOrY((7l), (34l), (12l)) == (34l));\n    assert(xOrY((15l), (8l), (5l)) == (5l));\n    assert(xOrY((3l), (33l), (5212l)) == (33l));\n    assert(xOrY((1259l), (3l), (52l)) == (3l));\n    assert(xOrY((7919l), (-1l), (12l)) == (-1l));\n    assert(xOrY((3609l), (1245l), (583l)) == (583l));\n    assert(xOrY((91l), (56l), (129l)) == (129l));\n    assert(xOrY((6l), (34l), (1234l)) == (1234l));\n    assert(xOrY((1l), (2l), (0l)) == (0l));\n    assert(xOrY((2l), (2l), (0l)) == (2l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef x_or_y(n: int, x: int, y: int) -> int:\n    if n == 1:\n        return y\n    for i in range(2, n):\n        if n % i == 0:\n            return y\n            break\n    else:\n        return x\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long xOrY(long n, long x, long y) {\n"
+}

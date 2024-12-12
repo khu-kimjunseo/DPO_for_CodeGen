@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_25_factorize",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> factorize(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_25_factorize.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = factorize;\n    assert(candidate((2)) == (std::vector<long>({(long)2})));\n    assert(candidate((4)) == (std::vector<long>({(long)2, (long)2})));\n    assert(candidate((8)) == (std::vector<long>({(long)2, (long)2, (long)2})));\n    assert(candidate((57)) == (std::vector<long>({(long)3, (long)19})));\n    assert(candidate((3249)) == (std::vector<long>({(long)3, (long)3, (long)19, (long)19})));\n    assert(candidate((185193)) == (std::vector<long>({(long)3, (long)3, (long)3, (long)19, (long)19, (long)19})));\n    assert(candidate((20577)) == (std::vector<long>({(long)3, (long)19, (long)19, (long)19})));\n    assert(candidate((18)) == (std::vector<long>({(long)2, (long)3, (long)3})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef factorize(n: int) -> List[int]:\n    import math\n    fact = []\n    i = 2\n    while i <= int(math.sqrt(n) + 1):\n        if n % i == 0:\n            fact.append(i)\n            n //= i\n        else:\n            i += 1\n\n    if n > 1:\n        fact.append(n)\n    return fact\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> factorize(long n) {\n"
+}

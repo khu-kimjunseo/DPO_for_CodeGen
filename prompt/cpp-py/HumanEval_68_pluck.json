@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_68_pluck",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef pluck(arr: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_68_pluck.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([4, 2, 3]) == [2, 1]\n    assert candidate([1, 2, 3]) == [2, 1]\n    assert candidate([]) == []\n    assert candidate([5, 0, 3, 0, 4, 2]) == [0, 1]\n    assert candidate([1, 2, 3, 0, 5, 3]) == [0, 3]\n    assert candidate([5, 4, 8, 4, 8]) == [4, 1]\n    assert candidate([7, 6, 7, 1]) == [6, 1]\n    assert candidate([7, 9, 7, 1]) == []\n\ndef test_check():\n    check(pluck)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> pluck(std::vector<long> arr) {\n    if(arr.size() == 0) return {};\n    std::vector<long> evens;\n    for(auto x: arr) if(x%2 == 0) evens.push_back(x);\n    if(evens.size() == 0) return {};\n    long min_val = *std::min_element(evens.begin(), evens.end());\n    return {min_val, std::find(arr.begin(), arr.end(), min_val) - arr.begin()};\n}\n\n### Python version\n\nfrom typing import List\n\ndef pluck(arr: List[int]) -> List[int]:\n"
+}

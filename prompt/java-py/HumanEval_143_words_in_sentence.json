@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_143_words_in_sentence",
+    "language": "py",
+    "prompt": "def words_in_sentence(sentence: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_143_words_in_sentence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('This is a test') == 'is'\n    assert candidate('lets go for swimming') == 'go for'\n    assert candidate('there is no place available here') == 'there is no place'\n    assert candidate('Hi I am Hussein') == 'Hi am Hussein'\n    assert candidate('go for it') == 'go for it'\n    assert candidate('here') == ''\n    assert candidate('here is') == 'is'\n\ndef test_check():\n    check(words_in_sentence)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String wordsInSentence(String sentence) {\n        List<String> newLst = new ArrayList<>();\n        for (String word : sentence.split(\" \")) {\n            int flg = 0;\n            if (word.length() == 1) {\n                flg = 1;\n            }\n            for (int i = 2; i < word.length(); i++) {\n                if (word.length() % i == 0) {\n                    flg = 1;\n                }\n            }\n            if (flg == 0 || word.length() == 2) {\n                newLst.add(word);\n            }\n        }\n        return String.join(\" \", newLst);\n    }\n}\n\n### Python version\n\ndef words_in_sentence(sentence: str) -> str:\n"
+}

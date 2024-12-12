@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_45_triangle_area",
+    "language": "py",
+    "prompt": "def triangle_area(a: int, h: int) -> float:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_45_triangle_area.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(triangle_area)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float triangleArea(long a, long h) {\n        return a * h / 2.0f;\n    }\n}\n\n### Python version\n\ndef triangle_area(a: int, h: int) -> float:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_79_decimal_to_binary",
+    "language": "py",
+    "prompt": "def decimal_to_binary(decimal: int) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_79_decimal_to_binary.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(0) == 'db0db'\n    assert candidate(32) == 'db100000db'\n    assert candidate(103) == 'db1100111db'\n    assert candidate(15) == 'db1111db'\n\ndef test_check():\n    check(decimal_to_binary)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String decimalToBinary(long decimal) {\n        return \"db\" + Long.toBinaryString(decimal) + \"db\";\n    }\n}\n\n### Python version\n\ndef decimal_to_binary(decimal: int) -> str:\n"
+}

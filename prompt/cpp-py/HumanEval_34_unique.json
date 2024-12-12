@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_34_unique",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_34_unique.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> unique(std::vector<long> l) {\n    std::sort(l.begin(), l.end()); l.erase(std::unique(l.begin(), l.end()), l.end()); return l;\n}\n\n### Python version\n\nfrom typing import List\n\ndef unique(l: List[int]) -> List[int]:\n"
+}

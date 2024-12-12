@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_141_file_name_check",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string file_name_check(std::string file_name) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_141_file_name_check.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = file_name_check;\n    assert(candidate((\"example.txt\")) == (\"Yes\"));\n    assert(candidate((\"1example.dll\")) == (\"No\"));\n    assert(candidate((\"s1sdf3.asd\")) == (\"No\"));\n    assert(candidate((\"K.dll\")) == (\"Yes\"));\n    assert(candidate((\"MY16FILE3.exe\")) == (\"Yes\"));\n    assert(candidate((\"His12FILE94.exe\")) == (\"No\"));\n    assert(candidate((\"_Y.txt\")) == (\"No\"));\n    assert(candidate((\"?aREYA.exe\")) == (\"No\"));\n    assert(candidate((\"/this_is_valid.dll\")) == (\"No\"));\n    assert(candidate((\"this_is_valid.wow\")) == (\"No\"));\n    assert(candidate((\"this_is_valid.txt\")) == (\"Yes\"));\n    assert(candidate((\"this_is_valid.txtexe\")) == (\"No\"));\n    assert(candidate((\"#this2_i4s_5valid.ten\")) == (\"No\"));\n    assert(candidate((\"@this1_is6_valid.exe\")) == (\"No\"));\n    assert(candidate((\"this_is_12valid.6exe4.txt\")) == (\"No\"));\n    assert(candidate((\"all.exe.txt\")) == (\"No\"));\n    assert(candidate((\"I563_No.exe\")) == (\"Yes\"));\n    assert(candidate((\"Is3youfault.txt\")) == (\"Yes\"));\n    assert(candidate((\"no_one#knows.dll\")) == (\"Yes\"));\n    assert(candidate((\"1I563_Yes3.exe\")) == (\"No\"));\n    assert(candidate((\"I563_Yes3.txtt\")) == (\"No\"));\n    assert(candidate((\"final..txt\")) == (\"No\"));\n    assert(candidate((\"final132\")) == (\"No\"));\n    assert(candidate((\"_f4indsartal132.\")) == (\"No\"));\n    assert(candidate((\".txt\")) == (\"No\"));\n    assert(candidate((\"s.\")) == (\"No\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef file_name_check(file_name: str) -> str:\n    suf = ['txt', 'exe', 'dll']\n    lst = file_name.split(sep='.')\n    if len(lst) != 2:\n        return 'No'\n    if not lst[1] in suf:\n        return 'No'\n    if len(lst[0]) == 0:\n        return 'No'\n    if not lst[0][0].isalpha():\n        return 'No'\n    t = len([x for x in lst[0] if x.isdigit()])\n    if t > 3:\n        return 'No'\n    return 'Yes'\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string file_name_check(std::string file_name) {\n"
+}

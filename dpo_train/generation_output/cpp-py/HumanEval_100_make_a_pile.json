@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_100_make_a_pile",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef make_a_pile(n: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_100_make_a_pile.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3) == [3, 5, 7]\n    assert candidate(4) == [4, 6, 8, 10]\n    assert candidate(5) == [5, 7, 9, 11, 13]\n    assert candidate(6) == [6, 8, 10, 12, 14, 16]\n    assert candidate(8) == [8, 10, 12, 14, 16, 18, 20, 22]\n\ndef test_check():\n    check(make_a_pile)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> make_a_pile(long n) {\n    std::vector<long> ans;\n    for(long i=0;i<n;i++) {\n        ans.push_back(n+2*i);\n    }\n    return ans;\n}\n\n### Python version\n\nfrom typing import List\n\ndef make_a_pile(n: int) -> List[int]:\n"
+}

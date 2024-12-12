@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_132_is_nested",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_nested(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_132_is_nested.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = is_nested;\n    assert(candidate((\"[[]]\")) == (true));\n    assert(candidate((\"[]]]]]]][[[[[]\")) == (false));\n    assert(candidate((\"[][]\")) == (false));\n    assert(candidate((\"[]\")) == (false));\n    assert(candidate((\"[[[[]]]]\")) == (true));\n    assert(candidate((\"[]]]]]]]]]]\")) == (false));\n    assert(candidate((\"[][][[]]\")) == (true));\n    assert(candidate((\"[[]\")) == (false));\n    assert(candidate((\"[]]\")) == (false));\n    assert(candidate((\"[[]][[\")) == (true));\n    assert(candidate((\"[[][]]\")) == (true));\n    assert(candidate((\"\")) == (false));\n    assert(candidate((\"[[[[[[[[\")) == (false));\n    assert(candidate((\"]]]]]]]]\")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef is_nested(string: str) -> bool:\n    opening_bracket_index = []\n    closing_bracket_index = []\n    for i in range(len(string)):\n        if string[i] == '[':\n            opening_bracket_index.append(i)\n        else:\n            closing_bracket_index.append(i)\n    closing_bracket_index.reverse()\n    cnt = 0\n    i = 0\n    l = len(closing_bracket_index)\n    for idx in opening_bracket_index:\n        if i < l and idx < closing_bracket_index[i]:\n            cnt += 1\n            i += 1\n    return cnt >= 2\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_nested(std::string string) {\n"
+}

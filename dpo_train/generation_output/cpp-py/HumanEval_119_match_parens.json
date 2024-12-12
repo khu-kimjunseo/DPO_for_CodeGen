@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_119_match_parens",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef match_parens(lst: List[str]) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_119_match_parens.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(['()(', ')']) == 'Yes'\n    assert candidate([')', ')']) == 'No'\n    assert candidate(['(()(())', '())())']) == 'No'\n    assert candidate([')())', '(()()(']) == 'Yes'\n    assert candidate(['(())))', '(()())((']) == 'Yes'\n    assert candidate(['()', '())']) == 'No'\n    assert candidate(['(()(', '()))()']) == 'Yes'\n    assert candidate(['((((', '((())']) == 'No'\n    assert candidate([')(()', '(()(']) == 'No'\n    assert candidate([')(', ')(']) == 'No'\n    assert candidate(['(', ')']) == 'Yes'\n    assert candidate([')', '(']) == 'Yes'\n\ndef test_check():\n    check(match_parens)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string match_parens(std::vector<std::string> lst) {\n    auto check = [](std::string s) {\n        int val = 0;\n        for (auto i : s) {\n            if (i == '(') {\n                val = val + 1;\n            } else {\n                val = val - 1;\n            }\n            if (val < 0) {\n                return false;\n            }\n        }\n        return val == 0;\n    };\n    auto S1 = lst[0] + lst[1];\n    auto S2 = lst[1] + lst[0];\n    return check(S1) || check(S2) ? \"Yes\" : \"No\";\n}\n\n### Python version\n\nfrom typing import List\n\ndef match_parens(lst: List[str]) -> str:\n"
+}

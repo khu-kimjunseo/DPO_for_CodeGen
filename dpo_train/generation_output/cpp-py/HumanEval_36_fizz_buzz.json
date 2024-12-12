@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_36_fizz_buzz",
+    "language": "py",
+    "prompt": "def fizz_buzz(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_36_fizz_buzz.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(50) == 0\n    assert candidate(78) == 2\n    assert candidate(79) == 3\n    assert candidate(100) == 3\n    assert candidate(200) == 6\n    assert candidate(4000) == 192\n    assert candidate(10000) == 639\n    assert candidate(100000) == 8026\n\ndef test_check():\n    check(fizz_buzz)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong fizz_buzz(long n) {\n    std::vector<long> ns;\n    for (long i = 0; i < n; i++) {\n        if (i % 11 == 0 || i % 13 == 0) {\n            ns.push_back(i);\n        }\n    }\n    std::stringstream ss;\n    for (auto i : ns) {\n        ss << i;\n    }\n    std::string s = ss.str();\n    long ans = 0;\n    for (auto c : s) {\n        ans += (c == '7');\n    }\n    return ans;\n}\n\n### Python version\n\ndef fizz_buzz(n: int) -> int:\n"
+}

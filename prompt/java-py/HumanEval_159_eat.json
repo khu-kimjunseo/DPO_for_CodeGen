@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_159_eat",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef eat(number: int, need: int, remaining: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_159_eat.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5, 6, 10) == [11, 4]\n    assert candidate(4, 8, 9) == [12, 1]\n    assert candidate(1, 10, 10) == [11, 0]\n    assert candidate(2, 11, 5) == [7, 0]\n    assert candidate(4, 5, 7) == [9, 2]\n    assert candidate(4, 5, 1) == [5, 0]\n\ndef test_check():\n    check(eat)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> eat(long number, long need, long remaining) {\n        return (need <= remaining) ? new ArrayList<Long>(Arrays.asList(number + need, remaining - need)) : new ArrayList<Long>(Arrays.asList(number + remaining, 0L));\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef eat(number: int, need: int, remaining: int) -> List[int]:\n"
+}

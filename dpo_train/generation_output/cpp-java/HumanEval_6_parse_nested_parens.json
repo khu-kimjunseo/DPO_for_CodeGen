@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_6_parse_nested_parens",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseNestedParens(String paren_string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_6_parse_nested_parens.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(parseNestedParens((\"(()()) ((())) () ((())()())\")).equals((new ArrayList<Long>(Arrays.asList((long)2l, (long)3l, (long)1l, (long)3l)))));\n    assert(parseNestedParens((\"() (()) ((())) (((())))\")).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l)))));\n    assert(parseNestedParens((\"(()(())((())))\")).equals((new ArrayList<Long>(Arrays.asList((long)4l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> parse_nested_parens(std::string paren_string) {\n    std::vector<long> res;\n    std::stringstream ss(paren_string);\n    std::string s;\n    while (ss >> s) {\n        long depth = 0, max_depth = 0;\n        for (char c : s) {\n            if (c == '(') {\n                depth++;\n                max_depth = std::max(depth, max_depth);\n            } else {\n                depth--;\n            }\n        }\n        res.push_back(max_depth);\n    }\n    return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseNestedParens(String paren_string) {\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_148_bf",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_148_bf.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = bf;\n    assert(candidate((\"Jupiter\"), (\"Neptune\")) == (std::vector<std::string>({(std::string)\"Saturn\", (std::string)\"Uranus\"})));\n    assert(candidate((\"Earth\"), (\"Mercury\")) == (std::vector<std::string>({(std::string)\"Venus\"})));\n    assert(candidate((\"Mercury\"), (\"Uranus\")) == (std::vector<std::string>({(std::string)\"Venus\", (std::string)\"Earth\", (std::string)\"Mars\", (std::string)\"Jupiter\", (std::string)\"Saturn\"})));\n    assert(candidate((\"Neptune\"), (\"Venus\")) == (std::vector<std::string>({(std::string)\"Earth\", (std::string)\"Mars\", (std::string)\"Jupiter\", (std::string)\"Saturn\", (std::string)\"Uranus\"})));\n    assert(candidate((\"Earth\"), (\"Earth\")) == (std::vector<std::string>()));\n    assert(candidate((\"Mars\"), (\"Earth\")) == (std::vector<std::string>()));\n    assert(candidate((\"Jupiter\"), (\"Makemake\")) == (std::vector<std::string>()));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import Tuple\n\ndef bf(planet1: str, planet2: str) -> Tuple[str, ...]:\n    planet_names = (\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\")\n    if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:\n        return ()\n    planet1_index = planet_names.index(planet1)\n    planet2_index = planet_names.index(planet2)\n    if planet1_index < planet2_index:\n        return (planet_names[planet1_index + 1: planet2_index])\n    else:\n        return (planet_names[planet2_index + 1 : planet1_index])\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n"
+}

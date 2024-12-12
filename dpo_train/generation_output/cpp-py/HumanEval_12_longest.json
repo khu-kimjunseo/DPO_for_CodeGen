@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_12_longest",
+    "language": "py",
+    "prompt": "from typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_12_longest.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == None\n    assert candidate(['x', 'y', 'z']) == 'x'\n    assert candidate(['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc']) == 'zzzz'\n\ndef test_check():\n    check(longest)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<std::string> longest(std::vector<std::string> strings) {\n    if (strings.empty()) {\n        return std::nullopt;\n    }\n    auto it = std::max_element(strings.begin(), strings.end(), [](const std::string& a, const std::string& b) {\n        return a.size() < b.size();\n    });\n    return *it;\n}\n\n### Python version\n\nfrom typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_33_sort_third",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_third(std::vector<long> l) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_33_sort_third.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sort_third;\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)3, (long)4, (long)8, (long)9, (long)2}))) == (std::vector<long>({(long)2, (long)6, (long)3, (long)4, (long)8, (long)9, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)8, (long)3, (long)4, (long)6, (long)9, (long)2}))) == (std::vector<long>({(long)2, (long)8, (long)3, (long)4, (long)6, (long)9, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)9, (long)4, (long)8, (long)3, (long)2}))) == (std::vector<long>({(long)2, (long)6, (long)9, (long)4, (long)8, (long)3, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)3, (long)4, (long)8, (long)9, (long)2, (long)1}))) == (std::vector<long>({(long)2, (long)6, (long)3, (long)4, (long)8, (long)9, (long)5, (long)1})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef sort_third(l: List[int]) -> List[int]:\n    l = list(l)\n    l[::3] = sorted(l[::3])\n    return l\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_third(std::vector<long> l) {\n"
+}

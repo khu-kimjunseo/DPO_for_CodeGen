@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_18_how_many_times",
+    "language": "py",
+    "prompt": "def how_many_times(string: str, substring: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_18_how_many_times.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('', 'x') == 0\n    assert candidate('xyxyxyx', 'x') == 4\n    assert candidate('cacacacac', 'cac') == 4\n    assert candidate('john doe', 'john') == 1\n\ndef test_check():\n    check(how_many_times)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long howManyTimes(String string, String substring) {\n        long times = 0;\n        for (int i = 0; i <= string.length() - substring.length(); i++) {\n            if (string.substring(i, i + substring.length()).equals(substring)) {\n                times++;\n            }\n        }\n        return times;\n    }\n}\n\n### Python version\n\ndef how_many_times(string: str, substring: str) -> int:\n"
+}

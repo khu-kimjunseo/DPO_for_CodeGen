@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_29_filter_by_prefix",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_29_filter_by_prefix.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(filter_by_prefix)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> filterByPrefix(ArrayList<String> strings, String prefix) {\n        return (ArrayList<String>)strings.stream().filter(s -> s.startsWith(prefix)).collect(Collectors.toList());\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n"
+}

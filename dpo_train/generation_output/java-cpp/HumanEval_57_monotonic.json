@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_57_monotonic",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool monotonic(std::vector<long> l) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_57_monotonic.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = monotonic;\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)4, (long)10}))) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)4, (long)20}))) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)20, (long)4, (long)10}))) == (false));\n    assert(candidate((std::vector<long>({(long)4, (long)1, (long)0, (long)-10}))) == (true));\n    assert(candidate((std::vector<long>({(long)4, (long)1, (long)1, (long)0}))) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)2, (long)5, (long)60}))) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4, (long)5, (long)60}))) == (true));\n    assert(candidate((std::vector<long>({(long)9, (long)9, (long)9, (long)9}))) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean monotonic(ArrayList<Long> l) {\n        if (l.equals(l.stream().sorted().collect(Collectors.toList())) || l.equals(l.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()))) {\n            return true;\n        }\n        return false;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool monotonic(std::vector<long> l) {\n"
+}

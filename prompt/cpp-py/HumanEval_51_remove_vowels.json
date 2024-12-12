@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_51_remove_vowels",
+    "language": "py",
+    "prompt": "def remove_vowels(text: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_51_remove_vowels.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('') == ''\n    assert candidate('abcdef\\nghijklm') == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\ndef test_check():\n    check(remove_vowels)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string remove_vowels(std::string text) {\n    std::string res;\n    for (char c : text) {\n        if (std::string(\"aeiouAEIOU\").find(c) == std::string::npos) {\n            res += c;\n        }\n    }\n    return res;\n}\n\n### Python version\n\ndef remove_vowels(text: str) -> str:\n"
+}

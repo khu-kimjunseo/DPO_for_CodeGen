@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_157_right_angle_triangle",
+    "language": "py",
+    "prompt": "def right_angle_triangle(a: int, b: int, c: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_157_right_angle_triangle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3, 4, 5) == True\n    assert candidate(1, 2, 3) == False\n    assert candidate(10, 6, 8) == True\n    assert candidate(2, 2, 2) == False\n    assert candidate(7, 24, 25) == True\n    assert candidate(10, 5, 7) == False\n    assert candidate(5, 12, 13) == True\n    assert candidate(15, 8, 17) == True\n    assert candidate(48, 55, 73) == True\n    assert candidate(1, 1, 1) == False\n    assert candidate(2, 2, 10) == False\n\ndef test_check():\n    check(right_angle_triangle)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool right_angle_triangle(long a, long b, long c) {\n    return a*a == b*b + c*c || b*b == a*a + c*c || c*c == a*a + b*b;\n}\n\n### Python version\n\ndef right_angle_triangle(a: int, b: int, c: int) -> bool:\n"
+}

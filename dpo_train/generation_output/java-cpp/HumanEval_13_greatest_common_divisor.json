@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_13_greatest_common_divisor",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong greatest_common_divisor(long a, long b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_13_greatest_common_divisor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = greatest_common_divisor;\n    assert(candidate((3), (7)) == (1));\n    assert(candidate((10), (15)) == (5));\n    assert(candidate((49), (14)) == (7));\n    assert(candidate((144), (60)) == (12));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long greatestCommonDivisor(long a, long b) {\n        while (b != 0) {\n            long t = b;\n            b = a % b;\n            a = t;\n        }\n        return a;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong greatest_common_divisor(long a, long b) {\n"
+}

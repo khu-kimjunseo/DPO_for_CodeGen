@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_28_concatenate",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string concatenate(std::vector<std::string> strings) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_28_concatenate.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = concatenate;\n    assert(candidate((std::vector<std::string>())) == (\"\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"x\", (std::string)\"y\", (std::string)\"z\"}))) == (\"xyz\"));\n    assert(candidate((std::vector<std::string>({(std::string)\"x\", (std::string)\"y\", (std::string)\"z\", (std::string)\"w\", (std::string)\"k\"}))) == (\"xyzwk\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string concatenate(std::vector<std::string> strings) {\n"
+}

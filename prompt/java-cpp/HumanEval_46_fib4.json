@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_46_fib4",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong fib4(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_46_fib4.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = fib4;\n    assert(candidate((5)) == (4));\n    assert(candidate((8)) == (28));\n    assert(candidate((10)) == (104));\n    assert(candidate((12)) == (386));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long fib4(long n) {\n        ArrayList<Long> results = new ArrayList<Long>(Arrays.asList(0L, 0L, 2L, 0L));\n        if (n < 4) {\n            return results.get((int)n);\n        }\n\n        for (long i = 4; i <= n; i++) {\n            results.add(results.get(3) + results.get(2) + results.get(1) + results.get(0));\n            results.remove(0);\n        }\n\n        return results.get(3);\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong fib4(long n) {\n"
+}

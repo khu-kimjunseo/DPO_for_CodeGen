@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_101_words_string",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> wordsString(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_101_words_string.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(wordsString((\"Hi, my name is John\")).equals((new ArrayList<String>(Arrays.asList((String)\"Hi\", (String)\"my\", (String)\"name\", (String)\"is\", (String)\"John\")))));\n    assert(wordsString((\"One, two, three, four, five, six\")).equals((new ArrayList<String>(Arrays.asList((String)\"One\", (String)\"two\", (String)\"three\", (String)\"four\", (String)\"five\", (String)\"six\")))));\n    assert(wordsString((\"Hi, my name\")).equals((new ArrayList<String>(Arrays.asList((String)\"Hi\", (String)\"my\", (String)\"name\")))));\n    assert(wordsString((\"One,, two, three, four, five, six,\")).equals((new ArrayList<String>(Arrays.asList((String)\"One\", (String)\"two\", (String)\"three\", (String)\"four\", (String)\"five\", (String)\"six\")))));\n    assert(wordsString((\"\")).equals((new ArrayList<String>(Arrays.asList()))));\n    assert(wordsString((\"ahmed     , gamal\")).equals((new ArrayList<String>(Arrays.asList((String)\"ahmed\", (String)\"gamal\")))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> words_string(std::string s) {\n    std::vector<std::string> result;\n    std::replace(s.begin(), s.end(), ',', ' ');\n    std::stringstream ss(s);\n    std::string word;\n    while (ss >> word) {\n        result.push_back(word);\n    }\n    return result;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> wordsString(String s) {\n"
+}

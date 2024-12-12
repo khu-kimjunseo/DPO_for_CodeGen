@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_149_sorted_list_sum",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> sorted_list_sum(std::vector<std::string> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_149_sorted_list_sum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sorted_list_sum;\n    assert(candidate((std::vector<std::string>({(std::string)\"aa\", (std::string)\"a\", (std::string)\"aaa\"}))) == (std::vector<std::string>({(std::string)\"aa\"})));\n    assert(candidate((std::vector<std::string>({(std::string)\"school\", (std::string)\"AI\", (std::string)\"asdf\", (std::string)\"b\"}))) == (std::vector<std::string>({(std::string)\"AI\", (std::string)\"asdf\", (std::string)\"school\"})));\n    assert(candidate((std::vector<std::string>({(std::string)\"d\", (std::string)\"b\", (std::string)\"c\", (std::string)\"a\"}))) == (std::vector<std::string>()));\n    assert(candidate((std::vector<std::string>({(std::string)\"d\", (std::string)\"dcba\", (std::string)\"abcd\", (std::string)\"a\"}))) == (std::vector<std::string>({(std::string)\"abcd\", (std::string)\"dcba\"})));\n    assert(candidate((std::vector<std::string>({(std::string)\"AI\", (std::string)\"ai\", (std::string)\"au\"}))) == (std::vector<std::string>({(std::string)\"AI\", (std::string)\"ai\", (std::string)\"au\"})));\n    assert(candidate((std::vector<std::string>({(std::string)\"a\", (std::string)\"b\", (std::string)\"b\", (std::string)\"c\", (std::string)\"c\", (std::string)\"a\"}))) == (std::vector<std::string>()));\n    assert(candidate((std::vector<std::string>({(std::string)\"aaaa\", (std::string)\"bbbb\", (std::string)\"dd\", (std::string)\"cc\"}))) == (std::vector<std::string>({(std::string)\"cc\", (std::string)\"dd\", (std::string)\"aaaa\", (std::string)\"bbbb\"})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> sortedListSum(ArrayList<String> lst) {\n        lst.sort(null);\n        ArrayList<String> new_lst = new ArrayList<String>();\n        for (String i : lst) {\n            if (i.length() % 2 == 0) {\n                new_lst.add(i);\n            }\n        }\n        new_lst.sort((a, b) -> a.length() - b.length());\n        return new_lst;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> sorted_list_sum(std::vector<std::string> lst) {\n"
+}

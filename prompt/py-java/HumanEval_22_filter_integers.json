@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_22_filter_integers",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> filterIntegers(ArrayList<Object> values) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_22_filter_integers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(filterIntegers((new ArrayList<Object>(Arrays.asList()))).equals((new ArrayList<Long>(Arrays.asList()))));\n    assert(filterIntegers((new ArrayList<Object>(Arrays.asList(4l, new HashMap<Long,Long>(Map.of()), new ArrayList<Long>(Arrays.asList()), 23.2f, 9l, \"adasd\")))).equals((new ArrayList<Long>(Arrays.asList((long)4l, (long)9l)))));\n    assert(filterIntegers((new ArrayList<Object>(Arrays.asList(3l, \"c\", 3l, 3l, \"a\", \"b\")))).equals((new ArrayList<Long>(Arrays.asList((long)3l, (long)3l, (long)3l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List, Any\n\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [x for x in values if isinstance(x, int)]\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> filterIntegers(ArrayList<Object> values) {\n"
+}

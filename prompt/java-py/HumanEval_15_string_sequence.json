@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_15_string_sequence",
+    "language": "py",
+    "prompt": "def string_sequence(n: int) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_15_string_sequence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(0) == '0'\n    assert candidate(3) == '0 1 2 3'\n    assert candidate(10) == '0 1 2 3 4 5 6 7 8 9 10'\n\ndef test_check():\n    check(string_sequence)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String stringSequence(long n) {\n        return LongStream.rangeClosed(0, n).mapToObj(Long::toString).collect(Collectors.joining(\" \"));\n    }\n}\n\n### Python version\n\ndef string_sequence(n: int) -> str:\n"
+}

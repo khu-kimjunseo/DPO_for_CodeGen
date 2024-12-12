@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_157_right_angle_triangle",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean rightAngleTriangle(long a, long b, long c) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_157_right_angle_triangle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(rightAngleTriangle((3l), (4l), (5l)) == (true));\n    assert(rightAngleTriangle((1l), (2l), (3l)) == (false));\n    assert(rightAngleTriangle((10l), (6l), (8l)) == (true));\n    assert(rightAngleTriangle((2l), (2l), (2l)) == (false));\n    assert(rightAngleTriangle((7l), (24l), (25l)) == (true));\n    assert(rightAngleTriangle((10l), (5l), (7l)) == (false));\n    assert(rightAngleTriangle((5l), (12l), (13l)) == (true));\n    assert(rightAngleTriangle((15l), (8l), (17l)) == (true));\n    assert(rightAngleTriangle((48l), (55l), (73l)) == (true));\n    assert(rightAngleTriangle((1l), (1l), (1l)) == (false));\n    assert(rightAngleTriangle((2l), (2l), (10l)) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool right_angle_triangle(long a, long b, long c) {\n    return a*a == b*b + c*c || b*b == a*a + c*c || c*c == a*a + b*b;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean rightAngleTriangle(long a, long b, long c) {\n"
+}

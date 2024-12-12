@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_64_vowels_count",
+    "language": "py",
+    "prompt": "def vowels_count(s: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_64_vowels_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('abcde') == 2\n    assert candidate('Alone') == 3\n    assert candidate('key') == 2\n    assert candidate('bye') == 1\n    assert candidate('keY') == 2\n    assert candidate('bYe') == 1\n    assert candidate('ACEDY') == 3\n\ndef test_check():\n    check(vowels_count)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long vowelsCount(String s) {\n        String vowels = \"aeiouAEIOU\";\n        long nVowels = s.chars().filter(c -> vowels.indexOf(c) != -1).count();\n        if (s.charAt(s.length()-1) == 'y' || s.charAt(s.length()-1) == 'Y') {\n            nVowels++;\n        }\n        return nVowels;\n    }\n}\n\n### Python version\n\ndef vowels_count(s: str) -> int:\n"
+}

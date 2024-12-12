@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_134_check_if_last_char_is_a_letter",
+    "language": "py",
+    "prompt": "def check_if_last_char_is_a_letter(txt: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_134_check_if_last_char_is_a_letter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('apple') == False\n    assert candidate('apple pi e') == True\n    assert candidate('eeeee') == False\n    assert candidate('A') == True\n    assert candidate('Pumpkin pie ') == False\n    assert candidate('Pumpkin pie 1') == False\n    assert candidate('') == False\n    assert candidate('eeeee e ') == False\n    assert candidate('apple pie') == False\n    assert candidate('apple pi e ') == False\n\ndef test_check():\n    check(check_if_last_char_is_a_letter)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool check_if_last_char_is_a_letter(std::string txt) {\n    std::string check = txt.substr(txt.find_last_of(' ') + 1);\n    return (check.size() == 1 && std::isalpha(check[0]));\n}\n\n### Python version\n\ndef check_if_last_char_is_a_letter(txt: str) -> bool:\n"
+}

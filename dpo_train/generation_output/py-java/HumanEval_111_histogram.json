@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_111_histogram",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static HashMap<String,Long> histogram(String test) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_111_histogram.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(histogram((\"a b b a\")).equals((new HashMap<String,Long>(Map.of(\"a\", 2l, \"b\", 2l)))));\n    assert(histogram((\"a b c a b\")).equals((new HashMap<String,Long>(Map.of(\"a\", 2l, \"b\", 2l)))));\n    assert(histogram((\"a b c d g\")).equals((new HashMap<String,Long>(Map.of(\"a\", 1l, \"b\", 1l, \"c\", 1l, \"d\", 1l, \"g\", 1l)))));\n    assert(histogram((\"r t g\")).equals((new HashMap<String,Long>(Map.of(\"r\", 1l, \"t\", 1l, \"g\", 1l)))));\n    assert(histogram((\"b b b b a\")).equals((new HashMap<String,Long>(Map.of(\"b\", 4l)))));\n    assert(histogram((\"r t g\")).equals((new HashMap<String,Long>(Map.of(\"r\", 1l, \"t\", 1l, \"g\", 1l)))));\n    assert(histogram((\"\")).equals((new HashMap<String,Long>())));\n    assert(histogram((\"a\")).equals((new HashMap<String,Long>(Map.of(\"a\", 1l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import Dict\n\ndef histogram(test: str) -> Dict[str, int]:\n    dict1={}\n    list1=test.split(\" \")\n    t=0\n\n    for i in list1:\n        if(list1.count(i)>t) and i!='':\n            t=list1.count(i)\n    if t>0:\n        for i in list1:\n            if(list1.count(i)==t):\n                \n                dict1[i]=t\n    return dict1\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static HashMap<String,Long> histogram(String test) {\n"
+}

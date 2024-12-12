@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_140_fix_spaces",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String fixSpaces(String text) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_140_fix_spaces.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(fixSpaces((\"Example\")).equals((\"Example\")));\n    assert(fixSpaces((\"Mudasir Hanif \")).equals((\"Mudasir_Hanif_\")));\n    assert(fixSpaces((\"Yellow Yellow  Dirty  Fellow\")).equals((\"Yellow_Yellow__Dirty__Fellow\")));\n    assert(fixSpaces((\"Exa   mple\")).equals((\"Exa-mple\")));\n    assert(fixSpaces((\"   Exa 1 2 2 mple\")).equals((\"-Exa_1_2_2_mple\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef fix_spaces(text: str) -> str:\n    new_text = \"\"\n    i = 0\n    start, end = 0, 0\n    while i < len(text):\n        if text[i] == \" \":\n            end += 1\n        else:\n            if end - start > 2:\n                new_text += \"-\"+text[i]\n            elif end - start > 0:\n                new_text += \"_\"*(end - start)+text[i]\n            else:\n                new_text += text[i]\n            start, end = i+1, i+1\n        i+=1\n    if end - start > 2:\n        new_text += \"-\"\n    elif end - start > 0:\n        new_text += \"_\"\n    return new_text\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String fixSpaces(String text) {\n"
+}

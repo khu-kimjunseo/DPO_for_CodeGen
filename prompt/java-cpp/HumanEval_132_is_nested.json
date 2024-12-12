@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_132_is_nested",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_nested(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_132_is_nested.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = is_nested;\n    assert(candidate((\"[[]]\")) == (true));\n    assert(candidate((\"[]]]]]]][[[[[]\")) == (false));\n    assert(candidate((\"[][]\")) == (false));\n    assert(candidate((\"[]\")) == (false));\n    assert(candidate((\"[[[[]]]]\")) == (true));\n    assert(candidate((\"[]]]]]]]]]]\")) == (false));\n    assert(candidate((\"[][][[]]\")) == (true));\n    assert(candidate((\"[[]\")) == (false));\n    assert(candidate((\"[]]\")) == (false));\n    assert(candidate((\"[[]][[\")) == (true));\n    assert(candidate((\"[[][]]\")) == (true));\n    assert(candidate((\"\")) == (false));\n    assert(candidate((\"[[[[[[[[\")) == (false));\n    assert(candidate((\"]]]]]]]]\")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isNested(String string) {\n        List<Integer> openingBracketIndex = new ArrayList<>();\n        List<Integer> closingBracketIndex = new ArrayList<>();\n        for (int i = 0; i < string.length(); i++) {\n            if (string.charAt(i) == '[') {\n                openingBracketIndex.add(i);\n            } else {\n                closingBracketIndex.add(i);\n            }\n        }\n        Collections.reverse(closingBracketIndex);\n        int cnt = 0;\n        int i = 0;\n        int l = closingBracketIndex.size();\n        for (int idx : openingBracketIndex) {\n            if (i < l && idx < closingBracketIndex.get(i)) {\n                cnt++;\n                i++;\n            }\n        }\n        return cnt >= 2;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_nested(std::string string) {\n"
+}

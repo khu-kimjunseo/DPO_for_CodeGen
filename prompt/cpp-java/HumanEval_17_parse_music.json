@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_17_parse_music",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseMusic(String music_string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_17_parse_music.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(parseMusic((\"\")).equals((new ArrayList<Long>(Arrays.asList()))));\n    assert(parseMusic((\"o o o o\")).equals((new ArrayList<Long>(Arrays.asList((long)4l, (long)4l, (long)4l, (long)4l)))));\n    assert(parseMusic((\".| .| .| .|\")).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)1l, (long)1l)))));\n    assert(parseMusic((\"o| o| .| .| o o o o\")).equals((new ArrayList<Long>(Arrays.asList((long)2l, (long)2l, (long)1l, (long)1l, (long)4l, (long)4l, (long)4l, (long)4l)))));\n    assert(parseMusic((\"o| .| o| .| o o| o o|\")).equals((new ArrayList<Long>(Arrays.asList((long)2l, (long)1l, (long)2l, (long)1l, (long)4l, (long)2l, (long)4l, (long)2l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> parse_music(std::string music_string) {\n  std::map<std::string, long> note_map = {{\"o\", 4}, {\"o|\", 2}, {\".|\", 1}};\n  std::vector<long> res;\n  std::istringstream iss(music_string);\n  std::string note;\n  while (iss >> note) {\n    if (note_map.count(note)) {\n      res.push_back(note_map[note]);\n    }\n  }\n  return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseMusic(String music_string) {\n"
+}

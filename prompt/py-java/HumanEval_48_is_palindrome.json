@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_48_is_palindrome",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isPalindrome(String text) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_48_is_palindrome.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(isPalindrome((\"\")) == (true));\n    assert(isPalindrome((\"aba\")) == (true));\n    assert(isPalindrome((\"aaaaa\")) == (true));\n    assert(isPalindrome((\"zbcd\")) == (false));\n    assert(isPalindrome((\"xywyx\")) == (true));\n    assert(isPalindrome((\"xywyz\")) == (false));\n    assert(isPalindrome((\"xywzx\")) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef is_palindrome(text: str) -> bool:\n    for i in range(len(text)):\n        if text[i] != text[len(text) - 1 - i]:\n            return False\n    return True\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isPalindrome(String text) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_30_get_positive",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef get_positive(l: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_30_get_positive.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([-1, -2, 4, 5, 6]) == [4, 5, 6]\n    assert candidate([5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10]) == [5, 3, 2, 3, 3, 9, 123, 1]\n    assert candidate([-1, -2]) == []\n    assert candidate([]) == []\n\ndef test_check():\n    check(get_positive)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> getPositive(ArrayList<Long> l) {\n        return (ArrayList<Long>) l.stream().filter(e -> e > 0).collect(Collectors.toList());\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef get_positive(l: List[int]) -> List[int]:\n"
+}

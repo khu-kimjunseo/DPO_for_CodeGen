@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_72_will_it_fly",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool will_it_fly(std::vector<long> q, long w) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_72_will_it_fly.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = will_it_fly;\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)3})), (9)) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)2})), (5)) == (false));\n    assert(candidate((std::vector<long>({(long)3})), (5)) == (true));\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)3})), (1)) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3})), (6)) == (false));\n    assert(candidate((std::vector<long>({(long)5})), (5)) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef will_it_fly(q: List[int], w: int) -> bool:\n    if sum(q) > w:\n        return False\n\n    i, j = 0, len(q)-1\n    while i<j:\n        if q[i] != q[j]:\n            return False\n        i+=1\n        j-=1\n    return True\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool will_it_fly(std::vector<long> q, long w) {\n"
+}

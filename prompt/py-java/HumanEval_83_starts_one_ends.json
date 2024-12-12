@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_83_starts_one_ends",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long startsOneEnds(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_83_starts_one_ends.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(startsOneEnds((1l)) == (1l));\n    assert(startsOneEnds((2l)) == (18l));\n    assert(startsOneEnds((3l)) == (180l));\n    assert(startsOneEnds((4l)) == (1800l));\n    assert(startsOneEnds((5l)) == (18000l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef starts_one_ends(n: int) -> int:\n    if n == 1: return 1\n    return 18 * (10 ** (n - 2))\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long startsOneEnds(long n) {\n"
+}

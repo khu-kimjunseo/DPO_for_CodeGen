@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_107_even_odd_palindrome",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<Long, Long> evenOddPalindrome(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_107_even_odd_palindrome.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(evenOddPalindrome((123l)).equals((Pair.with(8l, 13l))));\n    assert(evenOddPalindrome((12l)).equals((Pair.with(4l, 6l))));\n    assert(evenOddPalindrome((3l)).equals((Pair.with(1l, 2l))));\n    assert(evenOddPalindrome((63l)).equals((Pair.with(6l, 8l))));\n    assert(evenOddPalindrome((25l)).equals((Pair.with(5l, 6l))));\n    assert(evenOddPalindrome((19l)).equals((Pair.with(4l, 6l))));\n    assert(evenOddPalindrome((9l)).equals((Pair.with(4l, 5l))));\n    assert(evenOddPalindrome((1l)).equals((Pair.with(0l, 1l))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::tuple<long, long> even_odd_palindrome(long n) {\n    auto is_palindrome = [](long n) -> bool {\n        std::string s = std::to_string(n);\n        return std::equal(s.begin(), s.end(), s.rbegin());\n    };\n    long even_palindrome_count = 0;\n    long odd_palindrome_count = 0;\n    for(long i=1; i<=n; i++) {\n        if(i%2 == 1 && is_palindrome(i)) {\n            odd_palindrome_count++;\n        } else if(i%2 == 0 && is_palindrome(i)) {\n            even_palindrome_count++;\n        }\n    }\n    return std::make_tuple(even_palindrome_count, odd_palindrome_count);\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<Long, Long> evenOddPalindrome(long n) {\n"
+}

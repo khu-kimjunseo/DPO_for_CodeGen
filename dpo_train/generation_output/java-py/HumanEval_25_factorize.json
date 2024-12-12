@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_25_factorize",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef factorize(n: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_25_factorize.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(2) == [2]\n    assert candidate(4) == [2, 2]\n    assert candidate(8) == [2, 2, 2]\n    assert candidate(57) == [3, 19]\n    assert candidate(3249) == [3, 3, 19, 19]\n    assert candidate(185193) == [3, 3, 3, 19, 19, 19]\n    assert candidate(20577) == [3, 19, 19, 19]\n    assert candidate(18) == [2, 3, 3]\n\ndef test_check():\n    check(factorize)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> factorize(long n) {\n        ArrayList<Long> fact = new ArrayList<>();\n        long i = 2;\n        while (i <= n) {\n            if (n % i == 0) {\n                fact.add(i);\n                n /= i;\n            } else {\n                i++;\n            }\n        }\n        return fact;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef factorize(n: int) -> List[int]:\n"
+}

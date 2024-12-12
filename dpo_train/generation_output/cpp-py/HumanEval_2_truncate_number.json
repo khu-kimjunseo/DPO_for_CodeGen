@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_2_truncate_number",
+    "language": "py",
+    "prompt": "def truncate_number(number: float) -> float:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_2_truncate_number.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3.5) == 0.5\n    assert candidate(1.25) == 0.25\n    assert candidate(123.0) == 0.0\n\ndef test_check():\n    check(truncate_number)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nfloat truncate_number(float number) {\n    return number - floor(number);\n}\n\n### Python version\n\ndef truncate_number(number: float) -> float:\n"
+}

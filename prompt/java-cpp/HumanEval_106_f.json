@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_106_f",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> f(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_106_f.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = f;\n    assert(candidate((5)) == (std::vector<long>({(long)1, (long)2, (long)6, (long)24, (long)15})));\n    assert(candidate((7)) == (std::vector<long>({(long)1, (long)2, (long)6, (long)24, (long)15, (long)720, (long)28})));\n    assert(candidate((1)) == (std::vector<long>({(long)1})));\n    assert(candidate((3)) == (std::vector<long>({(long)1, (long)2, (long)6})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> f(long n) {\n        ArrayList<Long> ret = new ArrayList<Long>();\n        for (long i=1; i<=n; i++) {\n            if (i%2 == 0) {\n                long x = 1;\n                for (long j=1; j<=i; j++) x *= j;\n                ret.add(x);\n            } else {\n                long x = 0;\n                for (long j=1; j<=i; j++) x += j;\n                ret.add(x);\n            }\n        }\n        return ret;\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> f(long n) {\n"
+}

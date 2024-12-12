@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_93_encode",
+    "language": "py",
+    "prompt": "def encode(message: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_93_encode.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('TEST') == 'tgst'\n    assert candidate('Mudasir') == 'mWDCSKR'\n    assert candidate('YES') == 'ygs'\n    assert candidate('This is a message') == 'tHKS KS C MGSSCGG'\n    assert candidate('I DoNt KnOw WhAt tO WrItE') == 'k dQnT kNqW wHcT Tq wRkTg'\n\ndef test_check():\n    check(encode)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string encode(std::string message) {\n    std::string vowels = \"aeiouAEIOU\";\n    std::map<char, char> vowels_replace;\n    for (char i : vowels) {\n        vowels_replace[i] = i + 2;\n    }\n    std::transform(message.begin(), message.end(), message.begin(), [](char c) {\n        return std::isupper(c) ? std::tolower(c) : std::toupper(c);\n    });\n    std::string result = \"\";\n    for (char i : message) {\n        if (vowels_replace.count(i)) {\n            result += vowels_replace[i];\n        } else {\n            result += i;\n        }\n    }\n    return result;\n}\n\n### Python version\n\ndef encode(message: str) -> str:\n"
+}

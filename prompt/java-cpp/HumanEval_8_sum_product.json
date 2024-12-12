@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_8_sum_product",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<long, long> sum_product(std::vector<long> numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_8_sum_product.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sum_product;\n    assert(candidate((std::vector<long>())) == (std::make_tuple(0, 1)));\n    assert(candidate((std::vector<long>({(long)1, (long)1, (long)1}))) == (std::make_tuple(3, 1)));\n    assert(candidate((std::vector<long>({(long)100, (long)0}))) == (std::make_tuple(100, 0)));\n    assert(candidate((std::vector<long>({(long)3, (long)5, (long)7}))) == (std::make_tuple(15, 105)));\n    assert(candidate((std::vector<long>({(long)10}))) == (std::make_tuple(10, 10)));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<Long, Long> sumProduct(ArrayList<Long> numbers) {\n        long sum = 0;\n        long prod = 1;\n        for (long n : numbers) {\n            sum += n;\n            prod *= n;\n        }\n        return Pair.with(sum, prod);\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<long, long> sum_product(std::vector<long> numbers) {\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_144_simplify",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool simplify(std::string x, std::string n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_144_simplify.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = simplify;\n    assert(candidate((\"1/5\"), (\"5/1\")) == (true));\n    assert(candidate((\"1/6\"), (\"2/1\")) == (false));\n    assert(candidate((\"5/1\"), (\"3/1\")) == (true));\n    assert(candidate((\"7/10\"), (\"10/2\")) == (false));\n    assert(candidate((\"2/10\"), (\"50/10\")) == (true));\n    assert(candidate((\"7/2\"), (\"4/2\")) == (true));\n    assert(candidate((\"11/6\"), (\"6/1\")) == (true));\n    assert(candidate((\"2/3\"), (\"5/2\")) == (false));\n    assert(candidate((\"5/2\"), (\"3/5\")) == (false));\n    assert(candidate((\"2/4\"), (\"8/4\")) == (true));\n    assert(candidate((\"2/4\"), (\"4/2\")) == (true));\n    assert(candidate((\"1/5\"), (\"5/1\")) == (true));\n    assert(candidate((\"1/5\"), (\"1/5\")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef simplify(x: str, n: str) -> bool:\n    a, b = x.split(\"/\")\n    c, d = n.split(\"/\")\n    numerator = int(a) * int(c)\n    denom = int(b) * int(d)\n    if (numerator/denom == int(numerator/denom)):\n        return True\n    return False\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool simplify(std::string x, std::string n) {\n"
+}

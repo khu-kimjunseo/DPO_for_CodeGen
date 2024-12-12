@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_7_filter_by_substring",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_7_filter_by_substring.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n    assert candidate(['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx'], 'xx') == ['xxx', 'aaaxxy', 'xxxAAA', 'xxx']\n    assert candidate(['grunt', 'trumpet', 'prune', 'gruesome'], 'run') == ['grunt', 'prune']\n\ndef test_check():\n    check(filter_by_substring)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<std::string> filter_by_substring(std::vector<std::string> strings, std::string substring) {\n  std::vector<std::string> result;\n  for (auto x : strings) {\n    if (x.find(substring) != std::string::npos) {\n      result.push_back(x);\n    }\n  }\n  return result;\n}\n\n### Python version\n\nfrom typing import List\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n"
+}

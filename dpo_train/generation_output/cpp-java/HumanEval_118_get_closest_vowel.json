@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_118_get_closest_vowel",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String getClosestVowel(String word) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_118_get_closest_vowel.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(getClosestVowel((\"yogurt\")).equals((\"u\")));\n    assert(getClosestVowel((\"full\")).equals((\"u\")));\n    assert(getClosestVowel((\"easy\")).equals((\"\")));\n    assert(getClosestVowel((\"eAsy\")).equals((\"\")));\n    assert(getClosestVowel((\"ali\")).equals((\"\")));\n    assert(getClosestVowel((\"bad\")).equals((\"a\")));\n    assert(getClosestVowel((\"most\")).equals((\"o\")));\n    assert(getClosestVowel((\"ab\")).equals((\"\")));\n    assert(getClosestVowel((\"ba\")).equals((\"\")));\n    assert(getClosestVowel((\"quick\")).equals((\"\")));\n    assert(getClosestVowel((\"anime\")).equals((\"i\")));\n    assert(getClosestVowel((\"Asia\")).equals((\"\")));\n    assert(getClosestVowel((\"Above\")).equals((\"o\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string get_closest_vowel(std::string word) {\n    if (word.size() < 3) {\n        return \"\";\n    }\n\n    std::set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'O', 'U', 'I'};\n    for (int i = word.size() - 2; i >= 1; i--) {\n        if (vowels.count(word[i])) {\n            if (!vowels.count(word[i+1]) && !vowels.count(word[i-1])) {\n                return std::string(1, word[i]);\n            }\n        }\n    }\n    return \"\";\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String getClosestVowel(String word) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_39_prime_fib",
+    "language": "py",
+    "prompt": "def prime_fib(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_39_prime_fib.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(1) == 2\n    assert candidate(2) == 3\n    assert candidate(3) == 5\n    assert candidate(4) == 13\n    assert candidate(5) == 89\n    assert candidate(6) == 233\n    assert candidate(7) == 1597\n    assert candidate(8) == 28657\n    assert candidate(9) == 514229\n    assert candidate(10) == 433494437\n\ndef test_check():\n    check(prime_fib)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long primeFib(long n) {\n        int[] f = {0, 1};\n        while (true) {\n            int next = f[0] + f[1];\n            f[0] = f[1];\n            f[1] = next;\n            if (isPrime(next)) {\n                n--;\n            }\n            if (n == 0) {\n                return next;\n            }\n        }\n    }\n    private static boolean isPrime(int p) {\n        if (p < 2) {\n            return false;\n        }\n        for (int k = 2; k <= Math.min((int)Math.sqrt(p) + 1, p - 1); k++) {\n            if (p % k == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n    \n}\n\n### Python version\n\ndef prime_fib(n: int) -> int:\n"
+}

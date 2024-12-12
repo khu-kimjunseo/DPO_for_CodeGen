@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_95_check_dict_case",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool check_dict_case(std::map<std::string,std::string> dict) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_95_check_dict_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = check_dict_case;\n    assert(candidate((std::map<std::string,std::string>({{\"p\", \"pineapple\"}, {\"b\", \"banana\"}}))) == (true));\n    assert(candidate((std::map<std::string,std::string>({{\"p\", \"pineapple\"}, {\"A\", \"banana\"}, {\"B\", \"banana\"}}))) == (false));\n    assert(candidate((std::map<std::string,std::string>({{\"p\", \"pineapple\"}, {\"5\", \"banana\"}, {\"a\", \"apple\"}}))) == (false));\n    assert(candidate((std::map<std::string,std::string>({{\"Name\", \"John\"}, {\"Age\", \"36\"}, {\"City\", \"Houston\"}}))) == (false));\n    assert(candidate((std::map<std::string,std::string>({{\"STATE\", \"NC\"}, {\"ZIP\", \"12345\"}}))) == (true));\n    assert(candidate((std::map<std::string,std::string>({{\"fruit\", \"Orange\"}, {\"taste\", \"Sweet\"}}))) == (true));\n    assert(candidate((std::map<std::string,std::string>())) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import Dict\n\ndef check_dict_case(dict: Dict[str, str]) -> bool:\n    if len(dict.keys()) == 0:\n        return False\n    else:\n        state = \"start\"\n        for key in dict.keys():\n\n            if isinstance(key, str) == False:\n                state = \"mixed\"\n                break\n            if state == \"start\":\n                if key.isupper():\n                    state = \"upper\"\n                elif key.islower():\n                    state = \"lower\"\n                else:\n                    break\n            elif (state == \"upper\" and not key.isupper()) or (state == \"lower\" and not key.islower()):\n                    state = \"mixed\"\n                    break\n            else:\n                continue\n        return state == \"upper\" or state == \"lower\"\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool check_dict_case(std::map<std::string,std::string> dict) {\n"
+}

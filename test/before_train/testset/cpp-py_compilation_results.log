@@ -1,0 +1,80 @@
+2024-12-10 06:20:35 - INFO - Directory: cpp-py
+2024-12-10 06:20:35 - INFO - Total Files: 45
+2024-12-10 06:20:35 - INFO - Successful Compilations: 40
+2024-12-10 06:20:35 - INFO - Failed Compilations: 5
+2024-12-10 06:20:35 - INFO - Success Rate: 88.89%
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_13_greatest_common_divisor.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_161_solve.py
+2024-12-10 11:10:55 - ERROR - Failed to compile cpp-py/HumanEval_55_fib.py. Error:
+  File "cpp-py/HumanEval_55_fib.py", line 2
+    if (n == 0) {
+                ^
+SyntaxError: invalid syntax
+
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_106_f.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_154_cycpattern_check.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_117_select_words.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_104_unique_digits.py
+2024-12-10 11:10:55 - ERROR - Failed to compile cpp-py/HumanEval_144_simplify.py. Error:
+  File "cpp-py/HumanEval_144_simplify.py", line 100
+    if x
+        ^
+SyntaxError: expected ':'
+
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_78_hex_key.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_153_Strongest_Extension.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_110_exchange.py
+2024-12-10 11:10:55 - ERROR - Failed to compile cpp-py/HumanEval_129_minPath.py. Error:
+  File "cpp-py/HumanEval_129_minPath.py", line 34
+    assert(len(grid[0][0][0][0][0][0][0
+                                     ^
+SyntaxError: '[' was never closed
+
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_27_flip_case.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_146_specialFilter.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_95_check_dict_case.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_4_mean_absolute_deviation.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_35_max_element.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_8_sum_product.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_90_next_smallest.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_28_concatenate.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_18_how_many_times.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_87_get_row.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_9_rolling_max.py
+2024-12-10 11:10:55 - INFO - Successfully compiled: cpp-py/HumanEval_84_solve.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_130_tri.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_127_intersection.py
+2024-12-10 11:10:56 - ERROR - Failed to compile cpp-py/HumanEval_82_prime_length.py. Error:
+  File "cpp-py/HumanEval_82_prime_length.py", line 2
+    if (string == "") {
+                      ^
+SyntaxError: invalid syntax
+
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_89_encrypt.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_14_all_prefixes.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_40_triples_sum_to_zero.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_135_can_arrange.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_148_bf.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_125_split_words.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_157_right_angle_triangle.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_68_pluck.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_102_choose_num.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_16_count_distinct_characters.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_3_below_zero.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_23_strlen.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_70_strange_sort_list.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_22_filter_integers.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_143_words_in_sentence.py
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_155_even_odd_count.py
+2024-12-10 11:10:56 - ERROR - Failed to compile cpp-py/HumanEval_126_is_sorted.py. Error:
+  File "cpp-py/HumanEval_126_is_sorted.py", line 48
+    if
+      ^
+SyntaxError: invalid syntax
+
+2024-12-10 11:10:56 - INFO - Successfully compiled: cpp-py/HumanEval_66_digitSum.py
+2024-12-10 11:10:56 - INFO - Directory: cpp-py
+2024-12-10 11:10:56 - INFO - Total Files: 45
+2024-12-10 11:10:56 - INFO - Successful Compilations: 40
+2024-12-10 11:10:56 - INFO - Failed Compilations: 5
+2024-12-10 11:10:56 - INFO - Success Rate: 88.89%

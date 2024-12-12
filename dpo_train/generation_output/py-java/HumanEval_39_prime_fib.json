@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_39_prime_fib",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long primeFib(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_39_prime_fib.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(primeFib((1l)) == (2l));\n    assert(primeFib((2l)) == (3l));\n    assert(primeFib((3l)) == (5l));\n    assert(primeFib((4l)) == (13l));\n    assert(primeFib((5l)) == (89l));\n    assert(primeFib((6l)) == (233l));\n    assert(primeFib((7l)) == (1597l));\n    assert(primeFib((8l)) == (28657l));\n    assert(primeFib((9l)) == (514229l));\n    assert(primeFib((10l)) == (433494437l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef prime_fib(n: int) -> int:\n    import math\n    def is_prime(p):\n        if p < 2:\n            return False\n        for k in range(2, min(int(math.sqrt(p)) + 1, p - 1)):\n            if p % k == 0:\n                return False\n        return True\n    f = [0, 1]\n    while True:\n        f.append(f[-1] + f[-2])\n        if is_prime(f[-1]):\n            n -= 1\n        if n == 0:\n            return f[-1]\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long primeFib(long n) {\n"
+}

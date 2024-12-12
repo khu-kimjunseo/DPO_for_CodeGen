@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_84_solve",
+    "language": "py",
+    "prompt": "def solve(N: int) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_84_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(1000) == '1'\n    assert candidate(150) == '110'\n    assert candidate(147) == '1100'\n    assert candidate(333) == '1001'\n    assert candidate(963) == '10010'\n\ndef test_check():\n    check(solve)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(long N) {\n        return Long.toBinaryString(Long.toString(N).chars().map(c -> c - '0').sum());\n    }\n}\n\n### Python version\n\ndef solve(N: int) -> str:\n"
+}

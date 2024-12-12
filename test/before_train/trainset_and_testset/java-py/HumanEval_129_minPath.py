@@ -1,0 +1,54 @@
+from typing import List
+
+def minPath(grid: List[List[int]], k: int) -> List[int]:
+    """
+    :param grid:
+    :param k:
+    :return:
+    """
+    if len(grid) == 0:
+        return []
+    if len(grid) == 1:
+        return [grid[0]]
+    if len(grid) == 2:
+        return [grid[0], grid[1]]
+    if len(grid) == 3:
+        return [grid[0], grid[1], grid[2]]
+    if len(grid) == 4:
+        return [grid[0], grid[1], grid[2], grid[3]]
+    if len(grid) == 5:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4]]
+    if len(grid) == 6:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5]]
+    if len(grid) == 7:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6]]
+    if len(grid) == 8:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7]]
+    if len(grid) == 9:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7], grid[8]]
+    if len(grid) == 10:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7], grid[8], grid[9]]
+    if len(grid) == 11:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7], grid[8], grid[9], grid[10]]
+    if len(grid) == 12:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7], grid[8], grid[9], grid[10], grid[11]]
+    if len(grid) == 13:
+        return [grid[0], grid[1], grid[2], grid[3], grid[4], grid[5], grid[6], grid[7], grid[8], grid[9], grid[10], grid[11], grid[12]]
+    if len(grid) ==
+def check(candidate):
+    assert candidate([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 3) == [1, 2, 1]
+    assert candidate([[5, 9, 3], [4, 1, 6], [7, 8, 2]], 1) == [1]
+    assert candidate([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 4) == [1, 2, 1, 2]
+    assert candidate([[6, 4, 13, 10], [5, 7, 12, 1], [3, 16, 11, 15], [8, 14, 9, 2]], 7) == [1, 10, 1, 10, 1, 10, 1]
+    assert candidate([[8, 14, 9, 2], [6, 4, 13, 15], [5, 7, 1, 12], [3, 10, 11, 16]], 5) == [1, 7, 1, 7, 1]
+    assert candidate([[11, 8, 7, 2], [5, 16, 14, 4], [9, 3, 15, 6], [12, 13, 10, 1]], 9) == [1, 6, 1, 6, 1, 6, 1, 6, 1]
+    assert candidate([[12, 13, 10, 1], [9, 3, 15, 6], [5, 16, 14, 4], [11, 8, 7, 2]], 12) == [1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6]
+    assert candidate([[2, 7, 4], [3, 1, 5], [6, 8, 9]], 8) == [1, 3, 1, 3, 1, 3, 1, 3]
+    assert candidate([[6, 1, 5], [3, 8, 9], [2, 7, 4]], 8) == [1, 5, 1, 5, 1, 5, 1, 5]
+    assert candidate([[1, 2], [3, 4]], 10) == [1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+    assert candidate([[1, 3], [3, 2]], 10) == [1, 3, 1, 3, 1, 3, 1, 3, 1, 3]
+
+def test_check():
+    check(minPath)
+
+test_check()

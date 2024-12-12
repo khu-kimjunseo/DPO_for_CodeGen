@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_19_sort_numbers",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string sort_numbers(std::string numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_19_sort_numbers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sort_numbers;\n    assert(candidate((\"\")) == (\"\"));\n    assert(candidate((\"three\")) == (\"three\"));\n    assert(candidate((\"three five nine\")) == (\"three five nine\"));\n    assert(candidate((\"five zero four seven nine eight\")) == (\"zero four five seven eight nine\"));\n    assert(candidate((\"six five four three two one zero\")) == (\"zero one two three four five six\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String sortNumbers(String numbers) {\n        Map<String, Integer> valueMap = new HashMap<String, Integer>() {{\n            put(\"zero\", 0);\n            put(\"one\", 1);\n            put(\"two\", 2);\n            put(\"three\", 3);\n            put(\"four\", 4);\n            put(\"five\", 5);\n            put(\"six\", 6);\n            put(\"seven\", 7);\n            put(\"eight\", 8);\n            put(\"nine\", 9);\n        }};\n        return String.join(\" \", Arrays.stream(numbers.split(\" \")).filter(x -> !x.isEmpty()).sorted((x, y) -> valueMap.get(x) - valueMap.get(y)).toArray(String[]::new));\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string sort_numbers(std::string numbers) {\n"
+}

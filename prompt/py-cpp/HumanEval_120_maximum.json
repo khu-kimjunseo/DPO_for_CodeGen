@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_120_maximum",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> maximum(std::vector<long> arr, long k) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_120_maximum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = maximum;\n    assert(candidate((std::vector<long>({(long)-3, (long)-4, (long)5})), (3)) == (std::vector<long>({(long)-4, (long)-3, (long)5})));\n    assert(candidate((std::vector<long>({(long)4, (long)-4, (long)4})), (2)) == (std::vector<long>({(long)4, (long)4})));\n    assert(candidate((std::vector<long>({(long)-3, (long)2, (long)1, (long)2, (long)-1, (long)-2, (long)1})), (1)) == (std::vector<long>({(long)2})));\n    assert(candidate((std::vector<long>({(long)123, (long)-123, (long)20, (long)0, (long)1, (long)2, (long)-3})), (3)) == (std::vector<long>({(long)2, (long)20, (long)123})));\n    assert(candidate((std::vector<long>({(long)-123, (long)20, (long)0, (long)1, (long)2, (long)-3})), (4)) == (std::vector<long>({(long)0, (long)1, (long)2, (long)20})));\n    assert(candidate((std::vector<long>({(long)5, (long)15, (long)0, (long)3, (long)-13, (long)-8, (long)0})), (7)) == (std::vector<long>({(long)-13, (long)-8, (long)0, (long)0, (long)3, (long)5, (long)15})));\n    assert(candidate((std::vector<long>({(long)-1, (long)0, (long)2, (long)5, (long)3, (long)-10})), (2)) == (std::vector<long>({(long)3, (long)5})));\n    assert(candidate((std::vector<long>({(long)1, (long)0, (long)5, (long)-7})), (1)) == (std::vector<long>({(long)5})));\n    assert(candidate((std::vector<long>({(long)4, (long)-4})), (2)) == (std::vector<long>({(long)-4, (long)4})));\n    assert(candidate((std::vector<long>({(long)-10, (long)10})), (2)) == (std::vector<long>({(long)-10, (long)10})));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)-23, (long)243, (long)-400, (long)0})), (0)) == (std::vector<long>()));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef maximum(arr: List[int], k: int) -> List[int]:\n    if k == 0:\n        return []\n    arr.sort()\n    ans = arr[-k:]\n    return ans\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> maximum(std::vector<long> arr, long k) {\n"
+}

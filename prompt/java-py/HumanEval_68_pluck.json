@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_68_pluck",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef pluck(arr: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_68_pluck.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([4, 2, 3]) == [2, 1]\n    assert candidate([1, 2, 3]) == [2, 1]\n    assert candidate([]) == []\n    assert candidate([5, 0, 3, 0, 4, 2]) == [0, 1]\n    assert candidate([1, 2, 3, 0, 5, 3]) == [0, 3]\n    assert candidate([5, 4, 8, 4, 8]) == [4, 1]\n    assert candidate([7, 6, 7, 1]) == [6, 1]\n    assert candidate([7, 9, 7, 1]) == []\n\ndef test_check():\n    check(pluck)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> pluck(ArrayList<Long> arr) {\n        if (arr.size() == 0) return new ArrayList<Long>();\n        List<Long> evens = arr.stream().filter(x -> x % 2 == 0).collect(Collectors.toList());\n        if (evens.size() == 0) return new ArrayList<Long>();\n        long min = Collections.min(evens);\n        return new ArrayList<Long>(Arrays.asList(min, (long) arr.indexOf(min)));\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef pluck(arr: List[int]) -> List[int]:\n"
+}

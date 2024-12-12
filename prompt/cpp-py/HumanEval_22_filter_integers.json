@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_22_filter_integers",
+    "language": "py",
+    "prompt": "from typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_22_filter_integers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([4, {  }, [], 23.2, 9, 'adasd']) == [4, 9]\n    assert candidate([3, 'c', 3, 3, 'a', 'b']) == [3, 3, 3]\n\ndef test_check():\n    check(filter_integers)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> filter_integers(std::vector<std::any> values) {\n    std::vector<long> res;\n    for (auto x : values) {\n        if (x.type() == typeid(int)) {\n            res.push_back(std::any_cast<int>(x));\n        }\n    }\n    return res;\n}\n\n### Python version\n\nfrom typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n"
+}

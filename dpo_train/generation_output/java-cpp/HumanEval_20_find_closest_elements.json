@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_20_find_closest_elements",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<float, float> find_closest_elements(std::vector<float> numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_20_find_closest_elements.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = find_closest_elements;\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.9f, (float)4.0f, (float)5.0f, (float)2.2f}))) == (std::make_tuple(3.9f, 4.0f)));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)5.9f, (float)4.0f, (float)5.0f}))) == (std::make_tuple(5.0f, 5.9f)));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.2f}))) == (std::make_tuple(2.0f, 2.2f)));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f}))) == (std::make_tuple(2.0f, 2.0f)));\n    assert(candidate((std::vector<float>({(float)1.1f, (float)2.2f, (float)3.1f, (float)4.1f, (float)5.1f}))) == (std::make_tuple(2.2f, 3.1f)));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<Float, Float> findClosestElements(ArrayList<Float> numbers) {\n        Pair<Float, Float> closestPair = null;\n        Float distance = null;\n\n        for (int idx = 0; idx < numbers.size(); idx++) {\n            Float elem = numbers.get(idx);\n            for (int idx2 = 0; idx2 < numbers.size(); idx2++) {\n                Float elem2 = numbers.get(idx2);\n                if (idx != idx2) {\n                    Float newDistance = Math.abs(elem - elem2);\n                    if (distance == null || newDistance < distance) {\n                        distance = newDistance;\n                        closestPair = Pair.with(Math.min(elem, elem2), Math.max(elem, elem2));\n                    }\n                }\n            }\n        }\n\n        return closestPair;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<float, float> find_closest_elements(std::vector<float> numbers) {\n"
+}

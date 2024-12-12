@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_100_make_a_pile",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef make_a_pile(n: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_100_make_a_pile.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3) == [3, 5, 7]\n    assert candidate(4) == [4, 6, 8, 10]\n    assert candidate(5) == [5, 7, 9, 11, 13]\n    assert candidate(6) == [6, 8, 10, 12, 14, 16]\n    assert candidate(8) == [8, 10, 12, 14, 16, 18, 20, 22]\n\ndef test_check():\n    check(make_a_pile)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> makeAPile(long n) {\n        return IntStream.range(0, (int) n).mapToObj(i -> n + 2 * i).collect(Collectors.toCollection(ArrayList::new));\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef make_a_pile(n: int) -> List[int]:\n"
+}

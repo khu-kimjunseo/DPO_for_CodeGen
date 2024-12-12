@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_66_digitSum",
+    "language": "py",
+    "prompt": "def digitSum(s: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_66_digitSum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('') == 0\n    assert candidate('abAB') == 131\n    assert candidate('abcCd') == 67\n    assert candidate('helloE') == 69\n    assert candidate('woArBld') == 131\n    assert candidate('aAaaaXa') == 153\n    assert candidate(' How are yOu?') == 151\n    assert candidate('You arE Very Smart') == 327\n\ndef test_check():\n    check(digitSum)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long digitSum(String s) {\n        if (s.equals(\"\")) return 0;\n        return s.chars().filter(Character::isUpperCase).sum();\n    }\n    \n}\n\n### Python version\n\ndef digitSum(s: str) -> int:\n"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_123_get_odd_collatz",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> getOddCollatz(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_123_get_odd_collatz.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(getOddCollatz((14l)).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)5l, (long)7l, (long)11l, (long)13l, (long)17l)))));\n    assert(getOddCollatz((5l)).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)5l)))));\n    assert(getOddCollatz((12l)).equals((new ArrayList<Long>(Arrays.asList((long)1l, (long)3l, (long)5l)))));\n    assert(getOddCollatz((1l)).equals((new ArrayList<Long>(Arrays.asList((long)1l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> get_odd_collatz(long n) {\n    std::vector<long> odd_collatz;\n    if (n%2==0) {\n        odd_collatz = {}; \n    } else {\n        odd_collatz = {n};\n    }\n    while (n > 1) {\n        if (n % 2 == 0) {\n            n = n/2;\n        } else {\n            n = n*3 + 1;\n        }\n        if (n%2 == 1) {\n            odd_collatz.push_back(n);\n        }\n    }\n    std::sort(odd_collatz.begin(), odd_collatz.end());\n    return odd_collatz;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> getOddCollatz(long n) {\n"
+}

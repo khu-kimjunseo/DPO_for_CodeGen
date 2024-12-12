@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_4_mean_absolute_deviation",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_4_mean_absolute_deviation.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1.0, 2.0]) == 0.5\n    assert candidate([1.0, 2.0, 3.0, 4.0]) == 1.0\n    assert candidate([1.0, 2.0, 3.0, 4.0, 5.0]) == 1.2\n\ndef test_check():\n    check(mean_absolute_deviation)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float meanAbsoluteDeviation(ArrayList<Float> numbers) {\n        float mean = numbers.stream().reduce(0.0f, Float::sum) / numbers.size();\n        return numbers.stream().map(x -> Math.abs(x - mean)).reduce(0.0f, Float::sum) / numbers.size();\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n"
+}

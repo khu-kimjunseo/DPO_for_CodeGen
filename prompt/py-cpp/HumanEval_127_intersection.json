@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_127_intersection",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string intersection(std::tuple<long, long> interval1, std::tuple<long, long> interval2) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_127_intersection.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = intersection;\n    assert(candidate((std::make_tuple(1, 2)), (std::make_tuple(2, 3))) == (\"NO\"));\n    assert(candidate((std::make_tuple(-1, 1)), (std::make_tuple(0, 4))) == (\"NO\"));\n    assert(candidate((std::make_tuple(-3, -1)), (std::make_tuple(-5, 5))) == (\"YES\"));\n    assert(candidate((std::make_tuple(-2, 2)), (std::make_tuple(-4, 0))) == (\"YES\"));\n    assert(candidate((std::make_tuple(-11, 2)), (std::make_tuple(-1, -1))) == (\"NO\"));\n    assert(candidate((std::make_tuple(1, 2)), (std::make_tuple(3, 5))) == (\"NO\"));\n    assert(candidate((std::make_tuple(1, 2)), (std::make_tuple(1, 2))) == (\"NO\"));\n    assert(candidate((std::make_tuple(-2, -2)), (std::make_tuple(-3, -2))) == (\"NO\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import Tuple\n\ndef intersection(interval1: Tuple[int, int], interval2: Tuple[int, int]) -> str:\n    def is_prime(num):\n        if num == 1 or num == 0:\n            return False\n        if num == 2:\n            return True\n        for i in range(2, num):\n            if num%i == 0:\n                return False\n        return True\n\n    l = max(interval1[0], interval2[0])\n    r = min(interval1[1], interval2[1])\n    length = r - l\n    if length > 0 and is_prime(length):\n        return \"YES\"\n    return \"NO\"\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string intersection(std::tuple<long, long> interval1, std::tuple<long, long> interval2) {\n"
+}

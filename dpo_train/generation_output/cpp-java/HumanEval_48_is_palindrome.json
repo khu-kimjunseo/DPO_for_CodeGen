@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_48_is_palindrome",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isPalindrome(String text) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_48_is_palindrome.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(isPalindrome((\"\")) == (true));\n    assert(isPalindrome((\"aba\")) == (true));\n    assert(isPalindrome((\"aaaaa\")) == (true));\n    assert(isPalindrome((\"zbcd\")) == (false));\n    assert(isPalindrome((\"xywyx\")) == (true));\n    assert(isPalindrome((\"xywyz\")) == (false));\n    assert(isPalindrome((\"xywzx\")) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool is_palindrome(std::string text) {\n    for (int i = 0; i < text.size(); i++) {\n        if (text[i] != text[text.size() - 1 - i]) {\n            return false;\n        }\n    }\n    return true;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isPalindrome(String text) {\n"
+}

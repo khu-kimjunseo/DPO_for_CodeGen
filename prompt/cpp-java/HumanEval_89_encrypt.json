@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_89_encrypt",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encrypt(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_89_encrypt.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(encrypt((\"hi\")).equals((\"lm\")));\n    assert(encrypt((\"asdfghjkl\")).equals((\"ewhjklnop\")));\n    assert(encrypt((\"gf\")).equals((\"kj\")));\n    assert(encrypt((\"et\")).equals((\"ix\")));\n    assert(encrypt((\"faewfawefaewg\")).equals((\"jeiajeaijeiak\")));\n    assert(encrypt((\"hellomyfriend\")).equals((\"lippsqcjvmirh\")));\n    assert(encrypt((\"dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh\")).equals((\"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl\")));\n    assert(encrypt((\"a\")).equals((\"e\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string encrypt(std::string s) {\n    std::string d = \"abcdefghijklmnopqrstuvwxyz\";\n    std::string out = \"\";\n    for (char c : s) {\n        if (d.find(c) != std::string::npos) {\n            out += d[(d.find(c)+2*2) % 26];\n        } else {\n            out += c;\n        }\n    }\n    return out;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encrypt(String s) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_59_largest_prime_factor",
+    "language": "py",
+    "prompt": "def largest_prime_factor(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_59_largest_prime_factor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(15) == 5\n    assert candidate(27) == 3\n    assert candidate(63) == 7\n    assert candidate(330) == 11\n    assert candidate(13195) == 29\n\ndef test_check():\n    check(largest_prime_factor)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong largest_prime_factor(long n) {\n    auto is_prime=[](long k){\n        if(k<2) return false;\n        for(long i=2;i<k;i++) if(k%i==0) return false;\n        return true;\n    };\n    long largest=1;\n    for(long j=2;j<=n;j++) if(n%j==0 && is_prime(j)) largest=std::max(largest,j);\n    return largest;\n}\n\n### Python version\n\ndef largest_prime_factor(n: int) -> int:\n"
+}

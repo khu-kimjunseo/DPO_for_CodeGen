@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_122_add_elements",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef add_elements(arr: List[int], k: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_122_add_elements.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, -2, -3, 41, 57, 76, 87, 88, 99], 3) == -4\n    assert candidate([111, 121, 3, 4000, 5, 6], 2) == 0\n    assert candidate([11, 21, 3, 90, 5, 6, 7, 8, 9], 4) == 125\n    assert candidate([111, 21, 3, 4000, 5, 6, 7, 8, 9], 4) == 24\n    assert candidate([1], 1) == 1\n\ndef test_check():\n    check(add_elements)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong add_elements(std::vector<long> arr, long k) {\n    long sum = 0;\n    for (int i = 0; i < k; i++) {\n        if (std::to_string(arr[i]).size() <= 2) {\n            sum += arr[i];\n        }\n    }\n    return sum;\n}\n\n### Python version\n\nfrom typing import List\n\ndef add_elements(arr: List[int], k: int) -> int:\n"
+}

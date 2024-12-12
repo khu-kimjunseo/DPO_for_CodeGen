@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_70_strange_sort_list",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> strange_sort_list(std::vector<long> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_70_strange_sort_list.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = strange_sort_list;\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4}))) == (std::vector<long>({(long)1, (long)4, (long)2, (long)3})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)7, (long)8, (long)9}))) == (std::vector<long>({(long)5, (long)9, (long)6, (long)8, (long)7})));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4, (long)5}))) == (std::vector<long>({(long)1, (long)5, (long)2, (long)4, (long)3})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)7, (long)8, (long)9, (long)1}))) == (std::vector<long>({(long)1, (long)9, (long)5, (long)8, (long)6, (long)7})));\n    assert(candidate((std::vector<long>({(long)5, (long)5, (long)5, (long)5}))) == (std::vector<long>({(long)5, (long)5, (long)5, (long)5})));\n    assert(candidate((std::vector<long>())) == (std::vector<long>()));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4, (long)5, (long)6, (long)7, (long)8}))) == (std::vector<long>({(long)1, (long)8, (long)2, (long)7, (long)3, (long)6, (long)4, (long)5})));\n    assert(candidate((std::vector<long>({(long)0, (long)2, (long)2, (long)2, (long)5, (long)5, (long)-5, (long)-5}))) == (std::vector<long>({(long)-5, (long)5, (long)-5, (long)5, (long)0, (long)2, (long)2, (long)2})));\n    assert(candidate((std::vector<long>({(long)111111}))) == (std::vector<long>({(long)111111})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef strange_sort_list(lst: List[int]) -> List[int]:\n    res, switch = [], True\n    while lst:\n        res.append(min(lst) if switch else max(lst))\n        lst.remove(res[-1])\n        switch = not switch\n    return res\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> strange_sort_list(std::vector<long> lst) {\n"
+}

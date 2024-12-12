@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_153_Strongest_Extension",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef Strongest_Extension(class_name: str, extensions: List[str]) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_153_Strongest_Extension.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Watashi', ['tEN', 'niNE', 'eIGHt8OKe']) == 'Watashi.eIGHt8OKe'\n    assert candidate('Boku123', ['nani', 'NazeDa', 'YEs.WeCaNe', '32145tggg']) == 'Boku123.YEs.WeCaNe'\n    assert candidate('__YESIMHERE', ['t', 'eMptY', 'nothing', 'zeR00', 'NuLl__', '123NoooneB321']) == '__YESIMHERE.NuLl__'\n    assert candidate('K', ['Ta', 'TAR', 't234An', 'cosSo']) == 'K.TAR'\n    assert candidate('__HAHA', ['Tab', '123', '781345', '-_-']) == '__HAHA.123'\n    assert candidate('YameRore', ['HhAas', 'okIWILL123', 'WorkOut', 'Fails', '-_-']) == 'YameRore.okIWILL123'\n    assert candidate('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) == 'finNNalLLly.WoW'\n    assert candidate('_', ['Bb', '91245']) == '_.Bb'\n    assert candidate('Sp', ['671235', 'Bb']) == 'Sp.671235'\n\ndef test_check():\n    check(Strongest_Extension)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string Strongest_Extension(std::string class_name, std::vector<std::string> extensions) {\n    std::string strong = extensions[0];\n    int my_val = std::count_if(strong.begin(), strong.end(), [](char c){return std::isupper(c);}) - std::count_if(strong.begin(), strong.end(), [](char c){return std::islower(c);});\n    for (std::string s : extensions) {\n        int val = std::count_if(s.begin(), s.end(), [](char c){return std::isupper(c);}) - std::count_if(s.begin(), s.end(), [](char c){return std::islower(c);});\n        if (val > my_val) {\n            strong = s;\n            my_val = val;\n        }\n    }\n    std::string ans = class_name + \".\" + strong;\n    return ans;\n}\n\n### Python version\n\nfrom typing import List\n\ndef Strongest_Extension(class_name: str, extensions: List[str]) -> str:\n"
+}

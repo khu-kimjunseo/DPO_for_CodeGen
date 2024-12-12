@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_83_starts_one_ends",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong starts_one_ends(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_83_starts_one_ends.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = starts_one_ends;\n    assert(candidate((1)) == (1));\n    assert(candidate((2)) == (18));\n    assert(candidate((3)) == (180));\n    assert(candidate((4)) == (1800));\n    assert(candidate((5)) == (18000));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long startsOneEnds(long n) {\n        if (n == 1) return 1;\n        return 18 * (long)Math.pow(10, n - 2);\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong starts_one_ends(long n) {\n"
+}

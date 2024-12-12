@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_161_solve",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_161_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(solve((\"AsDf\")).equals((\"aSdF\")));\n    assert(solve((\"1234\")).equals((\"4321\")));\n    assert(solve((\"ab\")).equals((\"AB\")));\n    assert(solve((\"#a@C\")).equals((\"#A@c\")));\n    assert(solve((\"#AsdfW^45\")).equals((\"#aSDFw^45\")));\n    assert(solve((\"#6@2\")).equals((\"2@6#\")));\n    assert(solve((\"#$a^D\")).equals((\"#$A^d\")));\n    assert(solve((\"#ccc\")).equals((\"#CCC\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef solve(s: str) -> str:\n    flg = 0\n    idx = 0\n    new_str = list(s)\n    for i in s:\n        if i.isalpha():\n            new_str[idx] = i.swapcase()\n            flg = 1\n        idx += 1\n    s = \"\"\n    for i in new_str:\n        s += i\n    if flg == 0:\n        return s[len(s)::-1]\n    return s\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(String s) {\n"
+}

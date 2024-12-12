@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_97_multiply",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong multiply(long a, long b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_97_multiply.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = multiply;\n    assert(candidate((148), (412)) == (16));\n    assert(candidate((19), (28)) == (72));\n    assert(candidate((2020), (1851)) == (0));\n    assert(candidate((14), (-15)) == (20));\n    assert(candidate((76), (67)) == (42));\n    assert(candidate((17), (27)) == (49));\n    assert(candidate((0), (1)) == (0));\n    assert(candidate((0), (0)) == (0));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long multiply(long a, long b) {\n        return Math.abs(a % 10) * Math.abs(b % 10);\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong multiply(long a, long b) {\n"
+}

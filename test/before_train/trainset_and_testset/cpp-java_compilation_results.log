@@ -1,0 +1,1998 @@
+2024-12-12 12:49:14 - ERROR - Failed to compile cpp-java/HumanEval_117_select_words.java. Error:
+cpp-java/HumanEval_117_select_words.java:13: error: incompatible types: char cannot be converted to String
+                result.add(c);
+                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:49:14 - INFO - Successfully compiled: cpp-java/HumanEval_86_anti_shuffle.java
+2024-12-12 12:49:15 - INFO - Successfully compiled: cpp-java/HumanEval_122_add_elements.java
+2024-12-12 12:49:15 - ERROR - Failed to compile cpp-java/HumanEval_134_check_if_last_char_is_a_letter.java. Error:
+cpp-java/HumanEval_134_check_if_last_char_is_a_letter.java:9: error: cannot find symbol
+        return check_if_last_char_is_a_letter(txt);
+               ^
+  symbol:   method check_if_last_char_is_a_letter(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:15 - ERROR - Failed to compile cpp-java/HumanEval_120_maximum.java. Error:
+cpp-java/HumanEval_120_maximum.java:11: error: incompatible types: possible lossy conversion from long to int
+            if (arr.get(i) > k) {
+                        ^
+cpp-java/HumanEval_120_maximum.java:12: error: incompatible types: possible lossy conversion from long to int
+                ans.add(arr.get(i));
+                                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+2024-12-12 12:49:16 - ERROR - Failed to compile cpp-java/HumanEval_7_filter_by_substring.java. Error:
+cpp-java/HumanEval_7_filter_by_substring.java:11: error: cannot find symbol
+            if (s.find(substring) != std::string::npos) {
+                 ^
+  symbol:   method find(String)
+  location: variable s of type String
+cpp-java/HumanEval_7_filter_by_substring.java:11: error: method reference not expected here
+            if (s.find(substring) != std::string::npos) {
+                                     ^
+2 errors
+
+2024-12-12 12:49:16 - INFO - Successfully compiled: cpp-java/HumanEval_115_max_fill.java
+2024-12-12 12:49:17 - ERROR - Failed to compile cpp-java/HumanEval_29_filter_by_prefix.java. Error:
+cpp-java/HumanEval_29_filter_by_prefix.java:10: error: cannot find symbol
+        for (auto x: strings) {
+             ^
+  symbol:   class auto
+  location: class Problem
+1 error
+
+2024-12-12 12:49:17 - INFO - Successfully compiled: cpp-java/HumanEval_142_sum_squares.java
+2024-12-12 12:49:18 - INFO - Successfully compiled: cpp-java/HumanEval_151_double_the_difference.java
+2024-12-12 12:49:19 - INFO - Successfully compiled: cpp-java/HumanEval_129_minPath.java
+2024-12-12 12:49:19 - ERROR - Failed to compile cpp-java/HumanEval_31_is_prime.java. Error:
+cpp-java/HumanEval_31_is_prime.java:139: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:19 - ERROR - Failed to compile cpp-java/HumanEval_130_tri.java. Error:
+cpp-java/HumanEval_130_tri.java:81: error: ';' expected
+        for (long i = 1
+                       ^
+cpp-java/HumanEval_130_tri.java:82: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:49:19 - ERROR - Failed to compile cpp-java/HumanEval_131_digits.java. Error:
+cpp-java/HumanEval_131_digits.java:11: error: ')' expected
+        for (char digit : std::to_string(n)) {
+                                        ^
+cpp-java/HumanEval_131_digits.java:11: error: ';' expected
+        for (char digit : std::to_string(n)) {
+                                           ^
+2 errors
+
+2024-12-12 12:49:20 - ERROR - Failed to compile cpp-java/HumanEval_65_circular_shift.java. Error:
+cpp-java/HumanEval_65_circular_shift.java:9: error: cannot find symbol
+        return circular_shift(x, shift);
+               ^
+  symbol:   method circular_shift(long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:20 - ERROR - Failed to compile cpp-java/HumanEval_45_triangle_area.java. Error:
+cpp-java/HumanEval_45_triangle_area.java:84: error: ')' or ',' expected
+        return triangle_area(a, h
+                                 ^
+cpp-java/HumanEval_45_triangle_area.java:85: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:49:20 - ERROR - Failed to compile cpp-java/HumanEval_16_count_distinct_characters.java. Error:
+cpp-java/HumanEval_16_count_distinct_characters.java:10: error: for-each not applicable to expression type
+        for (char c : string) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_16_count_distinct_characters.java:11: error: cannot find symbol
+            count += count_distinct_characters(string);
+                     ^
+  symbol:   method count_distinct_characters(String)
+  location: class Problem
+2 errors
+
+2024-12-12 12:49:21 - ERROR - Failed to compile cpp-java/HumanEval_98_count_upper.java. Error:
+cpp-java/HumanEval_98_count_upper.java:11: error: ')' expected
+            if (std::string("AEIOU").find(s[i]) != std::string::npos) {
+                           ^
+cpp-java/HumanEval_98_count_upper.java:11: error: not a statement
+            if (std::string("AEIOU").find(s[i]) != std::string::npos) {
+                                                ^
+cpp-java/HumanEval_98_count_upper.java:11: error: ';' expected
+            if (std::string("AEIOU").find(s[i]) != std::string::npos) {
+                                                                    ^
+3 errors
+
+2024-12-12 12:49:21 - ERROR - Failed to compile cpp-java/HumanEval_8_sum_product.java. Error:
+cpp-java/HumanEval_8_sum_product.java:16: error: ';' expected
+        return std::make_pair(sum_value, prod_value);
+                             ^
+cpp-java/HumanEval_8_sum_product.java:16: error: not a statement
+        return std::make_pair(sum_value, prod_value);
+                              ^
+cpp-java/HumanEval_8_sum_product.java:16: error: ';' expected
+        return std::make_pair(sum_value, prod_value);
+                                       ^
+cpp-java/HumanEval_8_sum_product.java:16: error: not a statement
+        return std::make_pair(sum_value, prod_value);
+                                         ^
+cpp-java/HumanEval_8_sum_product.java:16: error: ';' expected
+        return std::make_pair(sum_value, prod_value);
+                                                   ^
+5 errors
+
+2024-12-12 12:49:21 - ERROR - Failed to compile cpp-java/HumanEval_75_is_multiply_prime.java. Error:
+cpp-java/HumanEval_75_is_multiply_prime.java:18: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:18: error: not a statement
+        return is_multiply_prime(a) ? a : b : c;
+                                              ^
+cpp-java/HumanEval_75_is_multiply_prime.java:21: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:21: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d;
+                                                  ^
+cpp-java/HumanEval_75_is_multiply_prime.java:24: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:24: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e;
+                                                      ^
+cpp-java/HumanEval_75_is_multiply_prime.java:27: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:27: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f;
+                                                          ^
+cpp-java/HumanEval_75_is_multiply_prime.java:30: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:30: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g;
+                                                              ^
+cpp-java/HumanEval_75_is_multiply_prime.java:33: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:33: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h;
+                                                                  ^
+cpp-java/HumanEval_75_is_multiply_prime.java:36: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:36: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i;
+                                                                      ^
+cpp-java/HumanEval_75_is_multiply_prime.java:39: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i : j;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:39: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i : j;
+                                                                          ^
+cpp-java/HumanEval_75_is_multiply_prime.java:42: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i : j : k;
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:42: error: not a statement
+        return is_multiply_prime(a) ? a : b : c : d : e : f : g : h : i : j : k;
+                                                                              ^
+cpp-java/HumanEval_75_is_multiply_prime.java:45: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c
+                                           ^
+cpp-java/HumanEval_75_is_multiply_prime.java:45: error: not a statement
+        return is_multiply_prime(a) ? a : b : c
+                                              ^
+cpp-java/HumanEval_75_is_multiply_prime.java:45: error: ';' expected
+        return is_multiply_prime(a) ? a : b : c
+                                               ^
+cpp-java/HumanEval_75_is_multiply_prime.java:46: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+22 errors
+
+2024-12-12 12:49:22 - INFO - Successfully compiled: cpp-java/HumanEval_150_x_or_y.java
+2024-12-12 12:49:22 - INFO - Successfully compiled: cpp-java/HumanEval_163_generate_integers.java
+2024-12-12 12:49:23 - INFO - Successfully compiled: cpp-java/HumanEval_94_skjkasdkd.java
+2024-12-12 12:49:23 - INFO - Successfully compiled: cpp-java/HumanEval_111_histogram.java
+2024-12-12 12:49:24 - ERROR - Failed to compile cpp-java/HumanEval_95_check_dict_case.java. Error:
+cpp-java/HumanEval_95_check_dict_case.java:12: error: not a statement
+        std::string state = "start";
+        ^
+cpp-java/HumanEval_95_check_dict_case.java:12: error: ';' expected
+        std::string state = "start";
+                   ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: not a statement
+        for (auto const& [key, val] : dict) {
+             ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: ';' expected
+        for (auto const& [key, val] : dict) {
+                 ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: illegal start of expression
+        for (auto const& [key, val] : dict) {
+                  ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: not a statement
+        for (auto const& [key, val] : dict) {
+                          ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: ';' expected
+        for (auto const& [key, val] : dict) {
+                             ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: not a statement
+        for (auto const& [key, val] : dict) {
+                               ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: ';' expected
+        for (auto const& [key, val] : dict) {
+                                  ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: not a statement
+        for (auto const& [key, val] : dict) {
+                                      ^
+cpp-java/HumanEval_95_check_dict_case.java:13: error: ';' expected
+        for (auto const& [key, val] : dict) {
+                                          ^
+cpp-java/HumanEval_95_check_dict_case.java:14: error: ')' expected
+            if (!std::all_of(key.begin(), key.end(), ::isalpha)) {
+                            ^
+cpp-java/HumanEval_95_check_dict_case.java:14: error: ')' expected
+            if (!std::all_of(key.begin(), key.end(), ::isalpha)) {
+                                        ^
+cpp-java/HumanEval_95_check_dict_case.java:14: error: ';' expected
+            if (!std::all_of(key.begin(), key.end(), ::isalpha)) {
+                                                   ^
+cpp-java/HumanEval_95_check_dict_case.java:14: error: not a statement
+            if (!std::all_of(key.begin(), key.end(), ::isalpha)) {
+                                                       ^
+cpp-java/HumanEval_95_check_dict_case.java:14: error: ';' expected
+            if (!std::all_of(key.begin(), key.end(), ::isalpha)) {
+                                                              ^
+cpp-java/HumanEval_95_check_dict_case.java:19: error: ')' expected
+                if (std::all_of(key.begin(), key.end(), ::isupper)) {
+                               ^
+cpp-java/HumanEval_95_check_dict_case.java:19: error: ')' expected
+                if (std::all_of(key.begin(), key.end(), ::isupper)) {
+                                           ^
+cpp-java/HumanEval_95_check_dict_case.java:19: error: ';' expected
+                if (std::all_of(key.begin(), key.end(), ::isupper)) {
+                                                      ^
+cpp-java/HumanEval_95_check_dict_case.java:19: error: not a statement
+                if (std::all_of(key.begin(), key.end(), ::isupper)) {
+                                                          ^
+cpp-java/HumanEval_95_check_dict_case.java:19: error: ';' expected
+                if (std::all_of(key.begin(), key.end(), ::isupper)) {
+                                                                 ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: ')' expected
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                                      ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: ')' expected
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                                                  ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: 'else' without 'if'
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                  ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: ';' expected
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                                                             ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: not a statement
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                                                                 ^
+cpp-java/HumanEval_95_check_dict_case.java:21: error: ';' expected
+                } else if (std::all_of(key.begin(), key.end(), ::islower)) {
+                                                                        ^
+cpp-java/HumanEval_95_check_dict_case.java:23: error: 'else' without 'if'
+                } else {
+                  ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ')' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                        ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ')' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                    ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                               ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: not a statement
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                   ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                          ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: not a statement
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                  ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                                 ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                                             ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                                                        ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: not a statement
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                                                            ^
+cpp-java/HumanEval_95_check_dict_case.java:26: error: ';' expected
+            } else if ((state == "upper" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == "lower" && !std::all_of(key.begin(), key.end(), ::islower))) {
+                                                                                                                                                                   ^
+39 errors
+
+2024-12-12 12:49:24 - ERROR - Failed to compile cpp-java/HumanEval_44_change_base.java. Error:
+cpp-java/HumanEval_44_change_base.java:45: error: modifier public not allowed here
+    public static void main(String[] args) {
+                  ^
+cpp-java/HumanEval_44_change_base.java:45: error: ',', ')', or '[' expected
+    public static void main(String[] args) {
+                           ^
+2 errors
+
+2024-12-12 12:49:24 - INFO - Successfully compiled: cpp-java/HumanEval_77_iscube.java
+2024-12-12 12:49:25 - ERROR - Failed to compile cpp-java/HumanEval_57_monotonic.java. Error:
+cpp-java/HumanEval_57_monotonic.java:57: error: modifier public not allowed here
+    public static void main(String[] args) {
+                  ^
+cpp-java/HumanEval_57_monotonic.java:57: error: ',', ')', or '[' expected
+    public static void main(String[] args) {
+                           ^
+2 errors
+
+2024-12-12 12:49:25 - ERROR - Failed to compile cpp-java/HumanEval_47_median.java. Error:
+cpp-java/HumanEval_47_median.java:100: error: repeated modifier
+    public static void main(String[] args) {
+    ^
+cpp-java/HumanEval_47_median.java:100: error: repeated modifier
+    public static void main(String[] args) {
+           ^
+2 errors
+
+2024-12-12 12:49:25 - ERROR - Failed to compile cpp-java/HumanEval_161_solve.java. Error:
+cpp-java/HumanEval_161_solve.java:37: error: illegal escape character
+            } else if (s.charAt(i) == '\x1b') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:37: error: illegal start of expression
+            } else if (s.charAt(i) == '\x1b') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:38: error: illegal escape character
+                sb.append("\x1b");
+                            ^
+cpp-java/HumanEval_161_solve.java:39: error: illegal escape character
+            } else if (s.charAt(i) == '\x1c') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:39: error: illegal start of expression
+            } else if (s.charAt(i) == '\x1c') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:39: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x1c') {
+              ^
+cpp-java/HumanEval_161_solve.java:40: error: illegal escape character
+                sb.append("\x1c");
+                            ^
+cpp-java/HumanEval_161_solve.java:41: error: illegal escape character
+            } else if (s.charAt(i) == '\x1d') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:41: error: illegal start of expression
+            } else if (s.charAt(i) == '\x1d') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:41: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x1d') {
+              ^
+cpp-java/HumanEval_161_solve.java:42: error: illegal escape character
+                sb.append("\x1d");
+                            ^
+cpp-java/HumanEval_161_solve.java:43: error: illegal escape character
+            } else if (s.charAt(i) == '\x1e') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:43: error: illegal start of expression
+            } else if (s.charAt(i) == '\x1e') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:43: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x1e') {
+              ^
+cpp-java/HumanEval_161_solve.java:44: error: illegal escape character
+                sb.append("\x1e");
+                            ^
+cpp-java/HumanEval_161_solve.java:45: error: illegal escape character
+            } else if (s.charAt(i) == '\x1f') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:45: error: illegal start of expression
+            } else if (s.charAt(i) == '\x1f') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:45: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x1f') {
+              ^
+cpp-java/HumanEval_161_solve.java:46: error: illegal escape character
+                sb.append("\x1f");
+                            ^
+cpp-java/HumanEval_161_solve.java:47: error: illegal escape character
+            } else if (s.charAt(i) == '\x7f') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:47: error: illegal start of expression
+            } else if (s.charAt(i) == '\x7f') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:47: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x7f') {
+              ^
+cpp-java/HumanEval_161_solve.java:48: error: illegal escape character
+                sb.append("\x7f");
+                            ^
+cpp-java/HumanEval_161_solve.java:49: error: illegal escape character
+            } else if (s.charAt(i) == '\x80') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:49: error: illegal start of expression
+            } else if (s.charAt(i) == '\x80') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:49: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x80') {
+              ^
+cpp-java/HumanEval_161_solve.java:50: error: illegal escape character
+                sb.append("\x80");
+                            ^
+cpp-java/HumanEval_161_solve.java:51: error: illegal escape character
+            } else if (s.charAt(i) == '\x81') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:51: error: illegal start of expression
+            } else if (s.charAt(i) == '\x81') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:51: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x81') {
+              ^
+cpp-java/HumanEval_161_solve.java:52: error: illegal escape character
+                sb.append("\x81");
+                            ^
+cpp-java/HumanEval_161_solve.java:53: error: illegal escape character
+            } else if (s.charAt(i) == '\x82') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:53: error: illegal start of expression
+            } else if (s.charAt(i) == '\x82') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:53: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x82') {
+              ^
+cpp-java/HumanEval_161_solve.java:54: error: illegal escape character
+                sb.append("\x82");
+                            ^
+cpp-java/HumanEval_161_solve.java:55: error: illegal escape character
+            } else if (s.charAt(i) == '\x83') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:55: error: illegal start of expression
+            } else if (s.charAt(i) == '\x83') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:55: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x83') {
+              ^
+cpp-java/HumanEval_161_solve.java:56: error: illegal escape character
+                sb.append("\x83");
+                            ^
+cpp-java/HumanEval_161_solve.java:57: error: illegal escape character
+            } else if (s.charAt(i) == '\x84') {
+                                        ^
+cpp-java/HumanEval_161_solve.java:57: error: illegal start of expression
+            } else if (s.charAt(i) == '\x84') {
+                                      ^
+cpp-java/HumanEval_161_solve.java:57: error: 'else' without 'if'
+            } else if (s.charAt(i) == '\x84') {
+              ^
+cpp-java/HumanEval_161_solve.java:58: error: illegal escape character
+                sb.append("\x84");
+                            ^
+cpp-java/HumanEval_161_solve.java:59: error: ')' expected
+            } else if (s
+                        ^
+cpp-java/HumanEval_161_solve.java:60: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+cpp-java/HumanEval_161_solve.java:59: error: 'else' without 'if'
+            } else if (s
+              ^
+46 errors
+
+2024-12-12 12:49:26 - ERROR - Failed to compile cpp-java/HumanEval_141_file_name_check.java. Error:
+cpp-java/HumanEval_141_file_name_check.java:88: error: unclosed string literal
+            return "
+                   ^
+cpp-java/HumanEval_141_file_name_check.java:89: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:49:26 - INFO - Successfully compiled: cpp-java/HumanEval_139_special_factorial.java
+2024-12-12 12:49:26 - INFO - Successfully compiled: cpp-java/HumanEval_35_max_element.java
+2024-12-12 12:49:27 - INFO - Successfully compiled: cpp-java/HumanEval_55_fib.java
+2024-12-12 12:49:27 - ERROR - Failed to compile cpp-java/HumanEval_25_factorize.java. Error:
+cpp-java/HumanEval_25_factorize.java:11: error: cannot find symbol
+        while (i <= sqrt(n) + 1) {
+                    ^
+  symbol:   method sqrt(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:28 - ERROR - Failed to compile cpp-java/HumanEval_107_even_odd_palindrome.java. Error:
+cpp-java/HumanEval_107_even_odd_palindrome.java:18: error: ';' expected
+        return std::make_pair(odd_palindrome_count, even_palindrome_count);
+                             ^
+cpp-java/HumanEval_107_even_odd_palindrome.java:18: error: not a statement
+        return std::make_pair(odd_palindrome_count, even_palindrome_count);
+                              ^
+cpp-java/HumanEval_107_even_odd_palindrome.java:18: error: ';' expected
+        return std::make_pair(odd_palindrome_count, even_palindrome_count);
+                                                  ^
+cpp-java/HumanEval_107_even_odd_palindrome.java:18: error: not a statement
+        return std::make_pair(odd_palindrome_count, even_palindrome_count);
+                                                    ^
+cpp-java/HumanEval_107_even_odd_palindrome.java:18: error: ';' expected
+        return std::make_pair(odd_palindrome_count, even_palindrome_count);
+                                                                         ^
+5 errors
+
+2024-12-12 12:49:28 - ERROR - Failed to compile cpp-java/HumanEval_119_match_parens.java. Error:
+cpp-java/HumanEval_119_match_parens.java:44: error: <identifier> expected
+    public static String
+                        ^
+1 error
+
+2024-12-12 12:49:28 - ERROR - Failed to compile cpp-java/HumanEval_0_has_close_elements.java. Error:
+cpp-java/HumanEval_0_has_close_elements.java:9: error: cannot find symbol
+        return has_close_elements(numbers, threshold);
+               ^
+  symbol:   method has_close_elements(ArrayList<Float>,float)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:29 - ERROR - Failed to compile cpp-java/HumanEval_66_digitSum.java. Error:
+cpp-java/HumanEval_66_digitSum.java:10: error: for-each not applicable to expression type
+        for (char c : s) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_66_digitSum.java:11: error: cannot find symbol
+            if (isupper(c)) ans += c;
+                ^
+  symbol:   method isupper(char)
+  location: class Problem
+2 errors
+
+2024-12-12 12:49:29 - ERROR - Failed to compile cpp-java/HumanEval_88_sort_array.java. Error:
+cpp-java/HumanEval_88_sort_array.java:11: error: incompatible types: possible lossy conversion from long to int
+            sortedArray.add(array.get(i));
+                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:49:30 - INFO - Successfully compiled: cpp-java/HumanEval_85_add.java
+2024-12-12 12:49:30 - INFO - Successfully compiled: cpp-java/HumanEval_123_get_odd_collatz.java
+2024-12-12 12:49:31 - ERROR - Failed to compile cpp-java/HumanEval_135_can_arrange.java. Error:
+cpp-java/HumanEval_135_can_arrange.java:12: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                    ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                   ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                            ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                          ^
+4 errors
+
+2024-12-12 12:49:31 - ERROR - Failed to compile cpp-java/HumanEval_128_prod_signs.java. Error:
+cpp-java/HumanEval_128_prod_signs.java:9: error: cannot find symbol
+        if (arr.size() == 0) return std::nullopt;
+                                    ^
+  symbol:   variable std
+  location: class Problem
+cpp-java/HumanEval_128_prod_signs.java:12: error: cannot find symbol
+        return prod_signs(arr);
+               ^
+  symbol:   method prod_signs(ArrayList<Long>)
+  location: class Problem
+2 errors
+
+2024-12-12 12:49:31 - INFO - Successfully compiled: cpp-java/HumanEval_54_same_chars.java
+2024-12-12 12:49:32 - ERROR - Failed to compile cpp-java/HumanEval_110_exchange.java. Error:
+cpp-java/HumanEval_110_exchange.java:11: error: cannot find symbol
+        for (auto i : lst1) {
+             ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_110_exchange.java:16: error: cannot find symbol
+        for (auto i : lst2) {
+             ^
+  symbol:   class auto
+  location: class Problem
+2 errors
+
+2024-12-12 12:49:32 - ERROR - Failed to compile cpp-java/HumanEval_73_smallest_change.java. Error:
+cpp-java/HumanEval_73_smallest_change.java:11: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i] != arr[arr.size() - i - 1]) {
+                    ^
+cpp-java/HumanEval_73_smallest_change.java:11: error: array required, but ArrayList<Long> found
+            if (arr[i] != arr[arr.size() - i - 1]) {
+                   ^
+cpp-java/HumanEval_73_smallest_change.java:11: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i] != arr[arr.size() - i - 1]) {
+                                             ^
+cpp-java/HumanEval_73_smallest_change.java:11: error: array required, but ArrayList<Long> found
+            if (arr[i] != arr[arr.size() - i - 1]) {
+                             ^
+4 errors
+
+2024-12-12 12:49:33 - ERROR - Failed to compile cpp-java/HumanEval_43_pairs_sum_to_zero.java. Error:
+cpp-java/HumanEval_43_pairs_sum_to_zero.java:16: error: cannot find symbol
+        return pairs_sum_to_zero(l);
+               ^
+  symbol:   method pairs_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:33 - INFO - Successfully compiled: cpp-java/HumanEval_49_modp.java
+2024-12-12 12:49:34 - ERROR - Failed to compile cpp-java/HumanEval_41_car_race_collision.java. Error:
+cpp-java/HumanEval_41_car_race_collision.java:11: error: cannot find symbol
+            result += car_race_collision(i);
+                      ^
+  symbol:   method car_race_collision(int)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:34 - ERROR - Failed to compile cpp-java/HumanEval_22_filter_integers.java. Error:
+cpp-java/HumanEval_22_filter_integers.java:11: error: '.class' expected
+            if (x.type() == typeid(int)) {
+                                      ^
+cpp-java/HumanEval_22_filter_integers.java:12: error: '.class' expected
+                res.add(std::any_cast<int>(x));
+                                         ^
+2 errors
+
+2024-12-12 12:49:34 - INFO - Successfully compiled: cpp-java/HumanEval_26_remove_duplicates.java
+2024-12-12 12:49:35 - INFO - Successfully compiled: cpp-java/HumanEval_97_multiply.java
+2024-12-12 12:49:35 - INFO - Successfully compiled: cpp-java/HumanEval_106_f.java
+2024-12-12 12:49:36 - ERROR - Failed to compile cpp-java/HumanEval_40_triples_sum_to_zero.java. Error:
+cpp-java/HumanEval_40_triples_sum_to_zero.java:16: error: cannot find symbol
+        return triples_sum_to_zero(l);
+               ^
+  symbol:   method triples_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:36 - ERROR - Failed to compile cpp-java/HumanEval_152_compare.java. Error:
+cpp-java/HumanEval_152_compare.java:11: error: array required, but ArrayList<Long> found
+            res.add(abs(game[i]-guess[i]));
+                            ^
+cpp-java/HumanEval_152_compare.java:11: error: array required, but ArrayList<Long> found
+            res.add(abs(game[i]-guess[i]));
+                                     ^
+2 errors
+
+2024-12-12 12:49:37 - ERROR - Failed to compile cpp-java/HumanEval_156_int_to_mini_roman.java. Error:
+cpp-java/HumanEval_156_int_to_mini_roman.java:10: error: cannot find symbol
+        sb.append(int_to_mini_roman(number));
+                  ^
+  symbol:   method int_to_mini_roman(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:37 - ERROR - Failed to compile cpp-java/HumanEval_136_largest_smallest_integers.java. Error:
+cpp-java/HumanEval_136_largest_smallest_integers.java:8: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(ArrayList<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:11: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(long[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:14: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(int[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:17: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(double[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:20: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(float[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:23: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(char[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:26: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(boolean[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:29: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(char[][] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:32: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(String[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:35: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(ArrayList<String> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:38: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(long[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:41: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(int[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:44: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(double[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:47: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(float[] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:50: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(double[][] lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:8: error: name clash: largestSmallestIntegers(ArrayList<Long>) in Problem and largestSmallestIntegers(ArrayList<String>) in Problem have the same erasure, yet neither hides the other
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(ArrayList<Long> lst) {
+                                                       ^
+cpp-java/HumanEval_136_largest_smallest_integers.java:9: error: cannot find symbol
+        return largest_smallest_integers(lst.toArray());
+               ^
+  symbol:   method largest_smallest_integers(Object[])
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:12: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<long[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:15: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<int[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:18: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<double[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:21: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<float[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:24: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<char[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:27: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<boolean[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:30: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<char[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:33: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<String>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:35: error: name clash: largestSmallestIntegers(ArrayList<String>) in Problem and largestSmallestIntegers(ArrayList<Long>) in Problem have the same erasure, yet neither hides the other
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(ArrayList<String> lst) {
+                                                       ^
+cpp-java/HumanEval_136_largest_smallest_integers.java:36: error: cannot find symbol
+        return largest_smallest_integers(lst.toArray());
+               ^
+  symbol:   method largest_smallest_integers(Object[])
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:39: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<long[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:42: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<int[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:45: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<double[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:48: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<float[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:51: error: cannot find symbol
+        return largest_smallest_integers(Arrays.asList(lst));
+               ^
+  symbol:   method largest_smallest_integers(List<double[]>)
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:55: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+                                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:56: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l, (long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+                                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:57: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)1l, (long)3l, (long)2l, (long)4l, (long)5l, (long)6l, (long)-2l)))).equals(Optional.of(Pair.with(-2l, 1l))));
+                                                                                                                                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:58: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)4l, (long)5l, (long)3l, (long)6l, (long)2l, (long)7l, (long)-7l)))).equals(Optional.of(Pair.with(-7l, 2l))));
+                                                                                                                                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:59: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)7l, (long)3l, (long)8l, (long)4l, (long)9l, (long)2l, (long)5l, (long)-9l)))).equals(Optional.of(Pair.with(-9l, 2l))));
+                                                                                                                                                                             ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:60: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList()))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:61: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+                                                                                          ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:62: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:63: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l, (long)0l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:64: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+                                                                                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_136_largest_smallest_integers.java:65: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)-100l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+                                                                                                                                                               ^
+  symbol:   variable Pair
+  location: class Problem
+43 errors
+
+2024-12-12 12:49:37 - ERROR - Failed to compile cpp-java/HumanEval_59_largest_prime_factor.java. Error:
+cpp-java/HumanEval_59_largest_prime_factor.java:10: error: ';' expected
+        for(long i=2;i<=n;i++) if(n%i==0 && is_prime(i)) largest=std::max(largest,i);
+                                                                         ^
+cpp-java/HumanEval_59_largest_prime_factor.java:10: error: not a statement
+        for(long i=2;i<=n;i++) if(n%i==0 && is_prime(i)) largest=std::max(largest,i);
+                                                                          ^
+cpp-java/HumanEval_59_largest_prime_factor.java:10: error: ';' expected
+        for(long i=2;i<=n;i++) if(n%i==0 && is_prime(i)) largest=std::max(largest,i);
+                                                                                 ^
+cpp-java/HumanEval_59_largest_prime_factor.java:10: error: not a statement
+        for(long i=2;i<=n;i++) if(n%i==0 && is_prime(i)) largest=std::max(largest,i);
+                                                                                  ^
+cpp-java/HumanEval_59_largest_prime_factor.java:10: error: ';' expected
+        for(long i=2;i<=n;i++) if(n%i==0 && is_prime(i)) largest=std::max(largest,i);
+                                                                                   ^
+5 errors
+
+2024-12-12 12:49:38 - ERROR - Failed to compile cpp-java/HumanEval_87_get_row.java. Error:
+cpp-java/HumanEval_87_get_row.java:13: error: ')' or ',' expected
+                    coords.add(std::make_pair(i, i));
+                                             ^
+cpp-java/HumanEval_87_get_row.java:13: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                              ^
+cpp-java/HumanEval_87_get_row.java:13: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                               ^
+cpp-java/HumanEval_87_get_row.java:13: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                                 ^
+cpp-java/HumanEval_87_get_row.java:13: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                                  ^
+5 errors
+
+2024-12-12 12:49:38 - INFO - Successfully compiled: cpp-java/HumanEval_5_intersperse.java
+2024-12-12 12:49:39 - INFO - Successfully compiled: cpp-java/HumanEval_63_fibfib.java
+2024-12-12 12:49:39 - INFO - Successfully compiled: cpp-java/HumanEval_46_fib4.java
+2024-12-12 12:49:39 - INFO - Successfully compiled: cpp-java/HumanEval_158_find_max.java
+2024-12-12 12:49:40 - INFO - Successfully compiled: cpp-java/HumanEval_69_search.java
+2024-12-12 12:49:40 - ERROR - Failed to compile cpp-java/HumanEval_155_even_odd_count.java. Error:
+cpp-java/HumanEval_155_even_odd_count.java:11: error: ')' expected
+        for (auto i: std::to_string(abs(num))) {
+                                   ^
+cpp-java/HumanEval_155_even_odd_count.java:11: error: ';' expected
+        for (auto i: std::to_string(abs(num))) {
+                                             ^
+cpp-java/HumanEval_155_even_odd_count.java:12: error: '.class' expected
+            if (int(i)%2==0) {
+                   ^
+cpp-java/HumanEval_155_even_odd_count.java:12: error: not a statement
+            if (int(i)%2==0) {
+                        ^
+cpp-java/HumanEval_155_even_odd_count.java:12: error: ';' expected
+            if (int(i)%2==0) {
+                           ^
+cpp-java/HumanEval_155_even_odd_count.java:14: error: 'else' without 'if'
+            } else {
+              ^
+cpp-java/HumanEval_155_even_odd_count.java:18: error: ';' expected
+        return std::make_pair(even_count, odd_count);
+                             ^
+cpp-java/HumanEval_155_even_odd_count.java:18: error: not a statement
+        return std::make_pair(even_count, odd_count);
+                              ^
+cpp-java/HumanEval_155_even_odd_count.java:18: error: ';' expected
+        return std::make_pair(even_count, odd_count);
+                                        ^
+cpp-java/HumanEval_155_even_odd_count.java:18: error: not a statement
+        return std::make_pair(even_count, odd_count);
+                                          ^
+cpp-java/HumanEval_155_even_odd_count.java:18: error: ';' expected
+        return std::make_pair(even_count, odd_count);
+                                                   ^
+11 errors
+
+2024-12-12 12:49:41 - INFO - Successfully compiled: cpp-java/HumanEval_17_parse_music.java
+2024-12-12 12:49:41 - INFO - Successfully compiled: cpp-java/HumanEval_24_largest_divisor.java
+2024-12-12 12:49:42 - INFO - Successfully compiled: cpp-java/HumanEval_70_strange_sort_list.java
+2024-12-12 12:49:42 - ERROR - Failed to compile cpp-java/HumanEval_62_derivative.java. Error:
+cpp-java/HumanEval_62_derivative.java:11: error: array required, but ArrayList<Long> found
+            res.add(i * xs[i]);
+                          ^
+1 error
+
+2024-12-12 12:49:43 - ERROR - Failed to compile cpp-java/HumanEval_101_words_string.java. Error:
+cpp-java/HumanEval_101_words_string.java:87: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:43 - ERROR - Failed to compile cpp-java/HumanEval_144_simplify.java. Error:
+cpp-java/HumanEval_144_simplify.java:36: error: ')' expected
+        if (n
+             ^
+cpp-java/HumanEval_144_simplify.java:37: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:49:43 - ERROR - Failed to compile cpp-java/HumanEval_124_valid_date.java. Error:
+cpp-java/HumanEval_124_valid_date.java:9: error: cannot find symbol
+        return valid_date(date);
+               ^
+  symbol:   method valid_date(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:44 - INFO - Successfully compiled: cpp-java/HumanEval_108_count_nums.java
+2024-12-12 12:49:44 - INFO - Successfully compiled: cpp-java/HumanEval_34_unique.java
+2024-12-12 12:49:45 - INFO - Successfully compiled: cpp-java/HumanEval_84_solve.java
+2024-12-12 12:49:45 - ERROR - Failed to compile cpp-java/HumanEval_3_below_zero.java. Error:
+cpp-java/HumanEval_3_below_zero.java:9: error: cannot find symbol
+        return below_zero(operations);
+               ^
+  symbol:   method below_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:46 - ERROR - Failed to compile cpp-java/HumanEval_13_greatest_common_divisor.java. Error:
+cpp-java/HumanEval_13_greatest_common_divisor.java:10: error: incompatible types: long cannot be converted to boolean
+        while (b) {
+               ^
+1 error
+
+2024-12-12 12:49:46 - ERROR - Failed to compile cpp-java/HumanEval_23_strlen.java. Error:
+cpp-java/HumanEval_23_strlen.java:59: error: ';' expected
+    public static long strlen
+                             ^
+1 error
+
+2024-12-12 12:49:46 - ERROR - Failed to compile cpp-java/HumanEval_39_prime_fib.java. Error:
+cpp-java/HumanEval_39_prime_fib.java:9: error: cannot find symbol
+        return prime_fib(n);
+               ^
+  symbol:   method prime_fib(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:47 - INFO - Successfully compiled: cpp-java/HumanEval_67_fruit_distribution.java
+2024-12-12 12:49:47 - ERROR - Failed to compile cpp-java/HumanEval_76_is_simple_power.java. Error:
+cpp-java/HumanEval_76_is_simple_power.java:9: error: cannot find symbol
+        return is_simple_power(x, n);
+               ^
+  symbol:   method is_simple_power(long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:47 - INFO - Successfully compiled: cpp-java/HumanEval_104_unique_digits.java
+2024-12-12 12:49:48 - ERROR - Failed to compile cpp-java/HumanEval_12_longest.java. Error:
+cpp-java/HumanEval_12_longest.java:10: error: cannot find symbol
+            return std::nullopt;
+                   ^
+  symbol:   variable std
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:12: error: cannot find symbol
+        auto max = strings.get(0);
+        ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:18: error: method reference not expected here
+        return std::optional<String>(max);
+               ^
+cpp-java/HumanEval_12_longest.java:18: error: cannot find symbol
+        return std::optional<String>(max);
+                             ^
+  symbol:   variable String
+  location: class Problem
+4 errors
+
+2024-12-12 12:49:48 - INFO - Successfully compiled: cpp-java/HumanEval_60_sum_to_n.java
+2024-12-12 12:49:49 - ERROR - Failed to compile cpp-java/HumanEval_138_is_equal_to_sum_even.java. Error:
+cpp-java/HumanEval_138_is_equal_to_sum_even.java:52: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:49 - ERROR - Failed to compile cpp-java/HumanEval_52_below_threshold.java. Error:
+cpp-java/HumanEval_52_below_threshold.java:9: error: cannot find symbol
+        return l.stream().filter(l1 -> below_threshold(l1, t)).findAny().isPresent();
+                                       ^
+  symbol:   method below_threshold(Long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:50 - INFO - Successfully compiled: cpp-java/HumanEval_157_right_angle_triangle.java
+2024-12-12 12:49:50 - ERROR - Failed to compile cpp-java/HumanEval_80_is_happy.java. Error:
+cpp-java/HumanEval_80_is_happy.java:9: error: cannot find symbol
+        return is_happy(s.toLowerCase());
+               ^
+  symbol:   method is_happy(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:50 - INFO - Successfully compiled: cpp-java/HumanEval_99_closest_integer.java
+2024-12-12 12:49:51 - ERROR - Failed to compile cpp-java/HumanEval_83_starts_one_ends.java. Error:
+cpp-java/HumanEval_83_starts_one_ends.java:116: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:51 - INFO - Successfully compiled: cpp-java/HumanEval_36_fizz_buzz.java
+2024-12-12 12:49:52 - INFO - Successfully compiled: cpp-java/HumanEval_30_get_positive.java
+2024-12-12 12:49:52 - ERROR - Failed to compile cpp-java/HumanEval_1_separate_paren_groups.java. Error:
+cpp-java/HumanEval_1_separate_paren_groups.java:12: error: for-each not applicable to expression type
+        for (char c : paren_string) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_1_separate_paren_groups.java:15: error: cannot find symbol
+                current_string.push_back(c);
+                              ^
+  symbol:   method push_back(char)
+  location: variable current_string of type String
+cpp-java/HumanEval_1_separate_paren_groups.java:18: error: cannot find symbol
+                current_string.push_back(c);
+                              ^
+  symbol:   method push_back(char)
+  location: variable current_string of type String
+cpp-java/HumanEval_1_separate_paren_groups.java:21: error: cannot find symbol
+                    current_string.clear();
+                                  ^
+  symbol:   method clear()
+  location: variable current_string of type String
+4 errors
+
+2024-12-12 12:49:53 - ERROR - Failed to compile cpp-java/HumanEval_149_sorted_list_sum.java. Error:
+cpp-java/HumanEval_149_sorted_list_sum.java:10: error: cannot find symbol
+        for (auto i:lst) {
+             ^
+  symbol:   class auto
+  location: class Problem
+1 error
+
+2024-12-12 12:49:53 - INFO - Successfully compiled: cpp-java/HumanEval_58_common.java
+2024-12-12 12:49:54 - INFO - Successfully compiled: cpp-java/HumanEval_51_remove_vowels.java
+2024-12-12 12:49:54 - ERROR - Failed to compile cpp-java/HumanEval_19_sort_numbers.java. Error:
+cpp-java/HumanEval_19_sort_numbers.java:9: error: cannot find symbol
+        return sort_numbers(numbers);
+               ^
+  symbol:   method sort_numbers(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:54 - ERROR - Failed to compile cpp-java/HumanEval_109_move_one_ball.java. Error:
+cpp-java/HumanEval_109_move_one_ball.java:12: error: illegal start of expression
+        long min_value = *std::min_element(arr.begin(), arr.end());
+                         ^
+cpp-java/HumanEval_109_move_one_ball.java:12: error: ';' expected
+        long min_value = *std::min_element(arr.begin(), arr.end());
+                                          ^
+cpp-java/HumanEval_109_move_one_ball.java:12: error: ';' expected
+        long min_value = *std::min_element(arr.begin(), arr.end());
+                                                      ^
+cpp-java/HumanEval_109_move_one_ball.java:12: error: ';' expected
+        long min_value = *std::min_element(arr.begin(), arr.end());
+                                                                 ^
+cpp-java/HumanEval_109_move_one_ball.java:13: error: ';' expected
+        long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();
+                                  ^
+cpp-java/HumanEval_109_move_one_ball.java:13: error: ';' expected
+        long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();
+                                              ^
+cpp-java/HumanEval_109_move_one_ball.java:13: error: ';' expected
+        long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();
+                                                         ^
+cpp-java/HumanEval_109_move_one_ball.java:13: error: not a statement
+        long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();
+                                                           ^
+cpp-java/HumanEval_109_move_one_ball.java:13: error: ';' expected
+        long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();
+                                                                    ^
+cpp-java/HumanEval_109_move_one_ball.java:14: error: illegal start of expression
+        long max_value = *std::max_element(arr.begin(), arr.end());
+                         ^
+cpp-java/HumanEval_109_move_one_ball.java:14: error: ';' expected
+        long max_value = *std::max_element(arr.begin(), arr.end());
+                                          ^
+cpp-java/HumanEval_109_move_one_ball.java:14: error: ';' expected
+        long max_value = *std::max_element(arr.begin(), arr.end());
+                                                      ^
+cpp-java/HumanEval_109_move_one_ball.java:14: error: ';' expected
+        long max_value = *std::max_element(arr.begin(), arr.end());
+                                                                 ^
+cpp-java/HumanEval_109_move_one_ball.java:15: error: ';' expected
+        long max_index = std::find(arr.begin(), arr.end(), max_value) - arr.begin();
+                                  ^
+cpp-java/HumanEval_109_move_one_ball.java:15: error: ';' expected
+        long max_index = std::find(arr.begin(), arr.end(), max_value) - arr.begin();
+                                              ^
+cpp-java/HumanEval_109_move_one_ball.java:15: error: ';' expected
+        long max_index = std::find(arr.begin(), arr.end(), max_value) - arr.begin();
+                                                         ^
+cpp-java/HumanEval_109_move_one_ball.java:15: error: not a statement
+        long max_index = std::find(arr.begin(), arr.end(), max_value) - arr.begin();
+                                                           ^
+cpp-java/HumanEval_109_move_one_ball.java:15: error: ';' expected
+        long max_index = std::find(arr.begin(), arr.end(), max_value) - arr.begin();
+                                                                    ^
+18 errors
+
+2024-12-12 12:49:55 - ERROR - Failed to compile cpp-java/HumanEval_154_cycpattern_check.java. Error:
+cpp-java/HumanEval_154_cycpattern_check.java:9: error: cannot find symbol
+        return cycpattern_check(a, b);
+               ^
+  symbol:   method cycpattern_check(String,String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:55 - ERROR - Failed to compile cpp-java/HumanEval_42_incr_list.java. Error:
+cpp-java/HumanEval_42_incr_list.java:99: error: ',', ')', or '[' expected
+    public static ArrayList<Long> incrList(ArrayList<Long> l, long n, long m, long n2, long n
+                                                                                             ^
+1 error
+
+2024-12-12 12:49:55 - INFO - Successfully compiled: cpp-java/HumanEval_4_mean_absolute_deviation.java
+2024-12-12 12:49:56 - ERROR - Failed to compile cpp-java/HumanEval_15_string_sequence.java. Error:
+cpp-java/HumanEval_15_string_sequence.java:11: error: ';' expected
+            result += std::to_string(i);
+                                    ^
+cpp-java/HumanEval_15_string_sequence.java:11: error: not a statement
+            result += std::to_string(i);
+                                     ^
+cpp-java/HumanEval_15_string_sequence.java:11: error: ';' expected
+            result += std::to_string(i);
+                                      ^
+3 errors
+
+2024-12-12 12:49:56 - INFO - Successfully compiled: cpp-java/HumanEval_143_words_in_sentence.java
+2024-12-12 12:49:57 - INFO - Successfully compiled: cpp-java/HumanEval_133_sum_squares.java
+2024-12-12 12:49:57 - ERROR - Failed to compile cpp-java/HumanEval_27_flip_case.java. Error:
+cpp-java/HumanEval_27_flip_case.java:48: error: repeated modifier
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:57 - ERROR - Failed to compile cpp-java/HumanEval_91_is_bored.java. Error:
+cpp-java/HumanEval_91_is_bored.java:12: error: cannot find symbol
+                res += is_bored(S.substring(0, i));
+                       ^
+  symbol:   method is_bored(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:58 - INFO - Successfully compiled: cpp-java/HumanEval_21_rescale_to_unit.java
+2024-12-12 12:49:58 - ERROR - Failed to compile cpp-java/HumanEval_90_next_smallest.java. Error:
+cpp-java/HumanEval_90_next_smallest.java:48: error: modifier public not allowed here
+    public static void main(String[] args) {
+                  ^
+cpp-java/HumanEval_90_next_smallest.java:48: error: ',', ')', or '[' expected
+    public static void main(String[] args) {
+                           ^
+2 errors
+
+2024-12-12 12:49:59 - ERROR - Failed to compile cpp-java/HumanEval_61_correct_bracketing.java. Error:
+cpp-java/HumanEval_61_correct_bracketing.java:9: error: cannot find symbol
+        return correct_bracketing(brackets.toLowerCase());
+               ^
+  symbol:   method correct_bracketing(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:49:59 - ERROR - Failed to compile cpp-java/HumanEval_71_triangle_area.java. Error:
+cpp-java/HumanEval_71_triangle_area.java:64: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:49:59 - INFO - Successfully compiled: cpp-java/HumanEval_14_all_prefixes.java
+2024-12-12 12:50:00 - INFO - Successfully compiled: cpp-java/HumanEval_28_concatenate.java
+2024-12-12 12:50:00 - ERROR - Failed to compile cpp-java/HumanEval_11_string_xor.java. Error:
+cpp-java/HumanEval_11_string_xor.java:10: error: cannot find symbol
+        for (int i = 0; i < a.size(); i++) {
+                             ^
+  symbol:   method size()
+  location: variable a of type String
+cpp-java/HumanEval_11_string_xor.java:11: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                 ^
+cpp-java/HumanEval_11_string_xor.java:11: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                         ^
+3 errors
+
+2024-12-12 12:50:00 - ERROR - Failed to compile cpp-java/HumanEval_20_find_closest_elements.java. Error:
+cpp-java/HumanEval_20_find_closest_elements.java:44: error: <identifier> expected
+    public static Pair
+                      ^
+1 error
+
+2024-12-12 12:50:01 - ERROR - Failed to compile cpp-java/HumanEval_146_specialFilter.java. Error:
+cpp-java/HumanEval_146_specialFilter.java:12: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                           ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                             ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                                                              ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                                 ^
+5 errors
+
+2024-12-12 12:50:01 - ERROR - Failed to compile cpp-java/HumanEval_118_get_closest_vowel.java. Error:
+cpp-java/HumanEval_118_get_closest_vowel.java:9: error: cannot find symbol
+        if (word.size() < 3) {
+                ^
+  symbol:   method size()
+  location: variable word of type String
+cpp-java/HumanEval_118_get_closest_vowel.java:14: error: cannot find symbol
+        for (int i = 0; i < word.size() - 1; i++) {
+                                ^
+  symbol:   method size()
+  location: variable word of type String
+cpp-java/HumanEval_118_get_closest_vowel.java:21: error: cannot find symbol
+            closest += get_closest_vowel(word.substring(i, i + 2));
+                       ^
+  symbol:   method get_closest_vowel(String)
+  location: class Problem
+3 errors
+
+2024-12-12 12:50:02 - ERROR - Failed to compile cpp-java/HumanEval_159_eat.java. Error:
+cpp-java/HumanEval_159_eat.java:12: error: incompatible types: possible lossy conversion from long to int
+            result.add(eat.get(i));
+                               ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:50:02 - ERROR - Failed to compile cpp-java/HumanEval_127_intersection.java. Error:
+cpp-java/HumanEval_127_intersection.java:8: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                      ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:8: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                                                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:24: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:24: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+18 errors
+
+2024-12-12 12:50:03 - ERROR - Failed to compile cpp-java/HumanEval_56_correct_bracketing.java. Error:
+cpp-java/HumanEval_56_correct_bracketing.java:9: error: cannot find symbol
+        return correct_bracketing(brackets.toLowerCase());
+               ^
+  symbol:   method correct_bracketing(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:03 - ERROR - Failed to compile cpp-java/HumanEval_18_how_many_times.java. Error:
+cpp-java/HumanEval_18_how_many_times.java:10: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                  ^
+  symbol:   method size()
+  location: variable string of type String
+cpp-java/HumanEval_18_how_many_times.java:10: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                                     ^
+  symbol:   method size()
+  location: variable substring of type String
+cpp-java/HumanEval_18_how_many_times.java:11: error: cannot find symbol
+            if (string.substr(i, substring.size()) == substring) {
+                                          ^
+  symbol:   method size()
+  location: variable substring of type String
+3 errors
+
+2024-12-12 12:50:03 - ERROR - Failed to compile cpp-java/HumanEval_112_reverse_delete.java. Error:
+cpp-java/HumanEval_112_reverse_delete.java:104: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:50:04 - INFO - Successfully compiled: cpp-java/HumanEval_147_get_max_triples.java
+2024-12-12 12:50:04 - ERROR - Failed to compile cpp-java/HumanEval_2_truncate_number.java. Error:
+cpp-java/HumanEval_2_truncate_number.java:32: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:35: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:38: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:41: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:44: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:47: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:50: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:53: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:56: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:59: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:62: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:65: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:68: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:71: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:74: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:77: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:80: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:83: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:86: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:89: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:92: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:95: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:98: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:101: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:104: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:107: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:110: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:9: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:12: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:15: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:18: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:21: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:24: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:27: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:30: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:33: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:36: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:39: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:42: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:45: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:48: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:51: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:54: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:57: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:60: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:63: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:66: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:69: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:72: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:75: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:78: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:81: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:84: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:87: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:90: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:93: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:96: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:99: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:102: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:105: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:108: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:111: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+62 errors
+
+2024-12-12 12:50:04 - ERROR - Failed to compile cpp-java/HumanEval_132_is_nested.java. Error:
+cpp-java/HumanEval_132_is_nested.java:47: error: <identifier> expected
+    public static String getNestedString(String string, int index, int length, int index2, int length2, int
+                                                                                                           ^
+1 error
+
+2024-12-12 12:50:05 - INFO - Successfully compiled: cpp-java/HumanEval_78_hex_key.java
+2024-12-12 12:50:05 - ERROR - Failed to compile cpp-java/HumanEval_148_bf.java. Error:
+cpp-java/HumanEval_148_bf.java:10: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                     ^
+cpp-java/HumanEval_148_bf.java:10: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                          ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                              ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                       ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                               ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                           ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                    ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                      ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                             ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                     ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                                          ^
+cpp-java/HumanEval_148_bf.java:11: error: illegal start of expression
+            return {};
+                   ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:13: error: not a statement
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:14: error: not a statement
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:16: error: illegal start of expression
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:16: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:16: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:16: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:16: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                                  ^
+cpp-java/HumanEval_148_bf.java:18: error: illegal start of expression
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:18: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:18: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:18: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:18: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                                  ^
+34 errors
+
+2024-12-12 12:50:06 - INFO - Successfully compiled: cpp-java/HumanEval_74_total_match.java
+2024-12-12 12:50:06 - ERROR - Failed to compile cpp-java/HumanEval_6_parse_nested_parens.java. Error:
+cpp-java/HumanEval_6_parse_nested_parens.java:20: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                        ^
+cpp-java/HumanEval_6_parse_nested_parens.java:20: error: not a statement
+                    max_depth = std::max(depth, max_depth);
+                                         ^
+cpp-java/HumanEval_6_parse_nested_parens.java:20: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                              ^
+cpp-java/HumanEval_6_parse_nested_parens.java:20: error: not a statement
+                    max_depth = std::max(depth, max_depth);
+                                                ^
+cpp-java/HumanEval_6_parse_nested_parens.java:20: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                                         ^
+cpp-java/HumanEval_6_parse_nested_parens.java:22: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                        ^
+cpp-java/HumanEval_6_parse_nested_parens.java:22: error: not a statement
+                    max_depth = std::max(depth, max_depth);
+                                         ^
+cpp-java/HumanEval_6_parse_nested_parens.java:22: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                              ^
+cpp-java/HumanEval_6_parse_nested_parens.java:22: error: not a statement
+                    max_depth = std::max(depth, max_depth);
+                                                ^
+cpp-java/HumanEval_6_parse_nested_parens.java:22: error: ';' expected
+                    max_depth = std::max(depth, max_depth);
+                                                         ^
+10 errors
+
+2024-12-12 12:50:06 - ERROR - Failed to compile cpp-java/HumanEval_93_encode.java. Error:
+cpp-java/HumanEval_93_encode.java:44: error: ',', ')', or '[' expected
+    public static String encode(String message, String vowels, String vowels_replace, String vowels_replace_replace, String vowels_replace_replace
+                                                                                                                                                  ^
+1 error
+
+2024-12-12 12:50:07 - INFO - Successfully compiled: cpp-java/HumanEval_102_choose_num.java
+2024-12-12 12:50:07 - INFO - Successfully compiled: cpp-java/HumanEval_53_add.java
+2024-12-12 12:50:08 - INFO - Successfully compiled: cpp-java/HumanEval_96_count_up_to.java
+2024-12-12 12:50:08 - ERROR - Failed to compile cpp-java/HumanEval_126_is_sorted.java. Error:
+cpp-java/HumanEval_126_is_sorted.java:9: error: cannot find symbol
+        return is_sorted(lst);
+               ^
+  symbol:   method is_sorted(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:08 - ERROR - Failed to compile cpp-java/HumanEval_113_odd_count.java. Error:
+cpp-java/HumanEval_113_odd_count.java:11: error: ';' expected
+            int n = std::count_if(arr.begin(), arr.end(), [](char c){return c%2==1;});
+                                 ^
+cpp-java/HumanEval_113_odd_count.java:11: error: ';' expected
+            int n = std::count_if(arr.begin(), arr.end(), [](char c){return c%2==1;});
+                                             ^
+cpp-java/HumanEval_113_odd_count.java:11: error: ';' expected
+            int n = std::count_if(arr.begin(), arr.end(), [](char c){return c%2==1;});
+                                                        ^
+cpp-java/HumanEval_113_odd_count.java:11: error: ';' expected
+            int n = std::count_if(arr.begin(), arr.end(), [](char c){return c%2==1;});
+                                                                   ^
+cpp-java/HumanEval_113_odd_count.java:11: error: illegal start of expression
+            int n = std::count_if(arr.begin(), arr.end(), [](char c){return c%2==1;});
+                                                                                    ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ')' or ',' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                        ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                         ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                          ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                           ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                         ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                          ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                           ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                     ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                   ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                    ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                     ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                                    ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                                                  ^
+cpp-java/HumanEval_113_odd_count.java:12: error: not a statement
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                                                   ^
+cpp-java/HumanEval_113_odd_count.java:12: error: ';' expected
+            res.push_back("the number of odd elements " + std::to_string(n) + "n the str"+ std::to_string(n) +"ng "+ std::to_string(n) +" of the "+ std::to_string(n) +"nput.");
+                                                                                                                                                                    ^
+20 errors
+
+2024-12-12 12:50:09 - INFO - Successfully compiled: cpp-java/HumanEval_89_encrypt.java
+2024-12-12 12:50:09 - ERROR - Failed to compile cpp-java/HumanEval_68_pluck.java. Error:
+cpp-java/HumanEval_68_pluck.java:58: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:50:10 - ERROR - Failed to compile cpp-java/HumanEval_48_is_palindrome.java. Error:
+cpp-java/HumanEval_48_is_palindrome.java:9: error: cannot find symbol
+        return is_palindrome(text.toLowerCase());
+               ^
+  symbol:   method is_palindrome(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:10 - INFO - Successfully compiled: cpp-java/HumanEval_37_sort_even.java
+2024-12-12 12:50:10 - ERROR - Failed to compile cpp-java/HumanEval_72_will_it_fly.java. Error:
+cpp-java/HumanEval_72_will_it_fly.java:9: error: cannot find symbol
+        if (will_it_fly(q, w)) {
+            ^
+  symbol:   method will_it_fly(ArrayList<Long>,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:11 - INFO - Successfully compiled: cpp-java/HumanEval_121_solution.java
+2024-12-12 12:50:11 - INFO - Successfully compiled: cpp-java/HumanEval_105_by_length.java
+2024-12-12 12:50:12 - ERROR - Failed to compile cpp-java/HumanEval_100_make_a_pile.java. Error:
+cpp-java/HumanEval_100_make_a_pile.java:82: error: ')' or ',' expected
+            ans.add(n+2
+                       ^
+cpp-java/HumanEval_100_make_a_pile.java:83: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:50:12 - INFO - Successfully compiled: cpp-java/HumanEval_64_vowels_count.java
+2024-12-12 12:50:13 - INFO - Successfully compiled: cpp-java/HumanEval_153_Strongest_Extension.java
+2024-12-12 12:50:13 - INFO - Successfully compiled: cpp-java/HumanEval_9_rolling_max.java
+2024-12-12 12:50:14 - ERROR - Failed to compile cpp-java/HumanEval_82_prime_length.java. Error:
+cpp-java/HumanEval_82_prime_length.java:9: error: cannot find symbol
+        return prime_length(string);
+               ^
+  symbol:   method prime_length(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:14 - ERROR - Failed to compile cpp-java/HumanEval_145_order_by_points.java. Error:
+cpp-java/HumanEval_145_order_by_points.java:11: error: incompatible types: possible lossy conversion from long to int
+            result.add(nums.get(i));
+                                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:50:14 - INFO - Directory: cpp-java
+2024-12-12 12:50:14 - INFO - Total Files: 148
+2024-12-12 12:50:14 - INFO - Successful Compilations: 60
+2024-12-12 12:50:14 - INFO - Failed Compilations: 88
+2024-12-12 12:50:14 - INFO - Success Rate: 40.54%

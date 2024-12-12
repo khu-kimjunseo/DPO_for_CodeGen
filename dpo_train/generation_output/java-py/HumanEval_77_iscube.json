@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_77_iscube",
+    "language": "py",
+    "prompt": "def iscube(a: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_77_iscube.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(1) == True\n    assert candidate(2) == False\n    assert candidate(-1) == True\n    assert candidate(64) == True\n    assert candidate(180) == False\n    assert candidate(1000) == True\n    assert candidate(0) == True\n    assert candidate(1729) == False\n\ndef test_check():\n    check(iscube)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean iscube(long a) {\n        a = Math.abs(a);\n        return Math.pow(Math.round(Math.cbrt(a)), 3) == a;\n    }\n    \n}\n\n### Python version\n\ndef iscube(a: int) -> bool:\n"
+}

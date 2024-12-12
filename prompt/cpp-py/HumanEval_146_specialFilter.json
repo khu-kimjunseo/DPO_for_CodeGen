@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_146_specialFilter",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef specialFilter(nums: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_146_specialFilter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([5, -2, 1, -5]) == 0\n    assert candidate([15, -73, 14, -15]) == 1\n    assert candidate([33, -2, -3, 45, 21, 109]) == 2\n    assert candidate([43, -12, 93, 125, 121, 109]) == 4\n    assert candidate([71, -2, -33, 75, 21, 19]) == 3\n    assert candidate([1]) == 0\n    assert candidate([]) == 0\n\ndef test_check():\n    check(specialFilter)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong specialFilter(std::vector<long> nums) {\n    long count = 0;\n    for (auto num: nums) {\n        if (num > 10) {\n            std::string number_as_string = std::to_string(num);\n            if (number_as_string.front() % 2 == 1 && number_as_string.back() % 2 == 1) {\n                count++;\n            }\n        }\n    }\n    return count;\n}\n\n### Python version\n\nfrom typing import List\n\ndef specialFilter(nums: List[int]) -> int:\n"
+}

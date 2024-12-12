@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_35_max_element",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef max_element(l: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_35_max_element.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(max_element)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong max_element(std::vector<long> l) {\n    long m = l[0];\n    for (long e: l) {\n        if (e > m) {\n            m = e;\n        }\n    }\n    return m;\n}\n\n### Python version\n\nfrom typing import List\n\ndef max_element(l: List[int]) -> int:\n"
+}

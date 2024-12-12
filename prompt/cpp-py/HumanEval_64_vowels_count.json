@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_64_vowels_count",
+    "language": "py",
+    "prompt": "def vowels_count(s: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_64_vowels_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('abcde') == 2\n    assert candidate('Alone') == 3\n    assert candidate('key') == 2\n    assert candidate('bye') == 1\n    assert candidate('keY') == 2\n    assert candidate('bYe') == 1\n    assert candidate('ACEDY') == 3\n\ndef test_check():\n    check(vowels_count)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong vowels_count(std::string s) {\n    std::string vowels = \"aeiouAEIOU\";\n    long n_vowels = std::count_if(s.begin(), s.end(), [&](char c){return vowels.find(c) != std::string::npos;});\n    if (s.back() == 'y' || s.back() == 'Y') {\n        n_vowels += 1;\n    }\n    return n_vowels;\n}\n\n### Python version\n\ndef vowels_count(s: str) -> int:\n"
+}

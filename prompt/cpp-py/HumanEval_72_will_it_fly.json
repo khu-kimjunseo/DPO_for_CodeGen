@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_72_will_it_fly",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef will_it_fly(q: List[int], w: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_72_will_it_fly.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([3, 2, 3], 9) == True\n    assert candidate([1, 2], 5) == False\n    assert candidate([3], 5) == True\n    assert candidate([3, 2, 3], 1) == False\n    assert candidate([1, 2, 3], 6) == False\n    assert candidate([5], 5) == True\n\ndef test_check():\n    check(will_it_fly)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool will_it_fly(std::vector<long> q, long w) {\n    if (std::accumulate(q.begin(), q.end(), 0) > w) {\n        return false;\n    }\n    int i=0, j=q.size()-1;\n    while (i<j) {\n        if (q[i] != q[j]) {\n            return false;\n        }\n        i++;\n        j--;\n    }\n    return true;\n}\n\n### Python version\n\nfrom typing import List\n\ndef will_it_fly(q: List[int], w: int) -> bool:\n"
+}

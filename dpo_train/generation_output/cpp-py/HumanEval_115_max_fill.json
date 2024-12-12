@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_115_max_fill",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef max_fill(grid: List[List[int]], capacity: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_115_max_fill.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1) == 6\n    assert candidate([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]], 2) == 5\n    assert candidate([[0, 0, 0], [0, 0, 0]], 5) == 0\n    assert candidate([[1, 1, 1, 1], [1, 1, 1, 1]], 2) == 4\n    assert candidate([[1, 1, 1, 1], [1, 1, 1, 1]], 9) == 2\n\ndef test_check():\n    check(max_fill)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong max_fill(std::vector<std::vector<long>> grid, long capacity) {\n    long sum = 0;\n    for (auto arr : grid) {\n        sum += ceil(std::accumulate(arr.begin(), arr.end(), 0.0) / capacity);\n    }\n    return sum;\n}\n\n### Python version\n\nfrom typing import List\n\ndef max_fill(grid: List[List[int]], capacity: int) -> int:\n"
+}

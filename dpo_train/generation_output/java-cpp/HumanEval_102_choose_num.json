@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_102_choose_num",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong choose_num(long x, long y) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_102_choose_num.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = choose_num;\n    assert(candidate((12), (15)) == (14));\n    assert(candidate((13), (12)) == (-1));\n    assert(candidate((33), (12354)) == (12354));\n    assert(candidate((5234), (5233)) == (-1));\n    assert(candidate((6), (29)) == (28));\n    assert(candidate((27), (10)) == (-1));\n    assert(candidate((7), (7)) == (-1));\n    assert(candidate((546), (546)) == (546));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long chooseNum(long x, long y) {\n        if (x > y) {\n            return -1;\n        }\n        if (y % 2 == 0) {\n            return y;\n        }\n        if (x == y) {\n            return -1;\n        }\n        return y - 1;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong choose_num(long x, long y) {\n"
+}

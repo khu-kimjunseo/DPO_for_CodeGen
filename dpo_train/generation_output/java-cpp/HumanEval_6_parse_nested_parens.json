@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_6_parse_nested_parens",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> parse_nested_parens(std::string paren_string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_6_parse_nested_parens.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = parse_nested_parens;\n    assert(candidate((\"(()()) ((())) () ((())()())\")) == (std::vector<long>({(long)2, (long)3, (long)1, (long)3})));\n    assert(candidate((\"() (()) ((())) (((())))\")) == (std::vector<long>({(long)1, (long)2, (long)3, (long)4})));\n    assert(candidate((\"(()(())((())))\")) == (std::vector<long>({(long)4})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseNestedParens(String paren_string) {\n        ArrayList<Long> result = new ArrayList<Long>();\n\n        for (String s : paren_string.split(\" \")) {\n            long depth = 0;\n            long max_depth = 0;\n\n            for (int i = 0; i < s.length(); i++) {\n                char c = s.charAt(i);\n                if (c == '(') {\n                    depth += 1;\n                    max_depth = Math.max(depth, max_depth);\n                } else {\n                    depth -= 1;\n                }\n            }\n\n            result.add(max_depth);\n        }\n\n        return result;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> parse_nested_parens(std::string paren_string) {\n"
+}

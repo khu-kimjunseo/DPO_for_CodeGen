@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_54_same_chars",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean sameChars(String s0, String s1) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_54_same_chars.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(sameChars((\"eabcdzzzz\"), (\"dddzzzzzzzddeddabc\")) == (true));\n    assert(sameChars((\"abcd\"), (\"dddddddabc\")) == (true));\n    assert(sameChars((\"dddddddabc\"), (\"abcd\")) == (true));\n    assert(sameChars((\"eabcd\"), (\"dddddddabc\")) == (false));\n    assert(sameChars((\"abcd\"), (\"dddddddabcf\")) == (false));\n    assert(sameChars((\"eabcdzzzz\"), (\"dddzzzzzzzddddabc\")) == (false));\n    assert(sameChars((\"aabb\"), (\"aaccc\")) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef same_chars(s0: str, s1: str) -> bool:\n    return set(s0) == set(s1)\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean sameChars(String s0, String s1) {\n"
+}

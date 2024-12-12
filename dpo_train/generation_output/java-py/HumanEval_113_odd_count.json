@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_113_odd_count",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef odd_count(lst: List[str]) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_113_odd_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(['1234567']) == ['the number of odd elements 4n the str4ng 4 of the 4nput.']\n    assert candidate(['3', '11111111']) == ['the number of odd elements 1n the str1ng 1 of the 1nput.', 'the number of odd elements 8n the str8ng 8 of the 8nput.']\n    assert candidate(['271', '137', '314']) == ['the number of odd elements 2n the str2ng 2 of the 2nput.', 'the number of odd elements 3n the str3ng 3 of the 3nput.', 'the number of odd elements 2n the str2ng 2 of the 2nput.']\n\ndef test_check():\n    check(odd_count)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> oddCount(ArrayList<String> lst) {\n        ArrayList<String> res = new ArrayList<String>();\n        for (String arr : lst) {\n            int n = (int) Arrays.stream(arr.split(\"\")).filter(d -> Integer.parseInt(d) % 2 == 1).count();\n            res.add(\"the number of odd elements \" + n + \"n the str\"+ n +\"ng \"+ n +\" of the \"+ n +\"nput.\");\n        }\n        return res;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef odd_count(lst: List[str]) -> List[str]:\n"
+}

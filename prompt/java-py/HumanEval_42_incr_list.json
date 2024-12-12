@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_42_incr_list",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef incr_list(l: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_42_incr_list.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([3, 2, 1]) == [4, 3, 2]\n    assert candidate([5, 2, 5, 2, 3, 3, 9, 0, 123]) == [6, 3, 6, 3, 4, 4, 10, 1, 124]\n\ndef test_check():\n    check(incr_list)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> incrList(ArrayList<Long> l) {\n        return l.stream().map(e -> e + 1).collect(Collectors.toCollection(ArrayList::new));\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef incr_list(l: List[int]) -> List[int]:\n"
+}

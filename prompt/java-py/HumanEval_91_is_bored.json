@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_91_is_bored",
+    "language": "py",
+    "prompt": "def is_bored(S: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_91_is_bored.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hello world') == 0\n    assert candidate('Is the sky blue?') == 0\n    assert candidate('I love It !') == 1\n    assert candidate('bIt') == 0\n    assert candidate('I feel good today. I will be productive. will kill It') == 2\n    assert candidate('You and I are going for a walk') == 0\n\ndef test_check():\n    check(is_bored)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long isBored(String S) {\n        String[] sentences = S.split(\"[.?!]\\\\s*\");\n        return Arrays.stream(sentences).filter(s -> s.startsWith(\"I \")).count();\n    }\n    \n}\n\n### Python version\n\ndef is_bored(S: str) -> int:\n"
+}

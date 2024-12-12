@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_70_strange_sort_list",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef strange_sort_list(lst: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_70_strange_sort_list.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3, 4]) == [1, 4, 2, 3]\n    assert candidate([5, 6, 7, 8, 9]) == [5, 9, 6, 8, 7]\n    assert candidate([1, 2, 3, 4, 5]) == [1, 5, 2, 4, 3]\n    assert candidate([5, 6, 7, 8, 9, 1]) == [1, 9, 5, 8, 6, 7]\n    assert candidate([5, 5, 5, 5]) == [5, 5, 5, 5]\n    assert candidate([]) == []\n    assert candidate([1, 2, 3, 4, 5, 6, 7, 8]) == [1, 8, 2, 7, 3, 6, 4, 5]\n    assert candidate([0, 2, 2, 2, 5, 5, -5, -5]) == [-5, 5, -5, 5, 0, 2, 2, 2]\n    assert candidate([111111]) == [111111]\n\ndef test_check():\n    check(strange_sort_list)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> strangeSortList(ArrayList<Long> lst) {\n        ArrayList<Long> res = new ArrayList<>();\n        boolean switch_ = true;\n        while (!lst.isEmpty()) {\n            res.add(switch_ ? Collections.min(lst) : Collections.max(lst));\n            lst.remove(res.get(res.size() - 1));\n            switch_ = !switch_;\n        }\n        return res;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef strange_sort_list(lst: List[int]) -> List[int]:\n"
+}

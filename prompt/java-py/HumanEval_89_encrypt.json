@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_89_encrypt",
+    "language": "py",
+    "prompt": "def encrypt(s: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_89_encrypt.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('hi') == 'lm'\n    assert candidate('asdfghjkl') == 'ewhjklnop'\n    assert candidate('gf') == 'kj'\n    assert candidate('et') == 'ix'\n    assert candidate('faewfawefaewg') == 'jeiajeaijeiak'\n    assert candidate('hellomyfriend') == 'lippsqcjvmirh'\n    assert candidate('dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh') == 'hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl'\n    assert candidate('a') == 'e'\n\ndef test_check():\n    check(encrypt)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encrypt(String s) {\n        String d = \"abcdefghijklmnopqrstuvwxyz\";\n        String out = \"\";\n        for (char c : s.toCharArray()) {\n            if (d.indexOf(c) != -1) {\n                out += d.charAt((d.indexOf(c)+2*2) % 26);\n            } else {\n                out += c;\n            }\n        }\n        return out;\n    }\n}\n\n### Python version\n\ndef encrypt(s: str) -> str:\n"
+}

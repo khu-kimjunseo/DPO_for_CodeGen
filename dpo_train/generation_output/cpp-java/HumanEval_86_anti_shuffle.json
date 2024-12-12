@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_86_anti_shuffle",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String antiShuffle(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_86_anti_shuffle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(antiShuffle((\"Hi\")).equals((\"Hi\")));\n    assert(antiShuffle((\"hello\")).equals((\"ehllo\")));\n    assert(antiShuffle((\"number\")).equals((\"bemnru\")));\n    assert(antiShuffle((\"abcd\")).equals((\"abcd\")));\n    assert(antiShuffle((\"Hello World!!!\")).equals((\"Hello !!!Wdlor\")));\n    assert(antiShuffle((\"\")).equals((\"\")));\n    assert(antiShuffle((\"Hi. My name is Mister Robot. How are you?\")).equals((\".Hi My aemn is Meirst .Rboot How aer ?ouy\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string anti_shuffle(std::string s) {\n    std::stringstream ss(s);\n    std::string word, res;\n    while (ss >> word) {\n        std::sort(word.begin(), word.end());\n        res += word + \" \";\n    }\n    res.pop_back();\n    return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String antiShuffle(String s) {\n"
+}

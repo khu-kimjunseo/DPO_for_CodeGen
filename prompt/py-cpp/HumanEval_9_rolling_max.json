@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_9_rolling_max",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> rolling_max(std::vector<long> numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_9_rolling_max.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = rolling_max;\n    assert(candidate((std::vector<long>())) == (std::vector<long>()));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4}))) == (std::vector<long>({(long)1, (long)2, (long)3, (long)4})));\n    assert(candidate((std::vector<long>({(long)4, (long)3, (long)2, (long)1}))) == (std::vector<long>({(long)4, (long)4, (long)4, (long)4})));\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)3, (long)100, (long)3}))) == (std::vector<long>({(long)3, (long)3, (long)3, (long)100, (long)100})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    running_max = None\n    result = []\n\n    for n in numbers:\n        if running_max is None:\n            running_max = n\n        else:\n            running_max = max(running_max, n)\n\n        result.append(running_max)\n\n    return result\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> rolling_max(std::vector<long> numbers) {\n"
+}

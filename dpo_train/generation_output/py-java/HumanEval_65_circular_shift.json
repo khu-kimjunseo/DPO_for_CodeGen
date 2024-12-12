@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_65_circular_shift",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String circularShift(long x, long shift) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_65_circular_shift.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(circularShift((100l), (2l)).equals((\"001\")));\n    assert(circularShift((12l), (2l)).equals((\"12\")));\n    assert(circularShift((97l), (8l)).equals((\"79\")));\n    assert(circularShift((12l), (1l)).equals((\"21\")));\n    assert(circularShift((11l), (101l)).equals((\"11\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef circular_shift(x: int, shift: int) -> str:\n    s = str(x)\n    if shift > len(s):\n        return s[::-1]\n    else:\n        return s[len(s) - shift:] + s[:len(s) - shift]\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String circularShift(long x, long shift) {\n"
+}

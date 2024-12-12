@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_21_rescale_to_unit",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<float> rescale_to_unit(std::vector<float> numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_21_rescale_to_unit.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = rescale_to_unit;\n    assert(candidate((std::vector<float>({(float)2.0f, (float)49.9f}))) == (std::vector<float>({(float)0.0f, (float)1.0f})));\n    assert(candidate((std::vector<float>({(float)100.0f, (float)49.9f}))) == (std::vector<float>({(float)1.0f, (float)0.0f})));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f}))) == (std::vector<float>({(float)0.0f, (float)0.25f, (float)0.5f, (float)0.75f, (float)1.0f})));\n    assert(candidate((std::vector<float>({(float)2.0f, (float)1.0f, (float)5.0f, (float)3.0f, (float)4.0f}))) == (std::vector<float>({(float)0.25f, (float)0.0f, (float)1.0f, (float)0.5f, (float)0.75f})));\n    assert(candidate((std::vector<float>({(float)12.0f, (float)11.0f, (float)15.0f, (float)13.0f, (float)14.0f}))) == (std::vector<float>({(float)0.25f, (float)0.0f, (float)1.0f, (float)0.5f, (float)0.75f})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    min_number = min(numbers)\n    max_number = max(numbers)\n    return [(x - min_number) / (max_number - min_number) for x in numbers]\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<float> rescale_to_unit(std::vector<float> numbers) {\n"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_64_vowels_count",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long vowelsCount(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_64_vowels_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(vowelsCount((\"abcde\")) == (2l));\n    assert(vowelsCount((\"Alone\")) == (3l));\n    assert(vowelsCount((\"key\")) == (2l));\n    assert(vowelsCount((\"bye\")) == (1l));\n    assert(vowelsCount((\"keY\")) == (2l));\n    assert(vowelsCount((\"bYe\")) == (1l));\n    assert(vowelsCount((\"ACEDY\")) == (3l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong vowels_count(std::string s) {\n    std::string vowels = \"aeiouAEIOU\";\n    long n_vowels = std::count_if(s.begin(), s.end(), [&](char c){return vowels.find(c) != std::string::npos;});\n    if (s.back() == 'y' || s.back() == 'Y') {\n        n_vowels += 1;\n    }\n    return n_vowels;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long vowelsCount(String s) {\n"
+}

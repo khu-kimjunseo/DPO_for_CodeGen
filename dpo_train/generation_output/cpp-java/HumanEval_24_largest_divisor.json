@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_24_largest_divisor",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long largestDivisor(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_24_largest_divisor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(largestDivisor((3l)) == (1l));\n    assert(largestDivisor((7l)) == (1l));\n    assert(largestDivisor((10l)) == (5l));\n    assert(largestDivisor((100l)) == (50l));\n    assert(largestDivisor((49l)) == (7l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong largest_divisor(long n) {\n    for(long i=n-1;i>=1;i--) {\n        if(n%i==0) {\n            return i;\n        }\n    }\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long largestDivisor(long n) {\n"
+}

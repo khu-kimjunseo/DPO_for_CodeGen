@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_46_fib4",
+    "language": "py",
+    "prompt": "def fib4(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_46_fib4.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == 4\n    assert candidate(8) == 28\n    assert candidate(10) == 104\n    assert candidate(12) == 386\n\ndef test_check():\n    check(fib4)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong fib4(long n) {\n    std::vector<long> results = {0, 0, 2, 0};\n    if (n < 4) {\n        return results[n];\n    }\n    for (long i = 4; i <= n; i++) {\n        long next = results[0] + results[1] + results[2] + results[3];\n        results.erase(results.begin());\n        results.push_back(next);\n    }\n    return results[3];\n}\n\n### Python version\n\ndef fib4(n: int) -> int:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_81_numerical_letter_grade",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef numerical_letter_grade(grades: List[float]) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_81_numerical_letter_grade.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([4.0, 3, 1.7, 2, 3.5]) == ['A+', 'B', 'C-', 'C', 'A-']\n    assert candidate([1.2]) == ['D+']\n    assert candidate([0.5]) == ['D-']\n    assert candidate([0.0]) == ['E']\n    assert candidate([1.0, 0.3, 1.5, 2.8, 3.3]) == ['D', 'D-', 'C-', 'B', 'B+']\n    assert candidate([0.0, 0.7]) == ['E', 'D-']\n\ndef test_check():\n    check(numerical_letter_grade)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> numericalLetterGrade(ArrayList<Float> grades) {\n        ArrayList<String> letterGrade = new ArrayList<String>();\n        for (Float gpa : grades) {\n            if (gpa == 4.0f) {\n                letterGrade.add(\"A+\");\n            } else if (gpa > 3.7f) {\n                letterGrade.add(\"A\");\n            } else if (gpa > 3.3f) {\n                letterGrade.add(\"A-\");\n            } else if (gpa > 3.0f) {\n                letterGrade.add(\"B+\");\n            } else if (gpa > 2.7f) {\n                letterGrade.add(\"B\");\n            } else if (gpa > 2.3f) {\n                letterGrade.add(\"B-\");\n            } else if (gpa > 2.0f) {\n                letterGrade.add(\"C+\");\n            } else if (gpa > 1.7f) {\n                letterGrade.add(\"C\");\n            } else if (gpa > 1.3f) {\n                letterGrade.add(\"C-\");\n            } else if (gpa > 1.0f) {\n                letterGrade.add(\"D+\");\n            } else if (gpa > 0.7f) {\n                letterGrade.add(\"D\");\n            } else if (gpa > 0.0f) {\n                letterGrade.add(\"D-\");\n            } else {\n                letterGrade.add(\"E\");\n            }\n        }\n        return letterGrade;\n    }\n    \n}\n\n### Python version\n\nfrom typing import List\n\ndef numerical_letter_grade(grades: List[float]) -> List[str]:\n"
+}

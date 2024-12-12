@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_22_filter_integers",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> filter_integers(std::vector<std::any> values) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_22_filter_integers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = filter_integers;\n    assert(candidate((std::vector<std::any>())) == (std::vector<long>()));\n    assert(candidate((std::vector<std::any>({4, std::map<long,long>(), std::vector<long>(), 23.2f, 9, \"adasd\"}))) == (std::vector<long>({(long)4, (long)9})));\n    assert(candidate((std::vector<std::any>({3, \"c\", 3, 3, \"a\", \"b\"}))) == (std::vector<long>({(long)3, (long)3, (long)3})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> filterIntegers(ArrayList<Object> values) {\n        return values.stream().filter(x -> x instanceof Long).map(x -> (Long) x).collect(Collectors.toCollection(ArrayList::new));\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> filter_integers(std::vector<std::any> values) {\n"
+}

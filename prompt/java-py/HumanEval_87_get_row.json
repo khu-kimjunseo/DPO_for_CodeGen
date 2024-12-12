@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_87_get_row",
+    "language": "py",
+    "prompt": "from typing import List, Tuple\n\ndef get_row(lst: List[List[int]], x: int) -> List[Tuple[int, int]]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_87_get_row.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]], 1) == [(0, 0), (1, 4), (1, 0), (2, 5), (2, 0)]\n    assert candidate([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]], 2) == [(0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (5, 1)]\n    assert candidate([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 1, 3, 4, 5, 6], [1, 2, 1, 4, 5, 6], [1, 2, 3, 1, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]], 1) == [(0, 0), (1, 0), (2, 1), (2, 0), (3, 2), (3, 0), (4, 3), (4, 0), (5, 4), (5, 0), (6, 5), (6, 0)]\n    assert candidate([], 1) == []\n    assert candidate([[1]], 2) == []\n    assert candidate([[], [1], [1, 2, 3]], 3) == [(2, 2)]\n\ndef test_check():\n    check(get_row)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Pair<Long, Long>> getRow(ArrayList<ArrayList<Long>> lst, long x) {\n        ArrayList<Pair<Long, Long>> coords = new ArrayList<Pair<Long, Long>>();\n        for (int i = 0; i < lst.size(); i++) {\n            for (int j = 0; j < lst.get(i).size(); j++) {\n                if (lst.get(i).get(j) == x) {\n                    coords.add(new Pair<Long, Long>((long)i, (long)j));\n                }\n            }\n        }\n        coords.sort((a, b) -> {\n            if (a.getValue0() == b.getValue0()) {\n                return b.getValue1().compareTo(a.getValue1());\n            }\n            return a.getValue0().compareTo(b.getValue0());\n        });\n        return coords;\n    }\n    \n}\n\n### Python version\n\nfrom typing import List, Tuple\n\ndef get_row(lst: List[List[int]], x: int) -> List[Tuple[int, int]]:\n"
+}

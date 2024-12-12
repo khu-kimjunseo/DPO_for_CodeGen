@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_105_by_length",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> by_length(std::vector<long> arr) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_105_by_length.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = by_length;\n    assert(candidate((std::vector<long>({(long)2, (long)1, (long)1, (long)4, (long)5, (long)8, (long)2, (long)3}))) == (std::vector<std::string>({(std::string)\"Eight\", (std::string)\"Five\", (std::string)\"Four\", (std::string)\"Three\", (std::string)\"Two\", (std::string)\"Two\", (std::string)\"One\", (std::string)\"One\"})));\n    assert(candidate((std::vector<long>())) == (std::vector<std::string>()));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)55}))) == (std::vector<std::string>({(std::string)\"One\"})));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)3, (long)2}))) == (std::vector<std::string>({(std::string)\"Three\", (std::string)\"Two\", (std::string)\"One\"})));\n    assert(candidate((std::vector<long>({(long)9, (long)4, (long)8}))) == (std::vector<std::string>({(std::string)\"Nine\", (std::string)\"Eight\", (std::string)\"Four\"})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> byLength(ArrayList<Long> arr) {\n        String[] dic = {\"One\", \"Two\", \"Three\", \"Four\", \"Five\", \"Six\", \"Seven\", \"Eight\", \"Nine\"};\n        ArrayList<Long> sortedArr = (ArrayList<Long>) arr.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());\n        ArrayList<String> newArr = new ArrayList<String>();\n        for (Long var : sortedArr) {\n            if (var >= 1 && var <= 9) {\n                newArr.add(dic[var.intValue()-1]);\n            }\n        }\n        return newArr;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> by_length(std::vector<long> arr) {\n"
+}

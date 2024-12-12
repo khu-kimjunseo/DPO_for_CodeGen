@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_98_count_upper",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong count_upper(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_98_count_upper.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = count_upper;\n    assert(candidate((\"aBCdEf\")) == (1));\n    assert(candidate((\"abcdefg\")) == (0));\n    assert(candidate((\"dBBE\")) == (0));\n    assert(candidate((\"B\")) == (0));\n    assert(candidate((\"U\")) == (1));\n    assert(candidate((\"\")) == (0));\n    assert(candidate((\"EEEE\")) == (2));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef count_upper(s: str) -> int:\n    count = 0\n    for i in range(0,len(s),2):\n        if s[i] in \"AEIOU\":\n            count += 1\n    return count\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong count_upper(std::string s) {\n"
+}

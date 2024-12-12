@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_18_how_many_times",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long howManyTimes(String string, String substring) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_18_how_many_times.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(howManyTimes((\"\"), (\"x\")) == (0l));\n    assert(howManyTimes((\"xyxyxyx\"), (\"x\")) == (4l));\n    assert(howManyTimes((\"cacacacac\"), (\"cac\")) == (4l));\n    assert(howManyTimes((\"john doe\"), (\"john\")) == (1l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong how_many_times(std::string string, std::string substring) {\n    long times = 0;\n    for (int i = 0; i < string.size() - substring.size() + 1; i++) {\n        if (string.substr(i, substring.size()) == substring) {\n            times += 1;\n        }\n    }\n    return times;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long howManyTimes(String string, String substring) {\n"
+}

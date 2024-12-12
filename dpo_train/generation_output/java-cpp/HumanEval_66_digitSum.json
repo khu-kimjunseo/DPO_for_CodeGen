@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_66_digitSum",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong digitSum(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_66_digitSum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = digitSum;\n    assert(candidate((\"\")) == (0));\n    assert(candidate((\"abAB\")) == (131));\n    assert(candidate((\"abcCd\")) == (67));\n    assert(candidate((\"helloE\")) == (69));\n    assert(candidate((\"woArBld\")) == (131));\n    assert(candidate((\"aAaaaXa\")) == (153));\n    assert(candidate((\" How are yOu?\")) == (151));\n    assert(candidate((\"You arE Very Smart\")) == (327));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long digitSum(String s) {\n        if (s.equals(\"\")) return 0;\n        return s.chars().filter(Character::isUpperCase).sum();\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong digitSum(std::string s) {\n"
+}

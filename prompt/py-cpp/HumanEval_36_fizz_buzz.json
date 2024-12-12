@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_36_fizz_buzz",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong fizz_buzz(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_36_fizz_buzz.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = fizz_buzz;\n    assert(candidate((50)) == (0));\n    assert(candidate((78)) == (2));\n    assert(candidate((79)) == (3));\n    assert(candidate((100)) == (3));\n    assert(candidate((200)) == (6));\n    assert(candidate((4000)) == (192));\n    assert(candidate((10000)) == (639));\n    assert(candidate((100000)) == (8026));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef fizz_buzz(n: int) -> int:\n    ns = []\n    for i in range(n):\n        if i % 11 == 0 or i % 13 == 0:\n            ns.append(i)\n    s = ''.join(list(map(str, ns)))\n    ans = 0\n    for c in s:\n        ans += (c == '7')\n    return ans\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong fizz_buzz(long n) {\n"
+}

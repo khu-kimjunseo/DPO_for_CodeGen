@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_162_string_to_md5",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<std::string> string_to_md5(std::string text) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_162_string_to_md5.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = string_to_md5;\n    assert(candidate((\"Hello world\")) == \"3e25960a79dbc69b674cd4ec67a72c62\");\n    assert(candidate((\"\")) == std::nullopt);\n    assert(candidate((\"A B C\")) == \"0ef78513b0cb8cef12743f5aeb35f888\");\n    assert(candidate((\"password\")) == \"5f4dcc3b5aa765d61d8327deb882cf99\");\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<String> stringToMd5(String text) {\n        if (text == null || text.isEmpty()) {\n            return Optional.empty();\n        }\n        try {\n            MessageDigest md = MessageDigest.getInstance(\"MD5\");\n            byte[] hash = md.digest(text.getBytes(\"ASCII\"));\n            BigInteger bigInt = new BigInteger(1, hash);\n            return Optional.of(String.format(\"%032x\", bigInt));\n        } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {\n            return Optional.empty();\n        }\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<std::string> string_to_md5(std::string text) {\n"
+}

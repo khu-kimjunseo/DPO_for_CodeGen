@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_156_int_to_mini_roman",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String intToMiniRoman(long number) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_156_int_to_mini_roman.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(intToMiniRoman((19l)).equals((\"xix\")));\n    assert(intToMiniRoman((152l)).equals((\"clii\")));\n    assert(intToMiniRoman((251l)).equals((\"ccli\")));\n    assert(intToMiniRoman((426l)).equals((\"cdxxvi\")));\n    assert(intToMiniRoman((500l)).equals((\"d\")));\n    assert(intToMiniRoman((1l)).equals((\"i\")));\n    assert(intToMiniRoman((4l)).equals((\"iv\")));\n    assert(intToMiniRoman((43l)).equals((\"xliii\")));\n    assert(intToMiniRoman((90l)).equals((\"xc\")));\n    assert(intToMiniRoman((94l)).equals((\"xciv\")));\n    assert(intToMiniRoman((532l)).equals((\"dxxxii\")));\n    assert(intToMiniRoman((900l)).equals((\"cm\")));\n    assert(intToMiniRoman((994l)).equals((\"cmxciv\")));\n    assert(intToMiniRoman((1000l)).equals((\"m\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string int_to_mini_roman(long number) {\n    std::vector<long> num = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};\n    std::vector<std::string> sym = {\"I\", \"IV\", \"V\", \"IX\", \"X\", \"XL\", \"L\", \"XC\", \"C\", \"CD\", \"D\", \"CM\", \"M\"};\n    int i = 12;\n    std::string res = \"\";\n    while (number) {\n        long div = number / num[i];\n        number %= num[i];\n        while (div) {\n            res += sym[i];\n            div -= 1;\n        }\n        i -= 1;\n    }\n    std::transform(res.begin(), res.end(), res.begin(), ::tolower);\n    return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String intToMiniRoman(long number) {\n"
+}

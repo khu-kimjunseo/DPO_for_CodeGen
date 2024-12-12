@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_56_correct_bracketing",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool correct_bracketing(std::string brackets) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_56_correct_bracketing.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = correct_bracketing;\n    assert(candidate((\"<>\")) == (true));\n    assert(candidate((\"<<><>>\")) == (true));\n    assert(candidate((\"<><><<><>><>\")) == (true));\n    assert(candidate((\"<><><<<><><>><>><<><><<>>>\")) == (true));\n    assert(candidate((\"<<<><>>>>\")) == (false));\n    assert(candidate((\"><<>\")) == (false));\n    assert(candidate((\"<\")) == (false));\n    assert(candidate((\"<<<<\")) == (false));\n    assert(candidate((\">\")) == (false));\n    assert(candidate((\"<<>\")) == (false));\n    assert(candidate((\"<><><<><>><>><<>\")) == (false));\n    assert(candidate((\"<><><<><>><>>><>\")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef correct_bracketing(brackets: str) -> bool:\n    depth = 0\n    for b in brackets:\n        if b == \"<\":\n            depth += 1\n        else:\n            depth -= 1\n        if depth < 0:\n            return False\n    return depth == 0\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool correct_bracketing(std::string brackets) {\n"
+}

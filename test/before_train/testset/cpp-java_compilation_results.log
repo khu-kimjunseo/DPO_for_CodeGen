@@ -1,0 +1,1625 @@
+2024-12-10 06:20:19 - INFO - Directory: cpp-java
+2024-12-10 06:20:19 - INFO - Total Files: 45
+2024-12-10 06:20:19 - INFO - Successful Compilations: 0
+2024-12-10 06:20:19 - INFO - Failed Compilations: 45
+2024-12-10 06:20:19 - INFO - Success Rate: 0.00%
+2024-12-10 11:09:52 - ERROR - Failed to compile cpp-java/HumanEval_117_select_words.java. Error:
+cpp-java/HumanEval_117_select_words.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_117_select_words.java:14: error: incompatible types: char cannot be converted to String
+                result.add(c);
+                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+2024-12-10 11:09:52 - ERROR - Failed to compile cpp-java/HumanEval_129_minPath.java. Error:
+cpp-java/HumanEval_129_minPath.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:09:53 - ERROR - Failed to compile cpp-java/HumanEval_31_is_prime.java. Error:
+cpp-java/HumanEval_31_is_prime.java:140: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-10 11:09:53 - ERROR - Failed to compile cpp-java/HumanEval_130_tri.java. Error:
+cpp-java/HumanEval_130_tri.java:82: error: ';' expected
+        for (long i = 1
+                       ^
+cpp-java/HumanEval_130_tri.java:83: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-10 11:09:53 - ERROR - Failed to compile cpp-java/HumanEval_45_triangle_area.java. Error:
+cpp-java/HumanEval_45_triangle_area.java:85: error: ')' or ',' expected
+        return triangle_area(a, h
+                                 ^
+cpp-java/HumanEval_45_triangle_area.java:86: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-10 11:09:54 - ERROR - Failed to compile cpp-java/HumanEval_16_count_distinct_characters.java. Error:
+cpp-java/HumanEval_16_count_distinct_characters.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_16_count_distinct_characters.java:11: error: for-each not applicable to expression type
+        for (char c : string) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_16_count_distinct_characters.java:12: error: cannot find symbol
+            count += count_distinct_characters(string);
+                     ^
+  symbol:   method count_distinct_characters(String)
+  location: class Problem
+3 errors
+
+2024-12-10 11:09:54 - ERROR - Failed to compile cpp-java/HumanEval_47_median.java. Error:
+cpp-java/HumanEval_47_median.java:101: error: repeated modifier
+    public static void main(String[] args) {
+    ^
+cpp-java/HumanEval_47_median.java:101: error: repeated modifier
+    public static void main(String[] args) {
+           ^
+2 errors
+
+2024-12-10 11:09:54 - ERROR - Failed to compile cpp-java/HumanEval_35_max_element.java. Error:
+cpp-java/HumanEval_35_max_element.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:09:55 - ERROR - Failed to compile cpp-java/HumanEval_55_fib.java. Error:
+cpp-java/HumanEval_55_fib.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:09:55 - ERROR - Failed to compile cpp-java/HumanEval_66_digitSum.java. Error:
+cpp-java/HumanEval_66_digitSum.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_66_digitSum.java:11: error: for-each not applicable to expression type
+        for (char c : s) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_66_digitSum.java:12: error: cannot find symbol
+            if (isupper(c)) ans += c;
+                ^
+  symbol:   method isupper(char)
+  location: class Problem
+3 errors
+
+2024-12-10 11:09:56 - ERROR - Failed to compile cpp-java/HumanEval_88_sort_array.java. Error:
+cpp-java/HumanEval_88_sort_array.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_88_sort_array.java:12: error: incompatible types: possible lossy conversion from long to int
+            sortedArray.add(array.get(i));
+                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+2024-12-10 11:09:56 - ERROR - Failed to compile cpp-java/HumanEval_135_can_arrange.java. Error:
+cpp-java/HumanEval_135_can_arrange.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_135_can_arrange.java:13: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                    ^
+cpp-java/HumanEval_135_can_arrange.java:13: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                   ^
+cpp-java/HumanEval_135_can_arrange.java:13: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                            ^
+cpp-java/HumanEval_135_can_arrange.java:13: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                          ^
+5 errors
+
+2024-12-10 11:09:57 - ERROR - Failed to compile cpp-java/HumanEval_110_exchange.java. Error:
+cpp-java/HumanEval_110_exchange.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_110_exchange.java:12: error: cannot find symbol
+        for (auto i : lst1) {
+             ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_110_exchange.java:17: error: cannot find symbol
+        for (auto i : lst2) {
+             ^
+  symbol:   class auto
+  location: class Problem
+3 errors
+
+2024-12-10 11:09:57 - ERROR - Failed to compile cpp-java/HumanEval_43_pairs_sum_to_zero.java. Error:
+cpp-java/HumanEval_43_pairs_sum_to_zero.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_43_pairs_sum_to_zero.java:17: error: cannot find symbol
+        return pairs_sum_to_zero(l);
+               ^
+  symbol:   method pairs_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+2 errors
+
+2024-12-10 11:09:58 - ERROR - Failed to compile cpp-java/HumanEval_106_f.java. Error:
+cpp-java/HumanEval_106_f.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:09:58 - ERROR - Failed to compile cpp-java/HumanEval_40_triples_sum_to_zero.java. Error:
+cpp-java/HumanEval_40_triples_sum_to_zero.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_40_triples_sum_to_zero.java:17: error: cannot find symbol
+        return triples_sum_to_zero(l);
+               ^
+  symbol:   method triples_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+2 errors
+
+2024-12-10 11:09:58 - ERROR - Failed to compile cpp-java/HumanEval_87_get_row.java. Error:
+cpp-java/HumanEval_87_get_row.java:14: error: ')' or ',' expected
+                    coords.add(std::make_pair(i, i));
+                                             ^
+cpp-java/HumanEval_87_get_row.java:14: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                              ^
+cpp-java/HumanEval_87_get_row.java:14: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                               ^
+cpp-java/HumanEval_87_get_row.java:14: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                                 ^
+cpp-java/HumanEval_87_get_row.java:14: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                                  ^
+5 errors
+
+2024-12-10 11:09:59 - ERROR - Failed to compile cpp-java/HumanEval_70_strange_sort_list.java. Error:
+cpp-java/HumanEval_70_strange_sort_list.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:09:59 - ERROR - Failed to compile cpp-java/HumanEval_144_simplify.java. Error:
+cpp-java/HumanEval_144_simplify.java:37: error: ')' expected
+        if (n
+             ^
+cpp-java/HumanEval_144_simplify.java:38: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-10 11:10:00 - ERROR - Failed to compile cpp-java/HumanEval_3_below_zero.java. Error:
+cpp-java/HumanEval_3_below_zero.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_3_below_zero.java:10: error: cannot find symbol
+        return below_zero(operations);
+               ^
+  symbol:   method below_zero(ArrayList<Long>)
+  location: class Problem
+2 errors
+
+2024-12-10 11:10:00 - ERROR - Failed to compile cpp-java/HumanEval_104_unique_digits.java. Error:
+cpp-java/HumanEval_104_unique_digits.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:01 - ERROR - Failed to compile cpp-java/HumanEval_12_longest.java. Error:
+cpp-java/HumanEval_12_longest.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_12_longest.java:11: error: cannot find symbol
+            return std::nullopt;
+                   ^
+  symbol:   variable std
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:13: error: cannot find symbol
+        auto max = strings.get(0);
+        ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:19: error: method reference not expected here
+        return std::optional<String>(max);
+               ^
+cpp-java/HumanEval_12_longest.java:19: error: cannot find symbol
+        return std::optional<String>(max);
+                             ^
+  symbol:   variable String
+  location: class Problem
+5 errors
+
+2024-12-10 11:10:01 - ERROR - Failed to compile cpp-java/HumanEval_60_sum_to_n.java. Error:
+cpp-java/HumanEval_60_sum_to_n.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:01 - ERROR - Failed to compile cpp-java/HumanEval_157_right_angle_triangle.java. Error:
+cpp-java/HumanEval_157_right_angle_triangle.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:02 - ERROR - Failed to compile cpp-java/HumanEval_4_mean_absolute_deviation.java. Error:
+cpp-java/HumanEval_4_mean_absolute_deviation.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:02 - ERROR - Failed to compile cpp-java/HumanEval_143_words_in_sentence.java. Error:
+cpp-java/HumanEval_143_words_in_sentence.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:03 - ERROR - Failed to compile cpp-java/HumanEval_133_sum_squares.java. Error:
+cpp-java/HumanEval_133_sum_squares.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:03 - ERROR - Failed to compile cpp-java/HumanEval_90_next_smallest.java. Error:
+cpp-java/HumanEval_90_next_smallest.java:49: error: modifier public not allowed here
+    public static void main(String[] args) {
+                  ^
+cpp-java/HumanEval_90_next_smallest.java:49: error: ',', ')', or '[' expected
+    public static void main(String[] args) {
+                           ^
+2 errors
+
+2024-12-10 11:10:04 - ERROR - Failed to compile cpp-java/HumanEval_28_concatenate.java. Error:
+cpp-java/HumanEval_28_concatenate.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:04 - ERROR - Failed to compile cpp-java/HumanEval_11_string_xor.java. Error:
+cpp-java/HumanEval_11_string_xor.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_11_string_xor.java:11: error: cannot find symbol
+        for (int i = 0; i < a.size(); i++) {
+                             ^
+  symbol:   method size()
+  location: variable a of type String
+cpp-java/HumanEval_11_string_xor.java:12: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                 ^
+cpp-java/HumanEval_11_string_xor.java:12: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                         ^
+4 errors
+
+2024-12-10 11:10:04 - ERROR - Failed to compile cpp-java/HumanEval_146_specialFilter.java. Error:
+cpp-java/HumanEval_146_specialFilter.java:13: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                ^
+cpp-java/HumanEval_146_specialFilter.java:13: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                           ^
+cpp-java/HumanEval_146_specialFilter.java:13: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                             ^
+cpp-java/HumanEval_146_specialFilter.java:13: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                                                              ^
+cpp-java/HumanEval_146_specialFilter.java:13: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                                 ^
+5 errors
+
+2024-12-10 11:10:05 - ERROR - Failed to compile cpp-java/HumanEval_127_intersection.java. Error:
+cpp-java/HumanEval_127_intersection.java:9: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                      ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:9: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                                                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:32: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:32: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+19 errors
+
+2024-12-10 11:10:05 - ERROR - Failed to compile cpp-java/HumanEval_18_how_many_times.java. Error:
+cpp-java/HumanEval_18_how_many_times.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_18_how_many_times.java:11: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                  ^
+  symbol:   method size()
+  location: variable string of type String
+cpp-java/HumanEval_18_how_many_times.java:11: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                                     ^
+  symbol:   method size()
+  location: variable substring of type String
+cpp-java/HumanEval_18_how_many_times.java:12: error: cannot find symbol
+            if (string.substr(i, substring.size()) == substring) {
+                                          ^
+  symbol:   method size()
+  location: variable substring of type String
+4 errors
+
+2024-12-10 11:10:06 - ERROR - Failed to compile cpp-java/HumanEval_147_get_max_triples.java. Error:
+cpp-java/HumanEval_147_get_max_triples.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:06 - ERROR - Failed to compile cpp-java/HumanEval_2_truncate_number.java. Error:
+cpp-java/HumanEval_2_truncate_number.java:33: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:36: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:39: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:42: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:45: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:48: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:51: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:54: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:57: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:60: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:63: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:66: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:69: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:72: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:75: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:78: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:81: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:84: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:87: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:90: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:93: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:96: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:99: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:102: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:105: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:108: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:111: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_2_truncate_number.java:10: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:13: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:16: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:19: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:22: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:25: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:28: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:31: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:34: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:37: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:40: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:43: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:46: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:49: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:52: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:55: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:58: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:61: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:64: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:67: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:70: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:73: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:76: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:79: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:82: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:85: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:88: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:91: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:94: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:97: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:100: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:103: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:106: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:109: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:112: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+63 errors
+
+2024-12-10 11:10:07 - ERROR - Failed to compile cpp-java/HumanEval_78_hex_key.java. Error:
+cpp-java/HumanEval_78_hex_key.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:07 - ERROR - Failed to compile cpp-java/HumanEval_148_bf.java. Error:
+cpp-java/HumanEval_148_bf.java:11: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                     ^
+cpp-java/HumanEval_148_bf.java:11: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                          ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                              ^
+cpp-java/HumanEval_148_bf.java:11: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                       ^
+cpp-java/HumanEval_148_bf.java:11: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                               ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                           ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                    ^
+cpp-java/HumanEval_148_bf.java:11: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                      ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                             ^
+cpp-java/HumanEval_148_bf.java:11: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                     ^
+cpp-java/HumanEval_148_bf.java:11: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                                          ^
+cpp-java/HumanEval_148_bf.java:12: error: illegal start of expression
+            return {};
+                   ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:14: error: not a statement
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:15: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:15: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:15: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:15: error: not a statement
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:15: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:17: error: illegal start of expression
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:17: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:17: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:17: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:17: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                                  ^
+cpp-java/HumanEval_148_bf.java:19: error: illegal start of expression
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:19: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:19: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:19: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:19: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                                  ^
+34 errors
+
+2024-12-10 11:10:07 - ERROR - Failed to compile cpp-java/HumanEval_74_total_match.java. Error:
+cpp-java/HumanEval_74_total_match.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:08 - ERROR - Failed to compile cpp-java/HumanEval_96_count_up_to.java. Error:
+cpp-java/HumanEval_96_count_up_to.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:08 - ERROR - Failed to compile cpp-java/HumanEval_126_is_sorted.java. Error:
+cpp-java/HumanEval_126_is_sorted.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_126_is_sorted.java:10: error: cannot find symbol
+        return is_sorted(lst);
+               ^
+  symbol:   method is_sorted(ArrayList<Long>)
+  location: class Problem
+2 errors
+
+2024-12-10 11:10:09 - ERROR - Failed to compile cpp-java/HumanEval_89_encrypt.java. Error:
+cpp-java/HumanEval_89_encrypt.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:09 - ERROR - Failed to compile cpp-java/HumanEval_72_will_it_fly.java. Error:
+cpp-java/HumanEval_72_will_it_fly.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_72_will_it_fly.java:10: error: cannot find symbol
+        if (will_it_fly(q, w)) {
+            ^
+  symbol:   method will_it_fly(ArrayList<Long>,long)
+  location: class Problem
+2 errors
+
+2024-12-10 11:10:10 - ERROR - Failed to compile cpp-java/HumanEval_64_vowels_count.java. Error:
+cpp-java/HumanEval_64_vowels_count.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:10 - ERROR - Failed to compile cpp-java/HumanEval_153_Strongest_Extension.java. Error:
+cpp-java/HumanEval_153_Strongest_Extension.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+1 error
+
+2024-12-10 11:10:11 - ERROR - Failed to compile cpp-java/HumanEval_82_prime_length.java. Error:
+cpp-java/HumanEval_82_prime_length.java:3: error: package org.javatuples does not exist
+import org.javatuples.*;
+^
+cpp-java/HumanEval_82_prime_length.java:10: error: cannot find symbol
+        return prime_length(string);
+               ^
+  symbol:   method prime_length(String)
+  location: class Problem
+2 errors
+
+2024-12-10 11:10:11 - INFO - Directory: cpp-java
+2024-12-10 11:10:11 - INFO - Total Files: 45
+2024-12-10 11:10:11 - INFO - Successful Compilations: 0
+2024-12-10 11:10:11 - INFO - Failed Compilations: 45
+2024-12-10 11:10:11 - INFO - Success Rate: 0.00%
+2024-12-11 18:14:14 - ERROR - Failed to compile cpp-java/HumanEval_117_select_words.java. Error:
+cpp-java/HumanEval_117_select_words.java:13: error: incompatible types: char cannot be converted to String
+                result.add(c);
+                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-11 18:14:14 - INFO - Successfully compiled: cpp-java/HumanEval_129_minPath.java
+2024-12-11 18:14:15 - ERROR - Failed to compile cpp-java/HumanEval_31_is_prime.java. Error:
+cpp-java/HumanEval_31_is_prime.java:139: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-11 18:14:15 - ERROR - Failed to compile cpp-java/HumanEval_130_tri.java. Error:
+cpp-java/HumanEval_130_tri.java:81: error: ';' expected
+        for (long i = 1
+                       ^
+cpp-java/HumanEval_130_tri.java:82: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-11 18:14:15 - ERROR - Failed to compile cpp-java/HumanEval_45_triangle_area.java. Error:
+cpp-java/HumanEval_45_triangle_area.java:84: error: ')' or ',' expected
+        return triangle_area(a, h
+                                 ^
+cpp-java/HumanEval_45_triangle_area.java:85: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-11 18:14:16 - ERROR - Failed to compile cpp-java/HumanEval_16_count_distinct_characters.java. Error:
+cpp-java/HumanEval_16_count_distinct_characters.java:10: error: for-each not applicable to expression type
+        for (char c : string) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_16_count_distinct_characters.java:11: error: cannot find symbol
+            count += count_distinct_characters(string);
+                     ^
+  symbol:   method count_distinct_characters(String)
+  location: class Problem
+2 errors
+
+2024-12-11 18:14:16 - ERROR - Failed to compile cpp-java/HumanEval_47_median.java. Error:
+cpp-java/HumanEval_47_median.java:100: error: repeated modifier
+    public static void main(String[] args) {
+    ^
+cpp-java/HumanEval_47_median.java:100: error: repeated modifier
+    public static void main(String[] args) {
+           ^
+2 errors
+
+2024-12-11 18:14:16 - INFO - Successfully compiled: cpp-java/HumanEval_35_max_element.java
+2024-12-11 18:14:17 - INFO - Successfully compiled: cpp-java/HumanEval_55_fib.java
+2024-12-11 18:14:17 - ERROR - Failed to compile cpp-java/HumanEval_66_digitSum.java. Error:
+cpp-java/HumanEval_66_digitSum.java:10: error: for-each not applicable to expression type
+        for (char c : s) {
+                      ^
+  required: array or java.lang.Iterable
+  found:    String
+cpp-java/HumanEval_66_digitSum.java:11: error: cannot find symbol
+            if (isupper(c)) ans += c;
+                ^
+  symbol:   method isupper(char)
+  location: class Problem
+2 errors
+
+2024-12-11 18:14:18 - ERROR - Failed to compile cpp-java/HumanEval_88_sort_array.java. Error:
+cpp-java/HumanEval_88_sort_array.java:11: error: incompatible types: possible lossy conversion from long to int
+            sortedArray.add(array.get(i));
+                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-11 18:14:18 - ERROR - Failed to compile cpp-java/HumanEval_135_can_arrange.java. Error:
+cpp-java/HumanEval_135_can_arrange.java:12: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                    ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                   ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: incompatible types: possible lossy conversion from long to int
+            if (arr[i]<arr[i-1]) {
+                            ^
+cpp-java/HumanEval_135_can_arrange.java:12: error: array required, but ArrayList<Long> found
+            if (arr[i]<arr[i-1]) {
+                          ^
+4 errors
+
+2024-12-11 18:14:19 - ERROR - Failed to compile cpp-java/HumanEval_110_exchange.java. Error:
+cpp-java/HumanEval_110_exchange.java:11: error: cannot find symbol
+        for (auto i : lst1) {
+             ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_110_exchange.java:16: error: cannot find symbol
+        for (auto i : lst2) {
+             ^
+  symbol:   class auto
+  location: class Problem
+2 errors
+
+2024-12-11 18:14:19 - ERROR - Failed to compile cpp-java/HumanEval_43_pairs_sum_to_zero.java. Error:
+cpp-java/HumanEval_43_pairs_sum_to_zero.java:16: error: cannot find symbol
+        return pairs_sum_to_zero(l);
+               ^
+  symbol:   method pairs_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:20 - INFO - Successfully compiled: cpp-java/HumanEval_106_f.java
+2024-12-11 18:14:20 - ERROR - Failed to compile cpp-java/HumanEval_40_triples_sum_to_zero.java. Error:
+cpp-java/HumanEval_40_triples_sum_to_zero.java:16: error: cannot find symbol
+        return triples_sum_to_zero(l);
+               ^
+  symbol:   method triples_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:20 - ERROR - Failed to compile cpp-java/HumanEval_87_get_row.java. Error:
+cpp-java/HumanEval_87_get_row.java:13: error: ')' or ',' expected
+                    coords.add(std::make_pair(i, i));
+                                             ^
+cpp-java/HumanEval_87_get_row.java:13: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                              ^
+cpp-java/HumanEval_87_get_row.java:13: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                               ^
+cpp-java/HumanEval_87_get_row.java:13: error: not a statement
+                    coords.add(std::make_pair(i, i));
+                                                 ^
+cpp-java/HumanEval_87_get_row.java:13: error: ';' expected
+                    coords.add(std::make_pair(i, i));
+                                                  ^
+5 errors
+
+2024-12-11 18:14:21 - INFO - Successfully compiled: cpp-java/HumanEval_70_strange_sort_list.java
+2024-12-11 18:14:21 - ERROR - Failed to compile cpp-java/HumanEval_144_simplify.java. Error:
+cpp-java/HumanEval_144_simplify.java:36: error: ')' expected
+        if (n
+             ^
+cpp-java/HumanEval_144_simplify.java:37: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-11 18:14:22 - ERROR - Failed to compile cpp-java/HumanEval_3_below_zero.java. Error:
+cpp-java/HumanEval_3_below_zero.java:9: error: cannot find symbol
+        return below_zero(operations);
+               ^
+  symbol:   method below_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:22 - INFO - Successfully compiled: cpp-java/HumanEval_104_unique_digits.java
+2024-12-11 18:14:23 - ERROR - Failed to compile cpp-java/HumanEval_12_longest.java. Error:
+cpp-java/HumanEval_12_longest.java:10: error: cannot find symbol
+            return std::nullopt;
+                   ^
+  symbol:   variable std
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:12: error: cannot find symbol
+        auto max = strings.get(0);
+        ^
+  symbol:   class auto
+  location: class Problem
+cpp-java/HumanEval_12_longest.java:18: error: method reference not expected here
+        return std::optional<String>(max);
+               ^
+cpp-java/HumanEval_12_longest.java:18: error: cannot find symbol
+        return std::optional<String>(max);
+                             ^
+  symbol:   variable String
+  location: class Problem
+4 errors
+
+2024-12-11 18:14:23 - INFO - Successfully compiled: cpp-java/HumanEval_60_sum_to_n.java
+2024-12-11 18:14:24 - INFO - Successfully compiled: cpp-java/HumanEval_157_right_angle_triangle.java
+2024-12-11 18:14:24 - INFO - Successfully compiled: cpp-java/HumanEval_4_mean_absolute_deviation.java
+2024-12-11 18:14:25 - INFO - Successfully compiled: cpp-java/HumanEval_143_words_in_sentence.java
+2024-12-11 18:14:25 - INFO - Successfully compiled: cpp-java/HumanEval_133_sum_squares.java
+2024-12-11 18:14:25 - ERROR - Failed to compile cpp-java/HumanEval_90_next_smallest.java. Error:
+cpp-java/HumanEval_90_next_smallest.java:48: error: modifier public not allowed here
+    public static void main(String[] args) {
+                  ^
+cpp-java/HumanEval_90_next_smallest.java:48: error: ',', ')', or '[' expected
+    public static void main(String[] args) {
+                           ^
+2 errors
+
+2024-12-11 18:14:26 - INFO - Successfully compiled: cpp-java/HumanEval_28_concatenate.java
+2024-12-11 18:14:26 - ERROR - Failed to compile cpp-java/HumanEval_11_string_xor.java. Error:
+cpp-java/HumanEval_11_string_xor.java:10: error: cannot find symbol
+        for (int i = 0; i < a.size(); i++) {
+                             ^
+  symbol:   method size()
+  location: variable a of type String
+cpp-java/HumanEval_11_string_xor.java:11: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                 ^
+cpp-java/HumanEval_11_string_xor.java:11: error: array required, but String found
+            if (a[i] == b[i]) ans += '0';
+                         ^
+3 errors
+
+2024-12-11 18:14:27 - ERROR - Failed to compile cpp-java/HumanEval_146_specialFilter.java. Error:
+cpp-java/HumanEval_146_specialFilter.java:12: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                           ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                             ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: not a statement
+                std::string number_as_string = std::to_string(num);
+                                                              ^
+cpp-java/HumanEval_146_specialFilter.java:12: error: ';' expected
+                std::string number_as_string = std::to_string(num);
+                                                                 ^
+5 errors
+
+2024-12-11 18:14:27 - ERROR - Failed to compile cpp-java/HumanEval_127_intersection.java. Error:
+cpp-java/HumanEval_127_intersection.java:8: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                      ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:8: error: cannot find symbol
+    public static String intersection(Pair<Long, Long> interval1, Pair<Long, Long> interval2) {
+                                                                  ^
+  symbol:   class Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:24: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:24: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(2l, 3l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:25: error: cannot find symbol
+    assert(intersection((Pair.with(-1l, 1l)), (Pair.with(0l, 4l))).equals(("NO")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:26: error: cannot find symbol
+    assert(intersection((Pair.with(-3l, -1l)), (Pair.with(-5l, 5l))).equals(("YES")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:27: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, 2l)), (Pair.with(-4l, 0l))).equals(("YES")));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:28: error: cannot find symbol
+    assert(intersection((Pair.with(-11l, 2l)), (Pair.with(-1l, -1l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:29: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(3l, 5l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:30: error: cannot find symbol
+    assert(intersection((Pair.with(1l, 2l)), (Pair.with(1l, 2l))).equals(("NO")));
+                                              ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                         ^
+  symbol:   variable Pair
+  location: class Problem
+cpp-java/HumanEval_127_intersection.java:31: error: cannot find symbol
+    assert(intersection((Pair.with(-2l, -2l)), (Pair.with(-3l, -2l))).equals(("NO")));
+                                                ^
+  symbol:   variable Pair
+  location: class Problem
+18 errors
+
+2024-12-11 18:14:27 - ERROR - Failed to compile cpp-java/HumanEval_18_how_many_times.java. Error:
+cpp-java/HumanEval_18_how_many_times.java:10: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                  ^
+  symbol:   method size()
+  location: variable string of type String
+cpp-java/HumanEval_18_how_many_times.java:10: error: cannot find symbol
+        for (int i = 0; i < string.size() - substring.size() + 1; i++) {
+                                                     ^
+  symbol:   method size()
+  location: variable substring of type String
+cpp-java/HumanEval_18_how_many_times.java:11: error: cannot find symbol
+            if (string.substr(i, substring.size()) == substring) {
+                                          ^
+  symbol:   method size()
+  location: variable substring of type String
+3 errors
+
+2024-12-11 18:14:28 - INFO - Successfully compiled: cpp-java/HumanEval_147_get_max_triples.java
+2024-12-11 18:14:28 - ERROR - Failed to compile cpp-java/HumanEval_2_truncate_number.java. Error:
+cpp-java/HumanEval_2_truncate_number.java:32: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:35: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:38: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:41: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:44: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:47: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:50: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:53: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:56: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:59: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:62: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:65: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:68: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:71: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:74: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:77: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:80: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:83: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:86: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:89: error: method truncateNumber(int) is already defined in class Problem
+    public static float truncateNumber(int number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:92: error: method truncateNumber(short) is already defined in class Problem
+    public static float truncateNumber(short number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:95: error: method truncateNumber(byte) is already defined in class Problem
+    public static float truncateNumber(byte number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:98: error: method truncateNumber(char) is already defined in class Problem
+    public static float truncateNumber(char number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:101: error: method truncateNumber(boolean) is already defined in class Problem
+    public static float truncateNumber(boolean number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:104: error: method truncateNumber(float) is already defined in class Problem
+    public static float truncateNumber(float number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:107: error: method truncateNumber(double) is already defined in class Problem
+    public static float truncateNumber(double number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:110: error: method truncateNumber(long) is already defined in class Problem
+    public static float truncateNumber(long number) {
+                        ^
+cpp-java/HumanEval_2_truncate_number.java:9: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:12: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:15: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:18: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:21: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:24: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:27: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:30: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:33: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:36: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:39: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:42: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:45: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:48: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:51: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:54: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:57: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:60: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:63: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:66: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:69: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:72: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:75: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:78: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:81: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:84: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:87: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:90: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(int)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:93: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(short)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:96: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(byte)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:99: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(char)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:102: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(boolean)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:105: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(float)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:108: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(double)
+  location: class Problem
+cpp-java/HumanEval_2_truncate_number.java:111: error: cannot find symbol
+        return number - floor(number);
+                        ^
+  symbol:   method floor(long)
+  location: class Problem
+62 errors
+
+2024-12-11 18:14:29 - INFO - Successfully compiled: cpp-java/HumanEval_78_hex_key.java
+2024-12-11 18:14:29 - ERROR - Failed to compile cpp-java/HumanEval_148_bf.java. Error:
+cpp-java/HumanEval_148_bf.java:10: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                     ^
+cpp-java/HumanEval_148_bf.java:10: error: ')' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                          ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                              ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                       ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                               ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                           ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                    ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                      ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                             ^
+cpp-java/HumanEval_148_bf.java:10: error: not a statement
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                     ^
+cpp-java/HumanEval_148_bf.java:10: error: ';' expected
+        if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {
+                                                                                                                                                                                                          ^
+cpp-java/HumanEval_148_bf.java:11: error: illegal start of expression
+            return {};
+                   ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:13: error: not a statement
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:13: error: ';' expected
+        int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                     ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                          ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                              ^
+cpp-java/HumanEval_148_bf.java:14: error: not a statement
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                ^
+cpp-java/HumanEval_148_bf.java:14: error: ';' expected
+        int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();
+                                                                                       ^
+cpp-java/HumanEval_148_bf.java:16: error: illegal start of expression
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:16: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:16: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:16: error: not a statement
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:16: error: ';' expected
+            return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};
+                                                                                                  ^
+cpp-java/HumanEval_148_bf.java:18: error: illegal start of expression
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                   ^
+cpp-java/HumanEval_148_bf.java:18: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                         ^
+cpp-java/HumanEval_148_bf.java:18: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                            ^
+cpp-java/HumanEval_148_bf.java:18: error: not a statement
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                   ^
+cpp-java/HumanEval_148_bf.java:18: error: ';' expected
+            return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};
+                                                                                                  ^
+34 errors
+
+2024-12-11 18:14:30 - INFO - Successfully compiled: cpp-java/HumanEval_74_total_match.java
+2024-12-11 18:14:30 - INFO - Successfully compiled: cpp-java/HumanEval_96_count_up_to.java
+2024-12-11 18:14:31 - ERROR - Failed to compile cpp-java/HumanEval_126_is_sorted.java. Error:
+cpp-java/HumanEval_126_is_sorted.java:9: error: cannot find symbol
+        return is_sorted(lst);
+               ^
+  symbol:   method is_sorted(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:31 - INFO - Successfully compiled: cpp-java/HumanEval_89_encrypt.java
+2024-12-11 18:14:31 - ERROR - Failed to compile cpp-java/HumanEval_72_will_it_fly.java. Error:
+cpp-java/HumanEval_72_will_it_fly.java:9: error: cannot find symbol
+        if (will_it_fly(q, w)) {
+            ^
+  symbol:   method will_it_fly(ArrayList<Long>,long)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:32 - INFO - Successfully compiled: cpp-java/HumanEval_64_vowels_count.java
+2024-12-11 18:14:32 - INFO - Successfully compiled: cpp-java/HumanEval_153_Strongest_Extension.java
+2024-12-11 18:14:33 - ERROR - Failed to compile cpp-java/HumanEval_82_prime_length.java. Error:
+cpp-java/HumanEval_82_prime_length.java:9: error: cannot find symbol
+        return prime_length(string);
+               ^
+  symbol:   method prime_length(String)
+  location: class Problem
+1 error
+
+2024-12-11 18:14:33 - INFO - Directory: cpp-java
+2024-12-11 18:14:33 - INFO - Total Files: 45
+2024-12-11 18:14:33 - INFO - Successful Compilations: 19
+2024-12-11 18:14:33 - INFO - Failed Compilations: 26
+2024-12-11 18:14:33 - INFO - Success Rate: 42.22%

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_145_order_by_points",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef order_by_points(nums: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_145_order_by_points.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0, 6, 6, -76, -21, 23, 4]) == [-76, -21, 0, 4, 23, 6, 6]\n\ndef test_check():\n    check(order_by_points)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> orderByPoints(ArrayList<Long> nums) {\n        return nums.stream().sorted((a, b) -> Long.compare(digitsSum(a), digitsSum(b))).collect(Collectors.toCollection(ArrayList::new));\n    }\n    private static long digitsSum(long n) {\n        long neg = 1;\n        if (n < 0) {\n            n = -1 * n;\n            neg = -1;\n        }\n        String s = Long.toString(n);\n        long[] digits = new long[s.length()];\n        for (int i = 0; i < s.length(); i++) {\n            digits[i] = s.charAt(i) - '0';\n        }\n        digits[0] *= neg;\n        return Arrays.stream(digits).sum();\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef order_by_points(nums: List[int]) -> List[int]:\n"
+}

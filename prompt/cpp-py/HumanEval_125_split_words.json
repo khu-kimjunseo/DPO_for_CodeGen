@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_125_split_words",
+    "language": "py",
+    "prompt": "from typing import Union, List\n\ndef split_words(txt: str) -> Union[List[str], int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_125_split_words.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hello world!') == ['Hello', 'world!']\n    assert candidate('Hello,world!') == ['Hello', 'world!']\n    assert candidate('Hello world,!') == ['Hello', 'world,!']\n    assert candidate('Hello,Hello,world !') == ['Hello,Hello,world', '!']\n    assert candidate('abcdef') == 3\n    assert candidate('aaabb') == 2\n    assert candidate('aaaBb') == 1\n    assert candidate('') == 0\n\ndef test_check():\n    check(split_words)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nunion Union_std_vector_std_string__long{\n    std::vector<std::string> f0;\n    long f1;    Union_std_vector_std_string__long(std::vector<std::string> _f0) : f0(_f0) {}\n    Union_std_vector_std_string__long(long _f1) : f1(_f1) {}\n    ~Union_std_vector_std_string__long() {}\n    bool operator==(std::vector<std::string> f) {\n        return f0 == f ;\n    }    bool operator==(long f) {\n        return f1 == f ;\n    }\n};\nUnion_std_vector_std_string__long split_words(std::string txt) {\n    if (txt.find(\" \") != std::string::npos) {\n        std::vector<std::string> result;\n        std::stringstream ss(txt);\n        std::string word;\n        while (ss >> word) {\n            result.push_back(word);\n        }\n        return result;\n    } else if (txt.find(\",\") != std::string::npos) {\n        std::vector<std::string> result;\n        std::stringstream ss(txt);\n        std::string word;\n        while (getline(ss, word, ',')) {\n            result.push_back(word);\n        }\n        return result;\n    } else {\n        long count = 0;\n        for (char c : txt) {\n            if (islower(c) && c % 2 == 0) {\n                count++;\n            }\n        }\n        return count;\n    }\n}\n\n### Python version\n\nfrom typing import Union, List\n\ndef split_words(txt: str) -> Union[List[str], int]:\n"
+}

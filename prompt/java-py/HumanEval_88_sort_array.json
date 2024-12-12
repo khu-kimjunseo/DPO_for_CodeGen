@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_88_sort_array",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef sort_array(array: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_88_sort_array.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([5]) == [5]\n    assert candidate([2, 4, 3, 0, 1, 5]) == [0, 1, 2, 3, 4, 5]\n    assert candidate([2, 4, 3, 0, 1, 5, 6]) == [6, 5, 4, 3, 2, 1, 0]\n    assert candidate([2, 1]) == [1, 2]\n    assert candidate([15, 42, 87, 32, 11, 0]) == [0, 11, 15, 32, 42, 87]\n    assert candidate([21, 14, 23, 11]) == [23, 21, 14, 11]\n\ndef test_check():\n    check(sort_array)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> sortArray(ArrayList<Long> array) {\n        if (array.size() == 0) {\n            return new ArrayList<Long>();\n        } else {\n            boolean reverse = (array.get(0) + array.get(array.size() - 1)) % 2 == 0;\n            Collections.sort(array);\n            if (reverse) {\n                Collections.reverse(array);\n            }\n            return array;\n        }\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef sort_array(array: List[int]) -> List[int]:\n"
+}

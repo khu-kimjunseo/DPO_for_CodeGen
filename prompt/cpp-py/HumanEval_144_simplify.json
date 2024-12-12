@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_144_simplify",
+    "language": "py",
+    "prompt": "def simplify(x: str, n: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_144_simplify.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('1/5', '5/1') == True\n    assert candidate('1/6', '2/1') == False\n    assert candidate('5/1', '3/1') == True\n    assert candidate('7/10', '10/2') == False\n    assert candidate('2/10', '50/10') == True\n    assert candidate('7/2', '4/2') == True\n    assert candidate('11/6', '6/1') == True\n    assert candidate('2/3', '5/2') == False\n    assert candidate('5/2', '3/5') == False\n    assert candidate('2/4', '8/4') == True\n    assert candidate('2/4', '4/2') == True\n    assert candidate('1/5', '5/1') == True\n    assert candidate('1/5', '1/5') == False\n\ndef test_check():\n    check(simplify)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool simplify(std::string x, std::string n) {\n    std::stringstream ss1(x), ss2(n);\n    int a, b, c, d;\n    char slash;\n    ss1 >> a >> slash >> b;\n    ss2 >> c >> slash >> d;\n    int numerator = a * c;\n    int denom = b * d;\n    return numerator % denom == 0;\n}\n\n### Python version\n\ndef simplify(x: str, n: str) -> bool:\n"
+}

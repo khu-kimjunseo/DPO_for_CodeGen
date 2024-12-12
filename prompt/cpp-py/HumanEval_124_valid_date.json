@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_124_valid_date",
+    "language": "py",
+    "prompt": "def valid_date(date: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_124_valid_date.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('03-11-2000') == True\n    assert candidate('15-01-2012') == False\n    assert candidate('04-0-2040') == False\n    assert candidate('06-04-2020') == True\n    assert candidate('01-01-2007') == True\n    assert candidate('03-32-2011') == False\n    assert candidate('') == False\n    assert candidate('04-31-3000') == False\n    assert candidate('06-06-2005') == True\n    assert candidate('21-31-2000') == False\n    assert candidate('04-12-2003') == True\n    assert candidate('04122003') == False\n    assert candidate('20030412') == False\n    assert candidate('2003-04') == False\n    assert candidate('2003-04-12') == False\n    assert candidate('04-2003') == False\n\ndef test_check():\n    check(valid_date)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool valid_date(std::string date) {\n    try {\n        date = date.substr(0, date.find(' '));\n        int month, day, year;\n        sscanf(date.c_str(), \"%d-%d-%d\", &month, &day, &year);\n        if (month < 1 || month > 12) {\n            return false;\n        }\n        if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && (day < 1 || day > 31)) {\n            return false;\n        }\n        if ((month == 4 || month == 6 || month == 9 || month == 11) && (day < 1 || day > 30)) {\n            return false;\n        }\n        if (month == 2 && (day < 1 || day > 29)) {\n            return false;\n        }\n    } catch (...) {\n        return false;\n    }\n    return true;\n}\n\n### Python version\n\ndef valid_date(date: str) -> bool:\n"
+}

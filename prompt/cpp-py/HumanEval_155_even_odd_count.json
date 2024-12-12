@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_155_even_odd_count",
+    "language": "py",
+    "prompt": "from typing import Tuple\n\ndef even_odd_count(num: int) -> Tuple[int, int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_155_even_odd_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(7) == (0, 1)\n    assert candidate(-78) == (1, 1)\n    assert candidate(3452) == (2, 2)\n    assert candidate(346211) == (3, 3)\n    assert candidate(-345821) == (3, 3)\n    assert candidate(-2) == (1, 0)\n    assert candidate(-45347) == (2, 3)\n    assert candidate(0) == (1, 0)\n\ndef test_check():\n    check(even_odd_count)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::tuple<long, long> even_odd_count(long num) {\n    long even_count = 0;\n    long odd_count = 0;\n    for (auto i: std::to_string(abs(num))) {\n        if (int(i)%2==0) {\n            even_count +=1;\n        } else {\n            odd_count +=1;\n        }\n    }\n    return std::make_tuple(even_count, odd_count);\n}\n\n### Python version\n\nfrom typing import Tuple\n\ndef even_odd_count(num: int) -> Tuple[int, int]:\n"
+}

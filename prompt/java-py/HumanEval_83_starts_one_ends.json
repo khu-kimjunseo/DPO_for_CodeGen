@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_83_starts_one_ends",
+    "language": "py",
+    "prompt": "def starts_one_ends(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_83_starts_one_ends.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(starts_one_ends)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long startsOneEnds(long n) {\n        if (n == 1) return 1;\n        return 18 * (long)Math.pow(10, n - 2);\n    }\n}\n\n### Python version\n\ndef starts_one_ends(n: int) -> int:\n"
+}

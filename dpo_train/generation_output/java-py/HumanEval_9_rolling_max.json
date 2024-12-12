@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_9_rolling_max",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_9_rolling_max.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([1, 2, 3, 4]) == [1, 2, 3, 4]\n    assert candidate([4, 3, 2, 1]) == [4, 4, 4, 4]\n    assert candidate([3, 2, 3, 100, 3]) == [3, 3, 3, 100, 100]\n\ndef test_check():\n    check(rolling_max)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> rollingMax(ArrayList<Long> numbers) {\n        long running_max = Long.MIN_VALUE;\n        ArrayList<Long> result = new ArrayList<Long>();\n\n        for (long n : numbers) {\n            running_max = Math.max(running_max, n);\n            result.add(running_max);\n        }\n\n        return result;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n"
+}

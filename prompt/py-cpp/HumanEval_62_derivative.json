@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_62_derivative",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> derivative(std::vector<long> xs) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_62_derivative.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = derivative;\n    assert(candidate((std::vector<long>({(long)3, (long)1, (long)2, (long)4, (long)5}))) == (std::vector<long>({(long)1, (long)4, (long)12, (long)20})));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3}))) == (std::vector<long>({(long)2, (long)6})));\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)1}))) == (std::vector<long>({(long)2, (long)2})));\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)1, (long)0, (long)4}))) == (std::vector<long>({(long)2, (long)2, (long)0, (long)16})));\n    assert(candidate((std::vector<long>({(long)1}))) == (std::vector<long>()));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef derivative(xs: List[int]) -> List[int]:\n    return [(i * x) for i, x in enumerate(xs)][1:]\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> derivative(std::vector<long> xs) {\n"
+}

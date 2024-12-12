@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_121_solution",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong solution(std::vector<long> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_121_solution.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = solution;\n    assert(candidate((std::vector<long>({(long)5, (long)8, (long)7, (long)1}))) == (12));\n    assert(candidate((std::vector<long>({(long)3, (long)3, (long)3, (long)3, (long)3}))) == (9));\n    assert(candidate((std::vector<long>({(long)30, (long)13, (long)24, (long)321}))) == (0));\n    assert(candidate((std::vector<long>({(long)5, (long)9}))) == (5));\n    assert(candidate((std::vector<long>({(long)2, (long)4, (long)8}))) == (0));\n    assert(candidate((std::vector<long>({(long)30, (long)13, (long)23, (long)32}))) == (23));\n    assert(candidate((std::vector<long>({(long)3, (long)13, (long)2, (long)9}))) == (3));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef solution(lst: List[int]) -> int:\n    return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong solution(std::vector<long> lst) {\n"
+}

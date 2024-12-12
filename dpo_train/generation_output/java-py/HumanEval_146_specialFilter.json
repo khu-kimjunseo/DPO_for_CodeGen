@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_146_specialFilter",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef specialFilter(nums: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_146_specialFilter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([5, -2, 1, -5]) == 0\n    assert candidate([15, -73, 14, -15]) == 1\n    assert candidate([33, -2, -3, 45, 21, 109]) == 2\n    assert candidate([43, -12, 93, 125, 121, 109]) == 4\n    assert candidate([71, -2, -33, 75, 21, 19]) == 3\n    assert candidate([1]) == 0\n    assert candidate([]) == 0\n\ndef test_check():\n    check(specialFilter)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long specialFilter(ArrayList<Long> nums) {\n        long count = 0;\n        for (long num : nums) {\n            if (num > 10) {\n                if (isOdd(num / (long) Math.pow(10, (long) Math.log10(num))) && isOdd(num % 10)) {\n                    count++;\n                }\n            }\n        }\n        return count;\n    }\n\n    private static boolean isOdd(long n) {\n        return n % 2 == 1;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef specialFilter(nums: List[int]) -> int:\n"
+}

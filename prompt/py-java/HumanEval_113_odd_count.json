@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_113_odd_count",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> oddCount(ArrayList<String> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_113_odd_count.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(oddCount((new ArrayList<String>(Arrays.asList((String)\"1234567\")))).equals((new ArrayList<String>(Arrays.asList((String)\"the number of odd elements 4n the str4ng 4 of the 4nput.\")))));\n    assert(oddCount((new ArrayList<String>(Arrays.asList((String)\"3\", (String)\"11111111\")))).equals((new ArrayList<String>(Arrays.asList((String)\"the number of odd elements 1n the str1ng 1 of the 1nput.\", (String)\"the number of odd elements 8n the str8ng 8 of the 8nput.\")))));\n    assert(oddCount((new ArrayList<String>(Arrays.asList((String)\"271\", (String)\"137\", (String)\"314\")))).equals((new ArrayList<String>(Arrays.asList((String)\"the number of odd elements 2n the str2ng 2 of the 2nput.\", (String)\"the number of odd elements 3n the str3ng 3 of the 3nput.\", (String)\"the number of odd elements 2n the str2ng 2 of the 2nput.\")))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef odd_count(lst: List[str]) -> List[str]:\n    res = []\n    for arr in lst:\n        n = sum(int(d)%2==1 for d in arr)\n        res.append(\"the number of odd elements \" + str(n) + \"n the str\"+ str(n) +\"ng \"+ str(n) +\" of the \"+ str(n) +\"nput.\")\n    return res\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> oddCount(ArrayList<String> lst) {\n"
+}

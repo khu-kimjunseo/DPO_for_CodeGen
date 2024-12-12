@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_61_correct_bracketing",
+    "language": "py",
+    "prompt": "def correct_bracketing(brackets: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_61_correct_bracketing.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('()') == True\n    assert candidate('(()())') == True\n    assert candidate('()()(()())()') == True\n    assert candidate('()()((()()())())(()()(()))') == True\n    assert candidate('((()())))') == False\n    assert candidate(')(()') == False\n    assert candidate('(') == False\n    assert candidate('((((') == False\n    assert candidate(')') == False\n    assert candidate('(()') == False\n    assert candidate('()()(()())())(()') == False\n    assert candidate('()()(()())()))()') == False\n\ndef test_check():\n    check(correct_bracketing)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool correct_bracketing(std::string brackets) {\n    int depth = 0;\n    for (char b : brackets) {\n        if (b == '(') {\n            depth++;\n        } else {\n            depth--;\n        }\n        if (depth < 0) {\n            return false;\n        }\n    }\n    return depth == 0;\n}\n\n### Python version\n\ndef correct_bracketing(brackets: str) -> bool:\n"
+}

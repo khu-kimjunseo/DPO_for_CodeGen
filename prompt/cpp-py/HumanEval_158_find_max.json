@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_158_find_max",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef find_max(words: List[str]) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_158_find_max.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(['name', 'of', 'string']) == 'string'\n    assert candidate(['name', 'enam', 'game']) == 'enam'\n    assert candidate(['aaaaaaa', 'bb', 'cc']) == 'aaaaaaa'\n    assert candidate(['abc', 'cba']) == 'abc'\n    assert candidate(['play', 'this', 'game', 'of', 'footbott']) == 'footbott'\n    assert candidate(['we', 'are', 'gonna', 'rock']) == 'gonna'\n    assert candidate(['we', 'are', 'a', 'mad', 'nation']) == 'nation'\n    assert candidate(['this', 'is', 'a', 'prrk']) == 'this'\n    assert candidate(['b']) == 'b'\n    assert candidate(['play', 'play', 'play']) == 'play'\n\ndef test_check():\n    check(find_max)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string find_max(std::vector<std::string> words) {\n    std::sort(words.begin(), words.end(), [](std::string a, std::string b) {\n        return std::make_pair(-std::set<char>(a.begin(), a.end()).size(), a) < std::make_pair(-std::set<char>(b.begin(), b.end()).size(), b);\n    });\n    return words[0];\n}\n\n### Python version\n\nfrom typing import List\n\ndef find_max(words: List[str]) -> str:\n"
+}

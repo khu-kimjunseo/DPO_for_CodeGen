@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_52_below_threshold",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean belowThreshold(ArrayList<Long> l, long t) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_52_below_threshold.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)4l, (long)10l))), (100l)) == (true));\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)20l, (long)4l, (long)10l))), (5l)) == (false));\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)20l, (long)4l, (long)10l))), (21l)) == (true));\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)20l, (long)4l, (long)10l))), (22l)) == (true));\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)8l, (long)4l, (long)10l))), (11l)) == (true));\n    assert(belowThreshold((new ArrayList<Long>(Arrays.asList((long)1l, (long)8l, (long)4l, (long)10l))), (10l)) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool below_threshold(std::vector<long> l, long t) {\n    for (auto e: l) {\n        if (e >= t) {\n            return false;\n        }\n    }\n    return true;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean belowThreshold(ArrayList<Long> l, long t) {\n"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_158_find_max",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String findMax(ArrayList<String> words) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_158_find_max.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"name\", (String)\"of\", (String)\"string\")))).equals((\"string\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"name\", (String)\"enam\", (String)\"game\")))).equals((\"enam\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"aaaaaaa\", (String)\"bb\", (String)\"cc\")))).equals((\"aaaaaaa\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"abc\", (String)\"cba\")))).equals((\"abc\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"play\", (String)\"this\", (String)\"game\", (String)\"of\", (String)\"footbott\")))).equals((\"footbott\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"we\", (String)\"are\", (String)\"gonna\", (String)\"rock\")))).equals((\"gonna\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"we\", (String)\"are\", (String)\"a\", (String)\"mad\", (String)\"nation\")))).equals((\"nation\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"this\", (String)\"is\", (String)\"a\", (String)\"prrk\")))).equals((\"this\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"b\")))).equals((\"b\")));\n    assert(findMax((new ArrayList<String>(Arrays.asList((String)\"play\", (String)\"play\", (String)\"play\")))).equals((\"play\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string find_max(std::vector<std::string> words) {\n    std::sort(words.begin(), words.end(), [](std::string a, std::string b) {\n        return std::make_pair(-std::set<char>(a.begin(), a.end()).size(), a) < std::make_pair(-std::set<char>(b.begin(), b.end()).size(), b);\n    });\n    return words[0];\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String findMax(ArrayList<String> words) {\n"
+}

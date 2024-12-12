@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_125_split_words",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nunion Union_std_vector_std_string__long{\n    std::vector<std::string> f0;\n    long f1;    Union_std_vector_std_string__long(std::vector<std::string> _f0) : f0(_f0) {}\n    Union_std_vector_std_string__long(long _f1) : f1(_f1) {}\n    ~Union_std_vector_std_string__long() {}\n    bool operator==(std::vector<std::string> f) {\n        return f0 == f ;\n    }    bool operator==(long f) {\n        return f1 == f ;\n    }\n};\nUnion_std_vector_std_string__long split_words(std::string txt) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_125_split_words.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = split_words;\n    assert(candidate((\"Hello world!\")) == std::vector<std::string>({(std::string)\"Hello\", (std::string)\"world!\"}));\n    assert(candidate((\"Hello,world!\")) == std::vector<std::string>({(std::string)\"Hello\", (std::string)\"world!\"}));\n    assert(candidate((\"Hello world,!\")) == std::vector<std::string>({(std::string)\"Hello\", (std::string)\"world,!\"}));\n    assert(candidate((\"Hello,Hello,world !\")) == std::vector<std::string>({(std::string)\"Hello,Hello,world\", (std::string)\"!\"}));\n    assert(candidate((\"abcdef\")) == 3);\n    assert(candidate((\"aaabb\")) == 2);\n    assert(candidate((\"aaaBb\")) == 1);\n    assert(candidate((\"\")) == 0);\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\nfrom typing import Union\n\ndef split_words(txt: str) -> Union[List[str], int]:\n    if \" \" in txt:\n        return txt.split()\n    elif \",\" in txt:\n        return txt.replace(',',' ').split()\n    else:\n        return len([i for i in txt if i.islower() and ord(i)%2 == 0])\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nunion Union_std_vector_std_string__long{\n    std::vector<std::string> f0;\n    long f1;    Union_std_vector_std_string__long(std::vector<std::string> _f0) : f0(_f0) {}\n    Union_std_vector_std_string__long(long _f1) : f1(_f1) {}\n    ~Union_std_vector_std_string__long() {}\n    bool operator==(std::vector<std::string> f) {\n        return f0 == f ;\n    }    bool operator==(long f) {\n        return f1 == f ;\n    }\n};\nUnion_std_vector_std_string__long split_words(std::string txt) {\n"
+}

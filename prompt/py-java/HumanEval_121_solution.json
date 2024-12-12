@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_121_solution",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long solution(ArrayList<Long> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_121_solution.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)5l, (long)8l, (long)7l, (long)1l)))) == (12l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)3l, (long)3l, (long)3l, (long)3l, (long)3l)))) == (9l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)30l, (long)13l, (long)24l, (long)321l)))) == (0l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)5l, (long)9l)))) == (5l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)8l)))) == (0l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)30l, (long)13l, (long)23l, (long)32l)))) == (23l));\n    assert(solution((new ArrayList<Long>(Arrays.asList((long)3l, (long)13l, (long)2l, (long)9l)))) == (3l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef solution(lst: List[int]) -> int:\n    return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long solution(ArrayList<Long> lst) {\n"
+}

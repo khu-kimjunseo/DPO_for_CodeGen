@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_132_is_nested",
+    "language": "py",
+    "prompt": "def is_nested(string: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_132_is_nested.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('[[]]') == True\n    assert candidate('[]]]]]]][[[[[]') == False\n    assert candidate('[][]') == False\n    assert candidate('[]') == False\n    assert candidate('[[[[]]]]') == True\n    assert candidate('[]]]]]]]]]]') == False\n    assert candidate('[][][[]]') == True\n    assert candidate('[[]') == False\n    assert candidate('[]]') == False\n    assert candidate('[[]][[') == True\n    assert candidate('[[][]]') == True\n    assert candidate('') == False\n    assert candidate('[[[[[[[[') == False\n    assert candidate(']]]]]]]]') == False\n\ndef test_check():\n    check(is_nested)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool is_nested(std::string string) {\n    std::vector<int> opening_bracket_index;\n    std::vector<int> closing_bracket_index;\n    for (int i = 0; i < string.length(); i++) {\n        if (string[i] == '[') {\n            opening_bracket_index.push_back(i);\n        } else {\n            closing_bracket_index.push_back(i);\n        }\n    }\n    std::reverse(closing_bracket_index.begin(), closing_bracket_index.end());\n    int cnt = 0;\n    int i = 0;\n    int l = closing_bracket_index.size();\n    for (int idx : opening_bracket_index) {\n        if (i < l && idx < closing_bracket_index[i]) {\n            cnt++;\n            i++;\n        }\n    }\n    return cnt >= 2;\n}\n\n### Python version\n\ndef is_nested(string: str) -> bool:\n"
+}

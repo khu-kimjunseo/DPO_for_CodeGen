@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_92_any_int",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool any_int(float x, float y, float z) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_92_any_int.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = any_int;\n    assert(candidate((float(2)), (float(3)), (float(1))) == (true));\n    assert(candidate((2.5f), (float(2)), (float(3))) == (false));\n    assert(candidate((1.5f), (float(5)), (3.5f)) == (false));\n    assert(candidate((float(2)), (float(6)), (float(2))) == (false));\n    assert(candidate((float(4)), (float(2)), (float(2))) == (true));\n    assert(candidate((2.2f), (2.2f), (2.2f)) == (false));\n    assert(candidate((float(-4)), (float(6)), (float(2))) == (true));\n    assert(candidate((float(2)), (float(1)), (float(1))) == (true));\n    assert(candidate((float(3)), (float(4)), (float(7))) == (true));\n    assert(candidate((3.0f), (float(4)), (float(7))) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef any_int(x: float, y: float, z: float) -> bool:\n    \n    if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):\n        if (x+y==z) or (x+z==y) or (y+z==x):\n            return True\n        return False\n    return False\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool any_int(float x, float y, float z) {\n"
+}

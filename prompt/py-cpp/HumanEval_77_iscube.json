@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_77_iscube",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool iscube(long a) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_77_iscube.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = iscube;\n    assert(candidate((1)) == (true));\n    assert(candidate((2)) == (false));\n    assert(candidate((-1)) == (true));\n    assert(candidate((64)) == (true));\n    assert(candidate((180)) == (false));\n    assert(candidate((1000)) == (true));\n    assert(candidate((0)) == (true));\n    assert(candidate((1729)) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef iscube(a: int) -> bool:\n    a = abs(a)\n    return int(round(a ** (1. / 3))) ** 3 == a\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool iscube(long a) {\n"
+}

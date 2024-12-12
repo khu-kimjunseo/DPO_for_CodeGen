@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_95_check_dict_case",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkDictCase(HashMap<String,String> dict) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_95_check_dict_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"p\", \"pineapple\", \"b\", \"banana\")))) == (true));\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"p\", \"pineapple\", \"A\", \"banana\", \"B\", \"banana\")))) == (false));\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"p\", \"pineapple\", \"5\", \"banana\", \"a\", \"apple\")))) == (false));\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"Name\", \"John\", \"Age\", \"36\", \"City\", \"Houston\")))) == (false));\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"STATE\", \"NC\", \"ZIP\", \"12345\")))) == (true));\n    assert(checkDictCase((new HashMap<String,String>(Map.of(\"fruit\", \"Orange\", \"taste\", \"Sweet\")))) == (true));\n    assert(checkDictCase((new HashMap<String,String>())) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool check_dict_case(std::map<std::string,std::string> dict) {\n    if (dict.empty()) {\n        return false;\n    }\n    std::string state = \"start\";\n    for (auto const& [key, val] : dict) {\n        if (!std::all_of(key.begin(), key.end(), ::isalpha)) {\n            state = \"mixed\";\n            break;\n        }\n        if (state == \"start\") {\n            if (std::all_of(key.begin(), key.end(), ::isupper)) {\n                state = \"upper\";\n            } else if (std::all_of(key.begin(), key.end(), ::islower)) {\n                state = \"lower\";\n            } else {\n                break;\n            }\n        } else if ((state == \"upper\" && !std::all_of(key.begin(), key.end(), ::isupper)) || (state == \"lower\" && !std::all_of(key.begin(), key.end(), ::islower))) {\n            state = \"mixed\";\n            break;\n        }\n    }\n    return state == \"upper\" || state == \"lower\";\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkDictCase(HashMap<String,String> dict) {\n"
+}

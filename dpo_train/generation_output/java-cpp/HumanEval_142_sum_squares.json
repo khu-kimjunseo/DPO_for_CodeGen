@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_142_sum_squares",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong sum_squares(std::vector<long> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_142_sum_squares.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sum_squares;\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3}))) == (6));\n    assert(candidate((std::vector<long>({(long)1, (long)4, (long)9}))) == (14));\n    assert(candidate((std::vector<long>())) == (0));\n    assert(candidate((std::vector<long>({(long)1, (long)1, (long)1, (long)1, (long)1, (long)1, (long)1, (long)1, (long)1}))) == (9));\n    assert(candidate((std::vector<long>({(long)-1, (long)-1, (long)-1, (long)-1, (long)-1, (long)-1, (long)-1, (long)-1, (long)-1}))) == (-3));\n    assert(candidate((std::vector<long>({(long)0}))) == (0));\n    assert(candidate((std::vector<long>({(long)-1, (long)-5, (long)2, (long)-1, (long)-5}))) == (-126));\n    assert(candidate((std::vector<long>({(long)-56, (long)-99, (long)1, (long)0, (long)-2}))) == (3030));\n    assert(candidate((std::vector<long>({(long)-1, (long)0, (long)0, (long)0, (long)0, (long)0, (long)0, (long)0, (long)-1}))) == (0));\n    assert(candidate((std::vector<long>({(long)-16, (long)-9, (long)-2, (long)36, (long)36, (long)26, (long)-20, (long)25, (long)-40, (long)20, (long)-4, (long)12, (long)-26, (long)35, (long)37}))) == (-14196));\n    assert(candidate((std::vector<long>({(long)-1, (long)-3, (long)17, (long)-1, (long)-15, (long)13, (long)-1, (long)14, (long)-14, (long)-12, (long)-5, (long)14, (long)-14, (long)6, (long)13, (long)11, (long)16, (long)16, (long)4, (long)10}))) == (-1448));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long sumSquares(ArrayList<Long> lst) {\n        long result = 0;\n        for (int i = 0; i < lst.size(); i++) {\n            if (i % 3 == 0) {\n                result += Math.pow(lst.get(i), 2);\n            } else if (i % 4 == 0 && i % 3 != 0) {\n                result += Math.pow(lst.get(i), 3);\n            } else {\n                result += lst.get(i);\n            }\n        }\n        return result;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong sum_squares(std::vector<long> lst) {\n"
+}

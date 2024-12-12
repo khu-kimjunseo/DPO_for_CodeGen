@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_41_car_race_collision",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long carRaceCollision(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_41_car_race_collision.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(carRaceCollision((2l)) == (4l));\n    assert(carRaceCollision((3l)) == (9l));\n    assert(carRaceCollision((4l)) == (16l));\n    assert(carRaceCollision((8l)) == (64l));\n    assert(carRaceCollision((10l)) == (100l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef car_race_collision(n: int) -> int:\n    return n**2\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long carRaceCollision(long n) {\n"
+}

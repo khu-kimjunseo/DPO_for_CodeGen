@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_17_parse_music",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> parse_music(std::string music_string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_17_parse_music.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = parse_music;\n    assert(candidate((\"\")) == (std::vector<long>()));\n    assert(candidate((\"o o o o\")) == (std::vector<long>({(long)4, (long)4, (long)4, (long)4})));\n    assert(candidate((\".| .| .| .|\")) == (std::vector<long>({(long)1, (long)1, (long)1, (long)1})));\n    assert(candidate((\"o| o| .| .| o o o o\")) == (std::vector<long>({(long)2, (long)2, (long)1, (long)1, (long)4, (long)4, (long)4, (long)4})));\n    assert(candidate((\"o| .| o| .| o o| o o|\")) == (std::vector<long>({(long)2, (long)1, (long)2, (long)1, (long)4, (long)2, (long)4, (long)2})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> parseMusic(String music_string) {\n        HashMap<String, Long> note_map = new HashMap<String, Long>() {{\n            put(\"o\", 4L);\n            put(\"o|\", 2L);\n            put(\".|\", 1L);\n        }};\n        return Arrays.stream(music_string.split(\" \")).filter(x -> !x.isEmpty()).map(x -> note_map.get(x)).collect(Collectors.toCollection(ArrayList::new));\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> parse_music(std::string music_string) {\n"
+}

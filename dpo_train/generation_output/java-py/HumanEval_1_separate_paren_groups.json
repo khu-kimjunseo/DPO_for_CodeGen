@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_1_separate_paren_groups",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_1_separate_paren_groups.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('(()()) ((())) () ((())()())') == ['(()())', '((()))', '()', '((())()())']\n    assert candidate('() (()) ((())) (((())))') == ['()', '(())', '((()))', '(((())))']\n    assert candidate('(()(())((())))') == ['(()(())((())))']\n    assert candidate('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\ndef test_check():\n    check(separate_paren_groups)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> separateParenGroups(String paren_string) {\n        ArrayList<String> result = new ArrayList<String>();\n        ArrayList<Character> current_string = new ArrayList<Character>();\n        int current_depth = 0;\n\n        for (int i = 0; i < paren_string.length(); i++) {\n            char c = paren_string.charAt(i);\n            if (c == '(') {\n                current_depth += 1;\n                current_string.add(c);\n            } else if (c == ')') {\n                current_depth -= 1;\n                current_string.add(c);\n\n                if (current_depth == 0) {\n                    StringBuilder sb = new StringBuilder(current_string.size());\n                    for (Character ch : current_string) {\n                        sb.append(ch);\n                    }\n                    result.add(sb.toString());\n                    current_string.clear();\n                }\n            }\n        }\n\n        return result;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n"
+}

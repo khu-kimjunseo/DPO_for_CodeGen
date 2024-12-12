@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_152_compare",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef compare(game: List[int], guess: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_152_compare.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5, 1], [1, 2, 3, 4, 2, -2]) == [0, 0, 0, 0, 3, 3]\n    assert candidate([0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]) == [0, 0, 0, 0, 0, 0]\n    assert candidate([1, 2, 3], [-1, -2, -3]) == [2, 4, 6]\n    assert candidate([1, 2, 3, 5], [-1, 2, 3, 4]) == [2, 0, 0, 1]\n\ndef test_check():\n    check(compare)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> compare(ArrayList<Long> game, ArrayList<Long> guess) {\n        return (ArrayList<Long>) IntStream.range(0, game.size()).mapToObj(i -> Math.abs(game.get(i) - guess.get(i))).collect(Collectors.toList());\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef compare(game: List[int], guess: List[int]) -> List[int]:\n"
+}

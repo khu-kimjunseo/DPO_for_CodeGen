@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_33_sort_third",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_third(std::vector<long> l) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_33_sort_third.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sort_third;\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)3, (long)4, (long)8, (long)9, (long)2}))) == (std::vector<long>({(long)2, (long)6, (long)3, (long)4, (long)8, (long)9, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)8, (long)3, (long)4, (long)6, (long)9, (long)2}))) == (std::vector<long>({(long)2, (long)8, (long)3, (long)4, (long)6, (long)9, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)9, (long)4, (long)8, (long)3, (long)2}))) == (std::vector<long>({(long)2, (long)6, (long)9, (long)4, (long)8, (long)3, (long)5})));\n    assert(candidate((std::vector<long>({(long)5, (long)6, (long)3, (long)4, (long)8, (long)9, (long)2, (long)1}))) == (std::vector<long>({(long)2, (long)6, (long)3, (long)4, (long)8, (long)9, (long)5, (long)1})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> sortThird(ArrayList<Long> l) {\n        for (int i=2; i<l.size(); i+=3) {\n            int j=i-2;\n            while (j>=0 && l.get(j+3)<l.get(j)) {\n                long tmp=l.get(j);\n                l.set(j,l.get(j+3));\n                l.set(j+3,tmp);\n                j-=3;\n            }\n        }\n        return l;\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_third(std::vector<long> l) {\n"
+}

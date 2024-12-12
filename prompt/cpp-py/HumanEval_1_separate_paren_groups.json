@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_1_separate_paren_groups",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_1_separate_paren_groups.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('(()()) ((())) () ((())()())') == ['(()())', '((()))', '()', '((())()())']\n    assert candidate('() (()) ((())) (((())))') == ['()', '(())', '((()))', '(((())))']\n    assert candidate('(()(())((())))') == ['(()(())((())))']\n    assert candidate('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\ndef test_check():\n    check(separate_paren_groups)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n    std::vector<std::string> result;\n    std::string current_string;\n    int current_depth = 0;\n    for (char c : paren_string) {\n        if (c == '(') {\n            current_depth++;\n            current_string.push_back(c);\n        } else if (c == ')') {\n            current_depth--;\n            current_string.push_back(c);\n            if (current_depth == 0) {\n                result.push_back(current_string);\n                current_string.clear();\n            }\n        }\n    }\n    return result;\n}\n\n### Python version\n\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n"
+}

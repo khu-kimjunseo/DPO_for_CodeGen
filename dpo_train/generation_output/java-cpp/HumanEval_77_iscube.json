@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_77_iscube",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool iscube(long a) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_77_iscube.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = iscube;\n    assert(candidate((1)) == (true));\n    assert(candidate((2)) == (false));\n    assert(candidate((-1)) == (true));\n    assert(candidate((64)) == (true));\n    assert(candidate((180)) == (false));\n    assert(candidate((1000)) == (true));\n    assert(candidate((0)) == (true));\n    assert(candidate((1729)) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean iscube(long a) {\n        a = Math.abs(a);\n        return Math.pow(Math.round(Math.cbrt(a)), 3) == a;\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool iscube(long a) {\n"
+}

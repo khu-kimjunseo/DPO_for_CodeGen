@@ -1,0 +1,99 @@
+2024-12-12 20:29:47 - ERROR - Failed to compile java-py/HumanEval_74_total_match.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_74_total_match.py, line 4)
+2024-12-12 20:29:47 - ERROR - Failed to compile java-py/HumanEval_122_add_elements.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_122_add_elements.py, line 4)
+2024-12-12 20:29:47 - ERROR - Failed to compile java-py/HumanEval_55_fib.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_55_fib.py, line 2)
+2024-12-12 20:29:47 - ERROR - Failed to compile java-py/HumanEval_60_sum_to_n.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_60_sum_to_n.py, line 2)
+2024-12-12 20:29:47 - ERROR - Failed to compile java-py/HumanEval_47_median.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_47_median.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_138_is_equal_to_sum_even.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_138_is_equal_to_sum_even.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_7_filter_by_substring.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_7_filter_by_substring.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_101_words_string.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_101_words_string.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_114_minSubArraySum.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_114_minSubArraySum.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_96_count_up_to.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_96_count_up_to.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_88_sort_array.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_88_sort_array.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_104_unique_digits.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_104_unique_digits.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_83_starts_one_ends.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_83_starts_one_ends.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_86_anti_shuffle.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_86_anti_shuffle.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_153_Strongest_Extension.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_153_Strongest_Extension.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_129_minPath.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_129_minPath.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_27_flip_case.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_27_flip_case.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_5_intersperse.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_5_intersperse.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_80_is_happy.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_80_is_happy.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_158_find_max.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_158_find_max.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_121_solution.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_121_solution.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_105_by_length.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_105_by_length.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_35_max_element.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_35_max_element.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_12_longest.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_12_longest.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_145_order_by_points.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_145_order_by_points.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_54_same_chars.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_54_same_chars.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_17_parse_music.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_17_parse_music.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_120_maximum.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_120_maximum.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_10_make_palindrome.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_10_make_palindrome.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_87_get_row.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_87_get_row.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_127_intersection.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_127_intersection.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_82_prime_length.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_82_prime_length.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_40_triples_sum_to_zero.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_40_triples_sum_to_zero.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_135_can_arrange.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_135_can_arrange.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_72_will_it_fly.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_72_will_it_fly.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_42_incr_list.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_42_incr_list.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_46_fib4.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_46_fib4.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_3_below_zero.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_3_below_zero.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_23_strlen.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_23_strlen.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_29_filter_by_prefix.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_29_filter_by_prefix.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_147_get_max_triples.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_147_get_max_triples.py, line 2)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_33_sort_third.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_33_sort_third.py, line 4)
+2024-12-12 20:29:48 - ERROR - Failed to compile java-py/HumanEval_70_strange_sort_list.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_70_strange_sort_list.py, line 4)
+2024-12-12 20:29:49 - ERROR - Failed to compile java-py/HumanEval_131_digits.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_131_digits.py, line 2)
+2024-12-12 20:29:49 - ERROR - Failed to compile java-py/HumanEval_107_even_odd_palindrome.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_107_even_odd_palindrome.py, line 4)
+2024-12-12 20:29:49 - ERROR - Failed to compile java-py/HumanEval_143_words_in_sentence.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_143_words_in_sentence.py, line 2)
+2024-12-12 20:29:49 - ERROR - Failed to compile java-py/HumanEval_75_is_multiply_prime.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_75_is_multiply_prime.py, line 2)
+2024-12-12 20:29:49 - INFO - Directory: java-py
+2024-12-12 20:29:49 - INFO - Total Files: 47
+2024-12-12 20:29:49 - INFO - Successful Compilations: 0
+2024-12-12 20:29:49 - INFO - Failed Compilations: 47
+2024-12-12 20:29:49 - INFO - Success Rate: 0.00%

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_111_histogram",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static HashMap<String,Long> histogram(String test) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_111_histogram.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(histogram((\"a b b a\")).equals((new HashMap<String,Long>(Map.of(\"a\", 2l, \"b\", 2l)))));\n    assert(histogram((\"a b c a b\")).equals((new HashMap<String,Long>(Map.of(\"a\", 2l, \"b\", 2l)))));\n    assert(histogram((\"a b c d g\")).equals((new HashMap<String,Long>(Map.of(\"a\", 1l, \"b\", 1l, \"c\", 1l, \"d\", 1l, \"g\", 1l)))));\n    assert(histogram((\"r t g\")).equals((new HashMap<String,Long>(Map.of(\"r\", 1l, \"t\", 1l, \"g\", 1l)))));\n    assert(histogram((\"b b b b a\")).equals((new HashMap<String,Long>(Map.of(\"b\", 4l)))));\n    assert(histogram((\"r t g\")).equals((new HashMap<String,Long>(Map.of(\"r\", 1l, \"t\", 1l, \"g\", 1l)))));\n    assert(histogram((\"\")).equals((new HashMap<String,Long>())));\n    assert(histogram((\"a\")).equals((new HashMap<String,Long>(Map.of(\"a\", 1l)))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::map<std::string,long> histogram(std::string test) {\n    std::map<std::string,long> dict1;\n    std::stringstream ss(test);\n    std::string word;\n    long t = 0;\n    while (ss >> word) {\n        dict1[word]++;\n        if (dict1[word] > t) {\n            t = dict1[word];\n        }\n    }\n    std::map<std::string,long> result;\n    for (auto i : dict1) {\n        if (i.second == t) {\n            result[i.first] = t;\n        }\n    }\n    return result;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static HashMap<String,Long> histogram(String test) {\n"
+}

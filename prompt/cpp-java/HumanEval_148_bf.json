@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_148_bf",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> bf(String planet1, String planet2) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_148_bf.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(bf((\"Jupiter\"), (\"Neptune\")).equals((new ArrayList<String>(Arrays.asList((String)\"Saturn\", (String)\"Uranus\")))));\n    assert(bf((\"Earth\"), (\"Mercury\")).equals((new ArrayList<String>(Arrays.asList((String)\"Venus\")))));\n    assert(bf((\"Mercury\"), (\"Uranus\")).equals((new ArrayList<String>(Arrays.asList((String)\"Venus\", (String)\"Earth\", (String)\"Mars\", (String)\"Jupiter\", (String)\"Saturn\")))));\n    assert(bf((\"Neptune\"), (\"Venus\")).equals((new ArrayList<String>(Arrays.asList((String)\"Earth\", (String)\"Mars\", (String)\"Jupiter\", (String)\"Saturn\", (String)\"Uranus\")))));\n    assert(bf((\"Earth\"), (\"Earth\")).equals((new ArrayList<String>(Arrays.asList()))));\n    assert(bf((\"Mars\"), (\"Earth\")).equals((new ArrayList<String>(Arrays.asList()))));\n    assert(bf((\"Jupiter\"), (\"Makemake\")).equals((new ArrayList<String>(Arrays.asList()))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n    std::vector<std::string> planet_names = {\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"};\n    if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {\n        return {};\n    }\n    int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();\n    int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();\n    if (planet1_index < planet2_index) {\n        return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};\n    } else {\n        return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};\n    }\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> bf(String planet1, String planet2) {\n"
+}

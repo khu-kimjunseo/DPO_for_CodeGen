@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_65_circular_shift",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String circularShift(long x, long shift) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_65_circular_shift.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(circularShift((100l), (2l)).equals((\"001\")));\n    assert(circularShift((12l), (2l)).equals((\"12\")));\n    assert(circularShift((97l), (8l)).equals((\"79\")));\n    assert(circularShift((12l), (1l)).equals((\"21\")));\n    assert(circularShift((11l), (101l)).equals((\"11\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string circular_shift(long x, long shift) {\n    std::string s = std::to_string(x);\n    if (shift > s.size()) {\n        return std::string(s.rbegin(), s.rend());\n    } else {\n        return s.substr(s.size() - shift) + s.substr(0, s.size() - shift);\n    }\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String circularShift(long x, long shift) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_80_is_happy",
+    "language": "py",
+    "prompt": "def is_happy(s: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_80_is_happy.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('a') == False\n    assert candidate('aa') == False\n    assert candidate('abcd') == True\n    assert candidate('aabb') == False\n    assert candidate('adb') == True\n    assert candidate('xyy') == False\n    assert candidate('iopaxpoi') == True\n    assert candidate('iopaxioi') == False\n\ndef test_check():\n    check(is_happy)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isHappy(String s) {\n        if (s.length() < 3) return false;\n        for (int i = 0; i < s.length() - 2; i++) {\n            if (s.charAt(i) == s.charAt(i+1) || s.charAt(i+1) == s.charAt(i+2) || s.charAt(i) == s.charAt(i+2)) return false;\n        }\n        return true;\n    }\n    \n}\n\n### Python version\n\ndef is_happy(s: str) -> bool:\n"
+}

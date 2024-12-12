@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_98_count_upper",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countUpper(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_98_count_upper.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(countUpper((\"aBCdEf\")) == (1l));\n    assert(countUpper((\"abcdefg\")) == (0l));\n    assert(countUpper((\"dBBE\")) == (0l));\n    assert(countUpper((\"B\")) == (0l));\n    assert(countUpper((\"U\")) == (1l));\n    assert(countUpper((\"\")) == (0l));\n    assert(countUpper((\"EEEE\")) == (2l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong count_upper(std::string s) {\n    long count = 0;\n    for (int i = 0; i < s.size(); i += 2) {\n        if (std::string(\"AEIOU\").find(s[i]) != std::string::npos) {\n            count += 1;\n        }\n    }\n    return count;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countUpper(String s) {\n"
+}

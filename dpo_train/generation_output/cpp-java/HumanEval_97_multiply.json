@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_97_multiply",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long multiply(long a, long b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_97_multiply.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(multiply((148l), (412l)) == (16l));\n    assert(multiply((19l), (28l)) == (72l));\n    assert(multiply((2020l), (1851l)) == (0l));\n    assert(multiply((14l), (-15l)) == (20l));\n    assert(multiply((76l), (67l)) == (42l));\n    assert(multiply((17l), (27l)) == (49l));\n    assert(multiply((0l), (1l)) == (0l));\n    assert(multiply((0l), (0l)) == (0l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong multiply(long a, long b) {\n    return abs(a % 10) * abs(b % 10);\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long multiply(long a, long b) {\n"
+}

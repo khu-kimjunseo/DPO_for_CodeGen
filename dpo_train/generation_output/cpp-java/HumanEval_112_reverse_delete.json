@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_112_reverse_delete",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<String, Boolean> reverseDelete(String s, String c) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_112_reverse_delete.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(reverseDelete((\"abcde\"), (\"ae\")).equals((Pair.with(\"bcd\", false))));\n    assert(reverseDelete((\"abcdef\"), (\"b\")).equals((Pair.with(\"acdef\", false))));\n    assert(reverseDelete((\"abcdedcba\"), (\"ab\")).equals((Pair.with(\"cdedc\", true))));\n    assert(reverseDelete((\"dwik\"), (\"w\")).equals((Pair.with(\"dik\", false))));\n    assert(reverseDelete((\"a\"), (\"a\")).equals((Pair.with(\"\", true))));\n    assert(reverseDelete((\"abcdedcba\"), (\"\")).equals((Pair.with(\"abcdedcba\", true))));\n    assert(reverseDelete((\"abcdedcba\"), (\"v\")).equals((Pair.with(\"abcdedcba\", true))));\n    assert(reverseDelete((\"vabba\"), (\"v\")).equals((Pair.with(\"abba\", true))));\n    assert(reverseDelete((\"mamma\"), (\"mia\")).equals((Pair.with(\"\", true))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::tuple<std::string, bool> reverse_delete(std::string s, std::string c) {\n    s.erase(std::remove_if(s.begin(), s.end(), [&c](char x) { return c.find(x) != std::string::npos; }), s.end());\n    return {s, s == std::string(s.rbegin(), s.rend())};\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<String, Boolean> reverseDelete(String s, String c) {\n"
+}

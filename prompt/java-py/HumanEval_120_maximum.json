@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_120_maximum",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef maximum(arr: List[int], k: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_120_maximum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([-3, -4, 5], 3) == [-4, -3, 5]\n    assert candidate([4, -4, 4], 2) == [4, 4]\n    assert candidate([-3, 2, 1, 2, -1, -2, 1], 1) == [2]\n    assert candidate([123, -123, 20, 0, 1, 2, -3], 3) == [2, 20, 123]\n    assert candidate([-123, 20, 0, 1, 2, -3], 4) == [0, 1, 2, 20]\n    assert candidate([5, 15, 0, 3, -13, -8, 0], 7) == [-13, -8, 0, 0, 3, 5, 15]\n    assert candidate([-1, 0, 2, 5, 3, -10], 2) == [3, 5]\n    assert candidate([1, 0, 5, -7], 1) == [5]\n    assert candidate([4, -4], 2) == [-4, 4]\n    assert candidate([-10, 10], 2) == [-10, 10]\n    assert candidate([1, 2, 3, -23, 243, -400, 0], 0) == []\n\ndef test_check():\n    check(maximum)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> maximum(ArrayList<Long> arr, long k) {\n        if (k == 0) {\n            return new ArrayList<Long>();\n        }\n        Collections.sort(arr);\n        return new ArrayList<Long>(arr.subList(arr.size() - (int)k, arr.size()));\n    }\n    \n}\n\n### Python version\n\nfrom typing import List\n\ndef maximum(arr: List[int], k: int) -> List[int]:\n"
+}

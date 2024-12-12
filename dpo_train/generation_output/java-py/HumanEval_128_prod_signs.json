@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_128_prod_signs",
+    "language": "py",
+    "prompt": "from typing import List, Optional\n\ndef prod_signs(arr: List[int]) -> Optional[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_128_prod_signs.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 2, -4]) == -9\n    assert candidate([0, 1]) == 0\n    assert candidate([1, 1, 1, 2, 3, -1, 1]) == -10\n    assert candidate([]) == None\n    assert candidate([2, 4, 1, 2, -1, -1, 9]) == 20\n    assert candidate([-1, 1, -1, 1]) == 4\n    assert candidate([-1, 1, 1, 1]) == -4\n    assert candidate([-1, 1, 1, 0]) == 0\n\ndef test_check():\n    check(prod_signs)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<Long> prodSigns(ArrayList<Long> arr) {\n        if (arr.isEmpty()) return Optional.empty();\n        long prod = arr.contains(0L) ? 0L : (long) Math.pow(-1, arr.stream().filter(x -> x < 0).count());\n        return Optional.of(prod * arr.stream().map(Math::abs).reduce(0L, Long::sum));\n    }\n}\n\n### Python version\n\nfrom typing import List, Optional\n\ndef prod_signs(arr: List[int]) -> Optional[int]:\n"
+}

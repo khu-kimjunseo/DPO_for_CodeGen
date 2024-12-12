@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_13_greatest_common_divisor",
+    "language": "py",
+    "prompt": "def greatest_common_divisor(a: int, b: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_13_greatest_common_divisor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3, 7) == 1\n    assert candidate(10, 15) == 5\n    assert candidate(49, 14) == 7\n    assert candidate(144, 60) == 12\n\ndef test_check():\n    check(greatest_common_divisor)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong greatest_common_divisor(long a, long b) {\n    while (b) {\n        long temp = a % b; a = b; b = temp;\n    }\n    return a;\n}\n\n### Python version\n\ndef greatest_common_divisor(a: int, b: int) -> int:\n"
+}

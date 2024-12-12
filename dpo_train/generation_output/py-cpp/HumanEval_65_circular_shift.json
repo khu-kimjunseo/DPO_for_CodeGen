@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_65_circular_shift",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string circular_shift(long x, long shift) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_65_circular_shift.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = circular_shift;\n    assert(candidate((100), (2)) == (\"001\"));\n    assert(candidate((12), (2)) == (\"12\"));\n    assert(candidate((97), (8)) == (\"79\"));\n    assert(candidate((12), (1)) == (\"21\"));\n    assert(candidate((11), (101)) == (\"11\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef circular_shift(x: int, shift: int) -> str:\n    s = str(x)\n    if shift > len(s):\n        return s[::-1]\n    else:\n        return s[len(s) - shift:] + s[:len(s) - shift]\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string circular_shift(long x, long shift) {\n"
+}

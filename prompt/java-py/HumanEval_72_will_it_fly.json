@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_72_will_it_fly",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef will_it_fly(q: List[int], w: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_72_will_it_fly.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([3, 2, 3], 9) == True\n    assert candidate([1, 2], 5) == False\n    assert candidate([3], 5) == True\n    assert candidate([3, 2, 3], 1) == False\n    assert candidate([1, 2, 3], 6) == False\n    assert candidate([5], 5) == True\n\ndef test_check():\n    check(will_it_fly)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean willItFly(ArrayList<Long> q, long w) {\n        if(q.stream().mapToLong(Long::longValue).sum() > w) return false;\n        int i = 0, j = q.size()-1;\n        while(i < j) {\n            if(q.get(i) != q.get(j)) return false;\n            i++;\n            j--;\n        }\n        return true;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef will_it_fly(q: List[int], w: int) -> bool:\n"
+}

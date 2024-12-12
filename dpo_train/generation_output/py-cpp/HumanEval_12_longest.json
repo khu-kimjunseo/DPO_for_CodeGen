@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_12_longest",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<std::string> longest(std::vector<std::string> strings) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_12_longest.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = longest;\n    assert(candidate((std::vector<std::string>())) == std::nullopt);\n    assert(candidate((std::vector<std::string>({(std::string)\"x\", (std::string)\"y\", (std::string)\"z\"}))) == \"x\");\n    assert(candidate((std::vector<std::string>({(std::string)\"x\", (std::string)\"yyy\", (std::string)\"zzzz\", (std::string)\"www\", (std::string)\"kkkk\", (std::string)\"abc\"}))) == \"zzzz\");\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List, Optional\n\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n\n    maxlen = max(len(x) for x in strings)\n    for s in strings:\n        if len(s) == maxlen:\n            return s\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<std::string> longest(std::vector<std::string> strings) {\n"
+}

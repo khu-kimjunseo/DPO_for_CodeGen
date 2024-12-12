@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_156_int_to_mini_roman",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string int_to_mini_roman(long number) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_156_int_to_mini_roman.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = int_to_mini_roman;\n    assert(candidate((19)) == (\"xix\"));\n    assert(candidate((152)) == (\"clii\"));\n    assert(candidate((251)) == (\"ccli\"));\n    assert(candidate((426)) == (\"cdxxvi\"));\n    assert(candidate((500)) == (\"d\"));\n    assert(candidate((1)) == (\"i\"));\n    assert(candidate((4)) == (\"iv\"));\n    assert(candidate((43)) == (\"xliii\"));\n    assert(candidate((90)) == (\"xc\"));\n    assert(candidate((94)) == (\"xciv\"));\n    assert(candidate((532)) == (\"dxxxii\"));\n    assert(candidate((900)) == (\"cm\"));\n    assert(candidate((994)) == (\"cmxciv\"));\n    assert(candidate((1000)) == (\"m\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String intToMiniRoman(long number) {\n        long[] num = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};\n        String[] sym = {\"I\", \"IV\", \"V\", \"IX\", \"X\", \"XL\", \"L\", \"XC\", \"C\", \"CD\", \"D\", \"CM\", \"M\"};\n        int i = 12;\n        String res = \"\";\n        while (number > 0) {\n            long div = number / num[i];\n            number %= num[i];\n            while (div > 0) {\n                res += sym[i];\n                div--;\n            }\n            i--;\n        }\n        return res.toLowerCase();\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string int_to_mini_roman(long number) {\n"
+}

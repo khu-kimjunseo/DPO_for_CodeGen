@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_14_all_prefixes",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> all_prefixes(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_14_all_prefixes.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = all_prefixes;\n    assert(candidate((\"\")) == (std::vector<std::string>()));\n    assert(candidate((\"asdfgh\")) == (std::vector<std::string>({(std::string)\"a\", (std::string)\"as\", (std::string)\"asd\", (std::string)\"asdf\", (std::string)\"asdfg\", (std::string)\"asdfgh\"})));\n    assert(candidate((\"WWW\")) == (std::vector<std::string>({(std::string)\"W\", (std::string)\"WW\", (std::string)\"WWW\"})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    result = []\n\n    for i in range(len(string)):\n        result.append(string[:i+1])\n    return result\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> all_prefixes(std::string string) {\n"
+}

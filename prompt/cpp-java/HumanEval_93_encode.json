@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_93_encode",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encode(String message) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_93_encode.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(encode((\"TEST\")).equals((\"tgst\")));\n    assert(encode((\"Mudasir\")).equals((\"mWDCSKR\")));\n    assert(encode((\"YES\")).equals((\"ygs\")));\n    assert(encode((\"This is a message\")).equals((\"tHKS KS C MGSSCGG\")));\n    assert(encode((\"I DoNt KnOw WhAt tO WrItE\")).equals((\"k dQnT kNqW wHcT Tq wRkTg\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string encode(std::string message) {\n    std::string vowels = \"aeiouAEIOU\";\n    std::map<char, char> vowels_replace;\n    for (char i : vowels) {\n        vowels_replace[i] = i + 2;\n    }\n    std::transform(message.begin(), message.end(), message.begin(), [](char c) {\n        return std::isupper(c) ? std::tolower(c) : std::toupper(c);\n    });\n    std::string result = \"\";\n    for (char i : message) {\n        if (vowels_replace.count(i)) {\n            result += vowels_replace[i];\n        } else {\n            result += i;\n        }\n    }\n    return result;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encode(String message) {\n"
+}

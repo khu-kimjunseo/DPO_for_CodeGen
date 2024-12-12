@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_109_move_one_ball",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean moveOneBall(ArrayList<Long> arr) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_109_move_one_ball.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(moveOneBall((new ArrayList<Long>(Arrays.asList((long)3l, (long)4l, (long)5l, (long)1l, (long)2l)))) == (true));\n    assert(moveOneBall((new ArrayList<Long>(Arrays.asList((long)3l, (long)5l, (long)10l, (long)1l, (long)2l)))) == (true));\n    assert(moveOneBall((new ArrayList<Long>(Arrays.asList((long)4l, (long)3l, (long)1l, (long)2l)))) == (false));\n    assert(moveOneBall((new ArrayList<Long>(Arrays.asList((long)3l, (long)5l, (long)4l, (long)1l, (long)2l)))) == (false));\n    assert(moveOneBall((new ArrayList<Long>(Arrays.asList()))) == (true));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool move_one_ball(std::vector<long> arr) {\n    if (arr.empty()) {\n        return true;\n    }\n    std::vector<long> sorted_array = arr;\n    std::sort(sorted_array.begin(), sorted_array.end());\n    std::vector<long> my_arr;\n    long min_value = *std::min_element(arr.begin(), arr.end());\n    long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();\n    my_arr.insert(my_arr.end(), arr.begin() + min_index, arr.end());\n    my_arr.insert(my_arr.end(), arr.begin(), arr.begin() + min_index);\n    return my_arr == sorted_array;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean moveOneBall(ArrayList<Long> arr) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_75_is_multiply_prime",
+    "language": "py",
+    "prompt": "def is_multiply_prime(a: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_75_is_multiply_prime.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == False\n    assert candidate(30) == True\n    assert candidate(8) == True\n    assert candidate(10) == False\n    assert candidate(125) == True\n    assert candidate(105) == True\n    assert candidate(126) == False\n    assert candidate(729) == False\n    assert candidate(891) == False\n    assert candidate(1001) == True\n\ndef test_check():\n    check(is_multiply_prime)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean isMultiplyPrime(long a) {\n        for (int i = 2; i < 101; i++) {\n            if (!isPrime(i)) continue;\n            for (int j = 2; j < 101; j++) {\n                if (!isPrime(j)) continue;\n                for (int k = 2; k < 101; k++) {\n                    if (!isPrime(k)) continue;\n                    if (i*j*k == a) return true;\n                }\n            }\n        }\n        return false;\n    }\n    public static boolean isPrime(int n) {\n        for (int j = 2; j < n; j++) {\n            if (n%j == 0) return false;\n        }\n        return true;\n    }\n}\n\n### Python version\n\ndef is_multiply_prime(a: int) -> bool:\n"
+}

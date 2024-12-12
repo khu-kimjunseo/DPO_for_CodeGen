@@ -1,0 +1,55 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "language": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "doctests": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "original": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_terminology": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source_program": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "target_signature": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tests": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "stop_tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "translation_prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

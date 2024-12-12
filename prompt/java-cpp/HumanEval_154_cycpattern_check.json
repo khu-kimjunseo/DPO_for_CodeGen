@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_154_cycpattern_check",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool cycpattern_check(std::string a, std::string b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_154_cycpattern_check.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = cycpattern_check;\n    assert(candidate((\"xyzw\"), (\"xyw\")) == (false));\n    assert(candidate((\"yello\"), (\"ell\")) == (true));\n    assert(candidate((\"whattup\"), (\"ptut\")) == (false));\n    assert(candidate((\"efef\"), (\"fee\")) == (true));\n    assert(candidate((\"abab\"), (\"aabb\")) == (false));\n    assert(candidate((\"winemtt\"), (\"tinem\")) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean cycpatternCheck(String a, String b) {\n        int l = b.length();\n        String pat = b + b;\n        for (int i = 0; i <= a.length() - l; i++) {\n            for (int j = 0; j <= l; j++) {\n                if (a.substring(i, i+l).equals(pat.substring(j, j+l))) {\n                    return true;\n                }\n            }\n        }\n        return false;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool cycpattern_check(std::string a, std::string b) {\n"
+}

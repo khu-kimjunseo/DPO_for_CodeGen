@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_89_encrypt",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string encrypt(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_89_encrypt.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = encrypt;\n    assert(candidate((\"hi\")) == (\"lm\"));\n    assert(candidate((\"asdfghjkl\")) == (\"ewhjklnop\"));\n    assert(candidate((\"gf\")) == (\"kj\"));\n    assert(candidate((\"et\")) == (\"ix\"));\n    assert(candidate((\"faewfawefaewg\")) == (\"jeiajeaijeiak\"));\n    assert(candidate((\"hellomyfriend\")) == (\"lippsqcjvmirh\"));\n    assert(candidate((\"dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh\")) == (\"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl\"));\n    assert(candidate((\"a\")) == (\"e\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef encrypt(s: str) -> str:\n    d = 'abcdefghijklmnopqrstuvwxyz'\n    out = ''\n    for c in s:\n        if c in d:\n            out += d[(d.index(c)+2*2) % 26]\n        else:\n            out += c\n    return out\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string encrypt(std::string s) {\n"
+}

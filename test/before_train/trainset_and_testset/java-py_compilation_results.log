@@ -1,0 +1,320 @@
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_74_total_match.py. Error:
+  File "java-py/HumanEval_74_total_match.py", line 4
+    return lst1.stream().map(str -> str.upper()).collect(Collectors.toList());
+                                 ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_41_car_race_collision.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_13_greatest_common_divisor.py
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_119_match_parens.py. Error:
+  File "java-py/HumanEval_119_match_parens.py", line 4
+    return check(lst.get(0) + lst.get(1)) || check(lst.get(1) + lst.get(0)) ? "Yes" : "No";
+                                           ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_122_add_elements.py. Error:
+  File "java-py/HumanEval_122_add_elements.py", line 4
+    return arr.stream().limit(k).filter(i -> i.toString().length() <= 2).mapToLong(i -> i).sum()
+                                          ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_161_solve.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_113_odd_count.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_55_fib.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_60_sum_to_n.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_47_median.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_138_is_equal_to_sum_even.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_106_f.py
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_7_filter_by_substring.py. Error:
+  File "java-py/HumanEval_7_filter_by_substring.py", line 4
+    return strings.stream().filter(x -> x.contains(substring)).collect(Collectors.toList());
+                                     ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_154_cycpattern_check.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_101_words_string.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_114_minSubArraySum.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_96_count_up_to.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_117_select_words.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_88_sort_array.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_104_unique_digits.py
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_144_simplify.py. Error:
+  File "java-py/HumanEval_144_simplify.py", line 38
+    elif x == n + "/" + n + "/" + n + "/" + n + "/" + n + "/" + n + "/"
+                                                                       ^
+SyntaxError: expected ':'
+
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_2_truncate_number.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_77_iscube.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_83_starts_one_ends.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_78_hex_key.py
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_86_anti_shuffle.py. Error:
+  File "java-py/HumanEval_86_anti_shuffle.py", line 2
+    return s.replace(" ", "").replace("-", "").replace("+", "").replace(".", "").replace("/", "").replace("\\", "").replace("'", "").replace("\"", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "").replace("'", "
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: unterminated string literal (detected at line 2)
+
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_153_Strongest_Extension.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_115_max_fill.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_37_sort_even.py
+2024-12-12 12:55:46 - INFO - Successfully compiled: java-py/HumanEval_110_exchange.py
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_26_remove_duplicates.py. Error:
+  File "java-py/HumanEval_26_remove_duplicates.py", line 4
+    return numbers.stream().filter(n -> numbers.count(n) > 1).collect(Collectors.toList());
+                                     ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:46 - ERROR - Failed to compile java-py/HumanEval_129_minPath.py. Error:
+  File "java-py/HumanEval_129_minPath.py", line 37
+    if len(grid) ==
+                   ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_27_flip_case.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_123_get_odd_collatz.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_5_intersperse.py. Error:
+  File "java-py/HumanEval_5_intersperse.py", line 4
+    """
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 79)
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_118_get_closest_vowel.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_15_string_sequence.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_80_is_happy.py. Error:
+  File "java-py/HumanEval_80_is_happy.py", line 2
+    if (s.length() < 3) return false;
+                        ^^^^^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_146_specialFilter.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_95_check_dict_case.py. Error:
+  File "java-py/HumanEval_95_check_dict_case.py", line 4
+    if (dict.keySet().size() == 0) {
+                                   ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_158_find_max.py. Error:
+  File "java-py/HumanEval_158_find_max.py", line 5
+    .sorted(Comparator.comparing((str s) -> -s.chars().distinct().count()))
+    ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_108_count_nums.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_36_fizz_buzz.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_152_compare.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_4_mean_absolute_deviation.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_59_largest_prime_factor.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_121_solution.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_151_double_the_difference.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_48_is_palindrome.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_105_by_length.py. Error:
+  File "java-py/HumanEval_105_by_length.py", line 4
+    return arr.stream().map(str::upper).collect(Collectors.toList());
+                               ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_139_special_factorial.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_85_add.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_35_max_element.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_12_longest.py. Error:
+  File "java-py/HumanEval_12_longest.py", line 4
+    if (strings.isEmpty()) {
+                           ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_64_vowels_count.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_61_correct_bracketing.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_71_triangle_area.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_145_order_by_points.py. Error:
+  File "java-py/HumanEval_145_order_by_points.py", line 4
+    return nums.stream().sorted((a, b) -> Long.compare(digitsSum(a), digitsSum(b))).collect(Collectors.toList());
+                                       ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_124_valid_date.py. Error:
+  File "java-py/HumanEval_124_valid_date.py", line 20
+    } catch (Exception e) {
+    ^
+SyntaxError: unmatched '}'
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_54_same_chars.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_53_add.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_17_parse_music.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_11_string_xor.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_116_sort_array.py. Error:
+  File "java-py/HumanEval_116_sort_array.py", line 4
+    return sorted(arr, (a, b) -> {
+                              ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_73_smallest_change.py
+2024-12-12 12:55:47 - ERROR - Failed to compile java-py/HumanEval_140_fix_spaces.py. Error:
+  File "java-py/HumanEval_140_fix_spaces.py", line 2
+    , " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+SyntaxError: '(' was never closed
+
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_0_has_close_elements.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_39_prime_fib.py
+2024-12-12 12:55:47 - INFO - Successfully compiled: java-py/HumanEval_141_file_name_check.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_25_factorize.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_120_maximum.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_8_sum_product.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_65_circular_shift.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_90_next_smallest.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_97_multiply.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_28_concatenate.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_10_make_palindrome.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_18_how_many_times.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_69_search.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_87_get_row.py
+2024-12-12 12:55:48 - ERROR - Failed to compile java-py/HumanEval_109_move_one_ball.py. Error:
+  File "java-py/HumanEval_109_move_one_ball.py", line 4
+    if (arr.size() == 0) {
+                         ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_9_rolling_max.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_84_solve.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_130_tri.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_6_parse_nested_parens.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_127_intersection.py
+2024-12-12 12:55:48 - ERROR - Failed to compile java-py/HumanEval_82_prime_length.py. Error:
+  File "java-py/HumanEval_82_prime_length.py", line 2
+    if (string.length() <= 1) {
+                              ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_89_encrypt.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_14_all_prefixes.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_93_encode.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_40_triples_sum_to_zero.py
+2024-12-12 12:55:48 - ERROR - Failed to compile java-py/HumanEval_81_numerical_letter_grade.py. Error:
+  File "java-py/HumanEval_81_numerical_letter_grade.py", line 6
+    if grade == 4.0f:
+                  ^
+SyntaxError: invalid decimal literal
+
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_52_below_threshold.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_162_string_to_md5.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_135_can_arrange.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_45_triangle_area.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_34_unique.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_148_bf.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_72_will_it_fly.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_100_make_a_pile.py
+2024-12-12 12:55:48 - ERROR - Failed to compile java-py/HumanEval_62_derivative.py. Error:
+  File "java-py/HumanEval_62_derivative.py", line 4
+    return IntStream.range(1, xs.size()).mapToObj(i -> i * xs.get(i)).collect(Collectors.toCollection(ArrayList::new));
+                                                    ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_156_int_to_mini_roman.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_19_sort_numbers.py
+2024-12-12 12:55:48 - ERROR - Failed to compile java-py/HumanEval_42_incr_list.py. Error:
+  File "java-py/HumanEval_42_incr_list.py", line 4
+    return l.stream().map(e -> e + 1).collect(Collectors.toCollection(ArrayList::new));
+                            ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_24_largest_divisor.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_133_sum_squares.py
+2024-12-12 12:55:48 - INFO - Successfully compiled: java-py/HumanEval_157_right_angle_triangle.py
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_68_pluck.py. Error:
+  File "java-py/HumanEval_68_pluck.py", line 4
+    return arr.stream().filter(x -> x % 2 == 0).collect(Collectors.toList());
+                                 ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_99_closest_integer.py. Error:
+  File "java-py/HumanEval_99_closest_integer.py", line 2
+    if (value == null || value.length() == 0) return 0
+                       ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_49_modp.py
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_31_is_prime.py. Error:
+  File "java-py/HumanEval_31_is_prime.py", line 2
+    if (n < 2) {
+               ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_67_fruit_distribution.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_46_fib4.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_102_choose_num.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_16_count_distinct_characters.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_20_find_closest_elements.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_3_below_zero.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_44_change_base.py
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_76_is_simple_power.py. Error:
+  File "java-py/HumanEval_76_is_simple_power.py", line 2
+    if (n == 1) return (x == 1);
+                ^^^^^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_23_strlen.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_150_x_or_y.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_91_is_bored.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_149_sorted_list_sum.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_29_filter_by_prefix.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_132_is_nested.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_134_check_if_last_char_is_a_letter.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_51_remove_vowels.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_111_histogram.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_147_get_max_triples.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_43_pairs_sum_to_zero.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_58_common.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_98_count_upper.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_94_skjkasdkd.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_142_sum_squares.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_33_sort_third.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_21_rescale_to_unit.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_159_eat.py
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_56_correct_bracketing.py
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_128_prod_signs.py. Error:
+  File "java-py/HumanEval_128_prod_signs.py", line 4
+    return Optional.of(arr.stream().map(x -> x * x).reduce(0, Long::sum));
+                                          ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - ERROR - Failed to compile java-py/HumanEval_112_reverse_delete.py. Error:
+  File "java-py/HumanEval_112_reverse_delete.py", line 4
+    s = s.chars().filter(ch -> c.indexOf(ch) == -1).mapToObj(Character::toString).collect(Collectors.joining());
+                            ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:49 - INFO - Successfully compiled: java-py/HumanEval_70_strange_sort_list.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_63_fibfib.py
+2024-12-12 12:55:50 - ERROR - Failed to compile java-py/HumanEval_22_filter_integers.py. Error:
+  File "java-py/HumanEval_22_filter_integers.py", line 4
+    return values.stream().filter(x -> x instanceof int).map(x -> (int) x).collect(Collectors.toCollection(ArrayList::new));
+                                    ^^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_57_monotonic.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_131_digits.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_107_even_odd_palindrome.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_1_separate_paren_groups.py
+2024-12-12 12:55:50 - ERROR - Failed to compile java-py/HumanEval_143_words_in_sentence.py. Error:
+  File "java-py/HumanEval_143_words_in_sentence.py", line 2
+    !").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!", "!").replace("!",
+                                                                                                                                                                                                                                                                                                                                      ^
+SyntaxError: '(' was never closed
+
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_75_is_multiply_prime.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_155_even_odd_count.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_126_is_sorted.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_79_decimal_to_binary.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_163_generate_integers.py
+2024-12-12 12:55:50 - INFO - Successfully compiled: java-py/HumanEval_66_digitSum.py
+2024-12-12 12:55:50 - ERROR - Failed to compile java-py/HumanEval_30_get_positive.py. Error:
+  File "java-py/HumanEval_30_get_positive.py", line 4
+    return (List[int]) l.stream().filter(e -> e > 0).collect(Collectors.toList());
+                       ^
+SyntaxError: invalid syntax
+
+2024-12-12 12:55:50 - INFO - Directory: java-py
+2024-12-12 12:55:50 - INFO - Total Files: 155
+2024-12-12 12:55:50 - INFO - Successful Compilations: 123
+2024-12-12 12:55:50 - INFO - Failed Compilations: 32
+2024-12-12 12:55:50 - INFO - Success Rate: 79.35%

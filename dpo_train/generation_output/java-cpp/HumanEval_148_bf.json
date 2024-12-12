@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_148_bf",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_148_bf.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = bf;\n    assert(candidate((\"Jupiter\"), (\"Neptune\")) == (std::vector<std::string>({(std::string)\"Saturn\", (std::string)\"Uranus\"})));\n    assert(candidate((\"Earth\"), (\"Mercury\")) == (std::vector<std::string>({(std::string)\"Venus\"})));\n    assert(candidate((\"Mercury\"), (\"Uranus\")) == (std::vector<std::string>({(std::string)\"Venus\", (std::string)\"Earth\", (std::string)\"Mars\", (std::string)\"Jupiter\", (std::string)\"Saturn\"})));\n    assert(candidate((\"Neptune\"), (\"Venus\")) == (std::vector<std::string>({(std::string)\"Earth\", (std::string)\"Mars\", (std::string)\"Jupiter\", (std::string)\"Saturn\", (std::string)\"Uranus\"})));\n    assert(candidate((\"Earth\"), (\"Earth\")) == (std::vector<std::string>()));\n    assert(candidate((\"Mars\"), (\"Earth\")) == (std::vector<std::string>()));\n    assert(candidate((\"Jupiter\"), (\"Makemake\")) == (std::vector<std::string>()));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> bf(String planet1, String planet2) {\n        ArrayList<String> planetNames = new ArrayList<>(Arrays.asList(\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"));\n        if (!planetNames.contains(planet1) || !planetNames.contains(planet2) || planet1.equals(planet2)) {\n            return new ArrayList<>();\n        }\n        int planet1Index = planetNames.indexOf(planet1);\n        int planet2Index = planetNames.indexOf(planet2);\n        if (planet1Index < planet2Index) {\n            return new ArrayList<>(planetNames.subList(planet1Index + 1, planet2Index));\n        } else {\n            return new ArrayList<>(planetNames.subList(planet2Index + 1, planet1Index));\n        }\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n"
+}

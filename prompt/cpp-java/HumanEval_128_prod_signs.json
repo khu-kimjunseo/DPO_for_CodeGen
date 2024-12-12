@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_128_prod_signs",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<Long> prodSigns(ArrayList<Long> arr) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_128_prod_signs.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)2l, (long)-4l)))).equals(Optional.of(-9l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)0l, (long)1l)))).equals(Optional.of(0l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)1l, (long)2l, (long)3l, (long)-1l, (long)1l)))).equals(Optional.of(-10l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList()))).equals(Optional.empty()));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)2l, (long)-1l, (long)-1l, (long)9l)))).equals(Optional.of(20l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)-1l, (long)1l, (long)-1l, (long)1l)))).equals(Optional.of(4l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)-1l, (long)1l, (long)1l, (long)1l)))).equals(Optional.of(-4l)));\n    assert(prodSigns((new ArrayList<Long>(Arrays.asList((long)-1l, (long)1l, (long)1l, (long)0l)))).equals(Optional.of(0l)));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::optional<long> prod_signs(std::vector<long> arr) {\n    if (arr.empty()) return std::nullopt;\n    long prod = 0;\n    auto neg_count = std::count_if(arr.begin(), arr.end(), [](long x){return x < 0;});\n    if (std::find(arr.begin(), arr.end(), 0) != arr.end()) prod = 0;\n    else prod = pow(-1, neg_count);\n    long sum = 0;\n    for (auto i : arr) sum += std::abs(i);\n    return prod * sum;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<Long> prodSigns(ArrayList<Long> arr) {\n"
+}

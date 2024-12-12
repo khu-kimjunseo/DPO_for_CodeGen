@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_161_solve",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(String s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_161_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(solve((\"AsDf\")).equals((\"aSdF\")));\n    assert(solve((\"1234\")).equals((\"4321\")));\n    assert(solve((\"ab\")).equals((\"AB\")));\n    assert(solve((\"#a@C\")).equals((\"#A@c\")));\n    assert(solve((\"#AsdfW^45\")).equals((\"#aSDFw^45\")));\n    assert(solve((\"#6@2\")).equals((\"2@6#\")));\n    assert(solve((\"#$a^D\")).equals((\"#$A^d\")));\n    assert(solve((\"#ccc\")).equals((\"#CCC\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string solve(std::string s) {\n    bool flg = false;\n    std::string new_str = s;\n    for (int i = 0; i < s.size(); i++) {\n        if (isalpha(s[i])) {\n            new_str[i] = isupper(s[i]) ? tolower(s[i]) : toupper(s[i]);\n            flg = true;\n        }\n    }\n    if (!flg) {\n        std::reverse(new_str.begin(), new_str.end());\n    }\n    return new_str;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(String s) {\n"
+}

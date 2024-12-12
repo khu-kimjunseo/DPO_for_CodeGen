@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_7_filter_by_substring",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> filterBySubstring(ArrayList<String> strings, String substring) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_7_filter_by_substring.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(filterBySubstring((new ArrayList<String>(Arrays.asList())), (\"john\")).equals((new ArrayList<String>(Arrays.asList()))));\n    assert(filterBySubstring((new ArrayList<String>(Arrays.asList((String)\"xxx\", (String)\"asd\", (String)\"xxy\", (String)\"john doe\", (String)\"xxxAAA\", (String)\"xxx\"))), (\"xxx\")).equals((new ArrayList<String>(Arrays.asList((String)\"xxx\", (String)\"xxxAAA\", (String)\"xxx\")))));\n    assert(filterBySubstring((new ArrayList<String>(Arrays.asList((String)\"xxx\", (String)\"asd\", (String)\"aaaxxy\", (String)\"john doe\", (String)\"xxxAAA\", (String)\"xxx\"))), (\"xx\")).equals((new ArrayList<String>(Arrays.asList((String)\"xxx\", (String)\"aaaxxy\", (String)\"xxxAAA\", (String)\"xxx\")))));\n    assert(filterBySubstring((new ArrayList<String>(Arrays.asList((String)\"grunt\", (String)\"trumpet\", (String)\"prune\", (String)\"gruesome\"))), (\"run\")).equals((new ArrayList<String>(Arrays.asList((String)\"grunt\", (String)\"prune\")))));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [x for x in strings if substring in x]\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> filterBySubstring(ArrayList<String> strings, String substring) {\n"
+}

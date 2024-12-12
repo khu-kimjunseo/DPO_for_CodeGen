@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_149_sorted_list_sum",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef sorted_list_sum(lst: List[str]) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_149_sorted_list_sum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(['aa', 'a', 'aaa']) == ['aa']\n    assert candidate(['school', 'AI', 'asdf', 'b']) == ['AI', 'asdf', 'school']\n    assert candidate(['d', 'b', 'c', 'a']) == []\n    assert candidate(['d', 'dcba', 'abcd', 'a']) == ['abcd', 'dcba']\n    assert candidate(['AI', 'ai', 'au']) == ['AI', 'ai', 'au']\n    assert candidate(['a', 'b', 'b', 'c', 'c', 'a']) == []\n    assert candidate(['aaaa', 'bbbb', 'dd', 'cc']) == ['cc', 'dd', 'aaaa', 'bbbb']\n\ndef test_check():\n    check(sorted_list_sum)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> sortedListSum(ArrayList<String> lst) {\n        lst.sort(null);\n        ArrayList<String> new_lst = new ArrayList<String>();\n        for (String i : lst) {\n            if (i.length() % 2 == 0) {\n                new_lst.add(i);\n            }\n        }\n        new_lst.sort((a, b) -> a.length() - b.length());\n        return new_lst;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef sorted_list_sum(lst: List[str]) -> List[str]:\n"
+}

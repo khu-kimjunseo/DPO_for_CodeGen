@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_82_prime_length",
+    "language": "py",
+    "prompt": "def prime_length(string: str) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_82_prime_length.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hello') == True\n    assert candidate('abcdcba') == True\n    assert candidate('kittens') == True\n    assert candidate('orange') == False\n    assert candidate('wow') == True\n    assert candidate('world') == True\n    assert candidate('MadaM') == True\n    assert candidate('Wow') == True\n    assert candidate('') == False\n    assert candidate('HI') == True\n    assert candidate('go') == True\n    assert candidate('gogo') == False\n    assert candidate('aaaaaaaaaaaaaaa') == False\n    assert candidate('Madam') == True\n    assert candidate('M') == False\n    assert candidate('0') == False\n\ndef test_check():\n    check(prime_length)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean primeLength(String string) {\n        int l = string.length();\n        if (l <= 1) {\n            return false;\n        }\n        for (int i = 2; i < l; i++) {\n            if (l % i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n}\n\n### Python version\n\ndef prime_length(string: str) -> bool:\n"
+}

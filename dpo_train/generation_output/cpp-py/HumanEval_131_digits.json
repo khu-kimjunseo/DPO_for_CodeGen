@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_131_digits",
+    "language": "py",
+    "prompt": "def digits(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_131_digits.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == 5\n    assert candidate(54) == 5\n    assert candidate(120) == 1\n    assert candidate(5014) == 5\n    assert candidate(98765) == 315\n    assert candidate(5576543) == 2625\n    assert candidate(2468) == 0\n\ndef test_check():\n    check(digits)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong digits(long n) {\n    long product = 1;\n    int odd_count = 0;\n    for (char digit : std::to_string(n)) {\n        int int_digit = digit - '0';\n        if (int_digit % 2 == 1) {\n            product *= int_digit;\n            odd_count++;\n        }\n    }\n    return odd_count == 0 ? 0 : product;\n}\n\n### Python version\n\ndef digits(n: int) -> int:\n"
+}

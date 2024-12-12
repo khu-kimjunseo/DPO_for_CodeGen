@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_161_solve",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string solve(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_161_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = solve;\n    assert(candidate((\"AsDf\")) == (\"aSdF\"));\n    assert(candidate((\"1234\")) == (\"4321\"));\n    assert(candidate((\"ab\")) == (\"AB\"));\n    assert(candidate((\"#a@C\")) == (\"#A@c\"));\n    assert(candidate((\"#AsdfW^45\")) == (\"#aSDFw^45\"));\n    assert(candidate((\"#6@2\")) == (\"2@6#\"));\n    assert(candidate((\"#$a^D\")) == (\"#$A^d\"));\n    assert(candidate((\"#ccc\")) == (\"#CCC\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String solve(String s) {\n        int flg = 0;\n        int idx = 0;\n        char[] newStr = s.toCharArray();\n        for (char c : s.toCharArray()) {\n            if (Character.isLetter(c)) {\n                newStr[idx] = Character.isUpperCase(c) ? Character.toLowerCase(c) : Character.toUpperCase(c);\n                flg = 1;\n            }\n            idx++;\n        }\n        if (flg == 0) {\n            return new StringBuilder(s).reverse().toString();\n        }\n        return new String(newStr);\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string solve(std::string s) {\n"
+}

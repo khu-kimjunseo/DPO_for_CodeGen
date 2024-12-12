@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_28_concatenate",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String concatenate(ArrayList<String> strings) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_28_concatenate.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(concatenate((new ArrayList<String>(Arrays.asList()))).equals((\"\")));\n    assert(concatenate((new ArrayList<String>(Arrays.asList((String)\"x\", (String)\"y\", (String)\"z\")))).equals((\"xyz\")));\n    assert(concatenate((new ArrayList<String>(Arrays.asList((String)\"x\", (String)\"y\", (String)\"z\", (String)\"w\", (String)\"k\")))).equals((\"xyzwk\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String concatenate(ArrayList<String> strings) {\n"
+}

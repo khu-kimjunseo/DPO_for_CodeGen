@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_75_is_multiply_prime",
+    "language": "py",
+    "prompt": "def is_multiply_prime(a: int) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_75_is_multiply_prime.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == False\n    assert candidate(30) == True\n    assert candidate(8) == True\n    assert candidate(10) == False\n    assert candidate(125) == True\n    assert candidate(105) == True\n    assert candidate(126) == False\n    assert candidate(729) == False\n    assert candidate(891) == False\n    assert candidate(1001) == True\n\ndef test_check():\n    check(is_multiply_prime)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nbool is_multiply_prime(long a) {\n    auto is_prime = [&](long n) {\n        for (long j = 2; j < n; j++) {\n            if (n % j == 0) {\n                return false;\n            }\n        }\n        return true;\n    };\n    for (long i = 2; i <= 100; i++) {\n        if (!is_prime(i)) continue;\n        for (long j = 2; j <= 100; j++) {\n            if (!is_prime(j)) continue;\n            for (long k = 2; k <= 100; k++) {\n                if (!is_prime(k)) continue;\n                if (i * j * k == a) return true;\n            }\n        }\n    }\n    return false;\n}\n\n### Python version\n\ndef is_multiply_prime(a: int) -> bool:\n"
+}

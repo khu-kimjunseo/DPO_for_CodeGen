@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_86_anti_shuffle",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string anti_shuffle(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_86_anti_shuffle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = anti_shuffle;\n    assert(candidate((\"Hi\")) == (\"Hi\"));\n    assert(candidate((\"hello\")) == (\"ehllo\"));\n    assert(candidate((\"number\")) == (\"bemnru\"));\n    assert(candidate((\"abcd\")) == (\"abcd\"));\n    assert(candidate((\"Hello World!!!\")) == (\"Hello !!!Wdlor\"));\n    assert(candidate((\"\")) == (\"\"));\n    assert(candidate((\"Hi. My name is Mister Robot. How are you?\")) == (\".Hi My aemn is Meirst .Rboot How aer ?ouy\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef anti_shuffle(s: str) -> str:\n    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string anti_shuffle(std::string s) {\n"
+}

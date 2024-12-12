@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_123_get_odd_collatz",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef get_odd_collatz(n: int) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_123_get_odd_collatz.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(14) == [1, 5, 7, 11, 13, 17]\n    assert candidate(5) == [1, 5]\n    assert candidate(12) == [1, 3, 5]\n    assert candidate(1) == [1]\n\ndef test_check():\n    check(get_odd_collatz)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> getOddCollatz(long n) {\n        ArrayList<Long> oddCollatz = new ArrayList<Long>();\n        if (n % 2 == 1) {\n            oddCollatz.add(n);\n        }\n        while (n > 1) {\n            if (n % 2 == 0) {\n                n = n / 2;\n            } else {\n                n = n * 3 + 1;\n            }\n            if (n % 2 == 1) {\n                oddCollatz.add(n);\n            }\n        }\n        oddCollatz.sort(null);\n        return oddCollatz;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef get_odd_collatz(n: int) -> List[int]:\n"
+}

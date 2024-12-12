@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_154_cycpattern_check",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean cycpatternCheck(String a, String b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_154_cycpattern_check.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(cycpatternCheck((\"xyzw\"), (\"xyw\")) == (false));\n    assert(cycpatternCheck((\"yello\"), (\"ell\")) == (true));\n    assert(cycpatternCheck((\"whattup\"), (\"ptut\")) == (false));\n    assert(cycpatternCheck((\"efef\"), (\"fee\")) == (true));\n    assert(cycpatternCheck((\"abab\"), (\"aabb\")) == (false));\n    assert(cycpatternCheck((\"winemtt\"), (\"tinem\")) == (true));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef cycpattern_check(a: str , b: str) -> bool:\n    l = len(b)\n    pat = b + b\n    for i in range(len(a) - l + 1):\n        for j in range(l + 1):\n            if a[i:i+l] == pat[j:j+l]:\n                return True\n    return False\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean cycpatternCheck(String a, String b) {\n"
+}

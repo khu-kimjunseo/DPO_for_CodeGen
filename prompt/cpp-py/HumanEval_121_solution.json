@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_121_solution",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef solution(lst: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_121_solution.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([5, 8, 7, 1]) == 12\n    assert candidate([3, 3, 3, 3, 3]) == 9\n    assert candidate([30, 13, 24, 321]) == 0\n    assert candidate([5, 9]) == 5\n    assert candidate([2, 4, 8]) == 0\n    assert candidate([30, 13, 23, 32]) == 23\n    assert candidate([3, 13, 2, 9]) == 3\n\ndef test_check():\n    check(solution)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong solution(std::vector<long> lst) {\n  long sum = 0;\n  for (int i = 0; i < lst.size(); i++) {\n    if (i % 2 == 0 && lst[i] % 2 == 1) {\n      sum += lst[i];\n    }\n  }\n  return sum;\n}\n\n### Python version\n\nfrom typing import List\n\ndef solution(lst: List[int]) -> int:\n"
+}

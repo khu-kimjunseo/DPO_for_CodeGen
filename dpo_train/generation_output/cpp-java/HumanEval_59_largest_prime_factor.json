@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_59_largest_prime_factor",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long largestPrimeFactor(long n) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_59_largest_prime_factor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(largestPrimeFactor((15l)) == (5l));\n    assert(largestPrimeFactor((27l)) == (3l));\n    assert(largestPrimeFactor((63l)) == (7l));\n    assert(largestPrimeFactor((330l)) == (11l));\n    assert(largestPrimeFactor((13195l)) == (29l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong largest_prime_factor(long n) {\n    auto is_prime=[](long k){\n        if(k<2) return false;\n        for(long i=2;i<k;i++) if(k%i==0) return false;\n        return true;\n    };\n    long largest=1;\n    for(long j=2;j<=n;j++) if(n%j==0 && is_prime(j)) largest=std::max(largest,j);\n    return largest;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long largestPrimeFactor(long n) {\n"
+}

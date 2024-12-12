@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_143_words_in_sentence",
+    "language": "py",
+    "prompt": "def words_in_sentence(sentence: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_143_words_in_sentence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('This is a test') == 'is'\n    assert candidate('lets go for swimming') == 'go for'\n    assert candidate('there is no place available here') == 'there is no place'\n    assert candidate('Hi I am Hussein') == 'Hi am Hussein'\n    assert candidate('go for it') == 'go for it'\n    assert candidate('here') == ''\n    assert candidate('here is') == 'is'\n\ndef test_check():\n    check(words_in_sentence)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string words_in_sentence(std::string sentence) {\n    std::vector<std::string> new_lst;\n    std::stringstream ss(sentence);\n    std::string word;\n    while(ss >> word) {\n        int flg = 0;\n        if(word.size() == 1) {\n            flg = 1;\n        }\n        for(int i = 2; i < word.size(); i++) {\n            if(word.size()%i == 0) {\n                flg = 1;\n            }\n        }\n        if(flg == 0 || word.size() == 2) {\n            new_lst.push_back(word);\n        }\n    }\n    std::string res = \"\";\n    for(int i = 0; i < new_lst.size(); i++) {\n        res += new_lst[i];\n        if(i != new_lst.size()-1) {\n            res += \" \";\n        }\n    }\n    return res;\n}\n\n### Python version\n\ndef words_in_sentence(sentence: str) -> str:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_71_triangle_area",
+    "language": "py",
+    "prompt": "def triangle_area(a: int, b: int, c: int) -> float:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_71_triangle_area.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(3, 4, 5) == 6.0\n    assert candidate(1, 2, 10) == -1\n    assert candidate(4, 8, 5) == 8.18\n    assert candidate(2, 2, 2) == 1.73\n    assert candidate(1, 2, 3) == -1\n    assert candidate(10, 5, 7) == 16.25\n    assert candidate(2, 6, 3) == -1\n    assert candidate(1, 1, 1) == 0.43\n    assert candidate(2, 2, 10) == -1\n\ndef test_check():\n    check(triangle_area)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nfloat triangle_area(long a, long b, long c) {\n    if (a + b <= c || a + c <= b || b + c <= a) {\n        return -1;\n    }\n    float s = (a + b + c) / 2.0;\n    float area = sqrt(s * (s - a) * (s - b) * (s - c));\n    area = round(area * 100) / 100;\n    return area;\n}\n\n### Python version\n\ndef triangle_area(a: int, b: int, c: int) -> float:\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_75_is_multiply_prime",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_multiply_prime(long a) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_75_is_multiply_prime.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = is_multiply_prime;\n    assert(candidate((5)) == (false));\n    assert(candidate((30)) == (true));\n    assert(candidate((8)) == (true));\n    assert(candidate((10)) == (false));\n    assert(candidate((125)) == (true));\n    assert(candidate((105)) == (true));\n    assert(candidate((126)) == (false));\n    assert(candidate((729)) == (false));\n    assert(candidate((891)) == (false));\n    assert(candidate((1001)) == (true));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef is_multiply_prime(a: int) -> bool:\n    def is_prime(n):\n        for j in range(2,n):\n            if n%j == 0:\n                return False\n        return True\n\n    for i in range(2,101):\n        if not is_prime(i): continue\n        for j in range(2,101):\n            if not is_prime(j): continue\n            for k in range(2,101):\n                if not is_prime(k): continue\n                if i*j*k == a: return True\n    return False\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool is_multiply_prime(long a) {\n"
+}

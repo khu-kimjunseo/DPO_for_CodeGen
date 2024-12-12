@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_71_triangle_area",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nfloat triangle_area(long a, long b, long c) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_71_triangle_area.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = triangle_area;\n    assert(candidate((3), (4), (5)) == (6.0f));\n    assert(candidate((1), (2), (10)) == (float(-1)));\n    assert(candidate((4), (8), (5)) == (8.18f));\n    assert(candidate((2), (2), (2)) == (1.73f));\n    assert(candidate((1), (2), (3)) == (float(-1)));\n    assert(candidate((10), (5), (7)) == (16.25f));\n    assert(candidate((2), (6), (3)) == (float(-1)));\n    assert(candidate((1), (1), (1)) == (0.43f));\n    assert(candidate((2), (2), (10)) == (float(-1)));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float triangleArea(long a, long b, long c) {\n        float s = (a + b + c) / 2.0f;\n        float area = (float) Math.sqrt(s * (s - a) * (s - b) * (s - c));\n        return a + b <= c || a + c <= b || b + c <= a ? -1 : Math.round(area * 100.0f) / 100.0f;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nfloat triangle_area(long a, long b, long c) {\n"
+}

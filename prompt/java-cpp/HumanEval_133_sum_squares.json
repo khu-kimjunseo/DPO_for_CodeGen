@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_133_sum_squares",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong sum_squares(std::vector<float> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_133_sum_squares.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sum_squares;\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f}))) == (14));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f}))) == (14));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)3.0f, (float)5.0f, (float)7.0f}))) == (84));\n    assert(candidate((std::vector<float>({(float)1.4f, (float)4.2f, (float)0.0f}))) == (29));\n    assert(candidate((std::vector<float>({(float)-2.4f, (float)1.0f, (float)1.0f}))) == (6));\n    assert(candidate((std::vector<float>({(float)100.0f, (float)1.0f, (float)15.0f, (float)2.0f}))) == (10230));\n    assert(candidate((std::vector<float>({(float)10000.0f, (float)10000.0f}))) == (200000000));\n    assert(candidate((std::vector<float>({(float)-1.4f, (float)4.6f, (float)6.3f}))) == (75));\n    assert(candidate((std::vector<float>({(float)-1.4f, (float)17.9f, (float)18.9f, (float)19.9f}))) == (1086));\n    assert(candidate((std::vector<float>({(float)0.0f}))) == (0));\n    assert(candidate((std::vector<float>({(float)-1.0f}))) == (1));\n    assert(candidate((std::vector<float>({(float)-1.0f, (float)1.0f, (float)0.0f}))) == (2));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long sumSquares(ArrayList<Float> lst) {\n        long squared = 0;\n        for (float i : lst) {\n            squared += Math.ceil(i) * Math.ceil(i);\n        }\n        return squared;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong sum_squares(std::vector<float> lst) {\n"
+}

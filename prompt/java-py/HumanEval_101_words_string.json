@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_101_words_string",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef words_string(s: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_101_words_string.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hi, my name is John') == ['Hi', 'my', 'name', 'is', 'John']\n    assert candidate('One, two, three, four, five, six') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('Hi, my name') == ['Hi', 'my', 'name']\n    assert candidate('One,, two, three, four, five, six,') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('') == []\n    assert candidate('ahmed     , gamal') == ['ahmed', 'gamal']\n\ndef test_check():\n    check(words_string)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> wordsString(String s) {\n        if (s.isEmpty()) {\n            return new ArrayList<String>();\n        }\n\n        ArrayList<String> sList = new ArrayList<String>();\n\n        for (char c : s.toCharArray()) {\n            if (c == ',') {\n                sList.add(\" \");\n            } else {\n                sList.add(Character.toString(c));\n            }\n        }\n\n        String joinedString = String.join(\"\", sList);\n        return new ArrayList<String>(Arrays.asList(joinedString.split(\"\\\\s+\")));\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef words_string(s: str) -> List[str]:\n"
+}

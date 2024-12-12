@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_143_words_in_sentence",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String wordsInSentence(String sentence) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_143_words_in_sentence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(wordsInSentence((\"This is a test\")).equals((\"is\")));\n    assert(wordsInSentence((\"lets go for swimming\")).equals((\"go for\")));\n    assert(wordsInSentence((\"there is no place available here\")).equals((\"there is no place\")));\n    assert(wordsInSentence((\"Hi I am Hussein\")).equals((\"Hi am Hussein\")));\n    assert(wordsInSentence((\"go for it\")).equals((\"go for it\")));\n    assert(wordsInSentence((\"here\")).equals((\"\")));\n    assert(wordsInSentence((\"here is\")).equals((\"is\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef words_in_sentence(sentence: str) -> str:\n    new_lst = []\n    for word in sentence.split():\n        flg = 0\n        if len(word) == 1:\n            flg = 1\n        for i in range(2, len(word)):\n            if len(word)%i == 0:\n                flg = 1\n        if flg == 0 or len(word) == 2:\n            new_lst.append(word)\n    return \" \".join(new_lst)\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String wordsInSentence(String sentence) {\n"
+}

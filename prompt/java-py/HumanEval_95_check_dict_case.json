@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_95_check_dict_case",
+    "language": "py",
+    "prompt": "from typing import Dict\n\ndef check_dict_case(dict: Dict[str, str]) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_95_check_dict_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate({ 'p': 'pineapple', 'b': 'banana' }) == True\n    assert candidate({ 'p': 'pineapple', 'A': 'banana', 'B': 'banana' }) == False\n    assert candidate({ 'p': 'pineapple', '5': 'banana', 'a': 'apple' }) == False\n    assert candidate({ 'Name': 'John', 'Age': '36', 'City': 'Houston' }) == False\n    assert candidate({ 'STATE': 'NC', 'ZIP': '12345' }) == True\n    assert candidate({ 'fruit': 'Orange', 'taste': 'Sweet' }) == True\n    assert candidate({  }) == False\n\ndef test_check():\n    check(check_dict_case)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkDictCase(HashMap<String,String> dict) {\n        if (dict.keySet().size() == 0) {\n            return false;\n        } else {\n            String state = \"start\";\n            for (String key : dict.keySet()) {\n                if (!(key instanceof String)) {\n                    state = \"mixed\";\n                    break;\n                }\n                if (state == \"start\") {\n                    if (key.matches(\"^[A-Z]+$\")) {\n                        state = \"upper\";\n                    } else if (key.matches(\"^[a-z]+$\")) {\n                        state = \"lower\";\n                    } else {\n                        break;\n                    }\n                } else if ((state == \"upper\" && !key.matches(\"^[A-Z]+$\")) || (state == \"lower\" && !key.matches(\"^[a-z]+$\"))) {\n                    state = \"mixed\";\n                    break;\n                } else {\n                    break;\n                }\n            }\n            return state == \"upper\" || state == \"lower\";\n        }\n    }\n    \n}\n\n### Python version\n\nfrom typing import Dict\n\ndef check_dict_case(dict: Dict[str, str]) -> bool:\n"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_19_sort_numbers",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String sortNumbers(String numbers) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_19_sort_numbers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(sortNumbers((\"\")).equals((\"\")));\n    assert(sortNumbers((\"three\")).equals((\"three\")));\n    assert(sortNumbers((\"three five nine\")).equals((\"three five nine\")));\n    assert(sortNumbers((\"five zero four seven nine eight\")).equals((\"zero four five seven eight nine\")));\n    assert(sortNumbers((\"six five four three two one zero\")).equals((\"zero one two three four five six\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string sort_numbers(std::string numbers) {\n    std::map<std::string, int> value_map = {\n        {\"zero\", 0},\n        {\"one\", 1},\n        {\"two\", 2},\n        {\"three\", 3},\n        {\"four\", 4},\n        {\"five\", 5},\n        {\"six\", 6},\n        {\"seven\", 7},\n        {\"eight\", 8},\n        {\"nine\", 9}\n    };\n    std::vector<std::string> nums;\n    std::stringstream ss(numbers);\n    std::string num;\n    while (ss >> num) {\n        nums.push_back(num);\n    }\n    std::sort(nums.begin(), nums.end(), [&](std::string a, std::string b) {\n        return value_map[a] < value_map[b];\n    });\n    std::string res;\n    for (auto& num : nums) {\n        res += num + \" \";\n    }\n    res.pop_back();\n    return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String sortNumbers(String numbers) {\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_151_double_the_difference",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef double_the_difference(lst: List[float]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_151_double_the_difference.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == 0\n    assert candidate([5.0, 4.0]) == 25\n    assert candidate([0.1, 0.2, 0.3]) == 0\n    assert candidate([-10.0, -20.0, -30.0]) == 0\n    assert candidate([-1.0, -2.0, 8.0]) == 0\n    assert candidate([0.2, 3.0, 5.0]) == 34\n    assert candidate([-9.0, -7.0, -5.0, -3.0, -1.0, 1.0, 3.0, 5.0, 7.0, 9.0]) == 165\n\ndef test_check():\n    check(double_the_difference)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long doubleTheDifference(ArrayList<Float> lst) {\n        return lst.stream().filter(i -> i > 0 && i%2!=0 && i == Math.floor(i)).mapToLong(i -> (long) Math.pow(i, 2)).sum();\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef double_the_difference(lst: List[float]) -> int:\n"
+}

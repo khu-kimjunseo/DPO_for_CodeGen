@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_118_get_closest_vowel",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String getClosestVowel(String word) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_118_get_closest_vowel.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(getClosestVowel((\"yogurt\")).equals((\"u\")));\n    assert(getClosestVowel((\"full\")).equals((\"u\")));\n    assert(getClosestVowel((\"easy\")).equals((\"\")));\n    assert(getClosestVowel((\"eAsy\")).equals((\"\")));\n    assert(getClosestVowel((\"ali\")).equals((\"\")));\n    assert(getClosestVowel((\"bad\")).equals((\"a\")));\n    assert(getClosestVowel((\"most\")).equals((\"o\")));\n    assert(getClosestVowel((\"ab\")).equals((\"\")));\n    assert(getClosestVowel((\"ba\")).equals((\"\")));\n    assert(getClosestVowel((\"quick\")).equals((\"\")));\n    assert(getClosestVowel((\"anime\")).equals((\"i\")));\n    assert(getClosestVowel((\"Asia\")).equals((\"\")));\n    assert(getClosestVowel((\"Above\")).equals((\"o\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef get_closest_vowel(word: str) -> str:\n    if len(word) < 3:\n        return \"\"\n\n    vowels = {\"a\", \"e\", \"i\", \"o\", \"u\", \"A\", \"E\", 'O', 'U', 'I'}\n    for i in range(len(word)-2, 0, -1):\n        if word[i] in vowels:\n            if (word[i+1] not in vowels) and (word[i-1] not in vowels):\n                return word[i]\n    return \"\"\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String getClosestVowel(String word) {\n"
+}

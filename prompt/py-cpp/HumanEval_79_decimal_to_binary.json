@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_79_decimal_to_binary",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string decimal_to_binary(long decimal) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_79_decimal_to_binary.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = decimal_to_binary;\n    assert(candidate((0)) == (\"db0db\"));\n    assert(candidate((32)) == (\"db100000db\"));\n    assert(candidate((103)) == (\"db1100111db\"));\n    assert(candidate((15)) == (\"db1111db\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef decimal_to_binary(decimal: int) -> str:\n    return \"db\" + bin(decimal)[2:] + \"db\"\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string decimal_to_binary(long decimal) {\n"
+}

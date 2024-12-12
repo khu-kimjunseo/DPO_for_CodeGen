@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_111_histogram",
+    "language": "py",
+    "prompt": "from typing import Dict\n\ndef histogram(test: str) -> Dict[str, int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_111_histogram.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('a b b a') == { 'a': 2, 'b': 2 }\n    assert candidate('a b c a b') == { 'a': 2, 'b': 2 }\n    assert candidate('a b c d g') == { 'a': 1, 'b': 1, 'c': 1, 'd': 1, 'g': 1 }\n    assert candidate('r t g') == { 'r': 1, 't': 1, 'g': 1 }\n    assert candidate('b b b b a') == { 'b': 4 }\n    assert candidate('r t g') == { 'r': 1, 't': 1, 'g': 1 }\n    assert candidate('') == {  }\n    assert candidate('a') == { 'a': 1 }\n\ndef test_check():\n    check(histogram)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::map<std::string,long> histogram(std::string test) {\n    std::map<std::string,long> dict1;\n    std::stringstream ss(test);\n    std::string word;\n    long t = 0;\n    while (ss >> word) {\n        dict1[word]++;\n        if (dict1[word] > t) {\n            t = dict1[word];\n        }\n    }\n    std::map<std::string,long> result;\n    for (auto i : dict1) {\n        if (i.second == t) {\n            result[i.first] = t;\n        }\n    }\n    return result;\n}\n\n### Python version\n\nfrom typing import Dict\n\ndef histogram(test: str) -> Dict[str, int]:\n"
+}

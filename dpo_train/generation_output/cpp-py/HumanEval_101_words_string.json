@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_101_words_string",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef words_string(s: str) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_101_words_string.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hi, my name is John') == ['Hi', 'my', 'name', 'is', 'John']\n    assert candidate('One, two, three, four, five, six') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('Hi, my name') == ['Hi', 'my', 'name']\n    assert candidate('One,, two, three, four, five, six,') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('') == []\n    assert candidate('ahmed     , gamal') == ['ahmed', 'gamal']\n\ndef test_check():\n    check(words_string)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> words_string(std::string s) {\n    std::vector<std::string> result;\n    std::replace(s.begin(), s.end(), ',', ' ');\n    std::stringstream ss(s);\n    std::string word;\n    while (ss >> word) {\n        result.push_back(word);\n    }\n    return result;\n}\n\n### Python version\n\nfrom typing import List\n\ndef words_string(s: str) -> List[str]:\n"
+}

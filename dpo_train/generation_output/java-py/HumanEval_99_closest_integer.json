@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_99_closest_integer",
+    "language": "py",
+    "prompt": "def closest_integer(value: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_99_closest_integer.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('10') == 10\n    assert candidate('14.5') == 15\n    assert candidate('-15.5') == -16\n    assert candidate('15.3') == 15\n    assert candidate('0') == 0\n\ndef test_check():\n    check(closest_integer)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long closestInteger(String value) {\n        if (value == null || value.length() == 0) return 0;\n        if (value.indexOf('.') == -1) return Long.parseLong(value);\n        value = value.replaceAll(\"0*$\", \"\");\n        double num = Double.parseDouble(value);\n        if (value.endsWith(\".5\")) {\n            return (long)(num > 0 ? Math.ceil(num) : Math.floor(num));\n        } else {\n            return Math.round(num);\n        }\n    }\n    \n}\n\n### Python version\n\ndef closest_integer(value: str) -> int:\n"
+}

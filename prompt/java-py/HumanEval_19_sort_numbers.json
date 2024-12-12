@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_19_sort_numbers",
+    "language": "py",
+    "prompt": "def sort_numbers(numbers: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_19_sort_numbers.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('') == ''\n    assert candidate('three') == 'three'\n    assert candidate('three five nine') == 'three five nine'\n    assert candidate('five zero four seven nine eight') == 'zero four five seven eight nine'\n    assert candidate('six five four three two one zero') == 'zero one two three four five six'\n\ndef test_check():\n    check(sort_numbers)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String sortNumbers(String numbers) {\n        Map<String, Integer> valueMap = new HashMap<String, Integer>() {{\n            put(\"zero\", 0);\n            put(\"one\", 1);\n            put(\"two\", 2);\n            put(\"three\", 3);\n            put(\"four\", 4);\n            put(\"five\", 5);\n            put(\"six\", 6);\n            put(\"seven\", 7);\n            put(\"eight\", 8);\n            put(\"nine\", 9);\n        }};\n        return String.join(\" \", Arrays.stream(numbers.split(\" \")).filter(x -> !x.isEmpty()).sorted((x, y) -> valueMap.get(x) - valueMap.get(y)).toArray(String[]::new));\n    }\n}\n\n### Python version\n\ndef sort_numbers(numbers: str) -> str:\n"
+}

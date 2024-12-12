@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_16_count_distinct_characters",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countDistinctCharacters(String string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_16_count_distinct_characters.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(countDistinctCharacters((\"\")) == (0l));\n    assert(countDistinctCharacters((\"abcde\")) == (5l));\n    assert(countDistinctCharacters((\"abcdecadeCADE\")) == (5l));\n    assert(countDistinctCharacters((\"aaaaAAAAaaaa\")) == (1l));\n    assert(countDistinctCharacters((\"Jerry jERRY JeRRRY\")) == (5l));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong count_distinct_characters(std::string string) {\n    std::set<char> s;\n    for (auto c : string) {\n        s.insert(tolower(c));\n    }\n    return s.size();\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countDistinctCharacters(String string) {\n"
+}

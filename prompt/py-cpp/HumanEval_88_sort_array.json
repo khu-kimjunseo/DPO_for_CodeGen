@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_88_sort_array",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_array(std::vector<long> array) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_88_sort_array.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = sort_array;\n    assert(candidate((std::vector<long>())) == (std::vector<long>()));\n    assert(candidate((std::vector<long>({(long)5}))) == (std::vector<long>({(long)5})));\n    assert(candidate((std::vector<long>({(long)2, (long)4, (long)3, (long)0, (long)1, (long)5}))) == (std::vector<long>({(long)0, (long)1, (long)2, (long)3, (long)4, (long)5})));\n    assert(candidate((std::vector<long>({(long)2, (long)4, (long)3, (long)0, (long)1, (long)5, (long)6}))) == (std::vector<long>({(long)6, (long)5, (long)4, (long)3, (long)2, (long)1, (long)0})));\n    assert(candidate((std::vector<long>({(long)2, (long)1}))) == (std::vector<long>({(long)1, (long)2})));\n    assert(candidate((std::vector<long>({(long)15, (long)42, (long)87, (long)32, (long)11, (long)0}))) == (std::vector<long>({(long)0, (long)11, (long)15, (long)32, (long)42, (long)87})));\n    assert(candidate((std::vector<long>({(long)21, (long)14, (long)23, (long)11}))) == (std::vector<long>({(long)23, (long)21, (long)14, (long)11})));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef sort_array(array: List[int]) -> List[int]:\n    return [] if len(array) == 0 else sorted(array, reverse= (array[0]+array[-1]) % 2 == 0)\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<long> sort_array(std::vector<long> array) {\n"
+}

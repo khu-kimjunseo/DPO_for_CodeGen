@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_134_check_if_last_char_is_a_letter",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool check_if_last_char_is_a_letter(std::string txt) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_134_check_if_last_char_is_a_letter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = check_if_last_char_is_a_letter;\n    assert(candidate((\"apple\")) == (false));\n    assert(candidate((\"apple pi e\")) == (true));\n    assert(candidate((\"eeeee\")) == (false));\n    assert(candidate((\"A\")) == (true));\n    assert(candidate((\"Pumpkin pie \")) == (false));\n    assert(candidate((\"Pumpkin pie 1\")) == (false));\n    assert(candidate((\"\")) == (false));\n    assert(candidate((\"eeeee e \")) == (false));\n    assert(candidate((\"apple pie\")) == (false));\n    assert(candidate((\"apple pi e \")) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkIfLastCharIsALetter(String txt) {\n        String check = txt.substring(txt.lastIndexOf(' ')+1);\n        return (check.length() == 1 && (97 <= Character.toLowerCase(check.charAt(0)) && Character.toLowerCase(check.charAt(0)) <= 122));\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool check_if_last_char_is_a_letter(std::string txt) {\n"
+}

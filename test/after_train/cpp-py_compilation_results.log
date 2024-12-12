@@ -1,0 +1,95 @@
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_13_greatest_common_divisor.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_13_greatest_common_divisor.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_161_solve.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_161_solve.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_55_fib.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_55_fib.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_106_f.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_106_f.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_154_cycpattern_check.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_154_cycpattern_check.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_117_select_words.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_117_select_words.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_104_unique_digits.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_104_unique_digits.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_144_simplify.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_144_simplify.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_78_hex_key.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_78_hex_key.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_153_Strongest_Extension.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_153_Strongest_Extension.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_110_exchange.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_110_exchange.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_129_minPath.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_129_minPath.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_27_flip_case.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_27_flip_case.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_146_specialFilter.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_146_specialFilter.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_95_check_dict_case.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_95_check_dict_case.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_4_mean_absolute_deviation.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_4_mean_absolute_deviation.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_35_max_element.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_35_max_element.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_8_sum_product.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_8_sum_product.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_90_next_smallest.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_90_next_smallest.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_28_concatenate.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_28_concatenate.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_18_how_many_times.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_18_how_many_times.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_87_get_row.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_87_get_row.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_9_rolling_max.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_9_rolling_max.py, line 4)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_84_solve.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_84_solve.py, line 2)
+2024-12-12 20:28:58 - ERROR - Failed to compile cpp-py/HumanEval_130_tri.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_130_tri.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_127_intersection.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_127_intersection.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_82_prime_length.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_82_prime_length.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_89_encrypt.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_89_encrypt.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_14_all_prefixes.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_14_all_prefixes.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_40_triples_sum_to_zero.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_40_triples_sum_to_zero.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_135_can_arrange.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_135_can_arrange.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_148_bf.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_148_bf.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_125_split_words.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_125_split_words.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_157_right_angle_triangle.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_157_right_angle_triangle.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_68_pluck.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_68_pluck.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_102_choose_num.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_102_choose_num.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_16_count_distinct_characters.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_16_count_distinct_characters.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_3_below_zero.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_3_below_zero.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_23_strlen.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_23_strlen.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_70_strange_sort_list.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_70_strange_sort_list.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_22_filter_integers.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_22_filter_integers.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_143_words_in_sentence.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_143_words_in_sentence.py, line 2)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_155_even_odd_count.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_155_even_odd_count.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_126_is_sorted.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 3 (HumanEval_126_is_sorted.py, line 4)
+2024-12-12 20:28:59 - ERROR - Failed to compile cpp-py/HumanEval_66_digitSum.py. Error:
+Sorry: IndentationError: expected an indented block after function definition on line 1 (HumanEval_66_digitSum.py, line 2)
+2024-12-12 20:28:59 - INFO - Directory: cpp-py
+2024-12-12 20:28:59 - INFO - Total Files: 45
+2024-12-12 20:28:59 - INFO - Successful Compilations: 0
+2024-12-12 20:28:59 - INFO - Failed Compilations: 45
+2024-12-12 20:28:59 - INFO - Success Rate: 0.00%

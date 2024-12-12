@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_90_next_smallest",
+    "language": "py",
+    "prompt": "from typing import List, Optional\n\ndef next_smallest(lst: List[int]) -> Optional[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_90_next_smallest.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5]) == 2\n    assert candidate([5, 1, 4, 3, 2]) == 2\n    assert candidate([]) == None\n    assert candidate([1, 1]) == None\n    assert candidate([1, 1, 1, 1, 0]) == 1\n    assert candidate([1, 1]) == None\n    assert candidate([-35, 34, 12, -45]) == -35\n\ndef test_check():\n    check(next_smallest)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<Long> nextSmallest(ArrayList<Long> lst) {\n        return lst.stream().sorted().distinct().skip(1).findFirst();\n    }\n    \n}\n\n### Python version\n\nfrom typing import List, Optional\n\ndef next_smallest(lst: List[int]) -> Optional[int]:\n"
+}

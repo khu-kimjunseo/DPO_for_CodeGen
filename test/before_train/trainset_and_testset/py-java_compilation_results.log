@@ -1,0 +1,1719 @@
+2024-12-12 12:50:42 - INFO - Successfully compiled: py-java/HumanEval_117_select_words.java
+2024-12-12 12:50:42 - ERROR - Failed to compile py-java/HumanEval_86_anti_shuffle.java. Error:
+py-java/HumanEval_86_anti_shuffle.java:9: error: cannot find symbol
+        return anti_shuffle(s.toLowerCase());
+               ^
+  symbol:   method anti_shuffle(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:42 - INFO - Successfully compiled: py-java/HumanEval_122_add_elements.java
+2024-12-12 12:50:43 - ERROR - Failed to compile py-java/HumanEval_134_check_if_last_char_is_a_letter.java. Error:
+py-java/HumanEval_134_check_if_last_char_is_a_letter.java:9: error: cannot find symbol
+        return check_if_last_char_is_a_letter(txt);
+               ^
+  symbol:   method check_if_last_char_is_a_letter(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:43 - INFO - Successfully compiled: py-java/HumanEval_120_maximum.java
+2024-12-12 12:50:44 - INFO - Successfully compiled: py-java/HumanEval_7_filter_by_substring.java
+2024-12-12 12:50:44 - INFO - Successfully compiled: py-java/HumanEval_115_max_fill.java
+2024-12-12 12:50:45 - INFO - Successfully compiled: py-java/HumanEval_29_filter_by_prefix.java
+2024-12-12 12:50:45 - INFO - Successfully compiled: py-java/HumanEval_142_sum_squares.java
+2024-12-12 12:50:46 - ERROR - Failed to compile py-java/HumanEval_151_double_the_difference.java. Error:
+py-java/HumanEval_151_double_the_difference.java:9: error: cannot find symbol
+        return double_the_difference(lst.toArray());
+               ^
+  symbol:   method double_the_difference(Object[])
+  location: class Problem
+1 error
+
+2024-12-12 12:50:47 - INFO - Successfully compiled: py-java/HumanEval_129_minPath.java
+2024-12-12 12:50:47 - ERROR - Failed to compile py-java/HumanEval_31_is_prime.java. Error:
+py-java/HumanEval_31_is_prime.java:150: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:50:47 - INFO - Successfully compiled: py-java/HumanEval_130_tri.java
+2024-12-12 12:50:48 - ERROR - Failed to compile py-java/HumanEval_160_do_algebra.java. Error:
+py-java/HumanEval_160_do_algebra.java:14: error: cannot find symbol
+                result += do_algebra(Arrays.asList(oprt), Arrays.asList(oprn));
+                          ^
+  symbol:   method do_algebra(List<String>,List<String>)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:48 - INFO - Successfully compiled: py-java/HumanEval_131_digits.java
+2024-12-12 12:50:49 - ERROR - Failed to compile py-java/HumanEval_65_circular_shift.java. Error:
+py-java/HumanEval_65_circular_shift.java:9: error: cannot find symbol
+        return circular_shift(x, shift) + " " + circular_shift(x, shift - 1);
+               ^
+  symbol:   method circular_shift(long,long)
+  location: class Problem
+py-java/HumanEval_65_circular_shift.java:9: error: cannot find symbol
+        return circular_shift(x, shift) + " " + circular_shift(x, shift - 1);
+                                                ^
+  symbol:   method circular_shift(long,long)
+  location: class Problem
+2 errors
+
+2024-12-12 12:50:49 - ERROR - Failed to compile py-java/HumanEval_79_decimal_to_binary.java. Error:
+py-java/HumanEval_79_decimal_to_binary.java:68: error: ',', ')', or '[' expected
+    public static String decimalToBinary(long decimal, int precision, int scale, int precisionOffset, int scaleOffset, int precisionOffset
+                                                                                                                                          ^
+1 error
+
+2024-12-12 12:50:49 - ERROR - Failed to compile py-java/HumanEval_10_make_palindrome.java. Error:
+py-java/HumanEval_10_make_palindrome.java:9: error: cannot find symbol
+        return make_palindrome(string.toLowerCase());
+               ^
+  symbol:   method make_palindrome(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:50 - ERROR - Failed to compile py-java/HumanEval_45_triangle_area.java. Error:
+py-java/HumanEval_45_triangle_area.java:9: error: cannot find symbol
+        return triangle_area(a, h);
+               ^
+  symbol:   method triangle_area(long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:50 - ERROR - Failed to compile py-java/HumanEval_16_count_distinct_characters.java. Error:
+py-java/HumanEval_16_count_distinct_characters.java:9: error: cannot find symbol
+        return count_distinct_characters(string.toLowerCase());
+               ^
+  symbol:   method count_distinct_characters(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:51 - ERROR - Failed to compile py-java/HumanEval_98_count_upper.java. Error:
+py-java/HumanEval_98_count_upper.java:9: error: cannot find symbol
+        return count_upper(s);
+               ^
+  symbol:   method count_upper(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:51 - ERROR - Failed to compile py-java/HumanEval_8_sum_product.java. Error:
+py-java/HumanEval_8_sum_product.java:8: error: cannot find symbol
+    public static Pair<Long, Long> sumProduct(ArrayList<Long> numbers) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:15: error: cannot find symbol
+        return Pair.of(sum, prod);
+               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:18: error: cannot find symbol
+    assert(sumProduct((new ArrayList<Long>(Arrays.asList()))).equals((Pair.with(0l, 1l))));
+                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:19: error: cannot find symbol
+    assert(sumProduct((new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)1l)))).equals((Pair.with(3l, 1l))));
+                                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:20: error: cannot find symbol
+    assert(sumProduct((new ArrayList<Long>(Arrays.asList((long)100l, (long)0l)))).equals((Pair.with(100l, 0l))));
+                                                                                          ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:21: error: cannot find symbol
+    assert(sumProduct((new ArrayList<Long>(Arrays.asList((long)3l, (long)5l, (long)7l)))).equals((Pair.with(15l, 105l))));
+                                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_8_sum_product.java:22: error: cannot find symbol
+    assert(sumProduct((new ArrayList<Long>(Arrays.asList((long)10l)))).equals((Pair.with(10l, 10l))));
+                                                                               ^
+  symbol:   variable Pair
+  location: class Problem
+7 errors
+
+2024-12-12 12:50:51 - ERROR - Failed to compile py-java/HumanEval_75_is_multiply_prime.java. Error:
+py-java/HumanEval_75_is_multiply_prime.java:9: error: cannot find symbol
+        return is_multiply_prime(a);
+               ^
+  symbol:   method is_multiply_prime(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:52 - ERROR - Failed to compile py-java/HumanEval_150_x_or_y.java. Error:
+py-java/HumanEval_150_x_or_y.java:9: error: cannot find symbol
+        return x_or_y(n, x, y);
+               ^
+  symbol:   method x_or_y(long,long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:52 - INFO - Successfully compiled: py-java/HumanEval_163_generate_integers.java
+2024-12-12 12:50:53 - INFO - Successfully compiled: py-java/HumanEval_94_skjkasdkd.java
+2024-12-12 12:50:53 - ERROR - Failed to compile py-java/HumanEval_111_histogram.java. Error:
+py-java/HumanEval_111_histogram.java:55: error: <identifier> expected
+                                                                                                                                               	String[] ss8 = s8.
+                                                                                                                                               	                  ^
+py-java/HumanEval_111_histogram.java:56: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+printing javac parameters to: /data/juny7s6/DPO/datasets/javac.20241212_125053.args
+
+2024-12-12 12:50:54 - ERROR - Failed to compile py-java/HumanEval_95_check_dict_case.java. Error:
+py-java/HumanEval_95_check_dict_case.java:9: error: cannot find symbol
+        return check_dict_case(dict);
+               ^
+  symbol:   method check_dict_case(HashMap<String,String>)
+  location: class Problem
+1 error
+
+2024-12-12 12:50:54 - INFO - Successfully compiled: py-java/HumanEval_44_change_base.java
+2024-12-12 12:50:54 - ERROR - Failed to compile py-java/HumanEval_77_iscube.java. Error:
+py-java/HumanEval_77_iscube.java:57: error: ')' or ',' expected
+        return iscube(a >> 32, b >> 32, c
+                                         ^
+py-java/HumanEval_77_iscube.java:58: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:50:55 - ERROR - Failed to compile py-java/HumanEval_57_monotonic.java. Error:
+py-java/HumanEval_57_monotonic.java:9: error: incompatible types: Object[] cannot be converted to ArrayList<Long>
+        return monotonic(l.toArray());
+                                  ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:50:55 - ERROR - Failed to compile py-java/HumanEval_47_median.java. Error:
+py-java/HumanEval_47_median.java:9: error: incompatible types: possible lossy conversion from double to float
+        return (l.size() / 2.0) * (l.size() / 2.0);
+                                ^
+1 error
+
+2024-12-12 12:50:55 - ERROR - Failed to compile py-java/HumanEval_161_solve.java. Error:
+py-java/HumanEval_161_solve.java:87: error: illegal line end in character literal
+            } else if (c == '
+                            ^
+py-java/HumanEval_161_solve.java:100: error: reached end of file while parsing
+2 errors
+
+2024-12-12 12:50:56 - INFO - Successfully compiled: py-java/HumanEval_141_file_name_check.java
+2024-12-12 12:50:56 - INFO - Successfully compiled: py-java/HumanEval_139_special_factorial.java
+2024-12-12 12:50:57 - INFO - Successfully compiled: py-java/HumanEval_35_max_element.java
+2024-12-12 12:50:57 - INFO - Successfully compiled: py-java/HumanEval_55_fib.java
+2024-12-12 12:50:58 - INFO - Successfully compiled: py-java/HumanEval_25_factorize.java
+2024-12-12 12:50:58 - ERROR - Failed to compile py-java/HumanEval_107_even_odd_palindrome.java. Error:
+py-java/HumanEval_107_even_odd_palindrome.java:8: error: cannot find symbol
+    public static Pair<Long, Long> evenOddPalindrome(long n) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:20: error: cannot find symbol
+        return Pair.of(result, odd_count + even_count);
+               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:23: error: cannot find symbol
+    assert(evenOddPalindrome((123l)).equals((Pair.with(8l, 13l))));
+                                             ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:24: error: cannot find symbol
+    assert(evenOddPalindrome((12l)).equals((Pair.with(4l, 6l))));
+                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:25: error: cannot find symbol
+    assert(evenOddPalindrome((3l)).equals((Pair.with(1l, 2l))));
+                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:26: error: cannot find symbol
+    assert(evenOddPalindrome((63l)).equals((Pair.with(6l, 8l))));
+                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:27: error: cannot find symbol
+    assert(evenOddPalindrome((25l)).equals((Pair.with(5l, 6l))));
+                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:28: error: cannot find symbol
+    assert(evenOddPalindrome((19l)).equals((Pair.with(4l, 6l))));
+                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:29: error: cannot find symbol
+    assert(evenOddPalindrome((9l)).equals((Pair.with(4l, 5l))));
+                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_107_even_odd_palindrome.java:30: error: cannot find symbol
+    assert(evenOddPalindrome((1l)).equals((Pair.with(0l, 1l))));
+                                           ^
+  symbol:   variable Pair
+  location: class Problem
+10 errors
+
+2024-12-12 12:50:58 - ERROR - Failed to compile py-java/HumanEval_119_match_parens.java. Error:
+py-java/HumanEval_119_match_parens.java:90: error: <identifier> expected
+            sb.
+               ^
+py-java/HumanEval_119_match_parens.java:90: error: not a statement
+            sb.
+              ^
+py-java/HumanEval_119_match_parens.java:91: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+3 errors
+
+2024-12-12 12:50:59 - ERROR - Failed to compile py-java/HumanEval_116_sort_array.java. Error:
+py-java/HumanEval_116_sort_array.java:85: error: not a statement
+            result.add
+                  ^
+py-java/HumanEval_116_sort_array.java:85: error: ';' expected
+            result.add
+                      ^
+py-java/HumanEval_116_sort_array.java:86: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+3 errors
+
+2024-12-12 12:50:59 - ERROR - Failed to compile py-java/HumanEval_0_has_close_elements.java. Error:
+py-java/HumanEval_0_has_close_elements.java:9: error: cannot find symbol
+        return has_close_elements(numbers, threshold, 0);
+               ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:14: error: cannot find symbol
+            return has_close_elements(numbers, threshold);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:16: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:22: error: cannot find symbol
+            return has_close_elements(numbers, threshold);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:24: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:30: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:32: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:38: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:40: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:46: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:48: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:54: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:56: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:62: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:64: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:70: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int)
+  location: class Problem
+py-java/HumanEval_0_has_close_elements.java:72: error: cannot find symbol
+            return has_close_elements(numbers, threshold, depth - 1, maxDepth2);
+                   ^
+  symbol:   method has_close_elements(ArrayList<Float>,float,int,int)
+  location: class Problem
+17 errors
+
+2024-12-12 12:51:00 - INFO - Successfully compiled: py-java/HumanEval_66_digitSum.java
+2024-12-12 12:51:00 - ERROR - Failed to compile py-java/HumanEval_88_sort_array.java. Error:
+py-java/HumanEval_88_sort_array.java:91: error: ')' or ',' expected
+            result.add(array.get
+                                ^
+py-java/HumanEval_88_sort_array.java:92: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:51:00 - INFO - Successfully compiled: py-java/HumanEval_85_add.java
+2024-12-12 12:51:01 - ERROR - Failed to compile py-java/HumanEval_123_get_odd_collatz.java. Error:
+py-java/HumanEval_123_get_odd_collatz.java:14: error: incompatible types: int cannot be converted to Long
+                odd_collatz.add(i);
+                                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:01 - INFO - Successfully compiled: py-java/HumanEval_135_can_arrange.java
+2024-12-12 12:51:02 - INFO - Successfully compiled: py-java/HumanEval_128_prod_signs.java
+2024-12-12 12:51:02 - INFO - Successfully compiled: py-java/HumanEval_54_same_chars.java
+2024-12-12 12:51:03 - INFO - Successfully compiled: py-java/HumanEval_110_exchange.java
+2024-12-12 12:51:03 - ERROR - Failed to compile py-java/HumanEval_73_smallest_change.java. Error:
+py-java/HumanEval_73_smallest_change.java:11: error: cannot find symbol
+            ans += smallest_change(arr.get(i));
+                   ^
+  symbol:   method smallest_change(Long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:04 - INFO - Successfully compiled: py-java/HumanEval_33_sort_third.java
+2024-12-12 12:51:04 - ERROR - Failed to compile py-java/HumanEval_43_pairs_sum_to_zero.java. Error:
+py-java/HumanEval_43_pairs_sum_to_zero.java:9: error: cannot find symbol
+        return pairs_sum_to_zero(l);
+               ^
+  symbol:   method pairs_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:05 - INFO - Successfully compiled: py-java/HumanEval_49_modp.java
+2024-12-12 12:51:05 - ERROR - Failed to compile py-java/HumanEval_41_car_race_collision.java. Error:
+py-java/HumanEval_41_car_race_collision.java:9: error: illegal start of expression
+        return n**2;
+                 ^
+1 error
+
+2024-12-12 12:51:05 - INFO - Successfully compiled: py-java/HumanEval_22_filter_integers.java
+2024-12-12 12:51:06 - INFO - Successfully compiled: py-java/HumanEval_26_remove_duplicates.java
+2024-12-12 12:51:06 - INFO - Successfully compiled: py-java/HumanEval_97_multiply.java
+2024-12-12 12:51:07 - INFO - Successfully compiled: py-java/HumanEval_106_f.java
+2024-12-12 12:51:07 - ERROR - Failed to compile py-java/HumanEval_40_triples_sum_to_zero.java. Error:
+py-java/HumanEval_40_triples_sum_to_zero.java:9: error: cannot find symbol
+        return triples_sum_to_zero(l);
+               ^
+  symbol:   method triples_sum_to_zero(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:08 - ERROR - Failed to compile py-java/HumanEval_152_compare.java. Error:
+py-java/HumanEval_152_compare.java:11: error: incompatible types: Long cannot be converted to ArrayList<Long>
+            result.add(compare(game.get(i),guess.get(i)));
+                                       ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:08 - ERROR - Failed to compile py-java/HumanEval_156_int_to_mini_roman.java. Error:
+py-java/HumanEval_156_int_to_mini_roman.java:52: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:09 - ERROR - Failed to compile py-java/HumanEval_136_largest_smallest_integers.java. Error:
+py-java/HumanEval_136_largest_smallest_integers.java:8: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(ArrayList<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:11: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(List<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:14: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(Tuple<Long, Long> lst) {
+                                                                               ^
+  symbol:   class Tuple
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:14: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(Tuple<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:17: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Map<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:20: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Set<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:23: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashMap<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:26: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashSet<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:29: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Hashtable<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:32: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashSet<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:35: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Map<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:38: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Set<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:41: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashMap<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:44: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashSet<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:47: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Hashtable<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:50: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.HashSet<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:53: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Map<Long, Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:56: error: cannot find symbol
+    public static Pair<Optional<Long>, Optional<Long>> largestSmallestIntegers(java.util.Set<Long> lst) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:9: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(ArrayList<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:12: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(List<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:18: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Map<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:21: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Set<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:24: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashMap<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:27: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashSet<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:30: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Hashtable<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:33: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashSet<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:36: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Map<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:39: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Set<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:42: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashMap<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:45: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashSet<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:48: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Hashtable<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:51: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(HashSet<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:54: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Map<Long,Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:57: error: cannot find symbol
+        return largest_smallest_integers(lst);
+               ^
+  symbol:   method largest_smallest_integers(Set<Long>)
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:61: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:61: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+                                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:62: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l, (long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:62: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)2l, (long)4l, (long)1l, (long)3l, (long)5l, (long)7l, (long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(1l))));
+                                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:63: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)1l, (long)3l, (long)2l, (long)4l, (long)5l, (long)6l, (long)-2l)))).equals(Optional.of(Pair.with(-2l, 1l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:63: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)1l, (long)3l, (long)2l, (long)4l, (long)5l, (long)6l, (long)-2l)))).equals(Optional.of(Pair.with(-2l, 1l))));
+                                                                                                                                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:64: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)4l, (long)5l, (long)3l, (long)6l, (long)2l, (long)7l, (long)-7l)))).equals(Optional.of(Pair.with(-7l, 2l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:64: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)4l, (long)5l, (long)3l, (long)6l, (long)2l, (long)7l, (long)-7l)))).equals(Optional.of(Pair.with(-7l, 2l))));
+                                                                                                                                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:65: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)7l, (long)3l, (long)8l, (long)4l, (long)9l, (long)2l, (long)5l, (long)-9l)))).equals(Optional.of(Pair.with(-9l, 2l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:65: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)7l, (long)3l, (long)8l, (long)4l, (long)9l, (long)2l, (long)5l, (long)-9l)))).equals(Optional.of(Pair.with(-9l, 2l))));
+                                                                                                                                                                             ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:66: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList()))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:66: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList()))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:67: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:67: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)0l)))).equals(Pair.with(Optional.of(Optional.empty()), Optional.of(Optional.empty()))));
+                                                                                          ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:68: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:68: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:69: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l, (long)0l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:69: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-1l, (long)-3l, (long)-5l, (long)-6l, (long)0l)))).equals(Pair.with(Optional.of(-1l), Optional.of(Optional.empty()))));
+                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:70: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:70: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+                                                                                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_136_largest_smallest_integers.java:71: error: reference to largestSmallestIntegers is ambiguous
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)-100l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+           ^
+  both method largestSmallestIntegers(List<Long>) in Problem and method largestSmallestIntegers(<any>) in Problem match
+py-java/HumanEval_136_largest_smallest_integers.java:71: error: cannot find symbol
+    assert(largestSmallestIntegers((new ArrayList<Long>(Arrays.asList((long)-6l, (long)-4l, (long)-4l, (long)-3l, (long)-100l, (long)1l)))).equals(Optional.of(Pair.with(-3l, 1l))));
+                                                                                                                                                               ^
+  symbol:   variable Pair
+  location: class Problem
+56 errors
+
+2024-12-12 12:51:09 - ERROR - Failed to compile py-java/HumanEval_59_largest_prime_factor.java. Error:
+py-java/HumanEval_59_largest_prime_factor.java:140: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:09 - ERROR - Failed to compile py-java/HumanEval_87_get_row.java. Error:
+py-java/HumanEval_87_get_row.java:8: error: cannot find symbol
+    public static ArrayList<Pair<Long, Long>> getRow(ArrayList<ArrayList<Long>> lst, long x) {
+                            ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:9: error: cannot find symbol
+        ArrayList<Pair<Long, Long>> res = new ArrayList<>();
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:14: error: cannot find symbol
+                    res.add(new Pair<>(i, j));
+                                ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:21: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 4l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 5l), (Pair<Long, Long>)Pair.with(2l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:22: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 1l), (Pair<Long, Long>)Pair.with(1l, 1l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(3l, 1l), (Pair<Long, Long>)Pair.with(4l, 1l), (Pair<Long, Long>)Pair.with(5l, 1l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:23: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)1l, (long)3l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)1l, (long)4l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)1l, (long)5l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)1l, (long)6l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l, (long)4l, (long)5l, (long)1l))))), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(0l, 0l), (Pair<Long, Long>)Pair.with(1l, 0l), (Pair<Long, Long>)Pair.with(2l, 1l), (Pair<Long, Long>)Pair.with(2l, 0l), (Pair<Long, Long>)Pair.with(3l, 2l), (Pair<Long, Long>)Pair.with(3l, 0l), (Pair<Long, Long>)Pair.with(4l, 3l), (Pair<Long, Long>)Pair.with(4l, 0l), (Pair<Long, Long>)Pair.with(5l, 4l), (Pair<Long, Long>)Pair.with(5l, 0l), (Pair<Long, Long>)Pair.with(6l, 5l), (Pair<Long, Long>)Pair.with(6l, 0l))))));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:24: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList())), (1l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList()))));
+                                                                                                 ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:25: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l))))), (2l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList()))));
+                                                                                                                                                              ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:26: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList()), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l))))), (3l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(2l, 2l))))));
+                                                                                                                                                                                                                                                                                                        ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:26: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList()), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l))))), (3l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(2l, 2l))))));
+                                                                                                                                                                                                                                                                                                                                         ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_87_get_row.java:26: error: cannot find symbol
+    assert(getRow((new ArrayList<ArrayList<Long>>(Arrays.asList((ArrayList<Long>)new ArrayList<Long>(Arrays.asList()), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l)), (ArrayList<Long>)new ArrayList<Long>(Arrays.asList((long)1l, (long)2l, (long)3l))))), (3l)).equals((new ArrayList<Pair<Long, Long>>(Arrays.asList((Pair<Long, Long>)Pair.with(2l, 2l))))));
+                                                                                                                                                                                                                                                                                                                                                          ^
+  symbol:   variable Pair
+  location: class Problem
+57 errors
+
+2024-12-12 12:51:10 - INFO - Successfully compiled: py-java/HumanEval_5_intersperse.java
+2024-12-12 12:51:10 - INFO - Successfully compiled: py-java/HumanEval_63_fibfib.java
+2024-12-12 12:51:11 - INFO - Successfully compiled: py-java/HumanEval_46_fib4.java
+2024-12-12 12:51:11 - ERROR - Failed to compile py-java/HumanEval_158_find_max.java. Error:
+py-java/HumanEval_158_find_max.java:99: error: ')' or ',' expected
+        return findMax(Arrays
+                             ^
+py-java/HumanEval_158_find_max.java:100: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:51:12 - INFO - Successfully compiled: py-java/HumanEval_69_search.java
+2024-12-12 12:51:12 - ERROR - Failed to compile py-java/HumanEval_155_even_odd_count.java. Error:
+py-java/HumanEval_155_even_odd_count.java:8: error: cannot find symbol
+    public static Pair<Long, Long> evenOddCount(long num) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:9: error: cannot find symbol
+        return Pair.of(even_odd_count(num), even_odd_count(num));
+               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:9: error: cannot find symbol
+        return Pair.of(even_odd_count(num), even_odd_count(num));
+                       ^
+  symbol:   method even_odd_count(long)
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:9: error: cannot find symbol
+        return Pair.of(even_odd_count(num), even_odd_count(num));
+                                            ^
+  symbol:   method even_odd_count(long)
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:12: error: cannot find symbol
+    assert(evenOddCount((7l)).equals((Pair.with(0l, 1l))));
+                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:13: error: cannot find symbol
+    assert(evenOddCount((-78l)).equals((Pair.with(1l, 1l))));
+                                        ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:14: error: cannot find symbol
+    assert(evenOddCount((3452l)).equals((Pair.with(2l, 2l))));
+                                         ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:15: error: cannot find symbol
+    assert(evenOddCount((346211l)).equals((Pair.with(3l, 3l))));
+                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:16: error: cannot find symbol
+    assert(evenOddCount((-345821l)).equals((Pair.with(3l, 3l))));
+                                            ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:17: error: cannot find symbol
+    assert(evenOddCount((-2l)).equals((Pair.with(1l, 0l))));
+                                       ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:18: error: cannot find symbol
+    assert(evenOddCount((-45347l)).equals((Pair.with(2l, 3l))));
+                                           ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_155_even_odd_count.java:19: error: cannot find symbol
+    assert(evenOddCount((0l)).equals((Pair.with(1l, 0l))));
+                                      ^
+  symbol:   variable Pair
+  location: class Problem
+12 errors
+
+2024-12-12 12:51:13 - INFO - Successfully compiled: py-java/HumanEval_17_parse_music.java
+2024-12-12 12:51:13 - ERROR - Failed to compile py-java/HumanEval_24_largest_divisor.java. Error:
+py-java/HumanEval_24_largest_divisor.java:9: error: cannot find symbol
+        return Long.valueOf(largest_divisor(n));
+                            ^
+  symbol:   method largest_divisor(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:14 - INFO - Successfully compiled: py-java/HumanEval_70_strange_sort_list.java
+2024-12-12 12:51:14 - ERROR - Failed to compile py-java/HumanEval_62_derivative.java. Error:
+py-java/HumanEval_62_derivative.java:11: error: incompatible types: Long cannot be converted to ArrayList<Long>
+            res.add(derivative(xs.get(i)));
+                                     ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:14 - ERROR - Failed to compile py-java/HumanEval_101_words_string.java. Error:
+py-java/HumanEval_101_words_string.java:13: error: incompatible types: char cannot be converted to String
+                words.add(c);
+                          ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:15 - ERROR - Failed to compile py-java/HumanEval_144_simplify.java. Error:
+py-java/HumanEval_144_simplify.java:41: error: <identifier> expected
+    public static boolean simplify(String x, List<String> n, List<String> n2, List<String>
+                                                                                          ^
+1 error
+
+2024-12-12 12:51:15 - ERROR - Failed to compile py-java/HumanEval_124_valid_date.java. Error:
+py-java/HumanEval_124_valid_date.java:9: error: cannot find symbol
+        return valid_date(date);
+               ^
+  symbol:   method valid_date(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:16 - INFO - Successfully compiled: py-java/HumanEval_108_count_nums.java
+2024-12-12 12:51:16 - ERROR - Failed to compile py-java/HumanEval_34_unique.java. Error:
+py-java/HumanEval_34_unique.java:12: error: incompatible types: int cannot be converted to Long
+                r.add(i);
+                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:16 - ERROR - Failed to compile py-java/HumanEval_84_solve.java. Error:
+py-java/HumanEval_84_solve.java:63: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:17 - ERROR - Failed to compile py-java/HumanEval_3_below_zero.java. Error:
+py-java/HumanEval_3_below_zero.java:9: error: cannot find symbol
+        return below_zero(operations.toArray());
+               ^
+  symbol:   method below_zero(Object[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:17 - INFO - Successfully compiled: py-java/HumanEval_13_greatest_common_divisor.java
+2024-12-12 12:51:18 - ERROR - Failed to compile py-java/HumanEval_23_strlen.java. Error:
+py-java/HumanEval_23_strlen.java:9: error: incompatible types: char[] cannot be converted to String
+        return strlen(string.toCharArray());
+                                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:18 - ERROR - Failed to compile py-java/HumanEval_39_prime_fib.java. Error:
+py-java/HumanEval_39_prime_fib.java:9: error: cannot find symbol
+        long prime = prime_fib(n);
+                     ^
+  symbol:   method prime_fib(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:19 - ERROR - Failed to compile py-java/HumanEval_67_fruit_distribution.java. Error:
+py-java/HumanEval_67_fruit_distribution.java:11: error: cannot find symbol
+            list.add(fruit_distribution(s, i));
+                     ^
+  symbol:   method fruit_distribution(String,int)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:19 - ERROR - Failed to compile py-java/HumanEval_76_is_simple_power.java. Error:
+py-java/HumanEval_76_is_simple_power.java:9: error: cannot find symbol
+        return is_simple_power(x, n);
+               ^
+  symbol:   method is_simple_power(long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:19 - ERROR - Failed to compile py-java/HumanEval_81_numerical_letter_grade.java. Error:
+py-java/HumanEval_81_numerical_letter_grade.java:11: error: cannot find symbol
+            letterGrade.add(numerical_letter_grade(grades.get(i)));
+                            ^
+  symbol:   method numerical_letter_grade(Float)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:20 - INFO - Successfully compiled: py-java/HumanEval_104_unique_digits.java
+2024-12-12 12:51:20 - ERROR - Failed to compile py-java/HumanEval_12_longest.java. Error:
+py-java/HumanEval_12_longest.java:104: error: <identifier> expected
+    public static Optional<String> longest(String
+                                                 ^
+1 error
+
+2024-12-12 12:51:21 - ERROR - Failed to compile py-java/HumanEval_60_sum_to_n.java. Error:
+py-java/HumanEval_60_sum_to_n.java:9: error: cannot find symbol
+        return sum_to_n(n);
+               ^
+  symbol:   method sum_to_n(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:21 - ERROR - Failed to compile py-java/HumanEval_138_is_equal_to_sum_even.java. Error:
+py-java/HumanEval_138_is_equal_to_sum_even.java:9: error: cannot find symbol
+        return is_equal_to_sum_even(n);
+               ^
+  symbol:   method is_equal_to_sum_even(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:22 - ERROR - Failed to compile py-java/HumanEval_52_below_threshold.java. Error:
+py-java/HumanEval_52_below_threshold.java:9: error: incompatible types: boolean cannot be converted to Predicate<? super Long>
+        return l.stream().filter(belowThreshold(l, t)).findAny().isPresent();
+                                               ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+2024-12-12 12:51:22 - ERROR - Failed to compile py-java/HumanEval_157_right_angle_triangle.java. Error:
+py-java/HumanEval_157_right_angle_triangle.java:9: error: ';' expected
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                               ^
+py-java/HumanEval_157_right_angle_triangle.java:9: error: ';' expected
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                                    ^
+py-java/HumanEval_157_right_angle_triangle.java:9: error: not a statement
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                                       ^
+py-java/HumanEval_157_right_angle_triangle.java:9: error: ';' expected
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                                                   ^
+py-java/HumanEval_157_right_angle_triangle.java:9: error: ';' expected
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                                                        ^
+py-java/HumanEval_157_right_angle_triangle.java:9: error: not a statement
+        return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b;
+                                                           ^
+6 errors
+
+2024-12-12 12:51:22 - ERROR - Failed to compile py-java/HumanEval_80_is_happy.java. Error:
+py-java/HumanEval_80_is_happy.java:9: error: cannot find symbol
+        return is_happy(s.toLowerCase());
+               ^
+  symbol:   method is_happy(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:23 - INFO - Successfully compiled: py-java/HumanEval_99_closest_integer.java
+2024-12-12 12:51:23 - ERROR - Failed to compile py-java/HumanEval_83_starts_one_ends.java. Error:
+py-java/HumanEval_83_starts_one_ends.java:9: error: cannot find symbol
+        return starts_one_ends(n / 10);
+               ^
+  symbol:   method starts_one_ends(long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:24 - INFO - Successfully compiled: py-java/HumanEval_36_fizz_buzz.java
+2024-12-12 12:51:24 - INFO - Successfully compiled: py-java/HumanEval_30_get_positive.java
+2024-12-12 12:51:25 - INFO - Successfully compiled: py-java/HumanEval_1_separate_paren_groups.java
+2024-12-12 12:51:25 - INFO - Successfully compiled: py-java/HumanEval_149_sorted_list_sum.java
+2024-12-12 12:51:26 - INFO - Successfully compiled: py-java/HumanEval_58_common.java
+2024-12-12 12:51:26 - INFO - Successfully compiled: py-java/HumanEval_51_remove_vowels.java
+2024-12-12 12:51:26 - ERROR - Failed to compile py-java/HumanEval_19_sort_numbers.java. Error:
+py-java/HumanEval_19_sort_numbers.java:9: error: cannot find symbol
+        return sort_numbers(numbers);
+               ^
+  symbol:   method sort_numbers(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:27 - ERROR - Failed to compile py-java/HumanEval_109_move_one_ball.java. Error:
+py-java/HumanEval_109_move_one_ball.java:60: error: ';' expected
+        int max_index_plus12=max_
+                                 ^
+py-java/HumanEval_109_move_one_ball.java:61: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:51:27 - ERROR - Failed to compile py-java/HumanEval_154_cycpattern_check.java. Error:
+py-java/HumanEval_154_cycpattern_check.java:9: error: cannot find symbol
+        return cycpattern_check(a, b);
+               ^
+  symbol:   method cycpattern_check(String,String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:28 - INFO - Successfully compiled: py-java/HumanEval_42_incr_list.java
+2024-12-12 12:51:28 - ERROR - Failed to compile py-java/HumanEval_4_mean_absolute_deviation.java. Error:
+py-java/HumanEval_4_mean_absolute_deviation.java:9: error: cannot find symbol
+        return mean_absolute_deviation(numbers.toArray());
+               ^
+  symbol:   method mean_absolute_deviation(Object[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:28 - ERROR - Failed to compile py-java/HumanEval_15_string_sequence.java. Error:
+py-java/HumanEval_15_string_sequence.java:60: error: ';' expected
+    public static String stringSequence(long n, long m, long n2, long n3, long n4, long n5, long n6, long n7, long n8, long n9, long n10, long n11, long n12, long n13)
+                                                                                                                                                                       ^
+1 error
+
+2024-12-12 12:51:29 - ERROR - Failed to compile py-java/HumanEval_143_words_in_sentence.java. Error:
+py-java/HumanEval_143_words_in_sentence.java:9: error: cannot find symbol
+        return words_in_sentence(sentence.split(" "));
+               ^
+  symbol:   method words_in_sentence(String[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:29 - INFO - Successfully compiled: py-java/HumanEval_133_sum_squares.java
+2024-12-12 12:51:29 - ERROR - Failed to compile py-java/HumanEval_27_flip_case.java. Error:
+py-java/HumanEval_27_flip_case.java:9: error: cannot find symbol
+        return string.swapcase();
+                     ^
+  symbol:   method swapcase()
+  location: variable string of type String
+1 error
+
+2024-12-12 12:51:30 - ERROR - Failed to compile py-java/HumanEval_114_minSubArraySum.java. Error:
+py-java/HumanEval_114_minSubArraySum.java:11: error: cannot find symbol
+            min_sum = min(min_sum, num);
+                      ^
+  symbol:   method min(long,long)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:30 - ERROR - Failed to compile py-java/HumanEval_91_is_bored.java. Error:
+py-java/HumanEval_91_is_bored.java:9: error: cannot find symbol
+        return is_bored(S.toLowerCase());
+               ^
+  symbol:   method is_bored(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:31 - ERROR - Failed to compile py-java/HumanEval_21_rescale_to_unit.java. Error:
+py-java/HumanEval_21_rescale_to_unit.java:11: error: cannot find symbol
+            res.add(numbers.get(i) * rescale_to_unit(numbers.subList(i, numbers.size())));
+                                     ^
+  symbol:   method rescale_to_unit(List<Float>)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:31 - ERROR - Failed to compile py-java/HumanEval_90_next_smallest.java. Error:
+py-java/HumanEval_90_next_smallest.java:70: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:32 - ERROR - Failed to compile py-java/HumanEval_61_correct_bracketing.java. Error:
+py-java/HumanEval_61_correct_bracketing.java:9: error: cannot find symbol
+        return correct_bracketing(brackets.split("\\s+"));
+               ^
+  symbol:   method correct_bracketing(String[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:32 - ERROR - Failed to compile py-java/HumanEval_162_string_to_md5.java. Error:
+py-java/HumanEval_162_string_to_md5.java:10: error: cannot find symbol
+            return Optional.of(string_to_md5(text));
+                               ^
+  symbol:   method string_to_md5(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:32 - ERROR - Failed to compile py-java/HumanEval_140_fix_spaces.java. Error:
+py-java/HumanEval_140_fix_spaces.java:9: error: cannot find symbol
+        return fix_spaces(text.replace(" ", ""));
+               ^
+  symbol:   method fix_spaces(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:33 - ERROR - Failed to compile py-java/HumanEval_71_triangle_area.java. Error:
+py-java/HumanEval_71_triangle_area.java:31: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:33 - INFO - Successfully compiled: py-java/HumanEval_14_all_prefixes.java
+2024-12-12 12:51:34 - INFO - Successfully compiled: py-java/HumanEval_28_concatenate.java
+2024-12-12 12:51:34 - ERROR - Failed to compile py-java/HumanEval_11_string_xor.java. Error:
+py-java/HumanEval_11_string_xor.java:9: error: cannot find symbol
+        return string_xor(a, b);
+               ^
+  symbol:   method string_xor(String,String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:34 - ERROR - Failed to compile py-java/HumanEval_20_find_closest_elements.java. Error:
+py-java/HumanEval_20_find_closest_elements.java:45: error: ';' expected
+        return findClosestE
+                           ^
+py-java/HumanEval_20_find_closest_elements.java:46: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:51:35 - INFO - Successfully compiled: py-java/HumanEval_146_specialFilter.java
+2024-12-12 12:51:35 - ERROR - Failed to compile py-java/HumanEval_118_get_closest_vowel.java. Error:
+py-java/HumanEval_118_get_closest_vowel.java:112: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:36 - INFO - Successfully compiled: py-java/HumanEval_159_eat.java
+2024-12-12 12:51:36 - ERROR - Failed to compile py-java/HumanEval_127_intersection.java. Error:
+py-java/HumanEval_127_intersection.java:9: error: ';' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                    ^
+py-java/HumanEval_127_intersection.java:9: error: '(' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                       ^
+py-java/HumanEval_127_intersection.java:9: error: ')' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                      ^
+py-java/HumanEval_127_intersection.java:9: error: ';' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                       ^
+py-java/HumanEval_127_intersection.java:9: error: variable declaration not allowed here
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                           ^
+py-java/HumanEval_127_intersection.java:9: error: not a statement
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                 ^
+py-java/HumanEval_127_intersection.java:9: error: ';' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                        ^
+py-java/HumanEval_127_intersection.java:9: error: not a statement
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                                   ^
+py-java/HumanEval_127_intersection.java:9: error: ';' expected
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                                          ^
+py-java/HumanEval_127_intersection.java:9: error: not a statement
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                                                 ^
+py-java/HumanEval_127_intersection.java:9: error: 'else' without 'if'
+        return "YES" if intersection(interval1.first, interval2.first) and intersection(interval1.second, interval2.second) else "NO";
+                                                                                                                            ^
+11 errors
+
+2024-12-12 12:51:36 - ERROR - Failed to compile py-java/HumanEval_56_correct_bracketing.java. Error:
+py-java/HumanEval_56_correct_bracketing.java:9: error: cannot find symbol
+        return correct_bracketing(brackets.split("\\s+"));
+               ^
+  symbol:   method correct_bracketing(String[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:37 - ERROR - Failed to compile py-java/HumanEval_18_how_many_times.java. Error:
+py-java/HumanEval_18_how_many_times.java:131: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+1 error
+
+2024-12-12 12:51:37 - ERROR - Failed to compile py-java/HumanEval_112_reverse_delete.java. Error:
+py-java/HumanEval_112_reverse_delete.java:8: error: cannot find symbol
+    public static Pair<String, Boolean> reverseDelete(String s, String c) {
+                  ^
+  symbol:   class Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:9: error: cannot find symbol
+        return Pair.of(reverse_delete(s,c),true);
+               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:9: error: cannot find symbol
+        return Pair.of(reverse_delete(s,c),true);
+                       ^
+  symbol:   method reverse_delete(String,String)
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:12: error: cannot find symbol
+    assert(reverseDelete(("abcde"), ("ae")).equals((Pair.with("bcd", false))));
+                                                    ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:13: error: cannot find symbol
+    assert(reverseDelete(("abcdef"), ("b")).equals((Pair.with("acdef", false))));
+                                                    ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:14: error: cannot find symbol
+    assert(reverseDelete(("abcdedcba"), ("ab")).equals((Pair.with("cdedc", true))));
+                                                        ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:15: error: cannot find symbol
+    assert(reverseDelete(("dwik"), ("w")).equals((Pair.with("dik", false))));
+                                                  ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:16: error: cannot find symbol
+    assert(reverseDelete(("a"), ("a")).equals((Pair.with("", true))));
+                                               ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:17: error: cannot find symbol
+    assert(reverseDelete(("abcdedcba"), ("")).equals((Pair.with("abcdedcba", true))));
+                                                      ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:18: error: cannot find symbol
+    assert(reverseDelete(("abcdedcba"), ("v")).equals((Pair.with("abcdedcba", true))));
+                                                       ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:19: error: cannot find symbol
+    assert(reverseDelete(("vabba"), ("v")).equals((Pair.with("abba", true))));
+                                                   ^
+  symbol:   variable Pair
+  location: class Problem
+py-java/HumanEval_112_reverse_delete.java:20: error: cannot find symbol
+    assert(reverseDelete(("mamma"), ("mia")).equals((Pair.with("", true))));
+                                                     ^
+  symbol:   variable Pair
+  location: class Problem
+12 errors
+
+2024-12-12 12:51:37 - INFO - Successfully compiled: py-java/HumanEval_147_get_max_triples.java
+2024-12-12 12:51:38 - ERROR - Failed to compile py-java/HumanEval_2_truncate_number.java. Error:
+py-java/HumanEval_2_truncate_number.java:9: error: incompatible types: possible lossy conversion from double to float
+        return number % 1.0;
+                      ^
+1 error
+
+2024-12-12 12:51:38 - INFO - Successfully compiled: py-java/HumanEval_132_is_nested.java
+2024-12-12 12:51:39 - ERROR - Failed to compile py-java/HumanEval_78_hex_key.java. Error:
+py-java/HumanEval_78_hex_key.java:9: error: cannot find symbol
+        return hex_key(num.toUpperCase());
+               ^
+  symbol:   method hex_key(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:39 - ERROR - Failed to compile py-java/HumanEval_148_bf.java. Error:
+py-java/HumanEval_148_bf.java:11: error: incompatible types: char cannot be converted to String
+            result.add(planet1.charAt(i));
+                                     ^
+py-java/HumanEval_148_bf.java:14: error: incompatible types: char cannot be converted to String
+            result.add(planet2.charAt(i));
+                                     ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+2024-12-12 12:51:40 - INFO - Successfully compiled: py-java/HumanEval_74_total_match.java
+2024-12-12 12:51:40 - ERROR - Failed to compile py-java/HumanEval_6_parse_nested_parens.java. Error:
+py-java/HumanEval_6_parse_nested_parens.java:12: error: cannot find symbol
+                result.add(parse_paren_group(paren_string.substring(i + 1, paren_string.length())));
+                           ^
+  symbol:   method parse_paren_group(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:40 - ERROR - Failed to compile py-java/HumanEval_93_encode.java. Error:
+py-java/HumanEval_93_encode.java:99: error: '.class' expected
+    public static void main(String[] args) {
+    ^
+py-java/HumanEval_93_encode.java:97: error: 'try' without 'catch', 'finally' or resource declarations
+        try {
+        ^
+2 errors
+
+2024-12-12 12:51:41 - ERROR - Failed to compile py-java/HumanEval_102_choose_num.java. Error:
+py-java/HumanEval_102_choose_num.java:9: error: cannot find symbol
+        return choose_num(x, y, 0);
+               ^
+  symbol:   method choose_num(long,long,int)
+  location: class Problem
+py-java/HumanEval_102_choose_num.java:17: error: cannot find symbol
+            return choose_num(x, y, z);
+                   ^
+  symbol:   method choose_num(long,long,long)
+  location: class Problem
+py-java/HumanEval_102_choose_num.java:19: error: cannot find symbol
+        return choose_num(x, y, z) + choose_num(x, y, z);
+               ^
+  symbol:   method choose_num(long,long,long)
+  location: class Problem
+py-java/HumanEval_102_choose_num.java:19: error: cannot find symbol
+        return choose_num(x, y, z) + choose_num(x, y, z);
+                                     ^
+  symbol:   method choose_num(long,long,long)
+  location: class Problem
+4 errors
+
+2024-12-12 12:51:41 - INFO - Successfully compiled: py-java/HumanEval_53_add.java
+2024-12-12 12:51:42 - ERROR - Failed to compile py-java/HumanEval_92_any_int.java. Error:
+py-java/HumanEval_92_any_int.java:9: error: cannot find symbol
+        return any_int(x, y, z);
+               ^
+  symbol:   method any_int(float,float,float)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:42 - INFO - Successfully compiled: py-java/HumanEval_96_count_up_to.java
+2024-12-12 12:51:43 - ERROR - Failed to compile py-java/HumanEval_126_is_sorted.java. Error:
+py-java/HumanEval_126_is_sorted.java:9: error: cannot find symbol
+        return is_sorted(lst);
+               ^
+  symbol:   method is_sorted(ArrayList<Long>)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:43 - INFO - Successfully compiled: py-java/HumanEval_113_odd_count.java
+2024-12-12 12:51:43 - ERROR - Failed to compile py-java/HumanEval_89_encrypt.java. Error:
+py-java/HumanEval_89_encrypt.java:14: error: cannot find symbol
+            SecretKey key1 = new SecretKeySpec(key.getBytes(), "AES");
+            ^
+  symbol:   class SecretKey
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:14: error: cannot find symbol
+            SecretKey key1 = new SecretKeySpec(key.getBytes(), "AES");
+                                 ^
+  symbol:   class SecretKeySpec
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:15: error: cannot find symbol
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            ^
+  symbol:   class Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:15: error: cannot find symbol
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+                            ^
+  symbol:   variable Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:16: error: cannot find symbol
+            cipher.init(Cipher.ENCRYPT_MODE, key1);
+                        ^
+  symbol:   variable Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:18: error: cannot find symbol
+            return new String(Base64.encodeBase64(encrypted));
+                                    ^
+  symbol:   method encodeBase64(byte[])
+  location: class Base64
+py-java/HumanEval_89_encrypt.java:31: error: cannot find symbol
+            SecretKey key1 = new SecretKeySpec(key.getBytes(), "AES");
+            ^
+  symbol:   class SecretKey
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:31: error: cannot find symbol
+            SecretKey key1 = new SecretKeySpec(key.getBytes(), "AES");
+                                 ^
+  symbol:   class SecretKeySpec
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:32: error: cannot find symbol
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            ^
+  symbol:   class Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:32: error: cannot find symbol
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+                            ^
+  symbol:   variable Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:33: error: cannot find symbol
+            cipher.init(Cipher.DECRYPT_MODE, key1);
+                        ^
+  symbol:   variable Cipher
+  location: class Problem
+py-java/HumanEval_89_encrypt.java:34: error: cannot find symbol
+            byte[] encrypted = cipher.doFinal(Base64.decodeBase64(s));
+                                                    ^
+  symbol:   method decodeBase64(String)
+  location: class Base64
+12 errors
+
+2024-12-12 12:51:44 - INFO - Successfully compiled: py-java/HumanEval_68_pluck.java
+2024-12-12 12:51:44 - ERROR - Failed to compile py-java/HumanEval_48_is_palindrome.java. Error:
+py-java/HumanEval_48_is_palindrome.java:9: error: cannot find symbol
+        return is_palindrome(text.toLowerCase());
+               ^
+  symbol:   method is_palindrome(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:45 - INFO - Successfully compiled: py-java/HumanEval_37_sort_even.java
+2024-12-12 12:51:45 - ERROR - Failed to compile py-java/HumanEval_72_will_it_fly.java. Error:
+py-java/HumanEval_72_will_it_fly.java:109: error: ';' expected
+            return will
+                       ^
+py-java/HumanEval_72_will_it_fly.java:110: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+2 errors
+
+2024-12-12 12:51:46 - INFO - Successfully compiled: py-java/HumanEval_121_solution.java
+2024-12-12 12:51:46 - INFO - Successfully compiled: py-java/HumanEval_105_by_length.java
+2024-12-12 12:51:47 - INFO - Successfully compiled: py-java/HumanEval_100_make_a_pile.java
+2024-12-12 12:51:47 - ERROR - Failed to compile py-java/HumanEval_64_vowels_count.java. Error:
+py-java/HumanEval_64_vowels_count.java:9: error: cannot find symbol
+        return vowels_count(s);
+               ^
+  symbol:   method vowels_count(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:47 - ERROR - Failed to compile py-java/HumanEval_153_Strongest_Extension.java. Error:
+py-java/HumanEval_153_Strongest_Extension.java:9: error: cannot find symbol
+        return Strongest_Extension(class_name, extensions.toArray(new String[extensions.size()]));
+               ^
+  symbol:   method Strongest_Extension(String,String[])
+  location: class Problem
+1 error
+
+2024-12-12 12:51:48 - INFO - Successfully compiled: py-java/HumanEval_9_rolling_max.java
+2024-12-12 12:51:48 - ERROR - Failed to compile py-java/HumanEval_82_prime_length.java. Error:
+py-java/HumanEval_82_prime_length.java:9: error: cannot find symbol
+        return prime_length(string);
+               ^
+  symbol:   method prime_length(String)
+  location: class Problem
+1 error
+
+2024-12-12 12:51:49 - INFO - Successfully compiled: py-java/HumanEval_145_order_by_points.java
+2024-12-12 12:51:49 - INFO - Directory: py-java
+2024-12-12 12:51:49 - INFO - Total Files: 158
+2024-12-12 12:51:49 - INFO - Successful Compilations: 65
+2024-12-12 12:51:49 - INFO - Failed Compilations: 93
+2024-12-12 12:51:49 - INFO - Success Rate: 41.14%

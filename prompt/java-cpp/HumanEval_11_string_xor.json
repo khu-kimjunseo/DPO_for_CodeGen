@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_11_string_xor",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string string_xor(std::string a, std::string b) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_11_string_xor.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = string_xor;\n    assert(candidate((\"111000\"), (\"101010\")) == (\"010010\"));\n    assert(candidate((\"1\"), (\"1\")) == (\"0\"));\n    assert(candidate((\"0101\"), (\"0000\")) == (\"0101\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String stringXor(String a, String b) {\n        return IntStream.range(0, a.length()).mapToObj(i -> a.charAt(i) == b.charAt(i) ? \"0\" : \"1\").collect(Collectors.joining());\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string string_xor(std::string a, std::string b) {\n"
+}

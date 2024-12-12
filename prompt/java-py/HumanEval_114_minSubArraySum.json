@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_114_minSubArraySum",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef minSubArraySum(nums: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_114_minSubArraySum.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([2, 3, 4, 1, 2, 4]) == 1\n    assert candidate([-1, -2, -3]) == -6\n    assert candidate([-1, -2, -3, 2, -10]) == -14\n    assert candidate([-9999999999999999]) == -9999999999999999\n    assert candidate([0, 10, 20, 1000000]) == 0\n    assert candidate([-1, -2, -3, 10, -5]) == -6\n    assert candidate([100, -1, -2, -3, 10, -5]) == -6\n    assert candidate([10, 11, 13, 8, 3, 4]) == 3\n    assert candidate([100, -33, 32, -1, 0, -2]) == -33\n    assert candidate([-10]) == -10\n    assert candidate([7]) == 7\n    assert candidate([1, -1]) == -1\n\ndef test_check():\n    check(minSubArraySum)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long minSubArraySum(ArrayList<Long> nums) {\n        long max_sum = 0;\n        long s = 0;\n        for (long num : nums) {\n            s += -num;\n            if (s < 0) {\n                s = 0;\n            }\n            max_sum = Math.max(s, max_sum);\n        }\n        if (max_sum == 0) {\n            max_sum = nums.stream().mapToLong(i -> -i).max().getAsLong();\n        }\n        long min_sum = -max_sum;\n        return min_sum;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef minSubArraySum(nums: List[int]) -> int:\n"
+}

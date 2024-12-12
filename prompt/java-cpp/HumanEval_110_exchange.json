@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_110_exchange",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string exchange(std::vector<long> lst1, std::vector<long> lst2) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_110_exchange.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = exchange;\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4})), (std::vector<long>({(long)1, (long)2, (long)3, (long)4}))) == (\"YES\"));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4})), (std::vector<long>({(long)1, (long)5, (long)3, (long)4}))) == (\"NO\"));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4})), (std::vector<long>({(long)2, (long)1, (long)4, (long)3}))) == (\"YES\"));\n    assert(candidate((std::vector<long>({(long)5, (long)7, (long)3})), (std::vector<long>({(long)2, (long)6, (long)4}))) == (\"YES\"));\n    assert(candidate((std::vector<long>({(long)5, (long)7, (long)3})), (std::vector<long>({(long)2, (long)6, (long)3}))) == (\"NO\"));\n    assert(candidate((std::vector<long>({(long)3, (long)2, (long)6, (long)1, (long)8, (long)9})), (std::vector<long>({(long)3, (long)5, (long)5, (long)1, (long)1, (long)1}))) == (\"NO\"));\n    assert(candidate((std::vector<long>({(long)100, (long)200})), (std::vector<long>({(long)200, (long)200}))) == (\"YES\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String exchange(ArrayList<Long> lst1, ArrayList<Long> lst2) {\n        long odd = lst1.stream().filter(i -> i % 2 == 1).count();\n        long even = lst2.stream().filter(i -> i % 2 == 0).count();\n        return even >= odd ? \"YES\" : \"NO\";\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string exchange(std::vector<long> lst1, std::vector<long> lst2) {\n"
+}

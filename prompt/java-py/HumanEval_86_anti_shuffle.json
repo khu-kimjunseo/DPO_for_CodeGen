@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_86_anti_shuffle",
+    "language": "py",
+    "prompt": "def anti_shuffle(s: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_86_anti_shuffle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello') == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd') == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n    check(anti_shuffle)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String antiShuffle(String s) {\n        return Arrays.stream(s.split(\" \")).map(i -> new String(i.chars().sorted().toArray(), 0, i.length())).collect(Collectors.joining(\" \"));\n    }\n    \n}\n\n### Python version\n\ndef anti_shuffle(s: str) -> str:\n"
+}

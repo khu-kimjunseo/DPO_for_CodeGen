@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_47_median",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nfloat median(std::vector<long> l) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_47_median.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = median;\n    assert(candidate((std::vector<long>({(long)3, (long)1, (long)2, (long)4, (long)5}))) == (float(3)));\n    assert(candidate((std::vector<long>({(long)-10, (long)4, (long)6, (long)1000, (long)10, (long)20}))) == (8.0f));\n    assert(candidate((std::vector<long>({(long)5}))) == (float(5)));\n    assert(candidate((std::vector<long>({(long)6, (long)5}))) == (5.5f));\n    assert(candidate((std::vector<long>({(long)8, (long)1, (long)3, (long)9, (long)9, (long)2, (long)7}))) == (float(7)));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float median(ArrayList<Long> l) {\n        Collections.sort(l);\n        int n = l.size();\n        if (n % 2 == 1) {\n            return l.get(n / 2);\n        } else {\n            return (l.get(n / 2 - 1) + l.get(n / 2)) / 2.0f;\n        }\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nfloat median(std::vector<long> l) {\n"
+}

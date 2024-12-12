@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_3_below_zero",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef below_zero(operations: List[int]) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_3_below_zero.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == False\n    assert candidate([1, 2, -3, 1, 2, -3]) == False\n    assert candidate([1, 2, -4, 5, 6]) == True\n    assert candidate([1, -1, 2, -2, 5, -5, 4, -4]) == False\n    assert candidate([1, -1, 2, -2, 5, -5, 4, -5]) == True\n    assert candidate([1, -2, 2, -2, 5, -5, 4, -4]) == True\n\ndef test_check():\n    check(below_zero)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean belowZero(ArrayList<Long> operations) {\n        long balance = 0;\n        for (long op : operations) {\n            balance += op;\n            if (balance < 0) {\n                return true;\n            }\n        }\n        return false;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef below_zero(operations: List[int]) -> bool:\n"
+}

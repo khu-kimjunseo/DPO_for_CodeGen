@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_21_rescale_to_unit",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_21_rescale_to_unit.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([2.0, 49.9]) == [0.0, 1.0]\n    assert candidate([100.0, 49.9]) == [1.0, 0.0]\n    assert candidate([1.0, 2.0, 3.0, 4.0, 5.0]) == [0.0, 0.25, 0.5, 0.75, 1.0]\n    assert candidate([2.0, 1.0, 5.0, 3.0, 4.0]) == [0.25, 0.0, 1.0, 0.5, 0.75]\n    assert candidate([12.0, 11.0, 15.0, 13.0, 14.0]) == [0.25, 0.0, 1.0, 0.5, 0.75]\n\ndef test_check():\n    check(rescale_to_unit)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<float> rescale_to_unit(std::vector<float> numbers) {\n    float min_number = *std::min_element(numbers.begin(), numbers.end());\n    float max_number = *std::max_element(numbers.begin(), numbers.end());\n    std::vector<float> result;\n    for (auto x : numbers) {\n        result.push_back((x - min_number) / (max_number - min_number));\n    }\n    return result;\n}\n\n### Python version\n\nfrom typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n"
+}

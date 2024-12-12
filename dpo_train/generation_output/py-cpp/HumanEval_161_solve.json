@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_161_solve",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string solve(std::string s) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_161_solve.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = solve;\n    assert(candidate((\"AsDf\")) == (\"aSdF\"));\n    assert(candidate((\"1234\")) == (\"4321\"));\n    assert(candidate((\"ab\")) == (\"AB\"));\n    assert(candidate((\"#a@C\")) == (\"#A@c\"));\n    assert(candidate((\"#AsdfW^45\")) == (\"#aSDFw^45\"));\n    assert(candidate((\"#6@2\")) == (\"2@6#\"));\n    assert(candidate((\"#$a^D\")) == (\"#$A^d\"));\n    assert(candidate((\"#ccc\")) == (\"#CCC\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef solve(s: str) -> str:\n    flg = 0\n    idx = 0\n    new_str = list(s)\n    for i in s:\n        if i.isalpha():\n            new_str[idx] = i.swapcase()\n            flg = 1\n        idx += 1\n    s = \"\"\n    for i in new_str:\n        s += i\n    if flg == 0:\n        return s[len(s)::-1]\n    return s\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string solve(std::string s) {\n"
+}

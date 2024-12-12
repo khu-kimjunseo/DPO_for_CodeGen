@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_97_multiply",
+    "language": "py",
+    "prompt": "def multiply(a: int, b: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_97_multiply.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(148, 412) == 16\n    assert candidate(19, 28) == 72\n    assert candidate(2020, 1851) == 0\n    assert candidate(14, -15) == 20\n    assert candidate(76, 67) == 42\n    assert candidate(17, 27) == 49\n    assert candidate(0, 1) == 0\n    assert candidate(0, 0) == 0\n\ndef test_check():\n    check(multiply)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong multiply(long a, long b) {\n    return abs(a % 10) * abs(b % 10);\n}\n\n### Python version\n\ndef multiply(a: int, b: int) -> int:\n"
+}

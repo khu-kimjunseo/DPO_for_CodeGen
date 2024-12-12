@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_43_pairs_sum_to_zero",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool pairs_sum_to_zero(std::vector<long> l) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_43_pairs_sum_to_zero.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = pairs_sum_to_zero;\n    assert(candidate((std::vector<long>({(long)1, (long)3, (long)5, (long)0}))) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)3, (long)-2, (long)1}))) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)7}))) == (false));\n    assert(candidate((std::vector<long>({(long)2, (long)4, (long)-5, (long)3, (long)5, (long)7}))) == (true));\n    assert(candidate((std::vector<long>({(long)1}))) == (false));\n    assert(candidate((std::vector<long>({(long)-3, (long)9, (long)-1, (long)3, (long)2, (long)30}))) == (true));\n    assert(candidate((std::vector<long>({(long)-3, (long)9, (long)-1, (long)3, (long)2, (long)31}))) == (true));\n    assert(candidate((std::vector<long>({(long)-3, (long)9, (long)-1, (long)4, (long)2, (long)30}))) == (false));\n    assert(candidate((std::vector<long>({(long)-3, (long)9, (long)-1, (long)4, (long)2, (long)31}))) == (false));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef pairs_sum_to_zero(l: List[int]) -> bool:\n    for i, l1 in enumerate(l):\n        for j in range(i + 1, len(l)):\n            if l1 + l[j] == 0:\n                return True\n    return False\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool pairs_sum_to_zero(std::vector<long> l) {\n"
+}

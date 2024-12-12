@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_78_hex_key",
+    "language": "py",
+    "prompt": "def hex_key(num: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_78_hex_key.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('AB') == 1\n    assert candidate('1077E') == 2\n    assert candidate('ABED1A33') == 4\n    assert candidate('2020') == 2\n    assert candidate('123456789ABCDEF0') == 6\n    assert candidate('112233445566778899AABBCCDDEEFF00') == 12\n\ndef test_check():\n    check(hex_key)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long hexKey(String num) {\n        String primes = \"2357BD\";\n        long total = 0;\n        for (int i = 0; i < num.length(); i++) {\n            if (primes.indexOf(num.charAt(i)) >= 0) {\n                total++;\n            }\n        }\n        return total;\n    }\n}\n\n### Python version\n\ndef hex_key(num: str) -> int:\n"
+}

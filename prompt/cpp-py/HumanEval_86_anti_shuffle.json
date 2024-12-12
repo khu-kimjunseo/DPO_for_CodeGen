@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_86_anti_shuffle",
+    "language": "py",
+    "prompt": "def anti_shuffle(s: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_86_anti_shuffle.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello') == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd') == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n    check(anti_shuffle)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string anti_shuffle(std::string s) {\n    std::stringstream ss(s);\n    std::string word, res;\n    while (ss >> word) {\n        std::sort(word.begin(), word.end());\n        res += word + \" \";\n    }\n    res.pop_back();\n    return res;\n}\n\n### Python version\n\ndef anti_shuffle(s: str) -> str:\n"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_27_flip_case",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String flipCase(String string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_27_flip_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(flipCase((\"\")).equals((\"\")));\n    assert(flipCase((\"Hello!\")).equals((\"hELLO!\")));\n    assert(flipCase((\"These violent delights have violent ends\")).equals((\"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string flip_case(std::string string) {\n    for (auto& c : string) {\n        if (isupper(c)) {\n            c = tolower(c);\n        } else {\n            c = toupper(c);\n        }\n    }\n    return string;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String flipCase(String string) {\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_90_next_smallest",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<long> next_smallest(std::vector<long> lst) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_90_next_smallest.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = next_smallest;\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)3, (long)4, (long)5}))) == 2);\n    assert(candidate((std::vector<long>({(long)5, (long)1, (long)4, (long)3, (long)2}))) == 2);\n    assert(candidate((std::vector<long>())) == std::nullopt);\n    assert(candidate((std::vector<long>({(long)1, (long)1}))) == std::nullopt);\n    assert(candidate((std::vector<long>({(long)1, (long)1, (long)1, (long)1, (long)0}))) == 1);\n    assert(candidate((std::vector<long>({(long)1, (long)1}))) == std::nullopt);\n    assert(candidate((std::vector<long>({(long)-35, (long)34, (long)12, (long)-45}))) == -35);\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Optional<Long> nextSmallest(ArrayList<Long> lst) {\n        return lst.stream().sorted().distinct().skip(1).findFirst();\n    }\n    \n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::optional<long> next_smallest(std::vector<long> lst) {\n"
+}

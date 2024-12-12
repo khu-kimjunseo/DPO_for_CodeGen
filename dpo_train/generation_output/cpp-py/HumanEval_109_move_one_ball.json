@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_109_move_one_ball",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef move_one_ball(arr: List[int]) -> bool:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_109_move_one_ball.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([3, 4, 5, 1, 2]) == True\n    assert candidate([3, 5, 10, 1, 2]) == True\n    assert candidate([4, 3, 1, 2]) == False\n    assert candidate([3, 5, 4, 1, 2]) == False\n    assert candidate([]) == True\n\ndef test_check():\n    check(move_one_ball)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nbool move_one_ball(std::vector<long> arr) {\n    if (arr.empty()) {\n        return true;\n    }\n    std::vector<long> sorted_array = arr;\n    std::sort(sorted_array.begin(), sorted_array.end());\n    std::vector<long> my_arr;\n    long min_value = *std::min_element(arr.begin(), arr.end());\n    long min_index = std::find(arr.begin(), arr.end(), min_value) - arr.begin();\n    my_arr.insert(my_arr.end(), arr.begin() + min_index, arr.end());\n    my_arr.insert(my_arr.end(), arr.begin(), arr.begin() + min_index);\n    return my_arr == sorted_array;\n}\n\n### Python version\n\nfrom typing import List\n\ndef move_one_ball(arr: List[int]) -> bool:\n"
+}

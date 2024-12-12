@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_108_count_nums",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef count_nums(arr: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_108_count_nums.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([]) == 0\n    assert candidate([-1, -2, 0]) == 0\n    assert candidate([1, 1, 2, -2, 3, 4, 5]) == 6\n    assert candidate([1, 6, 9, -6, 0, 1, 5]) == 5\n    assert candidate([1, 100, 98, -7, 1, -1]) == 4\n    assert candidate([12, 23, 34, -45, -56, 0]) == 5\n    assert candidate([0, 1]) == 1\n    assert candidate([1]) == 1\n\ndef test_check():\n    check(count_nums)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countNums(ArrayList<Long> arr) {\n        return arr.stream().map(i -> digitsSum(i)).filter(i -> i > 0).count();\n    }\n\n    private static long digitsSum(long n) {\n        long neg = 1;\n        if (n < 0) {\n            n = -1 * n;\n            neg = -1;\n        }\n        String[] digits = Long.toString(n).split(\"\");\n        digits[0] = Long.toString(Long.parseLong(digits[0]) * neg);\n        return Arrays.stream(digits).mapToLong(Long::parseLong).sum();\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef count_nums(arr: List[int]) -> int:\n"
+}

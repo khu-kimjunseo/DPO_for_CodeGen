@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_104_unique_digits",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef unique_digits(x: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_104_unique_digits.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([15, 33, 1422, 1]) == [1, 15, 33]\n    assert candidate([152, 323, 1422, 10]) == []\n    assert candidate([12345, 2033, 111, 151]) == [111, 151]\n    assert candidate([135, 103, 31]) == [31, 135]\n\ndef test_check():\n    check(unique_digits)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<Long> uniqueDigits(ArrayList<Long> x) {\n        ArrayList<Long> oddDigitElements = new ArrayList<>();\n        for (long i : x) {\n            if (Long.toString(i).chars().allMatch(c -> c % 2 == 1)) {\n                oddDigitElements.add(i);\n            }\n        }\n        Collections.sort(oddDigitElements);\n        return oddDigitElements;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef unique_digits(x: List[int]) -> List[int]:\n"
+}

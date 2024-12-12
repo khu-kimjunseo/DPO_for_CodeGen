@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_71_triangle_area",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float triangleArea(long a, long b, long c) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_71_triangle_area.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(triangleArea((3l), (4l), (5l)) == (6.0f));\n    assert(triangleArea((1l), (2l), (10l)) == (float)-1l);\n    assert(triangleArea((4l), (8l), (5l)) == (8.18f));\n    assert(triangleArea((2l), (2l), (2l)) == (1.73f));\n    assert(triangleArea((1l), (2l), (3l)) == (float)-1l);\n    assert(triangleArea((10l), (5l), (7l)) == (16.25f));\n    assert(triangleArea((2l), (6l), (3l)) == (float)-1l);\n    assert(triangleArea((1l), (1l), (1l)) == (0.43f));\n    assert(triangleArea((2l), (2l), (10l)) == (float)-1l);\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nfloat triangle_area(long a, long b, long c) {\n    if (a + b <= c || a + c <= b || b + c <= a) {\n        return -1;\n    }\n    float s = (a + b + c) / 2.0;\n    float area = sqrt(s * (s - a) * (s - b) * (s - c));\n    area = round(area * 100) / 100;\n    return area;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static float triangleArea(long a, long b, long c) {\n"
+}

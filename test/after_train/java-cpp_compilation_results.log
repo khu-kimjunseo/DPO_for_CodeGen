@@ -1,0 +1,345 @@
+2024-12-12 20:29:06 - ERROR - Failed to compile java-cpp/HumanEval_27_flip_case.cpp. Error:
+java-cpp/HumanEval_27_flip_case.cpp: In function ‘std::string flip_case(std::string)’:
+java-cpp/HumanEval_27_flip_case.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_27_flip_case.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:07 - ERROR - Failed to compile java-cpp/HumanEval_158_find_max.cpp. Error:
+java-cpp/HumanEval_158_find_max.cpp: In function ‘std::string find_max(std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_158_find_max.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_158_find_max.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:07 - ERROR - Failed to compile java-cpp/HumanEval_83_starts_one_ends.cpp. Error:
+java-cpp/HumanEval_83_starts_one_ends.cpp: In function ‘long int starts_one_ends(long int)’:
+java-cpp/HumanEval_83_starts_one_ends.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_83_starts_one_ends.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:08 - ERROR - Failed to compile java-cpp/HumanEval_47_median.cpp. Error:
+java-cpp/HumanEval_47_median.cpp: In function ‘float median(std::vector<long int>)’:
+java-cpp/HumanEval_47_median.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_47_median.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:09 - ERROR - Failed to compile java-cpp/HumanEval_143_words_in_sentence.cpp. Error:
+java-cpp/HumanEval_143_words_in_sentence.cpp: In function ‘std::string words_in_sentence(std::string)’:
+java-cpp/HumanEval_143_words_in_sentence.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_143_words_in_sentence.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:09 - ERROR - Failed to compile java-cpp/HumanEval_135_can_arrange.cpp. Error:
+java-cpp/HumanEval_135_can_arrange.cpp: In function ‘long int can_arrange(std::vector<long int>)’:
+java-cpp/HumanEval_135_can_arrange.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_135_can_arrange.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:10 - ERROR - Failed to compile java-cpp/HumanEval_131_digits.cpp. Error:
+java-cpp/HumanEval_131_digits.cpp: In function ‘long int digits(long int)’:
+java-cpp/HumanEval_131_digits.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_131_digits.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:10 - ERROR - Failed to compile java-cpp/HumanEval_75_is_multiply_prime.cpp. Error:
+java-cpp/HumanEval_75_is_multiply_prime.cpp: In function ‘bool is_multiply_prime(long int)’:
+java-cpp/HumanEval_75_is_multiply_prime.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_75_is_multiply_prime.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:11 - ERROR - Failed to compile java-cpp/HumanEval_114_minSubArraySum.cpp. Error:
+java-cpp/HumanEval_114_minSubArraySum.cpp: In function ‘long int minSubArraySum(std::vector<long int>)’:
+java-cpp/HumanEval_114_minSubArraySum.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_114_minSubArraySum.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:12 - ERROR - Failed to compile java-cpp/HumanEval_42_incr_list.cpp. Error:
+java-cpp/HumanEval_42_incr_list.cpp: In function ‘std::vector<long int> incr_list(std::vector<long int>)’:
+java-cpp/HumanEval_42_incr_list.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_42_incr_list.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:12 - ERROR - Failed to compile java-cpp/HumanEval_40_triples_sum_to_zero.cpp. Error:
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp: In function ‘bool triples_sum_to_zero(std::vector<long int>)’:
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_40_triples_sum_to_zero.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:13 - ERROR - Failed to compile java-cpp/HumanEval_121_solution.cpp. Error:
+java-cpp/HumanEval_121_solution.cpp: In function ‘long int solution(std::vector<long int>)’:
+java-cpp/HumanEval_121_solution.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_121_solution.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:13 - ERROR - Failed to compile java-cpp/HumanEval_60_sum_to_n.cpp. Error:
+java-cpp/HumanEval_60_sum_to_n.cpp: In function ‘long int sum_to_n(long int)’:
+java-cpp/HumanEval_60_sum_to_n.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_60_sum_to_n.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:14 - ERROR - Failed to compile java-cpp/HumanEval_105_by_length.cpp. Error:
+java-cpp/HumanEval_105_by_length.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > by_length(std::vector<long int>)’:
+java-cpp/HumanEval_105_by_length.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_105_by_length.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:14 - ERROR - Failed to compile java-cpp/HumanEval_153_Strongest_Extension.cpp. Error:
+java-cpp/HumanEval_153_Strongest_Extension.cpp: In function ‘std::string Strongest_Extension(std::string, std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_153_Strongest_Extension.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_153_Strongest_Extension.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:15 - ERROR - Failed to compile java-cpp/HumanEval_138_is_equal_to_sum_even.cpp. Error:
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp: In function ‘bool is_equal_to_sum_even(long int)’:
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_138_is_equal_to_sum_even.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:16 - ERROR - Failed to compile java-cpp/HumanEval_23_strlen.cpp. Error:
+java-cpp/HumanEval_23_strlen.cpp: In function ‘long int string_length(std::string)’:
+java-cpp/HumanEval_23_strlen.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_23_strlen.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:16 - ERROR - Failed to compile java-cpp/HumanEval_127_intersection.cpp. Error:
+java-cpp/HumanEval_127_intersection.cpp: In function ‘std::string intersection(std::tuple<long int, long int>, std::tuple<long int, long int>)’:
+java-cpp/HumanEval_127_intersection.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_127_intersection.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:17 - ERROR - Failed to compile java-cpp/HumanEval_10_make_palindrome.cpp. Error:
+java-cpp/HumanEval_10_make_palindrome.cpp: In function ‘std::string make_palindrome(std::string)’:
+java-cpp/HumanEval_10_make_palindrome.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_10_make_palindrome.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:17 - ERROR - Failed to compile java-cpp/HumanEval_88_sort_array.cpp. Error:
+java-cpp/HumanEval_88_sort_array.cpp: In function ‘std::vector<long int> sort_array(std::vector<long int>)’:
+java-cpp/HumanEval_88_sort_array.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_88_sort_array.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:18 - ERROR - Failed to compile java-cpp/HumanEval_70_strange_sort_list.cpp. Error:
+java-cpp/HumanEval_70_strange_sort_list.cpp: In function ‘std::vector<long int> strange_sort_list(std::vector<long int>)’:
+java-cpp/HumanEval_70_strange_sort_list.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_70_strange_sort_list.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:18 - ERROR - Failed to compile java-cpp/HumanEval_96_count_up_to.cpp. Error:
+java-cpp/HumanEval_96_count_up_to.cpp: In function ‘std::vector<long int> count_up_to(long int)’:
+java-cpp/HumanEval_96_count_up_to.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_96_count_up_to.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:19 - ERROR - Failed to compile java-cpp/HumanEval_86_anti_shuffle.cpp. Error:
+java-cpp/HumanEval_86_anti_shuffle.cpp: In function ‘std::string anti_shuffle(std::string)’:
+java-cpp/HumanEval_86_anti_shuffle.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_86_anti_shuffle.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:20 - ERROR - Failed to compile java-cpp/HumanEval_5_intersperse.cpp. Error:
+java-cpp/HumanEval_5_intersperse.cpp: In function ‘std::vector<long int> intersperse(std::vector<long int>, long int)’:
+java-cpp/HumanEval_5_intersperse.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_5_intersperse.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:20 - ERROR - Failed to compile java-cpp/HumanEval_87_get_row.cpp. Error:
+java-cpp/HumanEval_87_get_row.cpp: In function ‘std::vector<std::tuple<long int, long int> > get_row(std::vector<std::vector<long int> >, long int)’:
+java-cpp/HumanEval_87_get_row.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_87_get_row.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:21 - ERROR - Failed to compile java-cpp/HumanEval_145_order_by_points.cpp. Error:
+java-cpp/HumanEval_145_order_by_points.cpp: In function ‘std::vector<long int> order_by_points(std::vector<long int>)’:
+java-cpp/HumanEval_145_order_by_points.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_145_order_by_points.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:21 - ERROR - Failed to compile java-cpp/HumanEval_129_minPath.cpp. Error:
+java-cpp/HumanEval_129_minPath.cpp: In function ‘std::vector<long int> minPath(std::vector<std::vector<long int> >, long int)’:
+java-cpp/HumanEval_129_minPath.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_129_minPath.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:22 - ERROR - Failed to compile java-cpp/HumanEval_33_sort_third.cpp. Error:
+java-cpp/HumanEval_33_sort_third.cpp: In function ‘std::vector<long int> sort_third(std::vector<long int>)’:
+java-cpp/HumanEval_33_sort_third.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_33_sort_third.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:22 - ERROR - Failed to compile java-cpp/HumanEval_107_even_odd_palindrome.cpp. Error:
+java-cpp/HumanEval_107_even_odd_palindrome.cpp: In function ‘std::tuple<long int, long int> even_odd_palindrome(long int)’:
+java-cpp/HumanEval_107_even_odd_palindrome.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_107_even_odd_palindrome.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:23 - ERROR - Failed to compile java-cpp/HumanEval_17_parse_music.cpp. Error:
+java-cpp/HumanEval_17_parse_music.cpp: In function ‘std::vector<long int> parse_music(std::string)’:
+java-cpp/HumanEval_17_parse_music.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_17_parse_music.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:24 - ERROR - Failed to compile java-cpp/HumanEval_3_below_zero.cpp. Error:
+java-cpp/HumanEval_3_below_zero.cpp: In function ‘bool below_zero(std::vector<long int>)’:
+java-cpp/HumanEval_3_below_zero.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_3_below_zero.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:24 - ERROR - Failed to compile java-cpp/HumanEval_122_add_elements.cpp. Error:
+java-cpp/HumanEval_122_add_elements.cpp: In function ‘long int add_elements(std::vector<long int>, long int)’:
+java-cpp/HumanEval_122_add_elements.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_122_add_elements.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:25 - ERROR - Failed to compile java-cpp/HumanEval_72_will_it_fly.cpp. Error:
+java-cpp/HumanEval_72_will_it_fly.cpp: In function ‘bool will_it_fly(std::vector<long int>, long int)’:
+java-cpp/HumanEval_72_will_it_fly.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_72_will_it_fly.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:25 - ERROR - Failed to compile java-cpp/HumanEval_7_filter_by_substring.cpp. Error:
+java-cpp/HumanEval_7_filter_by_substring.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > filter_by_substring(std::vector<std::__cxx11::basic_string<char> >, std::string)’:
+java-cpp/HumanEval_7_filter_by_substring.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_7_filter_by_substring.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:26 - ERROR - Failed to compile java-cpp/HumanEval_101_words_string.cpp. Error:
+java-cpp/HumanEval_101_words_string.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > words_string(std::string)’:
+java-cpp/HumanEval_101_words_string.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_101_words_string.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:26 - ERROR - Failed to compile java-cpp/HumanEval_54_same_chars.cpp. Error:
+java-cpp/HumanEval_54_same_chars.cpp: In function ‘bool same_chars(std::string, std::string)’:
+java-cpp/HumanEval_54_same_chars.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_54_same_chars.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:27 - ERROR - Failed to compile java-cpp/HumanEval_55_fib.cpp. Error:
+java-cpp/HumanEval_55_fib.cpp: In function ‘long int fib(long int)’:
+java-cpp/HumanEval_55_fib.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_55_fib.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:28 - ERROR - Failed to compile java-cpp/HumanEval_147_get_max_triples.cpp. Error:
+java-cpp/HumanEval_147_get_max_triples.cpp: In function ‘long int get_max_triples(long int)’:
+java-cpp/HumanEval_147_get_max_triples.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_147_get_max_triples.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:28 - ERROR - Failed to compile java-cpp/HumanEval_12_longest.cpp. Error:
+java-cpp/HumanEval_12_longest.cpp:10:6: error: ‘optional’ in namespace ‘std’ does not name a template type
+   10 | std::optional<std::string> longest(std::vector<std::string> strings) {
+      |      ^~~~~~~~
+java-cpp/HumanEval_12_longest.cpp:10:1: note: ‘std::optional’ is only available from C++17 onwards
+   10 | std::optional<std::string> longest(std::vector<std::string> strings) {
+      | ^~~
+java-cpp/HumanEval_12_longest.cpp: In function ‘int main()’:
+java-cpp/HumanEval_12_longest.cpp:14:22: error: ‘longest’ was not declared in this scope
+   14 |     auto candidate = longest;
+      |                      ^~~~~~~
+In file included from /usr/include/c++/9/cassert:44,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h:33,
+                 from java-cpp/HumanEval_12_longest.cpp:2:
+java-cpp/HumanEval_12_longest.cpp:15:60: error: ‘nullopt’ is not a member of ‘std’
+   15 |     assert(candidate((std::vector<std::string>())) == std::nullopt);
+      |                                                            ^~~~~~~
+
+2024-12-12 20:29:29 - ERROR - Failed to compile java-cpp/HumanEval_46_fib4.cpp. Error:
+java-cpp/HumanEval_46_fib4.cpp: In function ‘long int fib4(long int)’:
+java-cpp/HumanEval_46_fib4.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_46_fib4.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:29 - ERROR - Failed to compile java-cpp/HumanEval_104_unique_digits.cpp. Error:
+java-cpp/HumanEval_104_unique_digits.cpp: In function ‘std::vector<long int> unique_digits(std::vector<long int>)’:
+java-cpp/HumanEval_104_unique_digits.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_104_unique_digits.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:30 - ERROR - Failed to compile java-cpp/HumanEval_82_prime_length.cpp. Error:
+java-cpp/HumanEval_82_prime_length.cpp: In function ‘bool prime_length(std::string)’:
+java-cpp/HumanEval_82_prime_length.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_82_prime_length.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:31 - ERROR - Failed to compile java-cpp/HumanEval_74_total_match.cpp. Error:
+java-cpp/HumanEval_74_total_match.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’:
+java-cpp/HumanEval_74_total_match.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_74_total_match.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:31 - ERROR - Failed to compile java-cpp/HumanEval_80_is_happy.cpp. Error:
+java-cpp/HumanEval_80_is_happy.cpp: In function ‘bool is_happy(std::string)’:
+java-cpp/HumanEval_80_is_happy.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_80_is_happy.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:32 - ERROR - Failed to compile java-cpp/HumanEval_29_filter_by_prefix.cpp. Error:
+java-cpp/HumanEval_29_filter_by_prefix.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > filter_by_prefix(std::vector<std::__cxx11::basic_string<char> >, std::string)’:
+java-cpp/HumanEval_29_filter_by_prefix.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_29_filter_by_prefix.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:33 - ERROR - Failed to compile java-cpp/HumanEval_120_maximum.cpp. Error:
+java-cpp/HumanEval_120_maximum.cpp: In function ‘std::vector<long int> maximum(std::vector<long int>, long int)’:
+java-cpp/HumanEval_120_maximum.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_120_maximum.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:33 - ERROR - Failed to compile java-cpp/HumanEval_35_max_element.cpp. Error:
+java-cpp/HumanEval_35_max_element.cpp: In function ‘long int max_element(std::vector<long int>)’:
+java-cpp/HumanEval_35_max_element.cpp:12:1: error: expected primary-expression before ‘}’ token
+   12 | }
+      | ^
+java-cpp/HumanEval_35_max_element.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+
+2024-12-12 20:29:33 - INFO - Directory: java-cpp
+2024-12-12 20:29:33 - INFO - Total Files: 47
+2024-12-12 20:29:33 - INFO - Successful Compilations: 0
+2024-12-12 20:29:33 - INFO - Failed Compilations: 47
+2024-12-12 20:29:33 - INFO - Success Rate: 0.00%

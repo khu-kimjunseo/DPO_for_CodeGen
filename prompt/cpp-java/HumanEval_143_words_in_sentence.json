@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_143_words_in_sentence",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String wordsInSentence(String sentence) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_143_words_in_sentence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(wordsInSentence((\"This is a test\")).equals((\"is\")));\n    assert(wordsInSentence((\"lets go for swimming\")).equals((\"go for\")));\n    assert(wordsInSentence((\"there is no place available here\")).equals((\"there is no place\")));\n    assert(wordsInSentence((\"Hi I am Hussein\")).equals((\"Hi am Hussein\")));\n    assert(wordsInSentence((\"go for it\")).equals((\"go for it\")));\n    assert(wordsInSentence((\"here\")).equals((\"\")));\n    assert(wordsInSentence((\"here is\")).equals((\"is\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string words_in_sentence(std::string sentence) {\n    std::vector<std::string> new_lst;\n    std::stringstream ss(sentence);\n    std::string word;\n    while(ss >> word) {\n        int flg = 0;\n        if(word.size() == 1) {\n            flg = 1;\n        }\n        for(int i = 2; i < word.size(); i++) {\n            if(word.size()%i == 0) {\n                flg = 1;\n            }\n        }\n        if(flg == 0 || word.size() == 2) {\n            new_lst.push_back(word);\n        }\n    }\n    std::string res = \"\";\n    for(int i = 0; i < new_lst.size(); i++) {\n        res += new_lst[i];\n        if(i != new_lst.size()-1) {\n            res += \" \";\n        }\n    }\n    return res;\n}\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String wordsInSentence(String sentence) {\n"
+}

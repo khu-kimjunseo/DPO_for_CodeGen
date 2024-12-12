@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_160_do_algebra",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong do_algebra(std::vector<std::string> op, std::vector<long> operand) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_160_do_algebra.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = do_algebra;\n    assert(candidate((std::vector<std::string>({(std::string)\"**\", (std::string)\"*\", (std::string)\"+\"})), (std::vector<long>({(long)2, (long)3, (long)4, (long)5}))) == (37));\n    assert(candidate((std::vector<std::string>({(std::string)\"+\", (std::string)\"*\", (std::string)\"-\"})), (std::vector<long>({(long)2, (long)3, (long)4, (long)5}))) == (9));\n    assert(candidate((std::vector<std::string>({(std::string)\"//\", (std::string)\"*\"})), (std::vector<long>({(long)7, (long)3, (long)4}))) == (8));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\nfrom typing import List\n\ndef do_algebra(operator: List[str], operand: List[int]) -> int:\n    expression = str(operand[0])\n    for oprt, oprn in zip(operator, operand[1:]):\n        expression+= oprt + str(oprn)\n    return eval(expression)\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong do_algebra(std::vector<std::string> op, std::vector<long> operand) {\n"
+}

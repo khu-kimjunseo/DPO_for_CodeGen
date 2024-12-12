@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_110_exchange",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef exchange(lst1: List[int], lst2: List[int]) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_110_exchange.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3, 4], [1, 2, 3, 4]) == 'YES'\n    assert candidate([1, 2, 3, 4], [1, 5, 3, 4]) == 'NO'\n    assert candidate([1, 2, 3, 4], [2, 1, 4, 3]) == 'YES'\n    assert candidate([5, 7, 3], [2, 6, 4]) == 'YES'\n    assert candidate([5, 7, 3], [2, 6, 3]) == 'NO'\n    assert candidate([3, 2, 6, 1, 8, 9], [3, 5, 5, 1, 1, 1]) == 'NO'\n    assert candidate([100, 200], [200, 200]) == 'YES'\n\ndef test_check():\n    check(exchange)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String exchange(ArrayList<Long> lst1, ArrayList<Long> lst2) {\n        long odd = lst1.stream().filter(i -> i % 2 == 1).count();\n        long even = lst2.stream().filter(i -> i % 2 == 0).count();\n        return even >= odd ? \"YES\" : \"NO\";\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef exchange(lst1: List[int], lst2: List[int]) -> str:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_93_encode",
+    "language": "py",
+    "prompt": "def encode(message: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_93_encode.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('TEST') == 'tgst'\n    assert candidate('Mudasir') == 'mWDCSKR'\n    assert candidate('YES') == 'ygs'\n    assert candidate('This is a message') == 'tHKS KS C MGSSCGG'\n    assert candidate('I DoNt KnOw WhAt tO WrItE') == 'k dQnT kNqW wHcT Tq wRkTg'\n\ndef test_check():\n    check(encode)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encode(String message) {\n        String vowels = \"aeiouAEIOU\";\n        Map<Character, Character> vowels_replace = new HashMap<>();\n        for (char i : vowels.toCharArray()) {\n            vowels_replace.put(i, (char)(i + 2));\n        }\n        message = swapCase(message);\n        StringBuilder sb = new StringBuilder();\n        for (char i : message.toCharArray()) {\n            sb.append(vowels_replace.containsKey(i) ? vowels_replace.get(i) : i);\n        }\n        return sb.toString();\n    }\n    public static String swapCase(String str) {\n        StringBuilder sb = new StringBuilder();\n        for (char i : str.toCharArray()) {\n            sb.append(Character.isUpperCase(i) ? Character.toLowerCase(i) : Character.toUpperCase(i));\n        }\n        return sb.toString();\n    }\n    \n}\n\n### Python version\n\ndef encode(message: str) -> str:\n"
+}

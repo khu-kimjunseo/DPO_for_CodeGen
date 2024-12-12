@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_134_check_if_last_char_is_a_letter",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkIfLastCharIsALetter(String txt) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_134_check_if_last_char_is_a_letter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(checkIfLastCharIsALetter((\"apple\")) == (false));\n    assert(checkIfLastCharIsALetter((\"apple pi e\")) == (true));\n    assert(checkIfLastCharIsALetter((\"eeeee\")) == (false));\n    assert(checkIfLastCharIsALetter((\"A\")) == (true));\n    assert(checkIfLastCharIsALetter((\"Pumpkin pie \")) == (false));\n    assert(checkIfLastCharIsALetter((\"Pumpkin pie 1\")) == (false));\n    assert(checkIfLastCharIsALetter((\"\")) == (false));\n    assert(checkIfLastCharIsALetter((\"eeeee e \")) == (false));\n    assert(checkIfLastCharIsALetter((\"apple pie\")) == (false));\n    assert(checkIfLastCharIsALetter((\"apple pi e \")) == (false));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef check_if_last_char_is_a_letter(txt: str) -> bool:\n \n    check = txt.split(' ')[-1]\n    return True if len(check) == 1 and (97 <= ord(check.lower()) <= 122) else False\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static boolean checkIfLastCharIsALetter(String txt) {\n"
+}

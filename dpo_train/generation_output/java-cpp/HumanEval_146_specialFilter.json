@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_146_specialFilter",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong specialFilter(std::vector<long> nums) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_146_specialFilter.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = specialFilter;\n    assert(candidate((std::vector<long>({(long)5, (long)-2, (long)1, (long)-5}))) == (0));\n    assert(candidate((std::vector<long>({(long)15, (long)-73, (long)14, (long)-15}))) == (1));\n    assert(candidate((std::vector<long>({(long)33, (long)-2, (long)-3, (long)45, (long)21, (long)109}))) == (2));\n    assert(candidate((std::vector<long>({(long)43, (long)-12, (long)93, (long)125, (long)121, (long)109}))) == (4));\n    assert(candidate((std::vector<long>({(long)71, (long)-2, (long)-33, (long)75, (long)21, (long)19}))) == (3));\n    assert(candidate((std::vector<long>({(long)1}))) == (0));\n    assert(candidate((std::vector<long>())) == (0));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long specialFilter(ArrayList<Long> nums) {\n        long count = 0;\n        for (long num : nums) {\n            if (num > 10) {\n                if (isOdd(num / (long) Math.pow(10, (long) Math.log10(num))) && isOdd(num % 10)) {\n                    count++;\n                }\n            }\n        }\n        return count;\n    }\n\n    private static boolean isOdd(long n) {\n        return n % 2 == 1;\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nlong specialFilter(std::vector<long> nums) {\n"
+}

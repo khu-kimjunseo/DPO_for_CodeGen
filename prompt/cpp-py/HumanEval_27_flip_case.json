@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_27_flip_case",
+    "language": "py",
+    "prompt": "def flip_case(string: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_27_flip_case.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(flip_case)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::string flip_case(std::string string) {\n    for (auto& c : string) {\n        if (isupper(c)) {\n            c = tolower(c);\n        } else {\n            c = toupper(c);\n        }\n    }\n    return string;\n}\n\n### Python version\n\ndef flip_case(string: str) -> str:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_135_can_arrange",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef can_arrange(arr: List[int]) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_135_can_arrange.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 4, 3, 5]) == 3\n    assert candidate([1, 2, 4, 5]) == -1\n    assert candidate([1, 4, 2, 5, 6, 7, 8, 9, 10]) == 2\n    assert candidate([4, 8, 5, 7, 3]) == 4\n    assert candidate([]) == -1\n\ndef test_check():\n    check(can_arrange)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong can_arrange(std::vector<long> arr) {\n    long ind=-1;\n    long i=1;\n    while (i<arr.size()) {\n      if (arr[i]<arr[i-1]) {\n        ind=i;\n      }\n      i+=1;\n    }\n    return ind;\n}\n\n### Python version\n\nfrom typing import List\n\ndef can_arrange(arr: List[int]) -> int:\n"
+}

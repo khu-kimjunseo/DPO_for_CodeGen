@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_143_words_in_sentence",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string words_in_sentence(std::string sentence) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_143_words_in_sentence.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = words_in_sentence;\n    assert(candidate((\"This is a test\")) == (\"is\"));\n    assert(candidate((\"lets go for swimming\")) == (\"go for\"));\n    assert(candidate((\"there is no place available here\")) == (\"there is no place\"));\n    assert(candidate((\"Hi I am Hussein\")) == (\"Hi am Hussein\"));\n    assert(candidate((\"go for it\")) == (\"go for it\"));\n    assert(candidate((\"here\")) == (\"\"));\n    assert(candidate((\"here is\")) == (\"is\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef words_in_sentence(sentence: str) -> str:\n    new_lst = []\n    for word in sentence.split():\n        flg = 0\n        if len(word) == 1:\n            flg = 1\n        for i in range(2, len(word)):\n            if len(word)%i == 0:\n                flg = 1\n        if flg == 0 or len(word) == 2:\n            new_lst.append(word)\n    return \" \".join(new_lst)\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string words_in_sentence(std::string sentence) {\n"
+}

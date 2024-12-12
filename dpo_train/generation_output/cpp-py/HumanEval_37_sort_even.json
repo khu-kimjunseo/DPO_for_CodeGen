@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_37_sort_even",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef sort_even(l: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_37_sort_even.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3]) == [1, 2, 3]\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) == [-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123]\n    assert candidate([5, 8, -12, 4, 23, 2, 3, 11, 12, -10]) == [-12, 8, 3, 4, 5, 2, 12, 11, 23, -10]\n\ndef test_check():\n    check(sort_even)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> sort_even(std::vector<long> l) {\n    std::vector<long> evens;\n    for(int i=0;i<l.size();i+=2) evens.push_back(l[i]);\n    std::vector<long> odds;\n    for(int i=1;i<l.size();i+=2) odds.push_back(l[i]);\n    std::sort(evens.begin(), evens.end());\n    std::vector<long> ans;\n    for(int i=0;i<odds.size();i++) {\n        ans.push_back(evens[i]);\n        ans.push_back(odds[i]);\n    }\n    if(evens.size() > odds.size()) ans.push_back(evens[evens.size()-1]);\n    return ans;\n}\n\n### Python version\n\nfrom typing import List\n\ndef sort_even(l: List[int]) -> List[int]:\n"
+}

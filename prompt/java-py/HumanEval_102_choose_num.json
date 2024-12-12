@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_102_choose_num",
+    "language": "py",
+    "prompt": "def choose_num(x: int, y: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_102_choose_num.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(12, 15) == 14\n    assert candidate(13, 12) == -1\n    assert candidate(33, 12354) == 12354\n    assert candidate(5234, 5233) == -1\n    assert candidate(6, 29) == 28\n    assert candidate(27, 10) == -1\n    assert candidate(7, 7) == -1\n    assert candidate(546, 546) == 546\n\ndef test_check():\n    check(choose_num)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long chooseNum(long x, long y) {\n        if (x > y) {\n            return -1;\n        }\n        if (y % 2 == 0) {\n            return y;\n        }\n        if (x == y) {\n            return -1;\n        }\n        return y - 1;\n    }\n}\n\n### Python version\n\ndef choose_num(x: int, y: int) -> int:\n"
+}

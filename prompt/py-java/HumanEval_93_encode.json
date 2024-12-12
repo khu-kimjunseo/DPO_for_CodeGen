@@ -1,0 +1,17 @@
+{
+    "name": "HumanEval_93_encode",
+    "language": "java",
+    "prompt": "import java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encode(String message) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_93_encode.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "    public static void main(String[] args) {\n    assert(encode((\"TEST\")).equals((\"tgst\")));\n    assert(encode((\"Mudasir\")).equals((\"mWDCSKR\")));\n    assert(encode((\"YES\")).equals((\"ygs\")));\n    assert(encode((\"This is a message\")).equals((\"tHKS KS C MGSSCGG\")));\n    assert(encode((\"I DoNt KnOw WhAt tO WrItE\")).equals((\"k dQnT kNqW wHcT Tq wRkTg\")));\n    }\n\n}\n",
+    "stop_tokens": [
+        "public static void main",
+        "###",
+        "\n}"
+    ],
+    "translation_prompt": "### Python version\n\ndef encode(message: str) -> str:\n    vowels = \"aeiouAEIOU\"\n    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])\n    message = message.swapcase()\n    return ''.join([vowels_replace[i] if i in vowels else i for i in message])\n\n### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String encode(String message) {\n"
+}

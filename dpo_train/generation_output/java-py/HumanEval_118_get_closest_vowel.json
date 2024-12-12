@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_118_get_closest_vowel",
+    "language": "py",
+    "prompt": "def get_closest_vowel(word: str) -> str:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_118_get_closest_vowel.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('yogurt') == 'u'\n    assert candidate('full') == 'u'\n    assert candidate('easy') == ''\n    assert candidate('eAsy') == ''\n    assert candidate('ali') == ''\n    assert candidate('bad') == 'a'\n    assert candidate('most') == 'o'\n    assert candidate('ab') == ''\n    assert candidate('ba') == ''\n    assert candidate('quick') == ''\n    assert candidate('anime') == 'i'\n    assert candidate('Asia') == ''\n    assert candidate('Above') == 'o'\n\ndef test_check():\n    check(get_closest_vowel)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String getClosestVowel(String word) {\n        String vowels = \"aeiouAEIOU\";\n        for (int i = word.length() - 2; i > 0; i--) {\n            if (vowels.indexOf(word.charAt(i)) != -1) {\n                if (vowels.indexOf(word.charAt(i + 1)) == -1 && vowels.indexOf(word.charAt(i - 1)) == -1) {\n                    return word.charAt(i) + \"\";\n                }\n            }\n        }\n        return \"\";\n    }\n    \n}\n\n### Python version\n\ndef get_closest_vowel(word: str) -> str:\n"
+}

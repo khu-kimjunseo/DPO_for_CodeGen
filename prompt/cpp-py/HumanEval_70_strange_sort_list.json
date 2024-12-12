@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_70_strange_sort_list",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef strange_sort_list(lst: List[int]) -> List[int]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_70_strange_sort_list.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([1, 2, 3, 4]) == [1, 4, 2, 3]\n    assert candidate([5, 6, 7, 8, 9]) == [5, 9, 6, 8, 7]\n    assert candidate([1, 2, 3, 4, 5]) == [1, 5, 2, 4, 3]\n    assert candidate([5, 6, 7, 8, 9, 1]) == [1, 9, 5, 8, 6, 7]\n    assert candidate([5, 5, 5, 5]) == [5, 5, 5, 5]\n    assert candidate([]) == []\n    assert candidate([1, 2, 3, 4, 5, 6, 7, 8]) == [1, 8, 2, 7, 3, 6, 4, 5]\n    assert candidate([0, 2, 2, 2, 5, 5, -5, -5]) == [-5, 5, -5, 5, 0, 2, 2, 2]\n    assert candidate([111111]) == [111111]\n\ndef test_check():\n    check(strange_sort_list)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<long> strange_sort_list(std::vector<long> lst) {\n    std::vector<long> res;\n    bool switch_ = true;\n    while (lst.size()) {\n        res.push_back(switch_ ? *std::min_element(lst.begin(), lst.end()) : *std::max_element(lst.begin(), lst.end()));\n        lst.erase(std::find(lst.begin(), lst.end(), res.back()));\n        switch_ = !switch_;\n    }\n    return res;\n}\n\n### Python version\n\nfrom typing import List\n\ndef strange_sort_list(lst: List[int]) -> List[int]:\n"
+}

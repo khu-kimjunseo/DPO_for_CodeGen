@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_36_fizz_buzz",
+    "language": "py",
+    "prompt": "def fizz_buzz(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_36_fizz_buzz.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(50) == 0\n    assert candidate(78) == 2\n    assert candidate(79) == 3\n    assert candidate(100) == 3\n    assert candidate(200) == 6\n    assert candidate(4000) == 192\n    assert candidate(10000) == 639\n    assert candidate(100000) == 8026\n\ndef test_check():\n    check(fizz_buzz)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long fizzBuzz(long n) {\n        List<Long> ns = new ArrayList<>();\n        for (long i = 0; i < n; i++) {\n            if (i % 11 == 0 || i % 13 == 0) {\n                ns.add(i);\n            }\n        }\n        long s = ns.stream().map(i -> String.valueOf(i)).flatMapToInt(String::chars).filter(c -> c == '7').count();\n        return s;\n    }\n    \n}\n\n### Python version\n\ndef fizz_buzz(n: int) -> int:\n"
+}

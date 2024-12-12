@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_131_digits",
+    "language": "py",
+    "prompt": "def digits(n: int) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_131_digits.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate(5) == 5\n    assert candidate(54) == 5\n    assert candidate(120) == 1\n    assert candidate(5014) == 5\n    assert candidate(98765) == 315\n    assert candidate(5576543) == 2625\n    assert candidate(2468) == 0\n\ndef test_check():\n    check(digits)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long digits(long n) {\n        long product = 1;\n        int oddCount = 0;\n        for (char c : Long.toString(n).toCharArray()) {\n            int digit = Character.getNumericValue(c);\n            if (digit % 2 == 1) {\n                product *= digit;\n                oddCount++;\n            }\n        }\n        return oddCount == 0 ? 0 : product;\n    }\n}\n\n### Python version\n\ndef digits(n: int) -> int:\n"
+}

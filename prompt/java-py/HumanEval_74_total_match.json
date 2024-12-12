@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_74_total_match",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef total_match(lst1: List[str], lst2: List[str]) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_74_total_match.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate([], []) == []\n    assert candidate(['hi', 'admin'], ['hi', 'hi']) == ['hi', 'hi']\n    assert candidate(['hi', 'admin'], ['hi', 'hi', 'admin', 'project']) == ['hi', 'admin']\n    assert candidate(['4'], ['1', '2', '3', '4', '5']) == ['4']\n    assert candidate(['hi', 'admin'], ['hI', 'Hi']) == ['hI', 'Hi']\n    assert candidate(['hi', 'admin'], ['hI', 'hi', 'hi']) == ['hI', 'hi', 'hi']\n    assert candidate(['hi', 'admin'], ['hI', 'hi', 'hii']) == ['hi', 'admin']\n    assert candidate([], ['this']) == []\n    assert candidate(['this'], []) == []\n\ndef test_check():\n    check(total_match)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static ArrayList<String> totalMatch(ArrayList<String> lst1, ArrayList<String> lst2) {\n        int l1 = lst1.stream().mapToInt(String::length).sum();\n        int l2 = lst2.stream().mapToInt(String::length).sum();\n        return l1 <= l2 ? lst1 : lst2;\n    }\n}\n\n### Python version\n\nfrom typing import List\n\ndef total_match(lst1: List[str], lst2: List[str]) -> List[str]:\n"
+}

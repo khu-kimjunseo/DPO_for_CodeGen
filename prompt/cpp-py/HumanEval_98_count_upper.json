@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_98_count_upper",
+    "language": "py",
+    "prompt": "def count_upper(s: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_98_count_upper.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('aBCdEf') == 1\n    assert candidate('abcdefg') == 0\n    assert candidate('dBBE') == 0\n    assert candidate('B') == 0\n    assert candidate('U') == 1\n    assert candidate('') == 0\n    assert candidate('EEEE') == 2\n\ndef test_check():\n    check(count_upper)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nlong count_upper(std::string s) {\n    long count = 0;\n    for (int i = 0; i < s.size(); i += 2) {\n        if (std::string(\"AEIOU\").find(s[i]) != std::string::npos) {\n            count += 1;\n        }\n    }\n    return count;\n}\n\n### Python version\n\ndef count_upper(s: str) -> int:\n"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_112_reverse_delete",
+    "language": "py",
+    "prompt": "from typing import Tuple\n\ndef reverse_delete(s: str, c: str) -> Tuple[str, bool]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_112_reverse_delete.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('abcde', 'ae') == ('bcd', False)\n    assert candidate('abcdef', 'b') == ('acdef', False)\n    assert candidate('abcdedcba', 'ab') == ('cdedc', True)\n    assert candidate('dwik', 'w') == ('dik', False)\n    assert candidate('a', 'a') == ('', True)\n    assert candidate('abcdedcba', '') == ('abcdedcba', True)\n    assert candidate('abcdedcba', 'v') == ('abcdedcba', True)\n    assert candidate('vabba', 'v') == ('abba', True)\n    assert candidate('mamma', 'mia') == ('', True)\n\ndef test_check():\n    check(reverse_delete)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::tuple<std::string, bool> reverse_delete(std::string s, std::string c) {\n    s.erase(std::remove_if(s.begin(), s.end(), [&c](char x) { return c.find(x) != std::string::npos; }), s.end());\n    return {s, s == std::string(s.rbegin(), s.rend())};\n}\n\n### Python version\n\nfrom typing import Tuple\n\ndef reverse_delete(s: str, c: str) -> Tuple[str, bool]:\n"
+}

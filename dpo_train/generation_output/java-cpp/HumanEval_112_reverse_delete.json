@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_112_reverse_delete",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<std::string, bool> reverse_delete(std::string s, std::string c) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_112_reverse_delete.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = reverse_delete;\n    assert(candidate((\"abcde\"), (\"ae\")) == (std::make_tuple(\"bcd\", false)));\n    assert(candidate((\"abcdef\"), (\"b\")) == (std::make_tuple(\"acdef\", false)));\n    assert(candidate((\"abcdedcba\"), (\"ab\")) == (std::make_tuple(\"cdedc\", true)));\n    assert(candidate((\"dwik\"), (\"w\")) == (std::make_tuple(\"dik\", false)));\n    assert(candidate((\"a\"), (\"a\")) == (std::make_tuple(\"\", true)));\n    assert(candidate((\"abcdedcba\"), (\"\")) == (std::make_tuple(\"abcdedcba\", true)));\n    assert(candidate((\"abcdedcba\"), (\"v\")) == (std::make_tuple(\"abcdedcba\", true)));\n    assert(candidate((\"vabba\"), (\"v\")) == (std::make_tuple(\"abba\", true)));\n    assert(candidate((\"mamma\"), (\"mia\")) == (std::make_tuple(\"\", true)));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static Pair<String, Boolean> reverseDelete(String s, String c) {\n        s = s.chars().filter(ch -> c.indexOf(ch) == -1).mapToObj(Character::toString).collect(Collectors.joining());\n        return Pair.with(s, new StringBuilder(s).reverse().toString().equals(s));\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::tuple<std::string, bool> reverse_delete(std::string s, std::string c) {\n"
+}

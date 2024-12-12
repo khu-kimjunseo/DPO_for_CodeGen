@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_117_select_words",
+    "language": "py",
+    "prompt": "from typing import List\n\ndef select_words(s: str, n: int) -> List[str]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_117_select_words.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Mary had a little lamb', 4) == ['little']\n    assert candidate('Mary had a little lamb', 3) == ['Mary', 'lamb']\n    assert candidate('simple white space', 2) == []\n    assert candidate('Hello world', 4) == ['world']\n    assert candidate('Uncle sam', 3) == ['Uncle']\n    assert candidate('', 4) == []\n    assert candidate('a b c d e f', 1) == ['b', 'c', 'd', 'f']\n\ndef test_check():\n    check(select_words)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::vector<std::string> select_words(std::string s, long n) {\n    std::vector<std::string> result;\n    std::stringstream ss(s);\n    std::string word;\n    while (ss >> word) {\n        long n_consonants = 0;\n        for (char c : word) {\n            if (std::string(\"aeiouAEIOU\").find(c) == std::string::npos) {\n                n_consonants++;\n            }\n        }\n        if (n_consonants == n) {\n            result.push_back(word);\n        }\n    }\n    return result;\n}\n\n### Python version\n\nfrom typing import List\n\ndef select_words(s: str, n: int) -> List[str]:\n"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "HumanEval_10_make_palindrome",
+    "language": "cpp",
+    "prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string make_palindrome(std::string string) {\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_10_make_palindrome.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "}\nint main() {\n    auto candidate = make_palindrome;\n    assert(candidate((\"\")) == (\"\"));\n    assert(candidate((\"x\")) == (\"x\"));\n    assert(candidate((\"xyz\")) == (\"xyzyx\"));\n    assert(candidate((\"xyx\")) == (\"xyx\"));\n    assert(candidate((\"jerry\")) == (\"jerryrrej\"));\n}\n",
+    "stop_tokens": [
+        "\n}"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static String makePalindrome(String string) {\n        if (string.isEmpty()) {\n            return \"\";\n        }\n        int beginningOfSuffix = 0;\n        while (!string.substring(beginningOfSuffix).equals(new StringBuilder(string.substring(beginningOfSuffix)).reverse().toString())) {\n            beginningOfSuffix++;\n        }\n        return string + new StringBuilder(string.substring(0, beginningOfSuffix)).reverse().toString();\n    }\n}\n\n### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\n#include<unordered_map>\n#include<unordered_set>\nstd::string make_palindrome(std::string string) {\n"
+}

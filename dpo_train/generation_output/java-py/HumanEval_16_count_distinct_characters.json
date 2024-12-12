@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_16_count_distinct_characters",
+    "language": "py",
+    "prompt": "def count_distinct_characters(string: str) -> int:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_16_count_distinct_characters.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(count_distinct_characters)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### Java version\n\nimport java.util.*;\nimport java.lang.reflect.*;\nimport org.javatuples.*;\nimport java.security.*;\nimport java.math.*;\nimport java.io.*;\nimport java.util.stream.*;\nclass Problem {\n    public static long countDistinctCharacters(String string) {\n        return string.toLowerCase().chars().distinct().count();\n    }\n}\n\n### Python version\n\ndef count_distinct_characters(string: str) -> int:\n"
+}

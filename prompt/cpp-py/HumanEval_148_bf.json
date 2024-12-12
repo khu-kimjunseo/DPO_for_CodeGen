@@ -1,0 +1,18 @@
+{
+    "name": "HumanEval_148_bf",
+    "language": "py",
+    "prompt": "from typing import Tuple\n\ndef bf(planet1: str, planet2: str) -> Tuple[str, ...]:\n",
+    "doctests": "keep",
+    "original": "/Users/zilutang/Projects/code_translation/explain-then-translate/MultiPL-C2C/datasets/../datasets/originals/HumanEval_148_bf.py",
+    "prompt_terminology": "remove",
+    "source_program": "keep",
+    "target_signature": "keep",
+    "tests": "def check(candidate):\n    assert candidate('Jupiter', 'Neptune') == ('Saturn', 'Uranus')\n    assert candidate('Earth', 'Mercury') == ('Venus',)\n    assert candidate('Mercury', 'Uranus') == ('Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')\n    assert candidate('Neptune', 'Venus') == ('Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus')\n    assert candidate('Earth', 'Earth') == ()\n    assert candidate('Mars', 'Earth') == ()\n    assert candidate('Jupiter', 'Makemake') == ()\n\ndef test_check():\n    check(bf)\n\ntest_check()\n",
+    "stop_tokens": [
+        "\ndef",
+        "\n#",
+        "\nif",
+        "\nclass"
+    ],
+    "translation_prompt": "### C++ version\n\n#include<assert.h>\n#include<bits/stdc++.h>\n#include<vector>\n#include<sstream>\n#include<regex>\n#include<map>\n#include<set>\nstd::vector<std::string> bf(std::string planet1, std::string planet2) {\n    std::vector<std::string> planet_names = {\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"};\n    if (std::find(planet_names.begin(), planet_names.end(), planet1) == planet_names.end() || std::find(planet_names.begin(), planet_names.end(), planet2) == planet_names.end() || planet1 == planet2) {\n        return {};\n    }\n    int planet1_index = std::find(planet_names.begin(), planet_names.end(), planet1) - planet_names.begin();\n    int planet2_index = std::find(planet_names.begin(), planet_names.end(), planet2) - planet_names.begin();\n    if (planet1_index < planet2_index) {\n        return {planet_names.begin() + planet1_index + 1, planet_names.begin() + planet2_index};\n    } else {\n        return {planet_names.begin() + planet2_index + 1, planet_names.begin() + planet1_index};\n    }\n}\n\n### Python version\n\nfrom typing import Tuple\n\ndef bf(planet1: str, planet2: str) -> Tuple[str, ...]:\n"
+}
